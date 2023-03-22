@@ -4,9 +4,13 @@ A set of standard RESTful web service that provides CRUD operations into our ent
 
 ### [Diagram-Link](https://app.diagrams.net/#G1REdLjoMMJaP6tBk-P2wAPLvq50BI7lfw)
 
+![image](https://github.com/Aashay7/organizing_data_HRAlit/blob/main/Experimental_Data/Entity-API/entity_api.png)
+
 ### Contents:
 - `entity_api_data.ipynb` : Python notebook file to query the `Entity API`. 
 - `entity_api.png` : Entity API endpoint responses visualized. 
+
+
 
 
 ## Entity API Specifications (March 22 2023)
