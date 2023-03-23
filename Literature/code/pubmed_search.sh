@@ -1,2 +1,7 @@
 #!/bin/bash
-esearch -db pubmed -query "human atlas" | efetch -format medline > output.txt
+
+KEYWORDS=$(csvtool col 1 keywords.csv | tail -n +2)
+
+for keyword in $KEYWORDS; do
+    esearch -db pubmed -query "'$keyword'" | efetch -format medline > "output_${keyword}.txt"
+done
