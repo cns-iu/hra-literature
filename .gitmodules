@@ -1,0 +1,6 @@
+[submodule "Experimental_Data/CZI_CXG/CZI_CT_Count_Summaries"]
+	path = Experimental_Data/CZI_CXG/CZI_CT_Count_Summaries
+	url = https://github.com/Aashay7/CZI_CT_Count_Summaries
+[submodule "Experimental_Data/CZI_CXG/CellxGene_HCA_dataset_comparison"]
+	path = Experimental_Data/CZI_CXG/CellxGene_HCA_dataset_comparison
+	url = https://github.com/hubmapconsortium/CellxGene_HCA_dataset_comparison
