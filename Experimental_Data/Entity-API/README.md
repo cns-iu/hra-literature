@@ -11,8 +11,6 @@ A set of standard RESTful web service that provides CRUD operations into our ent
 - `entity_api.png` : Entity API endpoint responses visualized. 
 
 
-
-
 ## Entity API Specifications (March 22 2023)
 
 [GET] Endpoints:
@@ -37,7 +35,6 @@ A set of standard RESTful web service that provides CRUD operations into our ent
 17. /datasets/sankey_data
 18. /datasets/unpublished
 ```
-
 
 ### 1. `/entities/{id}` - REQUIRES [nexus_token, uuid/hubmap_id]
 
@@ -181,7 +178,6 @@ A set of standard RESTful web service that provides CRUD operations into our ent
 
 ```
 
-
 ### 2. `/entity-types`
 
 > Get a list of all the available entity types defined in the schema yaml
@@ -191,9 +187,6 @@ Response:
  ['Collection', 'Dataset', 'Publication', 'Donor', 'Sample', 'Upload']
 
 ```
-
-
-
 
 
 ### 3. `/entities/{id}/provenance` - REQUIRES [nexus_token, uuid/hubmap_id]
