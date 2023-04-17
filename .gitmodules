@@ -4,3 +4,6 @@
 [submodule "Experimental_Data/CZI_CXG/CellxGene_HCA_dataset_comparison"]
 	path = Experimental_Data/CZI_CXG/CellxGene_HCA_dataset_comparison
 	url = https://github.com/hubmapconsortium/CellxGene_HCA_dataset_comparison
+[submodule "Experimental_Data/HuBMAP/hra-hubmap-experimental"]
+	path = Experimental_Data/HuBMAP/hra-hubmap-experimental
+	url = https://github.com/Aashay7/hra-hubmap-experimental
