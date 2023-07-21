@@ -114,3 +114,80 @@ for x, y, size in zip(data['organ'], data['Publication'], data['citation']):
 
 plt.tight_layout()
 plt.show()
+
+#------------------
+#Create Funding Proportion by Organ and Funder
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import colorsys
+import math
+
+# Load the Excel file
+data = pd.read_excel('/mnt/data/fig2.xlsx')
+
+# Melt the data into long format
+data_long = data.melt(id_vars='organ', var_name='funder', value_name='funding')
+
+# Calculate the total funding provided by each funder
+total_funding_by_funder = data_long.groupby('funder')['funding'].sum()
+
+# Calculate the proportion of each funding amount relative to the total for each funder
+data_long['funding_proportion'] = data_long.apply(lambda row: row['funding'] / total_funding_by_funder[row['funder']], axis=1)
+
+# Calculate the logarithm of the funding proportion to reduce the discrepancy between large and small values
+data_long['funding_proportion_log'] = np.log1p(data_long['funding_proportion'])
+
+# Convert RGB color to hex color
+color_rgb = [131, 99, 161]
+color_hex = '#%02x%02x%02x' % (color_rgb[0], color_rgb[1], color_rgb[2])
+
+# Convert RGB color to HSV, adjust Value (brightness), then convert back to RGB
+color_rgb = [131/255, 99/255, 161/255]  # RGB values need to be in the range [0, 1]
+color_hsv = colorsys.rgb_to_hsv(color_rgb[0], color_rgb[1], color_rgb[2])
+color_hsv_dark = (color_hsv[0], color_hsv[1], color_hsv[2]*0.6)  # Reduce brightness to 60%
+color_rgb_dark = colorsys.hsv_to_rgb(*color_hsv_dark)
+color_hex_dark = '#%02x%02x%02x' % (int(color_rgb_dark[0]*255), int(color_rgb_dark[1]*255), int(color_rgb_dark[2]*255))
+
+# Further adjust figure size to reduce scale distance in x-axis
+plt.figure(figsize=(6, 15))
+
+# Create bubble chart with reversed axes and further reduced x-axis scale distance
+# Use the darkened color for the bubbles
+bubble = sns.scatterplot(data=data_long, y='organ', x='funder', size='funding_proportion_log', sizes=(50, 1000), 
+                         legend=False, alpha=0.6, edgecolors=None, marker="o", color=color_hex_dark)
+
+# Remove grid lines
+bubble.grid(False)
+
+# Add labels and title
+plt.ylabel("Organ")
+plt.xlabel("Funder")
+plt.title("Funding Proportion by Organ and Funder (Logarithmic Scale)")
+
+# Rotate y-axis labels for better visibility
+plt.yticks(rotation=45)
+
+# Show the plot
+plt.show()
+
+# Calculate total funding by each funder
+total_funding = data_long.groupby('funder')['funding'].sum().reset_index()
+
+# Create bar chart
+plt.figure(figsize=(10, 6))
+bar = sns.barplot(x='funder', y='funding', data=total_funding, palette='coolwarm')
+
+# Add labels and title
+plt.xlabel("Funder")
+plt.ylabel("Total Funding")
+plt.title("Total Funding by Each Funder")
+
+# Rotate x-axis labels for better visibility
+plt.xticks(rotation=45)
+
+# Show the plot
+plt.show()
+
