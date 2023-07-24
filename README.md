@@ -13,7 +13,7 @@ Contents:
     │   ├── Entity-API                                  # EDA Code + Data Schema
     │   └── HuBMAP                                      # EDA Code + Data Schema
     │ 
-    ├── Expert
+    ├── Experts
     │   ├── Experts_citation_funding.csv
     │   ├── 
     │   
@@ -21,15 +21,15 @@ Contents:
     │   ├── Extract data
     │   └── Mapping
     │  
-    ├── Ontology
+    ├── Ontologies
     │   ├── Ontobee [WIP]
     │   └── SPOKE [WIP]                                      
     │
-    ├── Institution
+    ├── Institutions
     │   ├── 
     │   ├── 
     │   
-    └── Literature
+    └── Publications
     
     
         
