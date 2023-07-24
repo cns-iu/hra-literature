@@ -3,7 +3,7 @@ import json
 import pandas as pd
 
 
-# 设置请求 URL 和参数
+# Set the request URL and parameters
 url = 'https://researchdata.edu.au/api/v2.0/registry/activities'
 params = {
     'api_key':'ded8d31e8e38',
