@@ -3,8 +3,7 @@ import json
 import xmltodict
 import pandas as pd
 
-
-# 设置请求 URL 和参数
+# Set the request URL and parameters
 url = 'https://kaken.nii.ac.jp/opensearch/'
 params = {
     'appid': 'your_appid',
