@@ -12,12 +12,25 @@ Contents:
     │   │   └── CZI_CT_Count_Summaries                  [WIP - updated statistics]
     │   ├── Entity-API                                  # EDA Code + Data Schema
     │   └── HuBMAP                                      # EDA Code + Data Schema
-    ├── Funding               
+    │ 
+    ├── Expert
+    │   ├── Experts_citation_funding.csv
+    │   ├── 
+    │   
+    ├── Funding       
+    │   ├── Extract data
+    │   └── Mapping
     │  
     ├── Ontology
     │   ├── Ontobee [WIP]
     │   └── SPOKE [WIP]                                      
     │
+    ├── Institution
+    │   ├── 
+    │   ├── 
+    │   
     └── Literature
+    
+    
         
     
