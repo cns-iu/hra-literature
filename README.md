@@ -4,10 +4,10 @@ This repository contains the supporting code and documentation for the [HRALit p
 
 Contents:
 # Data extraction
-## experimental data (CZI_CXG, Entity-API, HuBMAP)
-## funding data (ardc_api, kaken_api, nih_api,nsf_api,ukri_api)
-      ontology (ccf_api)
-      publication
+* experimental data (CZI_CXG, Entity-API, HuBMAP)
+* funding data (ardc_api, kaken_api, nih_api,nsf_api,ukri_api)
+* ontology (ccf_api)
+* publication
 
     .
     ├── Experimental_Data
