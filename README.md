@@ -14,7 +14,7 @@ This repository contains the supporting code and documentation for the [HRALit p
 * tag AS/CT/B lables
 * attribute implementation
 
-## results 
+## Results 
 * publication_identifier_per_organ
 * list_funding_num
 * funding_publicationCt
