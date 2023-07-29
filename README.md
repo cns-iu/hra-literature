@@ -3,7 +3,8 @@
 This repository contains the supporting code and documentation for the [HRALit paper](https://docs.google.com/document/d/1KS1D_apP-Zj24RW4D0YmkGRqiNBNu_xfOgX1kXPOgwo/edit#heading=h.56nwsfxk6v55)
 
 Contents:
-
+* Data extraction
+** 
     .
     ├── Experimental_Data
     │   ├── CCF-API                                     # EDA Code + Data Schema
