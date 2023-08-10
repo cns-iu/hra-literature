@@ -1,10 +1,10 @@
 import pandas as pd
 
 # Load the files
-dataset_mapping = pd.read_csv('C:\\Users\\yokong\\Desktop\HRALit KG\\datasets\\dataset_mapping.csv')
-gtex_datasets = pd.read_csv('C:\\Users\\yokong\\Desktop\HRALit KG\\datasets\\gtex_datasets.csv')
-hubmap_datasets = pd.read_csv('C:\\Users\\yokong\\Desktop\HRALit KG\\datasets\\hubmap_datasets.csv')
-cxg_datasets = pd.read_csv('C:\\Users\\yokong\\Desktop\HRALit KG\\datasets\\cxg_healthy_human_adult_datasets.csv', encoding='ISO-8859-1')
+dataset_mapping = pd.read_csv('datasets\\dataset_mapping.csv')
+gtex_datasets = pd.read_csv('datasets\\gtex_datasets.csv')
+hubmap_datasets = pd.read_csv('datasets\\hubmap_datasets.csv')
+cxg_datasets = pd.read_csv('datasets\\cxg_healthy_human_adult_datasets.csv', encoding='ISO-8859-1')
 
 # Define a function to rename columns based on the mapping table and the portal name
 def rename_columns(df, portal):
