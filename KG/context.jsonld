@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "@base": "https://purl.humanatlas.io/g/hra-lit#",
+    "Publication": "http://schema.org/ScholarlyArticle",
+    "Author": "http://schema.org/Person",
+    "Institution": "http://schema.org/Organization",
+    "Funding": "http://schema.org/MonetaryGrant",
+    "Dataset": "http://schema.org/Dataset",
+    "Donor": "http://schema.org/Person",
+    "Organ": "http://schema.org/AnatomicalStructure",
+    "hasAuthor": {
+      "@id": "http://schema.org/author",
+      "@type": "@id"
+    },
+    "hasFunding": {
+      "@id": "http://schema.org/funder",
+      "@type": "@id"
+    },
+    "belongsTo": {
+      "@id": "http://schema.org/memberOf",
+      "@type": "@id"
+    },
+    "linkedToPublication": {
+      "@id": "http://schema.org/isBasedOn",
+      "@type": "@id"
+    },
+    "hasDonor": {
+      "@id": "http://schema.org/producer",
+      "@type": "@id"
+    },
+    "hasOrgan": {
+      "@id": "http://schema.org/about",
+      "@type": "@id"
+    }
+  }
+}
