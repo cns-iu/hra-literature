@@ -2,11 +2,11 @@ import pandas as pd
 import json
 
 #Import datasets
-publication_metadata = pd.read_csv('publication_metadata.csv')
-institutions_metadata = pd.read_csv('institutions_metadata.csv')
-fundings_metadata = pd.read_csv('fundings_metadata.csv')
-funder_metadata = pd.read_csv('funders_metadata.csv')
-experts_metadata = pd.read_csv('experts_metadata.csv')
+publication_metadata = pd.read_csv('publication_metadata.csv', nrows=500) # Added nrows as pd.merge method below runs out of memory
+institutions_metadata = pd.read_csv('institution_metadata.csv')
+fundings_metadata = pd.read_csv('funding_metadata.csv')
+funder_metadata = pd.read_csv('funder_metadata.csv')
+experts_metadata = pd.read_csv('expert_metadata.csv')
 dataset_metadata = pd.read_csv('dataset_metadata.csv')
 organ_metadata = pd.read_csv('organ_metadata.csv')
 donor_metadata = pd.read_csv('donor_metadata.csv')
@@ -21,25 +21,8 @@ publications_authors_fundings = pd.merge(publications_authors, fundings_metadata
 authors_institutions = pd.merge(experts_metadata, institutions_metadata, on=['organization', 'suborganization'], how='left')
 
 
-# Define the @context for the JSON-LD document
-context = {
-    "@context": {
-            "Publication": "http://schema.org/ScholarlyArticle",
-            "Author": "http://schema.org/Person",
-            "Institution": "http://schema.org/Organization",
-            "Funding": "http://schema.org/MonetaryGrant",
-            "Dataset": "http://schema.org/Dataset",
-            "Donor": "http://schema.org/Person",
-            "Organ": "http://schema.org/AnatomicalStructure",
-            "hasAuthor": "http://schema.org/author",
-            "hasFunding": "http://schema.org/funder",
-            "belongsTo": "http://schema.org/memberOf",
-            "linkedToPublication": "http://schema.org/isBasedOn",
-            "hasDonor": "http://schema.org/producer",
-            "hasOrgan": "http://schema.org/about"
-    }
-}
-
+# Get the @context for the JSON-LD document that becomes the base document
+document = json.load(open('context.jsonld'))
 
 def create_jsonld_nodes(df, entity_type, id_field, name_field=None):
     jsonld_nodes = []
@@ -73,10 +56,10 @@ for pub in publications_nodes:
         publications_authors_fundings['pmid'] == int(pmid), 'grant_id'].dropna().unique()
 
     if len(linked_authors) > 0:
-        pub['hasAuthors'] = [{"@id": f"Author/{author_id}"} for author_id in linked_authors]
+        pub['hasAuthor'] = [f"Author/{author_id}" for author_id in linked_authors]
 
     if len(linked_fundings) > 0:
-        pub['hasFundings'] = [{"@id": f"Funding/{grant_id}"} for grant_id in linked_fundings]
+        pub['hasFunding'] = [f"Funding/{grant_id}" for grant_id in linked_fundings]
 
 # Link authors to institutions
 for author in authors_nodes:
@@ -85,7 +68,7 @@ for author in authors_nodes:
         authors_institutions['author_id'] == author_id, 'institution_id'].dropna().unique()
 
     if len(linked_institution) > 0:
-        author['belongsToInstitution'] = {"@id": f"Institution/{linked_institution[0]}"}
+        author['belongsToInstitution'] = f"Institution/{linked_institution[0]}"
 
 # Link datasets to publications, donors, and organs
 for dataset in datasets_nodes:
@@ -97,13 +80,13 @@ for dataset in datasets_nodes:
         dataset_metadata['dataset_id'] == dataset_id, 'organ_ontology'].dropna().unique()
 
     if len(linked_publication) > 0:
-        dataset['linkedToPublication'] = {"@id": f"Publication/{linked_publication[0]}"}
+        dataset['linkedToPublication'] = f"Publication/{linked_publication[0]}"
 
     if len(linked_donor) > 0:
-        dataset['hasDonor'] = {"@id": f"Donor/{linked_donor[0]}"}
+        dataset['hasDonor'] = f"Donor/{linked_donor[0]}"
 
     if len(linked_organ) > 0:
-        dataset['hasOrgan'] = {"@id": f"Organ/{linked_organ[0]}"}
+        dataset['hasOrgan'] = f"Organ/{linked_organ[0]}"
 
 # Since the relationship between fundings and funders is directly based on the 'agency' column, it's already established in the initial nodes.
 
@@ -112,17 +95,15 @@ for dataset in datasets_nodes:
 jsonld_data = publications_nodes + authors_nodes + institutions_nodes + fundings_nodes + datasets_nodes + donors_nodes + organs_nodes
 jsonld_data[:5]  # Display the first 5 nodes for review
 
-# Embed the @context directly within the JSON-LD document
-jsonld_with_context = [context] + jsonld_data
+# Embed the generated data directly within the JSON-LD document's @graph
+document["@graph"] = jsonld_data
 
 # Convert the JSON-LD data structure with context to a string
-jsonld_str_with_context = json.dumps(jsonld_with_context, indent=4)
+jsonld_str_with_context = json.dumps(document, indent=2)
 
 # Save the string to a JSON-LD file
-with open("knowledge_graph_with_context.jsonld", "w") as jsonld_file:
+with open("hra-lit.jsonld", "w") as jsonld_file:
     jsonld_file.write(jsonld_str_with_context)
-
-
 
 # Create nodes and edges files
 nodes_data=[]
@@ -156,11 +137,11 @@ nodes_df.to_csv(nodes_filepath, index=False)
 
 # Add edges for relationships
 for pub in publications_nodes:
-    if "hasAuthors" in pub:
-        for author in pub["hasAuthors"]:
+    if "hasAuthor" in pub:
+        for author in pub["hasAuthor"]:
             edges_data.append({"source": pub["@id"], "target": author["@id"], "relationship": "hasAuthor"})
-    if "hasFundings" in pub:
-        for funding in pub["hasFundings"]:
+    if "hasFunding" in pub:
+        for funding in pub["hasFunding"]:
             edges_data.append({"source": pub["@id"], "target": funding["@id"], "relationship": "hasFunding"})
 
 for author in authors_nodes:
