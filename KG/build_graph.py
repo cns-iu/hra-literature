@@ -1,13 +1,14 @@
 import pandas as pd
 import json
+import urllib.parse
 
 #Import datasets
-publication_metadata = pd.read_csv('publication_metadata.csv', nrows=500) # Added nrows as pd.merge method below runs out of memory
+publication_metadata = pd.read_csv('publication_metadata.csv', nrows=1000) # Added nrows as pd.merge method below runs out of memory
 institutions_metadata = pd.read_csv('institution_metadata.csv')
-fundings_metadata = pd.read_csv('funding_metadata.csv')
-funder_metadata = pd.read_csv('funder_metadata.csv')
-experts_metadata = pd.read_csv('expert_metadata.csv')
-dataset_metadata = pd.read_csv('dataset_metadata.csv')
+fundings_metadata = pd.read_csv('funding_metadata.csv', nrows=1000)
+funder_metadata = pd.read_csv('funder_metadata.csv', nrows=1000)
+experts_metadata = pd.read_csv('expert_metadata.csv', nrows=1000)
+dataset_metadata = pd.read_csv('dataset_metadata.csv', nrows=1000)
 organ_metadata = pd.read_csv('organ_metadata.csv')
 donor_metadata = pd.read_csv('donor_metadata.csv')
 
@@ -24,15 +25,20 @@ authors_institutions = pd.merge(experts_metadata, institutions_metadata, on=['or
 # Get the @context for the JSON-LD document that becomes the base document
 document = json.load(open('context.jsonld'))
 
+def normalize_id(id):
+    return '#' + urllib.parse.quote_plus(id.lower(), safe='')
+
 def create_jsonld_nodes(df, entity_type, id_field, name_field=None):
     jsonld_nodes = []
     for idx, row in df.iterrows():
         node = {
-            "@id": f"{entity_type}/{row[id_field]}",
-            "@type": entity_type
+            "@id": normalize_id(f"{entity_type}/{row[id_field]}"),
+            "@type": entity_type,
+            "identifier": str(row[id_field]),
+            "role": entity_type
         }
         if name_field:
-            node["name"] = row[name_field]
+            node["name"] = str(row[name_field])
         jsonld_nodes.append(node)
     return jsonld_nodes
 
@@ -49,30 +55,30 @@ organs_nodes = create_jsonld_nodes(organ_metadata, "Organ", "organ_ontology", "o
 # Establish relationships in JSON-LD structure
 
 for pub in publications_nodes:
-    pmid = pub['@id'].split('/')[-1]
+    pmid = pub['identifier']
     linked_authors = publications_authors_fundings.loc[
         publications_authors_fundings['pmid'] == int(pmid), 'author_id'].dropna().unique()
     linked_fundings = publications_authors_fundings.loc[
         publications_authors_fundings['pmid'] == int(pmid), 'grant_id'].dropna().unique()
 
     if len(linked_authors) > 0:
-        pub['hasAuthor'] = [f"Author/{author_id}" for author_id in linked_authors]
+        pub['hasAuthor'] = [normalize_id(f"Author/{author_id}") for author_id in linked_authors]
 
     if len(linked_fundings) > 0:
-        pub['hasFunding'] = [f"Funding/{grant_id}" for grant_id in linked_fundings]
+        pub['hasFunding'] = [normalize_id(f"Funding/{grant_id}") for grant_id in linked_fundings]
 
 # Link authors to institutions
 for author in authors_nodes:
-    author_id = author['@id'].split('/')[-1]
+    author_id = author['identifier']
     linked_institution = authors_institutions.loc[
         authors_institutions['author_id'] == author_id, 'institution_id'].dropna().unique()
 
     if len(linked_institution) > 0:
-        author['belongsToInstitution'] = f"Institution/{linked_institution[0]}"
+        author['belongsToInstitution'] = normalize_id(f"Institution/{linked_institution[0]}")
 
 # Link datasets to publications, donors, and organs
 for dataset in datasets_nodes:
-    dataset_id = dataset['@id'].split('/')[-1]
+    dataset_id = dataset['identifier']
     linked_publication = dataset_metadata.loc[
         dataset_metadata['dataset_id'] == dataset_id, 'publication_doi'].dropna().unique()
     linked_donor = dataset_metadata.loc[dataset_metadata['dataset_id'] == dataset_id, 'donor_id'].dropna().unique()
@@ -80,13 +86,13 @@ for dataset in datasets_nodes:
         dataset_metadata['dataset_id'] == dataset_id, 'organ_ontology'].dropna().unique()
 
     if len(linked_publication) > 0:
-        dataset['linkedToPublication'] = f"Publication/{linked_publication[0]}"
+        dataset['linkedToPublication'] = normalize_id(f"Publication/{linked_publication[0]}")
 
     if len(linked_donor) > 0:
-        dataset['hasDonor'] = f"Donor/{linked_donor[0]}"
+        dataset['hasDonor'] = normalize_id(f"Donor/{linked_donor[0]}")
 
     if len(linked_organ) > 0:
-        dataset['hasOrgan'] = f"Organ/{linked_organ[0]}"
+        dataset['hasOrgan'] = normalize_id(f"Organ/{linked_organ[0]}")
 
 # Since the relationship between fundings and funders is directly based on the 'agency' column, it's already established in the initial nodes.
 
@@ -148,7 +154,7 @@ for pub in publications_nodes:
 
 for author in authors_nodes:
     if "belongsToInstitution" in author:
-        edges_data.append({"source": author["@id"], "target": author["belongsToInstitution"], "relationship": "belongsTo"})
+        edges_data.append({"source": author["@id"], "target": author["belongsToInstitution"], "relationship": "belongsToInstitution"})
 
 for dataset in datasets_nodes:
     if "linkedToPublication" in dataset:

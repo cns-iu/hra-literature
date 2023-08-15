@@ -1,6 +1,8 @@
 {
   "@context": {
-    "@base": "https://purl.humanatlas.io/g/hra-lit#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "orcid": "https://orcid.org/",
+    "@base": "https://purl.humanatlas.io/g/hra-lit/v0.1#",
     "Publication": "http://schema.org/ScholarlyArticle",
     "Author": "http://schema.org/Person",
     "Institution": "http://schema.org/Organization",
@@ -8,6 +10,9 @@
     "Dataset": "http://schema.org/Dataset",
     "Donor": "http://schema.org/Person",
     "Organ": "http://schema.org/AnatomicalStructure",
+    "identifier": "http://schema.org/identifier",
+    "role": "http://schema.org/roleName",
+    "name": "rdfs:label",
     "hasAuthor": {
       "@id": "http://schema.org/author",
       "@type": "@id"
@@ -17,6 +22,10 @@
       "@type": "@id"
     },
     "belongsTo": {
+      "@id": "http://schema.org/memberOf",
+      "@type": "@id"
+    },
+    "belongsToInstitution": {
       "@id": "http://schema.org/memberOf",
       "@type": "@id"
     },
