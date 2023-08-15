@@ -105,6 +105,8 @@ jsonld_str_with_context = json.dumps(document, indent=2)
 with open("hra-lit.jsonld", "w") as jsonld_file:
     jsonld_file.write(jsonld_str_with_context)
 
+print("Wrote hra-lit.jsonld")
+
 # Create nodes and edges files
 nodes_data=[]
 edges_data=[]
@@ -139,22 +141,22 @@ nodes_df.to_csv(nodes_filepath, index=False)
 for pub in publications_nodes:
     if "hasAuthor" in pub:
         for author in pub["hasAuthor"]:
-            edges_data.append({"source": pub["@id"], "target": author["@id"], "relationship": "hasAuthor"})
+            edges_data.append({"source": pub["@id"], "target": author, "relationship": "hasAuthor"})
     if "hasFunding" in pub:
         for funding in pub["hasFunding"]:
-            edges_data.append({"source": pub["@id"], "target": funding["@id"], "relationship": "hasFunding"})
+            edges_data.append({"source": pub["@id"], "target": funding, "relationship": "hasFunding"})
 
 for author in authors_nodes:
     if "belongsToInstitution" in author:
-        edges_data.append({"source": author["@id"], "target": author["belongsToInstitution"]["@id"], "relationship": "belongsTo"})
+        edges_data.append({"source": author["@id"], "target": author["belongsToInstitution"], "relationship": "belongsTo"})
 
 for dataset in datasets_nodes:
     if "linkedToPublication" in dataset:
-        edges_data.append({"source": dataset["@id"], "target": dataset["linkedToPublication"]["@id"], "relationship": "linkedToPublication"})
+        edges_data.append({"source": dataset["@id"], "target": dataset["linkedToPublication"], "relationship": "linkedToPublication"})
     if "hasDonor" in dataset:
-        edges_data.append({"source": dataset["@id"], "target": dataset["hasDonor"]["@id"], "relationship": "hasDonor"})
+        edges_data.append({"source": dataset["@id"], "target": dataset["hasDonor"], "relationship": "hasDonor"})
     if "hasOrgan" in dataset:
-        edges_data.append({"source": dataset["@id"], "target": dataset["hasOrgan"]["@id"], "relationship": "hasOrgan"})
+        edges_data.append({"source": dataset["@id"], "target": dataset["hasOrgan"], "relationship": "hasOrgan"})
 
 edges_df = pd.DataFrame(edges_data)
 edges_filepath = "edges.csv"
