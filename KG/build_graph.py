@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 
-# Step 1: Load datasets
+#Import datasets
 publication_metadata = pd.read_csv('publication_metadata.csv')
 institutions_metadata = pd.read_csv('institutions_metadata.csv')
 fundings_metadata = pd.read_csv('fundings_metadata.csv')
@@ -11,9 +11,6 @@ dataset_metadata = pd.read_csv('dataset_metadata.csv')
 organ_metadata = pd.read_csv('organ_metadata.csv')
 donor_metadata = pd.read_csv('donor_metadata.csv')
 
-# ... [Load other datasets as well] ...
-
-# Step 2: Establish relationships
 
 # Create unique ID for institutions
 institutions_metadata['institution_id'] = institutions_metadata['organization'] + "_" + institutions_metadata['suborganization'].fillna("")
@@ -22,13 +19,6 @@ institutions_metadata['institution_id'] = institutions_metadata['organization'] 
 publications_authors = pd.merge(publication_metadata, experts_metadata, on='author_id', how='left')
 publications_authors_fundings = pd.merge(publications_authors, fundings_metadata, on='grant_id', how='left')
 authors_institutions = pd.merge(experts_metadata, institutions_metadata, on=['organization', 'suborganization'], how='left')
-
-# ... [Other merging operations and relationships as established earlier] ...
-
-# Step 3: Create JSON-LD data structure
-
-# ... [JSON-LD node creation code from earlier] ...
-
 
 
 # Define the @context for the JSON-LD document
@@ -75,7 +65,6 @@ organs_nodes = create_jsonld_nodes(organ_metadata, "Organ", "organ_ontology", "o
 
 # Establish relationships in JSON-LD structure
 
-# Link publications to authors and fundings
 for pub in publications_nodes:
     pmid = pub['@id'].split('/')[-1]
     linked_authors = publications_authors_fundings.loc[
@@ -133,9 +122,9 @@ jsonld_str_with_context = json.dumps(jsonld_with_context, indent=4)
 with open("knowledge_graph_with_context.jsonld", "w") as jsonld_file:
     jsonld_file.write(jsonld_str_with_context)
 
-# Step 4: Create nodes and edges files
 
 
+# Create nodes and edges files
 nodes_data=[]
 edges_data=[]
 # Add nodes for each entity
@@ -160,7 +149,6 @@ for donor in donors_nodes:
 for organ in organs_nodes:
     nodes_data.append({"id": organ["@id"], "type": "Organ", "name": organ.get("name", None)})
 
-# Convert to dataframe and save as CSV
 nodes_df = pd.DataFrame(nodes_data)
 nodes_filepath = "nodes.csv"
 nodes_df.to_csv(nodes_filepath, index=False)
@@ -187,7 +175,6 @@ for dataset in datasets_nodes:
     if "hasOrgan" in dataset:
         edges_data.append({"source": dataset["@id"], "target": dataset["hasOrgan"]["@id"], "relationship": "hasOrgan"})
 
-# Convert to dataframe and save as CSV
 edges_df = pd.DataFrame(edges_data)
 edges_filepath = "edges.csv"
 edges_df.to_csv(edges_filepath, index=False)
