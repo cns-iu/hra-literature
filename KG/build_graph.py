@@ -2,28 +2,20 @@ import pandas as pd
 import json
 import urllib.parse
 
+def read_json(file):
+    with open(file, 'r') as in_file:
+        data = json.load(in_file)
+        return pd.DataFrame(data)
+
 #Import datasets
-# publication_metadata = pd.read_csv('publication_metadata.csv', nrows=1000) # Added nrows as pd.merge method below runs out of memory
-with open("publiccation_metadata.json", 'r') as file:
-    data = json.load(file)
-    publication_metadata = pd.DataFrame(data)
-
-with open('authors_metadata.json', 'r') as file:
-    data = json.load(file)
-    experts_metadata = pd.DataFrame(data)
-
-with open('institutions_metadata.json', 'r') as file:
-    data = json.load(file)
-    institutions_metadata = pd.DataFrame(data)
-
-with open('fundings_metadata.json', 'r') as file:
-    data = json.load(file)
-    fundings_metadata = pd.DataFrame(data)
-
-funder_metadata = pd.read_csv('funder_metadata.csv')
-dataset_metadata = pd.read_csv('dataset_metadata.csv')
-organ_metadata = pd.read_csv('organ_metadata.csv')
-donor_metadata = pd.read_csv('donor_metadata.csv')
+publication_metadata = read_json('data/publiccation_metadata.json')
+experts_metadata = read_json('data/authors_metadata.json')
+institutions_metadata = read_json('data/institutions_metadata.json')
+fundings_metadata = read_json('data/fundings_metadata.json')
+funder_metadata = pd.read_csv('data/funder_metadata.csv')
+dataset_metadata = pd.read_csv('data/dataset_metadata.csv')
+organ_metadata = pd.read_csv('data/organ_metadata.csv')
+donor_metadata = pd.read_csv('data/donor_metadata.csv')
 
 
 # Get the @context for the JSON-LD document that becomes the base document
@@ -72,6 +64,8 @@ donors_nodes = create_jsonld_nodes(donor_metadata, "Donor", "donor_id")
 organs_nodes = create_jsonld_nodes(organ_metadata, "Organ", "organ_ontology", "organ")
 funders_nodes = create_jsonld_nodes(funder_metadata, "Funder", "agency", "agency")
 
+print("Finished reading data")
+
 # Link datasets to publications, donors, and organs
 for dataset in datasets_nodes:
     dataset_id = dataset['identifier']
@@ -102,7 +96,7 @@ document["@graph"] = jsonld_data
 jsonld_str_with_context = json.dumps(document, indent=2)
 
 # Save the string to a JSON-LD file
-with open("hra-lit.jsonld", "w") as jsonld_file:
+with open("data/hra-lit.jsonld", "w") as jsonld_file:
     jsonld_file.write(jsonld_str_with_context)
 
 print("Wrote hra-lit.jsonld")
@@ -133,7 +127,7 @@ for organ in organs_nodes:
     nodes_data.append({"id": organ["@id"], "type": "Organ", "name": organ.get("name", None)})
 
 nodes_df = pd.DataFrame(nodes_data)
-nodes_filepath = "nodes.csv"
+nodes_filepath = "data/nodes.csv"
 nodes_df.to_csv(nodes_filepath, index=False)
 
 
@@ -159,5 +153,5 @@ for dataset in datasets_nodes:
         edges_data.append({"source": dataset["@id"], "target": dataset["hasOrgan"], "relationship": "hasOrgan"})
 
 edges_df = pd.DataFrame(edges_data)
-edges_filepath = "edges.csv"
+edges_filepath = "data/edges.csv"
 edges_df.to_csv(edges_filepath, index=False)
