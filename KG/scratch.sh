@@ -29,3 +29,7 @@ rapper -g --show-namespaces \
   --feature 'xmlns:hra-lit="https://purl.humanatlas.io/g/hra-lit/v0.1#"' \
   --feature 'xmlns:schema="http://schema.org/"' \
   data/hra-lit.nq > data/hra-lit.ttl
+
+jq '.["@graph"]' ../hra-lit.jsonld | jq -c '.[]' > out.ndjson
+./cli.js out.ndjson out.nq --context ../context.jsonld 
+rapper out.nq -i nquads -o turtle > out.ttl
