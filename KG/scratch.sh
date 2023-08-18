@@ -33,3 +33,5 @@ rapper -g --show-namespaces \
 jq '.["@graph"]' ../hra-lit.jsonld | jq -c '.[]' > out.ndjson
 ./cli.js out.ndjson out.nq --context ../context.jsonld 
 rapper out.nq -i nquads -o turtle > out.ttl
+
+./ndjsonld/cli.js institutions_metadata_updated2.json institutions_metadata_updated2.nq --context context.jsonld --unsafe

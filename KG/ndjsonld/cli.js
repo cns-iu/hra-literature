@@ -13,7 +13,8 @@ program
   .argument('<ndjsonFile>')
   .argument('<outputQuads>')
   .option('-c, --context <contextFile>')
-  .action(async (inputFile, outputFile, { context }) => {
+  .option('--unsafe')
+  .action(async (inputFile, outputFile, { context, unsafe }) => {
     const source = inputFile === '-' ? process.stdin : createReadStream(inputFile, { autoClose: true });
     const output = outputFile === '-' ? process.stdout : createWriteStream(outputFile, { autoClose: true });
     const contextObject = JSON.parse(readFileSync(context))?.['@context'];
@@ -22,7 +23,7 @@ program
       if (contextObject) {
         obj['@context'] = contextObject;
       }
-      const nquads = await jsonld.canonize(obj);
+      const nquads = await jsonld.canonize(obj, { safe: !unsafe, compactArrays: false });
       output.write(nquads);
     }
   });
