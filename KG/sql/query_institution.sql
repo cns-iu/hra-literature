@@ -1,6 +1,6 @@
 WITH 
--- Create temporary table named tmp
-tmp AS (
+-- Create temporary table named CTE
+CTE AS (
     SELECT 
         country, 
         city, 
@@ -8,9 +8,9 @@ tmp AS (
         zip, 
         CASE 
             WHEN organization IS NOT NULL AND suborganization IS NOT NULL THEN 
-                normalize_id(organization || '-' || suborganization)
+                organization || '-' || suborganization
             ELSE 
-                normalize_id(COALESCE(organization, '') || COALESCE(suborganization, ''))
+                COALESCE(organization, '') || COALESCE(suborganization, '')
         END AS institution_id,
         
         CASE 
@@ -22,47 +22,22 @@ tmp AS (
     FROM author_info_lastest_affi
 ),
 
--- Create CTE named CTE
-CTE AS (
+-- Filter out null values and group data
+cleaned AS (
     SELECT 
-        institution_id,
+        'Institution/' || normalize_id(institution_id) as institution_id,
         CASE 
             WHEN institution_name <>'' THEN lower(institution_name)
             ELSE NULL 
         END AS institution_name,
-        ARRAY_AGG(DISTINCT(country)) AS countries,
-        ARRAY_AGG(DISTINCT(city)) AS cities,
-        ARRAY_AGG(DISTINCT(state)) AS states,
-        ARRAY_AGG(DISTINCT(zip)) AS zips
-    FROM tmp
+        ARRAY_AGG(DISTINCT country) FILTER (WHERE country IS NOT NULL) AS countries,
+        ARRAY_AGG(DISTINCT city) FILTER (WHERE city IS NOT NULL) AS cities,
+        ARRAY_AGG(DISTINCT state) FILTER (WHERE state IS NOT NULL) AS states,
+        ARRAY_AGG(DISTINCT zip) FILTER (WHERE zip IS NOT NULL) AS zips
+    FROM CTE
     WHERE institution_id IS NOT NULL 
         AND institution_name IS NOT NULL 
         AND institution_name !=''
-    GROUP BY institution_id, institution_name
-),
-
--- Unpack arrays for each institution
-expanded AS (
-    SELECT 
-        institution_id, 
-        institution_name,
-        jsonb_array_elements_text(array_to_json(countries)::jsonb) AS country,
-        jsonb_array_elements_text(array_to_json(cities)::jsonb) AS city,
-        jsonb_array_elements_text(array_to_json(states)::jsonb) AS state,
-        jsonb_array_elements_text(array_to_json(zips)::jsonb) AS zip
-    FROM CTE
-),
-
--- Filter out null values and regroup data
-cleaned AS (
-    SELECT 
-        institution_id, 
-        institution_name,
-        jsonb_agg(country) FILTER (WHERE country IS NOT NULL) AS countries,
-        jsonb_agg(city) FILTER (WHERE city IS NOT NULL) AS cities,
-        jsonb_agg(state) FILTER (WHERE state IS NOT NULL) AS states,
-        jsonb_agg(zip) FILTER (WHERE zip IS NOT NULL) AS zips
-    FROM expanded
     GROUP BY institution_id, institution_name
 )
 
@@ -81,4 +56,4 @@ FROM (
         zips
     FROM cleaned
 ) row
-TO institutions_metadata.json
+TO institutions_metadata.json;
