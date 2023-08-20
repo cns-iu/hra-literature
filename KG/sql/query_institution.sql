@@ -25,7 +25,7 @@ CTE AS (
 -- Filter out null values and group data
 cleaned AS (
     SELECT 
-        'Institution/' || normalize_id(institution_id) as institution_id,
+        '#Institution/' || normalize_id(institution_id) as institution_id,
         CASE 
             WHEN institution_name <>'' THEN lower(institution_name)
             ELSE NULL 
