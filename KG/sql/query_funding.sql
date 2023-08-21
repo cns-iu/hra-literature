@@ -1,24 +1,38 @@
-\copy(
-  
-  WITH tmp AS (
+\copy (
+  WITH CTE AS (
     SELECT 
-        normalize_id(grant_id) AS grant_id,
-        normalize_id(agency) AS funder_id
+	grant_id,
+        acronym,
+	agency
     FROM pmid_grant_all
+	where grant_id is not null
+    UNION
+    SELECT
+	grant_id,
+	NULL AS acronym,
+	agency
+    FROM uid_grant_all
+	WHERE grant_id is not null
+	AND uid in (select uid from wosid_to_pmid where pmid is null)
   ),
-  CTE AS (
+  cleaned AS (
     SELECT 
-        grant_id,
-        ARRAY_AGG(DISTINCT(funder_id)) AS funder_ids
-    FROM tmp 
-    GROUP BY grant_id
-  )
-
-  SELECT ROW_TO_JSON(row) AS json_data FROM (
-    SELECT 
-        grant_id,
-        funder_ids
+        '#Funding/' || normalize_id(grant_id) as grant_ids,
+	ARRAY_AGG(DISTINCT grant_id ) FILTER (WHERE grant_id IS NOT NULL) as identifier,
+	ARRAY_AGG(DISTINCT acronym) FILTER (WHERE acronym IS NOT NULL) AS acronym,
+        ARRAY_AGG(DISTINCT '#Funder/' || normalize_id(agency)) FILTER (WHERE agency IS NOT NULL) AS agencies
     FROM CTE
-  ) row 
-
-TO '/N/slate/yokong/fundings_metadata.json'
+    GROUP BY grant_ids
+  )
+  SELECT 
+	jsonb_strip_nulls(ROW_TO_JSON(row)::jsonb) AS json_data
+  FROM (
+    SELECT 
+        grant_ids AS "@id", 
+        'Funding' AS "@type", 
+        identifier,
+	agencies AS "hasFunder"
+    FROM cleaned
+    Where grant_id != '#Funding/-' and grant_id != '#Funding/'
+) row
+)TO fundings_metadata.json
