@@ -1,4 +1,4 @@
-\copy (
+AS\copy (
   WITH CTE AS (
     SELECT 
 	agency,
@@ -8,14 +8,14 @@
     UNION
     SELECT
 	agency,
-	NULL
-    FROM pmid_grant_all
+	NULL AS countries
+    FROM uid_grant_all
 	WHERE agency is not null
 	AND uid in (select uid from wosid_to_pmid where pmid is null)
   ),
   cleaned AS (
     SELECT 
-        '#Funder' || normalize_id(agency) as agency_id,
+        '#Funder/' || normalize_id(agency) as agency_id,
 	ARRAY_AGG(DISTINCT agency) FILTER (WHERE agency IS NOT NULL) AS agencies,
         ARRAY_AGG(DISTINCT country) FILTER (WHERE country IS NOT NULL) AS countries
     FROM CTE
@@ -27,7 +27,8 @@
     SELECT 
         agency_id AS "@id", 
         'Funder' AS "@type", 
-        agencies AS identifier
+        agencies AS identifier,
+	countries
     FROM cleaned
 ) row
 )TO funders_metadata.json
