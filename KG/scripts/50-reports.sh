@@ -1,4 +1,4 @@
 #!/bin/bash
-set -e
 source constants.sh
-
+shopt -s extglob
+set -ev
