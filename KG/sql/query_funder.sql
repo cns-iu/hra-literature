@@ -1,4 +1,4 @@
-AS\copy (
+\copy (
   WITH CTE AS (
     SELECT 
 	agency,
