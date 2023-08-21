@@ -40,7 +40,7 @@
 
 CLEANED AS (
     SELECT 
-        'Publication/' || normalize_id(identifier_id) as pub_id,
+        '#Publication/' || normalize_id(identifier_id) as pub_id,
         ARRAY_AGG(DISTINCT uid) FILTER (WHERE uid IS NOT NULL) AS uids,
         ARRAY_AGG(DISTINCT doi) FILTER (WHERE doi IS NOT NULL) AS dois,
         ARRAY_AGG(DISTINCT pubyear) FILTER (WHERE pubyear IS NOT NULL) AS pubyears,
