@@ -62,7 +62,8 @@
     SELECT 
         author_id AS "@id", 
         'Author' AS "@type", 
-        identifier AS identifier, 
+        identifier AS identifier,
+	'Author' AS "role", 
         full_name AS name,
 	first_name,
 	last_name,
