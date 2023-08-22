@@ -12,7 +12,9 @@ for query in sparql/*.rq; do
   CSV=$REPORTS_DIR/${qname}.csv
   blazegraph-runner select --journal=$JNL $query $TSV
   head -1 $TSV | perl -pe 's/\?//g' > $CSV
-  tail -n +2 $TSV | csvformat -t -D ',' -U 0 > $CSV
+  tail -n +2 $TSV | csvformat -t -D ',' -U 0 | \
+    perl -pe 's/\^\^\<http\:\/\/www\.w3\.org\/2001\/XMLSchema\#string\>//g' | \
+    perl -pe 's/\^\^\<http\:\/\/www\.w3\.org\/2001\/XMLSchema\#integer\>//g' > $CSV
   #comunica-sparql $SPARQL_ENDPOINT -f $query -t text/csv > $REPORTS_DIR/${qname}.csv
 done
 
