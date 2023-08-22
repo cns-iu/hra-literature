@@ -1,6 +1,5 @@
-WITH 
--- Create temporary table named CTE
-CTE AS (
+\copy (
+WITH CTE AS (
     SELECT 
         country, 
         city, 
