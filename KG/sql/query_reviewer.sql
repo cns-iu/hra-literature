@@ -56,7 +56,7 @@
 	versions as "DOVersion",
 	names as "DOName",
 	types as "DOType",
-	organ_names as "expertiseOrganLabel",
+	organ_names as "expertiseLabel",
 	ontologies as "expertiseInOrgan",
 	linked_author_id as "linkedToAuthor"
     FROM cleaned
