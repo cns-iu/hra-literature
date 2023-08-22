@@ -23,7 +23,6 @@
     "predicted_race": "http://schema.org/additionalType",
     "career_age": "http://schema.org/additionalType",
     "expertiseLabel": "http://schema.org/AnatomicalStructure",
-    "expertiseLabelLevel": "https://purl.humanatlas.io/expertiseLabelLevel",
     "expertiseIn": "http://schema.org/AnatomicalStructure",
     "DOVersion": "https://schema.org/version",
     "DOName": "https://schema.org/name",
