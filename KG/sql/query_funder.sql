@@ -28,6 +28,7 @@
         agency_id AS "@id", 
         'Funder' AS "@type", 
         agencies AS identifier,
+	'Funder' AS "role", 
 	countries
     FROM cleaned
 ) row
