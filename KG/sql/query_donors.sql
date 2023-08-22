@@ -5,7 +5,8 @@
     SELECT 
 	'#Donor/' || normalize_id(donor_id) AS "@id",
 	'Donor' AS "@type", 
-	donor_id AS identifier, 
+	donor_id AS identifier,
+	'Donor' AS "role", 
 	sex,
 	age,
 	death_event AS "deathEvent",
@@ -31,4 +32,4 @@
 	race_ontotlogy AS "raceOntotlogy"
     FROM donor_metadata
 ) row
-TO donors_metadata.json
+)TO donors_metadata.json
