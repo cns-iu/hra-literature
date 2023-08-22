@@ -31,6 +31,7 @@
         grant_ids AS "@id", 
         'Funding' AS "@type", 
         identifier,
+	'Funding' AS "role", 
 	agencies AS "hasFunder"
     FROM cleaned
     Where grant_id != '#Funding/-' and grant_id != '#Funding/'
