@@ -46,7 +46,8 @@
     SELECT 
         author_id AS "@id", 
         'Reviewer' AS "@type", 
-        identifier AS identifier, 
+        identifier AS identifier,
+	'Reviewer' AS "role", 
         full_name AS name,
 	first_name,
 	last_name,
