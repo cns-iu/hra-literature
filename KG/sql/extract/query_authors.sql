@@ -87,7 +87,7 @@ FROM (
     predicted_gender,
     predicted_race,
     career_age,
-    institution_ids,
+    institution_ids AS "belongsToInstitution",
     labels AS "expertiseLabel",
     label_types AS "expertiseLabelLevel",
     ontologies AS "expertiseIn"
