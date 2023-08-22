@@ -38,7 +38,7 @@ cleaned AS (
   ARRAY_AGG(DISTINCT organ_name) FILTER (WHERE organ_name IS NOT NULL) AS organ_names,
   ARRAY_AGG(DISTINCT '#Ontology/' || normalize_id(ontology)) FILTER (WHERE ontology IS NOT NULL) AS ontologies,
   CASE WHEN linked_author_id IS NOT NULL THEN
-    '#Author/' || normalize_id(linked_author_id)
+    normalize_author_id(linked_author_id)
   ELSE
     NULL
   END AS linked_author_id

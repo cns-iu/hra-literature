@@ -42,7 +42,7 @@ WITH CTE AS (
 ),
 cleaned AS (
   SELECT
-  '#Author/' || normalize_id(author_id) AS author_id,
+  normalize_author_id(author_id) AS author_id,
   author_id AS identifier,
   full_name,
   first_name,

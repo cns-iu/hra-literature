@@ -10,5 +10,8 @@ REPORTS_DIR='./data/reports';
 BASENAME=$DATA_DIR/hra-lit
 
 GRAPH=https://purl.humanatlas.io/g/hra-lit/v0.1
-SAFE_MODE=--unsafe
+#SAFE_MODE=--unsafe
+SAFE_MODE=
 JNL=${BASENAME}.blazegraph.jnl
+
+SPARQL_ENDPOINT=http://localhost:8080/blazegraph/namespace/kb/sparql

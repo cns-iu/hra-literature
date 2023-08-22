@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  sparql-db:
+    image: phenoscape/blazegraph:latest
+    volumes:
+      - type: bind
+        source: ./blazegraph.properties
+        target: /data/blazegraph.properties
+      - type: bind
+        source: ./data/hra-lit.blazegraph.jnl
+        target: /data/blazegraph.jnl
+
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+
+    ports:
+      - 8080:8080

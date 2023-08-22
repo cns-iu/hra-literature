@@ -48,7 +48,7 @@ CLEANED AS (
   ARRAY_AGG(DISTINCT pubyear) FILTER (WHERE pubyear IS NOT NULL) AS pubyears,
   ARRAY_AGG(DISTINCT article_title) FILTER (WHERE article_title IS NOT NULL) AS article_titles,
   ARRAY_AGG(DISTINCT journal_title) FILTER (WHERE journal_title IS NOT NULL) AS journal_titles,
-  ARRAY_AGG(DISTINCT '#Author/' || normalize_id(author_id)) FILTER (WHERE author_id IS NOT NULL) AS author_ids,
+  ARRAY_AGG(DISTINCT normalize_author_id(author_id)) FILTER (WHERE author_id IS NOT NULL) AS author_ids,
   ARRAY_AGG(DISTINCT '#Funding/' || normalize_id(grant_id)) FILTER (WHERE grant_id IS NOT NULL) AS grant_ids,
   ARRAY_AGG(DISTINCT organ) FILTER (WHERE organ IS NOT NULL) AS organs,
   ARRAY_AGG(DISTINCT '#Ontology/' || normalize_id(ontology)) FILTER (WHERE ontology IS NOT NULL) AS ontologies
