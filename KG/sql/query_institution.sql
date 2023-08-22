@@ -49,6 +49,7 @@ FROM (
         institution_id AS "@id", 
         'Institution' AS "@type", 
         institution_name AS identifier, 
+        'Institution' AS "role", 
         institution_name AS name,
         countries, 
         cities,
@@ -56,4 +57,4 @@ FROM (
         zips
     FROM cleaned
 ) row
-TO institutions_metadata.json;
+)TO institutions_metadata.json;
