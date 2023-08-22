@@ -70,7 +70,7 @@ FROM (
     versions AS "DOVersion",
     names AS "DOName",
     types AS "DOType",
-    organ_names AS "expertiseOrganLabel",
+    organ_names AS "expertiseLabel",
     ontologies AS "expertiseInOrgan",
     linked_author_id AS "linkedToAuthor"
   FROM
