@@ -17,18 +17,18 @@
   ),
   cleaned AS (
     SELECT 
-        '#Funding/' || normalize_id(grant_id) as grant_ids,
+        '#Funding/' || normalize_id(grant_id) as grant_id,
 	ARRAY_AGG(DISTINCT grant_id ) FILTER (WHERE grant_id IS NOT NULL) as identifier,
 	ARRAY_AGG(DISTINCT acronym) FILTER (WHERE acronym IS NOT NULL) AS acronym,
         ARRAY_AGG(DISTINCT '#Funder/' || normalize_id(agency)) FILTER (WHERE agency IS NOT NULL) AS agencies
     FROM CTE
-    GROUP BY grant_ids
+    GROUP BY grant_id
   )
   SELECT 
 	jsonb_strip_nulls(ROW_TO_JSON(row)::jsonb) AS json_data
   FROM (
     SELECT 
-        grant_ids AS "@id", 
+        grant_id AS "@id", 
         'Funding' AS "@type", 
         identifier,
 	'Funding' AS "role", 
