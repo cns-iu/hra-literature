@@ -1,0 +1,46 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX hralit: <https://purl.humanatlas.io/g/hra-lit/v0.1#>
+PREFIX role: <http://schema.org/roleName>
+PREFIX ccf: <http://purl.org/ccf/>
+
+SELECT ?source_role ?type_iri ?target_role ?weight
+WHERE {
+  {
+    GRAPH <https://purl.humanatlas.io/g/hra-lit/v0.1> {
+      SELECT ?source_role ?type_iri ?target_role (COUNT(*) as ?weight)
+      WHERE {
+        ?source_iri role: ?source_role .
+        ?target_iri role: ?target_role .
+
+        ?source_iri ?type_iri ?target_iri .
+      }
+      GROUP BY ?source_role ?type_iri ?target_role
+    }
+  }
+  UNION
+  {
+    GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+      SELECT ?source_role ?type_iri ?target_role (COUNT(*) as ?weight)
+      WHERE {
+        ?source_iri ccf:ccf_asctb_type ?source_role .
+        ?target_iri ccf:ccf_asctb_type ?target_role .
+
+        ?source_iri ?type_iri ?target_iri .
+      }
+      GROUP BY ?source_role ?type_iri ?target_role
+    }
+  }
+  UNION
+  {
+    GRAPH <https://ccf-api.hubmapconsortium.org/v1/hubmap/rui_locations.jsonld> {
+      SELECT ?source_role ?type_iri ?target_role (COUNT(*) as ?weight)
+      WHERE {
+        ?source_iri a ?source_role .
+        ?target_iri a ?target_role .
+
+        ?source_iri ?type_iri ?target_iri .
+      }
+      GROUP BY ?source_role ?type_iri ?target_role
+    }
+  }
+}

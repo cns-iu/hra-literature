@@ -1,0 +1,40 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX hralit: <https://purl.humanatlas.io/g/hra-lit/v0.1#>
+PREFIX role: <http://schema.org/roleName>
+PREFIX ccf: <http://purl.org/ccf/>
+
+SELECT DISTINCT ?role ?weight
+{
+  { 
+    GRAPH <https://purl.humanatlas.io/g/hra-lit/v0.1> {
+      {
+        SELECT ?role (COUNT(*) as ?weight) WHERE {
+          ?iri role: ?role .
+        }
+        GROUP BY ?role
+      }
+    }
+  }
+  UNION
+  { 
+    GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+      {
+        SELECT ?role (COUNT(*) as ?weight) WHERE {
+          ?iri ccf:ccf_asctb_type ?role
+        }
+        GROUP BY ?role
+      }
+    }
+  }
+  UNION
+  { 
+    GRAPH <https://ccf-api.hubmapconsortium.org/v1/hubmap/rui_locations.jsonld> {
+      {
+        SELECT ?role (COUNT(*) as ?weight) WHERE {
+          ?iri a ?role
+        }
+        GROUP BY ?role
+      }
+    }
+  }
+}
