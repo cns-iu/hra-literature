@@ -1,5 +1,9 @@
 # File with constants that the scripts/*.sh use
 
+if [ -e db-config.sh ]; do
+  source db-config.sh
+done
+
 DATA_DIR='./data'
 REPORTS_DIR='./data/reports';
 BASENAME=$DATA_DIR/hra-lit
