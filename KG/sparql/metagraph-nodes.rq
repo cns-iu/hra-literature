@@ -1,0 +1,10 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX hralit: <https://purl.humanatlas.io/g/hra-lit/v0.1#>
+PREFIX role: <http://schema.org/roleName>
+
+SELECT ?role (COUNT(*) as ?weight)
+FROM <https://purl.humanatlas.io/g/hra-lit/v0.1>
+WHERE {
+  ?iri role: ?role .
+}
+GROUP BY ?role
