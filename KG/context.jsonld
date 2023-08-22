@@ -48,6 +48,10 @@
     "DatasetDateTimeModified": "https://schema.org/Time",
     "DatasetModifiedByEmail": "https://schema.org/Dataset",
     "LabIDOrName": "https://schema.org/name",
+    "hasAnatomicalStructure": {
+      "@id": "hasAnatomicalStructure",
+      "@type": "@id"
+    },
     "expertiseInOrgan": {
       "@id": "http://schema.org/about",
       "@type": "@id"
