@@ -3,6 +3,9 @@ source constants.sh
 shopt -s extglob
 set -ev
 
-for query in sql/extract/*.sql; do
-  psql -f $query
+cd $DATA_DIR
+
+for query in ${SRC}/sql/extract/*.sql; do
+  echo `basename $query`
+  time psql -f $query
 done

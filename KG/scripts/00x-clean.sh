@@ -3,5 +3,5 @@ source constants.sh
 shopt -s extglob
 set -ev
 
-rm -f ${BASENAME}.*
+rm -f *.*
 rm -f ${REPORTS_DIR}/*
