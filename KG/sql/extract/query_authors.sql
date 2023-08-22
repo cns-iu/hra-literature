@@ -42,7 +42,7 @@ WITH CTE AS (
 ),
 cleaned AS (
   SELECT
-    '#Author/' || normalize_id(author_id) AS author_id,
+  '#Author/' || normalize_id(author_id) AS author_id,
   author_id AS identifier,
   full_name,
   first_name,
@@ -58,7 +58,7 @@ cleaned AS (
   ARRAY_AGG(DISTINCT ('#Institution/' || normalize_id(institution_id))) FILTER (WHERE institution_id IS NOT NULL) AS institution_ids,
   ARRAY_AGG(DISTINCT label) FILTER (WHERE label IS NOT NULL) AS labels,
   ARRAY_AGG(DISTINCT label_type) FILTER (WHERE label_type IS NOT NULL) AS label_types,
-  ARRAY_AGG(DISTINCT '#Ontology/' || normalize_id(ontology)) FILTER (WHERE ontology IS NOT NULL) AS ontologies,
+  ARRAY_AGG(DISTINCT '#Ontology/' || normalize_id(ontology)) FILTER (WHERE ontology IS NOT NULL) AS ontologies
 FROM
   CTE
 GROUP BY
