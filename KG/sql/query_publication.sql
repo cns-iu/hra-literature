@@ -61,14 +61,15 @@ FROM (
         pub_id AS "@id",
         'Publication' AS "@type", 
         dois AS identifier, 
+	'Publication' AS "role", 
         article_titles AS name,
-	journal_titles AS "journalName"
+	journal_titles AS "journalName",
         uids AS "WOSID",
         pubyears AS "publicationYear",
         author_ids AS "hasAuthor",
         grant_ids AS "hasFunding", 
-	organs AS "organLabel"
+	organs AS "organLabel",
         ontologies AS "hasOrgan"
     FROM CLEANED
   ) row 
-)TO '/N/slate/yokong/publication_metadata.json
+)TO publication_metadata.json
