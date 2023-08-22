@@ -71,7 +71,7 @@
 	predicted_gender,
 	predicted_race,
 	career_age,
-	institution_ids,
+	institution_ids AS "belongsToInstitution",
 	labels as "expertiseLabel",
 	label_types as "expertiseLabelLevel",
 	ontologies as "expertiseIn"
