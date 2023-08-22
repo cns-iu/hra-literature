@@ -1,0 +1,15 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX hralit: <https://purl.humanatlas.io/g/hra-lit/v0.1#>
+PREFIX role: <http://schema.org/roleName>
+
+SELECT DISTINCT ?source_iri ?target_iri ?source_role ?source_label ?type_iri ?target_role ?target_label
+FROM <https://purl.humanatlas.io/g/hra-lit/v0.1>
+WHERE {
+  ?source_iri role: ?source_role .
+  ?target_iri role: ?target_role .
+
+  ?source_iri rdfs:label ?source_label .
+  ?target_iri rdfs:label ?target_label .
+
+  ?source_iri ?type_iri ?target_iri .
+}
