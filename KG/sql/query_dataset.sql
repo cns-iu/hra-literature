@@ -64,7 +64,8 @@
     SELECT 
         dataset_id AS "@id", 
         'Dataset' AS "@type", 
-        identifier AS identifier, 
+        identifier AS identifier,
+	'Dataset' AS "role", 
 	dataset_title AS name,
 	organ_gtex_id AS "organGtexId",
 	donor_ids AS "hasDonor",
