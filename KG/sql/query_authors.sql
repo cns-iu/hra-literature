@@ -30,9 +30,9 @@
     left join asct_ontology on lower(asct_expert.name) = lower(asct_ontology.label)
     left join predict_info on author_info_lastest_affi.author_id = predict_info.author_id
 	where author_info_lastest_affi.author_id is not null 
-	and author_info_lastest_affi.author_id != ", , , , ," 
-	and author_info_lastest_affi.author_id !=  "`"
-  and author_info_lastest_affi.author_id !=  "0"
+	and author_info_lastest_affi.author_id != ', , , , ,'
+	and author_info_lastest_affi.author_id !=  '`'
+  and author_info_lastest_affi.author_id !=  '0'
   ),
   cleaned AS (
     SELECT 
@@ -77,4 +77,4 @@
 	ontologies as "expertiseIn"
     FROM cleaned
 ) row
-TO authors_metadata.json
+)TO authors_metadata.json
