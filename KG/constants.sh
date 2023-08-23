@@ -18,4 +18,11 @@ JNL=${BASENAME}.blazegraph.jnl
 #SPARQL_ENDPOINT=https://lod.humanatlas.io/sparql
 
 # Local server via `docker compose up`
-SPARQL_ENDPOINT=http://localhost:8080/blazegraph/namespace/kb/sparql
+#SPARQL_ENDPOINT=http://localhost:8080/blazegraph/namespace/kb/sparql
+
+# Using blazegraph runner
+SPARQL_ENDPOINT=blazegraph-runner
+
+if [ -e env.sh ]; then
+  source env.sh
+fi
