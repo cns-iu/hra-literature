@@ -11,22 +11,6 @@ WITH CTE AS (
   WHERE
     grant_id IS NOT NULL AND
     pmid IS NOT NULL
-  -- UNION
-  -- SELECT
-  --   grant_id,
-  --   NULL AS acronym,
-  --   agency
-  -- FROM
-  --   uid_grant_all
-  -- WHERE
-  --   grant_id IS NOT NULL
-  --   AND uid IN (
-  --     SELECT
-  --       uid
-  --     FROM
-  --       wosid_to_pmid
-  --     WHERE
-  --       pmid IS NULL)
 ),
 cleaned AS (
   SELECT

@@ -21,26 +21,6 @@ WITH CTE AS (
     LEFT JOIN asct_ontology ON lower(pmid_34_organs.organ) = lower(asct_ontology.label)
   WHERE
     pub_34_organns.pmid IS NOT NULL
--- UNION
--- SELECT
---   'WOSID/' || pub_34_organns.uid AS identifier_id,
---   pub_34_organns.uid,
---   doi,
---   pubyear,
---   article_title,
---   journal_title,
---   identifier AS author_id,
---   grant_id,
---   organ,
---   asct_ontology.id AS ontology
--- FROM
---   pub_34_organns
---   LEFT JOIN pmid_author ON pub_34_organns.pmid = pmid_author.pmid
---     LEFT JOIN uid_grant_all ON pub_34_organns.uid = uid_grant_all.uid
---     LEFT JOIN uid_34_organs ON pub_34_organns.pmid = uid_34_organs.pmid
---     LEFT JOIN asct_ontology ON lower(uid_34_organs.organ) = lower(asct_ontology.label)
---   WHERE
---     pub_34_organns.pmid IS NULL
 ),
 CLEANED AS (
   SELECT
