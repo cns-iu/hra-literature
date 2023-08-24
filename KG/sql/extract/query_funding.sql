@@ -9,7 +9,8 @@ WITH CTE AS (
   FROM
     pmid_grant_all
   WHERE
-    grant_id IS NOT NULL
+    grant_id IS NOT NULL AND
+    pmid IS NOT NULL
   -- UNION
   -- SELECT
   --   grant_id,

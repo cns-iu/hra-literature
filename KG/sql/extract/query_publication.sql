@@ -19,6 +19,8 @@ WITH CTE AS (
     LEFT JOIN pmid_grant_all ON pub_34_organns.pmid = pmid_grant_all.pmid
     LEFT JOIN pmid_34_organs ON pub_34_organns.pmid = pmid_34_organs.pmid
     LEFT JOIN asct_ontology ON lower(pmid_34_organs.organ) = lower(asct_ontology.label)
+  WHERE
+    pub_34_organns.pmid IS NOT NULL
 -- UNION
 -- SELECT
 --   'WOSID/' || pub_34_organns.uid AS identifier_id,
