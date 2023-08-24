@@ -9,21 +9,21 @@ WITH CTE AS (
     pmid_grant_all
   WHERE
     pmid_grant_all.agency IS NOT NULL
-  UNION
-  SELECT
-    agency,
-    NULL AS countries
-  FROM
-    uid_grant_all
-  WHERE
-    agency IS NOT NULL
-    AND uid IN (
-      SELECT
-        uid
-      FROM
-        wosid_to_pmid
-      WHERE
-        pmid IS NULL)
+  -- UNION
+  -- SELECT
+  --   agency,
+  --   NULL AS countries
+  -- FROM
+  --   uid_grant_all
+  -- WHERE
+  --   agency IS NOT NULL
+  --   AND uid IN (
+  --     SELECT
+  --       uid
+  --     FROM
+  --       wosid_to_pmid
+  --     WHERE
+  --       pmid IS NULL)
 ),
 cleaned AS (
   SELECT
