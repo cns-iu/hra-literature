@@ -8,7 +8,8 @@ WITH CTE AS (
   FROM
     pmid_grant_all
   WHERE
-    pmid_grant_all.agency IS NOT NULL
+    pmid_grant_all.agency IS NOT NULL AND
+    pmid IS NOT NULL
   -- UNION
   -- SELECT
   --   agency,
