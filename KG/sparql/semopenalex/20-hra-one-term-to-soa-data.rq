@@ -1,0 +1,34 @@
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX sp: <https://semopenalex.org/property/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+
+SELECT *
+WHERE {
+  # HRA Term / Concept
+  VALUES (?concept) {
+    # ( <https://semopenalex.org/concept/C2780091579> )
+    ( <https://semopenalex.org/concept/C2778305430> )
+  }
+  # ?concept ccf:ccf_term ?term .
+
+  # Publications with the HRA Term
+  # SERVICE <https://semopenalex.org/sparql>
+  {
+    ?publication sp:hasConcept ?concept .
+    ?publication a <https://semopenalex.org/class/Work> .
+    ?publication fabio:hasPubMedId ?pmid .
+  }
+
+  # Authors and Instituions from Pubs related to HRA Term
+  {
+    ?publication <http://purl.org/dc/terms/creator> ?creator .
+    ?creator <http://www.w3.org/ns/org#memberOf> ?institution .
+    ?institution a <https://semopenalex.org/class/Institution> .  
+  }
+
+  # Try to get location if it has one
+  OPTIONAL {
+    ?institution <http://dbpedia.org/ontology/location> ?location .
+    ?location <https://dbpedia.org/property/country> ?institution_country .
+  }
+}
