@@ -51,7 +51,10 @@ WITH CTE AS (
     dataset_total_cell_count,
     collection_id,
     collection_name,
-    'https://pubmed.ncbi.nlm.nih.gov/' || pmid_doi.pmid as publication_id,
+    CASE
+      WHEN source='gtex' THEN 'https://pubmed.ncbi.nlm.nih.gov/35549429'
+      ELSE 'https://pubmed.ncbi.nlm.nih.gov/' || pmid_doi.pmid 
+    END AS publication_id,
     ARRAY_AGG(DISTINCT 'http://purl.obolibrary.org/obo/' || REPLACE(organ_ontology, ':', '_')) FILTER (WHERE organ_ontology IS NOT NULL) AS organ_ontologies,
     ARRAY_AGG(DISTINCT anatomical_structure) FILTER (WHERE anatomical_structure IS NOT NULL) AS anatomical_structures,
     ARRAY_AGG(DISTINCT 'http://purl.obolibrary.org/obo/' || REPLACE(anatomical_structure_ontology, ':', '_')) FILTER (WHERE anatomical_structure_ontology IS NOT NULL) AS anatomical_structure_ontologies,
