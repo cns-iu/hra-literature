@@ -1,6 +1,6 @@
 \t
 \a
-\o datasets_metadata2.json
+\o datasets_metadata.json
 WITH CTE AS (
   SELECT
     '#Dataset/' || normalize_id(dataset_id) AS dataset_id,
