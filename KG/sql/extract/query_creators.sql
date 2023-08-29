@@ -25,23 +25,18 @@ WITH CTE AS (
 ),
 cleaned AS (
   SELECT
-    '#Creator/' || normalize_id(author_id) AS author_id,
-  author_id AS identifier,
-  full_name,
-  first_name,
-  last_name,
-  predicted_gender,
-  predicted_race,
-  ARRAY_AGG(DISTINCT version) FILTER (WHERE version IS NOT NULL) AS versions,
-  ARRAY_AGG(DISTINCT name) FILTER (WHERE name IS NOT NULL) AS names,
-  ARRAY_AGG(DISTINCT type) FILTER (WHERE type IS NOT NULL) AS types,
-  ARRAY_AGG(DISTINCT organ_name) FILTER (WHERE organ_name IS NOT NULL) AS organ_names,
-  ARRAY_AGG(DISTINCT '#Ontology/' || normalize_id(ontology)) FILTER (WHERE ontology IS NOT NULL) AS ontologies,
-  CASE WHEN linked_author_id IS NOT NULL THEN
-    normalize_author_id(linked_author_id)
-  ELSE
-    NULL
-  END AS linked_author_id
+    '#https://orcid.org/' || author_id AS author_id,
+    author_id AS identifier,
+    full_name,
+    first_name,
+    last_name,
+    predicted_gender,
+    predicted_race,
+    ARRAY_AGG(DISTINCT version) FILTER (WHERE version IS NOT NULL) AS do_versions,
+    ARRAY_AGG(DISTINCT name) FILTER (WHERE name IS NOT NULL) AS do_names,
+    ARRAY_AGG(DISTINCT type) FILTER (WHERE type IS NOT NULL) AS do_types,
+    ARRAY_AGG(DISTINCT organ_name) FILTER (WHERE organ_name IS NOT NULL) AS organ_names,
+    ARRAY_AGG(DISTINCT 'http://purl.obolibrary.org/obo/' || REPLACE(ontology, ':', '_')) FILTER (WHERE ontology IS NOT NULL) AS ontologies
 FROM
   CTE
 GROUP BY
@@ -51,8 +46,7 @@ GROUP BY
   first_name,
   last_name,
   predicted_gender,
-  predicted_race,
-  linked_author_id
+  predicted_race
 )
 SELECT
   jsonb_strip_nulls(ROW_TO_JSON(ROW)::jsonb) AS json_data
@@ -67,12 +61,11 @@ FROM (
     last_name,
     predicted_gender,
     predicted_race,
-    versions AS "DOVersion",
-    names AS "DOName",
-    types AS "DOType",
+    do_versions AS "DOVersion",
+    do_names AS "DOName",
+    do_types AS "DOType",
     organ_names AS "expertiseLabel",
-    ontologies AS "expertiseInOrgan",
-    linked_author_id AS "linkedToAuthor"
+    ontologies AS "expertiseInOrgan"
   FROM
     cleaned)
   ROW
