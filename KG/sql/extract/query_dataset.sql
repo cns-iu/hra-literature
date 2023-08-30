@@ -51,13 +51,21 @@ WITH CTE AS (
     dataset_total_cell_count,
     collection_id,
     collection_name,
-    publication_doi,
-    ARRAY_AGG(DISTINCT '#Ontology/' || normalize_id(organ_ontology)) FILTER (WHERE organ_ontology IS NOT NULL) AS organ_ontologies,
+    CASE
+      WHEN source='gtex' THEN 'https://pubmed.ncbi.nlm.nih.gov/35549429'
+      ELSE 'https://pubmed.ncbi.nlm.nih.gov/' || pmid_doi.pmid 
+    END AS publication_id,
+    ARRAY_AGG(DISTINCT 'http://purl.obolibrary.org/obo/' || REPLACE(organ_ontology, ':', '_')) FILTER (WHERE organ_ontology IS NOT NULL) AS organ_ontologies,
     ARRAY_AGG(DISTINCT anatomical_structure) FILTER (WHERE anatomical_structure IS NOT NULL) AS anatomical_structures,
-    ARRAY_AGG(DISTINCT '#Ontology/' || normalize_id(anatomical_structure_ontology)) FILTER (WHERE anatomical_structure_ontology IS NOT NULL) AS anatomical_structure_ontologies,
+    ARRAY_AGG(DISTINCT 'http://purl.obolibrary.org/obo/' || REPLACE(anatomical_structure_ontology, ':', '_')) FILTER (WHERE anatomical_structure_ontology IS NOT NULL) AS anatomical_structure_ontologies,
     ARRAY_AGG(DISTINCT suspension_type) FILTER (WHERE suspension_type IS NOT NULL) AS suspension_types
   FROM
     datasets_metadata
+    LEFT JOIN pmid_doi ON 
+    CASE 
+        WHEN datasets_metadata.publication_doi IS NOT NULL THEN lower(datasets_metadata.publication_doi) 
+        ELSE NULL 
+    END = lower(pmid_doi.doi)
   GROUP BY
     dataset_id,
     organ_gtex_id,
@@ -104,7 +112,7 @@ WITH CTE AS (
     dataset_total_cell_count,
     collection_id,
     collection_name,
-    publication_doi
+    publication_id
 )
 SELECT
   jsonb_strip_nulls(ROW_TO_JSON(ROW)::jsonb) AS json_data
@@ -126,7 +134,7 @@ FROM (
     sample_ischemic_time AS "sampleIschemicTime",
     sample_type AS "sampleType",
     pathology_notes AS "pathologyNotes",
-    source,
+    source AS 'sourcePortal',
     dataset_hubmap_id AS "datasetHubmapId",
     dataset_status AS "datasetStatus",
     dataset_group_name AS "datasetGroupName",
@@ -160,7 +168,7 @@ FROM (
     dataset_total_cell_count AS "DatasetTotalCellCount",
     collection_id AS "collectionId",
     collection_name AS "PublicationTitle",
-    publication_doi AS "linkedToPublication",
+    publication_id AS "linkedToPublication",
     organ_ontologies AS "hasOrgan",
     anatomical_structures AS "anatomicalStructures",
     anatomical_structure_ontologies AS "hasAnatomicalStructure",
