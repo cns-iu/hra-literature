@@ -1,0 +1,64 @@
+﻿source,target,portal
+Sample ID,dataset_id,gtex
+Corresponding fixed tissue ID,organ_gtex_id,gtex
+Participant ID,donor_id,gtex
+"Individual ID
+(within tissue)",individual_id,gtex
+Protocols used,protocols_used,gtex
+RIN score from PAXgene tissue Aliquot,rin_score_from_paxgene,gtex
+RIN score from Frozen tissue Aliquot,rin_score_from_frozen,gtex
+Specimen Sampling Site,organ,gtex
+Autolysis Score,autolysis_score,gtex
+Sample Ischemic Time (mins),sample_ischemic_time,gtex
+Sample Type,sample_type,gtex
+Pathology Notes,pathology_notes,gtex
+dataset_id,dataset_id,cxg
+cxg_dataset_id,cxg_dataset_id,cxg
+tissue_general,organ,cxg
+tissue_general_ontology_term_id,organ_ontology,cxg
+tissue,anatomical_structure,cxg
+tissue_ontology_term_id,anatomical_structure_ontology,cxg
+suspension_type,suspension_type,cxg
+donor_id,donor_id,cxg
+dataset_title,dataset_title,cxg
+dataset_h5ad_path,dataset_h5ad_path,cxg
+dataset_total_cell_count,dataset_total_cell_count,cxg
+collection_id,collection_id,cxg
+collection_name,collection_name,cxg
+collection_doi,publication_doi,cxg
+dataset_uuid,dataset_id,hubmap
+dataset_hubmap_id,dataset_hubmap_id,hubmap
+dataset_status,dataset_status,hubmap
+dataset_group_name,dataset_group_name,hubmap
+dataset_group_uuid,dataset_group_uuid,hubmap
+dataset_date_time_created,dataset_date_time_created,hubmap
+dataset_created_by_email,dataset_created_by_email,hubmap
+dataset_date_time_modified,dataset_date_time_modified,hubmap
+dataset_modified_by_email,dataset_modified_by_email,hubmap
+lab_id_or_name,lab_id_or_name,hubmap
+dataset_data_types,dataset_data_types,hubmap
+dataset_portal_url,dataset_portal_url,hubmap
+first_sample_hubmap_id,first_sample_hubmap_id,hubmap
+first_sample_submission_id,first_sample_submission_id,hubmap
+first_sample_uuid,first_sample_uuid,hubmap
+first_sample_type,first_sample_type,hubmap
+first_sample_portal_url,first_sample_portal_url,hubmap
+organ_hubmap_id,organ_hubmap_id,hubmap
+organ_submission_id,organ_submission_id,hubmap
+organ_uuid,organ_uuid,hubmap
+organ_type,organ,hubmap
+donor_hubmap_id,donor_id,hubmap
+donor_submission_id,donor_submission_id,hubmap
+donor_uuid,donor_uuid,hubmap
+donor_group_name,donor_group_name,hubmap
+rui_location_hubmap_id,rui_location_hubmap_id,hubmap
+rui_location_submission_id,rui_location_submission_id,hubmap
+rui_location_uuid,rui_location_uuid,hubmap
+sample_metadata_hubmap_id,sample_metadata_hubmap_id,hubmap
+sample_metadata_submission_id,sample_metadata_submission_id,hubmap
+sample_metadata_uuid,sample_metadata_uuid,hubmap
+processed_dataset_uuid,processed_dataset_uuid,hubmap
+processed_dataset_hubmap_id,processed_dataset_hubmap_id,hubmap
+processed_dataset_status,processed_dataset_status,hubmap
+processed_dataset_portal_url,processed_dataset_portal_url,hubmap
+previous_version_hubmap_ids,previous_version_hubmap_ids,hubmap
