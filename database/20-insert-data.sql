@@ -6,6 +6,15 @@
 \copy hralit_ontology_biomarkers from /N/slate/yokong/asct_table_biomarkers.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
 
+-- experimental data:
+-- donors, datasets, digital objects 5th release
+
+\copy hralit_donor from data/experimental/harmonized_donor.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+
+\copy hralit_dataset from data/experimental/merged_datasets.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+
+\copy hralit_digital_object_5th_release from data/experimental/hra_do_5th_release.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+
 
 
 -- publication data:
