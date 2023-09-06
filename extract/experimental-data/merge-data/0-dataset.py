@@ -30,7 +30,7 @@ merged_datasets = pd.concat([gtex_datasets_renamed, hubmap_datasets_renamed, cxg
 merged_datasets_filled = merged_datasets.fillna('')
 
 # Save the modified dataset as a CSV file
-output_path_filled = 'data/experimental/merged_datasets_filled.csv'
+output_path_filled = 'data/experimental/merged_datasets.csv'
 merged_datasets_filled.to_csv(output_path_filled, index=False)
 
 # #change into json format
