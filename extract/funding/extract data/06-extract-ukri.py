@@ -22,5 +22,5 @@ while True:
         break
     page += 1
 
-with open('ukri_funds.json', 'w') as f:
+with open('data/funding/ukri/awards_results.json', 'w') as f:
     json.dump(all_results, f, indent=4)

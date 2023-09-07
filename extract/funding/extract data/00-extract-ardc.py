@@ -9,9 +9,9 @@ params = {
     'api_key':'ded8d31e8e38',
     'limit':1000
 }
-df = pd.read_csv('output.csv')
+df = pd.read_csv('/data/funding/organs.csv')
 
-for keyword in df['kw']:
+for keyword in df['organs']:
     encoded_keyword = keyword.replace('_', '%20')
     print(keyword)
     params['q'] = encoded_keyword
@@ -31,5 +31,5 @@ for keyword in df['kw']:
         if 1000 > len(data['data']['records']):
             break
 
-    with open(f'ardc_awards_results\\{keyword}.json', 'w') as f:
+    with open(f'data/funding/ardc/{keyword}.json', 'w') as f:
         json.dump(all_results, f, indent=4)

@@ -3,7 +3,7 @@ import json
 
 
 def transform_source_file(source_file_path, file_type, dataset_name, mapping_table_path):
-    mapping_table = pd.read_csv(mapping_table_path)
+    mapping_table = pd.read_csv("data/funding/mapping_tables.csv")
 
     if file_type.lower() == 'json':
         with open(source_file_path) as f:
