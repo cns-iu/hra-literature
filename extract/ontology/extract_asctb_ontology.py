@@ -29,7 +29,7 @@ def extract_entity_data(entity_data, entity_type, organ_key):
 
 
 # Read the JSON file
-with open('C:\\Users\\yokong\\Downloads\\ccf-asctb-all.json', 'r') as f:
+with open('data/ontology/ccf-asctb-all.json', 'r') as f:
     data = json.load(f)
 
 # Initialize empty lists to hold data for the six tables
@@ -60,8 +60,8 @@ for entity_type in ['anatomical_structures', 'cell_types', 'biomarkers']:
     second_table_df = pd.DataFrame(second_tables[entity_type], columns=second_table_columns).drop_duplicates()
 
     # Save to CSV
-    first_csv_path = f'first_table_{entity_type}.csv'
-    second_csv_path = f'second_table_{entity_type}.csv'
+    first_csv_path = f'data/ontology/asct_{entity_type}.csv'
+    second_csv_path = f'data/ontology/organ_{entity_type}.csv'
 
     first_table_df.to_csv(first_csv_path, index=False)
     second_table_df.to_csv(second_csv_path, index=False)

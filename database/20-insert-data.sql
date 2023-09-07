@@ -1,9 +1,9 @@
 -- ontology data: insert data from data-extraction step
-\copy hralit_ontology_anatomical_structures from /N/slate/yokong/asct_anatomical_structures.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy hralit_ontology_anatomical_structures from data/ontology/asct_anatomical_structures.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
-\copy hralit_ontology_cell_types from /N/slate/yokong/asct_cell_types.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy hralit_ontology_cell_types from ata/ontology/asct_cell_types.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
-\copy hralit_ontology_biomarkers from /N/slate/yokong/asct_table_biomarkers.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy hralit_ontology_biomarkers from ata/ontology/asct_biomarkers.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
 
 -- experimental data:
@@ -51,9 +51,9 @@ select pmid,doi,pub_year,article_title,journal_title
 
 
 -- expert data:
-\copy hralit_creator from hralit_creator.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy hralit_creator from /data/experts/hralit_creators.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
-\copy hralit_reviewer from hralit_reviewer.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy hralit_reviewer from /data/experts/hralit_reviewers.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
 with t1 as (
     select 
@@ -112,7 +112,7 @@ CREATE TABLE soa_institution (
     institution_type character varying
 );
 
-\copy soa_institution from orcid-authors-institution.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy data/institutions/soa_institution from orcid-authors-institution.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
 insert into hralit_institution (soa_institution_id,ror,institution_name,institution_type,country_code)
 select soa_institution_id,ror,institution_name,institution_type,country_code 
@@ -147,7 +147,7 @@ CREATE TABLE funder_meta (
     publications_count int8
 );
 
-\copy funder_meta from funders_soa.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy funder_meta from data/funders/funders_soa.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
 CREATE TABLE soa_funder (
     iri_id character varying,
@@ -157,7 +157,7 @@ CREATE TABLE soa_funder (
     grant_id character varying
 );
 
-\copy soa_funder from pmid-works-grants.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy soa_funder from data/funders/pmid-works-grants.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
 create table cleaned_funder (
     pmid varchar,
@@ -192,7 +192,7 @@ where funder_id in (select funder_soa_id from cleaned_funder where funder_soa_id
 
 --insert data for relationships
 
-\copy hralit_ontology_triangle from /N/slate/yokong/hralit_ontology_triangle.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy hralit_ontology_triangle from data/ontology/hralit_ontology_triangle.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
 insert into hralit_pub_funding_funder(
     pmid, funding_id, acronym, funder_name_pubmed, soa_funder_id, country)

@@ -2,14 +2,14 @@ import json
 import csv
 
 # File path for the input JSON file
-file_path = 'ccf-asctb-all.json'
+file_path = 'data/ontology/ccf-asctb-all.json'
 
 # Reading the JSON file
 with open(file_path, 'r') as file:
     data = json.load(file)
 
 # extract anatomical_structures
-with open('anatomical_structures.csv', mode='w', newline='') as file:
+with open('data/ontology/anatomical_structures.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     # Writing the header
     writer.writerow(['id', 'rdfs_label', 'name'])
@@ -24,7 +24,7 @@ with open('anatomical_structures.csv', mode='w', newline='') as file:
                 
 
 # extract cell_types
-with open('cell_types.csv', mode='w', newline='') as file:
+with open('data/ontology/cell_types.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     # Writing the header
     writer.writerow(['id', 'rdfs_label', 'name'])
@@ -39,7 +39,7 @@ with open('cell_types.csv', mode='w', newline='') as file:
 
 
 # extract biomarkers
-with open('biomarkers.csv', mode='w', newline='',encoding='utf-8') as file:
+with open('data/ontology/biomarkers.csv', mode='w', newline='',encoding='utf-8') as file:
     writer = csv.writer(file)
     # Writing the header
     writer.writerow(['id', 'rdfs_label', 'name', 'b_type'])
@@ -53,7 +53,7 @@ with open('biomarkers.csv', mode='w', newline='',encoding='utf-8') as file:
                     [biomarkers['id'], biomarkers['rdfs_label'], biomarkers['name'], biomarkers['b_type']])
 
 # extract biomarkers_protein
-with open('biomarkers_protein.csv', mode='w', newline='', encoding='utf-8') as file:
+with open('data/ontology/biomarkers_protein.csv', mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     # Writing the header
     writer.writerow(['id', 'rdfs_label', 'name', 'proteinPresence', 'b_type'])
@@ -67,7 +67,7 @@ with open('biomarkers_protein.csv', mode='w', newline='', encoding='utf-8') as f
                     [biomarkers['id'], biomarkers['rdfs_label'], biomarkers['name'], biomarkers['proteinPresence'],biomarkers['b_type']])
 
 # extract biomarkers_gene
-with open('biomarkers_gene.csv', mode='w', newline='', encoding='utf-8') as file:
+with open('data/ontology/biomarkers_gene.csv', mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     # Writing the header
     writer.writerow(['id', 'rdfs_label', 'name', 'b_type'])
@@ -81,7 +81,7 @@ with open('biomarkers_gene.csv', mode='w', newline='', encoding='utf-8') as file
                     [biomarkers['id'], biomarkers['rdfs_label'], biomarkers['name'], biomarkers['b_type']])
 
 # extract biomarkers_lipids
-with open('biomarkers_lipids.csv', mode='w', newline='', encoding='utf-8') as file:
+with open('data/ontology/biomarkers_lipids.csv', mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     # Writing the header
     writer.writerow(['id', 'rdfs_label', 'name', 'b_type', 'notes'])
@@ -95,7 +95,7 @@ with open('biomarkers_lipids.csv', mode='w', newline='', encoding='utf-8') as fi
                     [biomarkers['id'], biomarkers['rdfs_label'], biomarkers['name'], biomarkers['b_type'], biomarkers['notes'])
 
 # extract biomarkers_meta
-with open('biomarkers_meta.csv', mode='w', newline='', encoding='utf-8') as file:
+with open('data/ontology/biomarkers_meta.csv', mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     # Writing the header
     writer.writerow(['id', 'rdfs_label', 'name', 'b_type'])
