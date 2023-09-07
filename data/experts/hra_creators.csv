@@ -1,0 +1,551 @@
+orcid,full_name,first_name,last_name,version,name,type,organ,hubmap_id
+0000-0002-2142-983X,Supriya Bidanta,Supriya,Bidanta,v1.2,asct-b-2d-models-crosswalk,2d-ftu,,HBM565.DVKX.367
+0000-0002-2142-983X,Supriya Bidanta,Supriya,Bidanta,v1.1,asct-b-2d-models-mapping,2d-ftu,,HBM266.FLTT.686
+0000-0002-2142-983X,Supriya Bidanta,Supriya,Bidanta,Mapping,asctb-mapping,2d-ftu,,HBM984.MZSG.873
+0000-0001-6582-4041,Fauzan Isnaini,Fauzan,Isnaini,Mapping,asctb-mapping,2d-ftu,,HBM984.MZSG.873
+0000-0002-3775-857,Rachel Bajema,Rachel,Bajema,v1.0,kidney-ascending-thin-loop-of-henle,2d-ftu,Kidney,HBM252.GXZL.248
+0000-0002-3775-857,Rachel Bajema,Rachel,Bajema,v1.0,kidney-cortical-collecting-duct,2d-ftu,Kidney,HBM773.GJPC.954
+0000-0002-3775-857,Rachel Bajema,Rachel,Bajema,v1.0,kidney-descending-thin-loop-of-henle,2d-ftu,Kidney,HBM752.FQRT.755
+0000-0002-3775-857,Rachel Bajema,Rachel,Bajema,v1.0,kidney-inner-medullary-collecting-duct,2d-ftu,Kidney,HBM835.WLXG.458
+0000-0002-3775-857,Rachel Bajema,Rachel,Bajema,v1.0,kidney-nephron,2d-ftu,Kidney,HBM489.SGQZ.655
+0000-0002-3775-857,Rachel Bajema,Rachel,Bajema,v1.1,kidney-nephron,2d-ftu,Kidney,HBM868.LLHZ.223
+0000-0002-3775-857,Rachel Bajema,Rachel,Bajema,v1.0,kidney-outer-medullary-collecting-duct,2d-ftu,Kidney,HBM337.SZDB.254
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,kidney-renal-corpuscle,2d-ftu,Kidney,HBM395.LVFN.656
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.1,kidney-renal-corpuscle,2d-ftu,Kidney,HBM848.QQPG.278
+0000-0002-3775-857,Rachel Bajema,Rachel,Bajema,v1.0,kidney-thick-ascending-loop-of-henle,2d-ftu,Kidney,HBM856.XGXM.529
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,large-intestine-crypt-lieberkuhn,2d-ftu,Large intestine,HBM373.JRGS.542
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.1,large-intestine-crypt-lieberkuhn,2d-ftu,Large intestine,HBM344.NWFX.797
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,liver-liver-lobule,2d-ftu,Liver,HBM692.KXMT.939
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.1,liver-liver-lobule,2d-ftu,Liver,HBM389.SXZQ.599
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,lung-bronchial-submucosal-gland,2d-ftu,Lung,HBM438.ZJGP.747
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,lung-pulmonary-alveolus,2d-ftu,Lung,HBM626.KZVN.453
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.1,lung-pulmonary-alveolus,2d-ftu,Lung,HBM638.QLQK.834
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,pancreas-intercalated-duct,2d-ftu,Pancreas,HBM458.HKKL.976
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,pancreas-islets-langerhans,2d-ftu,Pancreas,HBM344.CNNH.639
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.1,pancreas-islets-langerhans,2d-ftu,Pancreas,HBM824.BJWG.292
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,pancreas-pancreatic-acinus,2d-ftu,Pancreas,HBM627.NNCW.688
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,prostate-prostate-glandular-acinus,2d-ftu,Prostate,HBM523.TDCH.662
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.1,prostate-prostate-glandular-acinus,2d-ftu,Prostate,HBM873.RHXX.584
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,skin-dermal-papilla,2d-ftu,Skin,HBM444.SLHZ.335
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,skin-epidermal-ridge,2d-ftu,Skin,HBM532.WTMJ.494
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,spleen-red-pulp,2d-ftu,Spleen,HBM979.GWZM.292
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,spleen-white-pulp,2d-ftu,Spleen,HBM332.LMKD.869
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.0,thymus-thymus-lobule,2d-ftu,Thymus,HBM794.PKVD.274
+0000-0002-3775-8574,Rachel Bajema,Rachel,Bajema,v1.1,thymus-thymus-lobule,2d-ftu,Thymus,HBM234.BXNR.636
+0000-0003-4549-588X,Jeremy A. Miller,Jeremy,Miller,v1.3,allen-brain,asct-b,Brain,HBM256.HGZN.489
+0000-0001-9141-090X,Raymond Sanchez,Raymond,Sanchez,v1.3,allen-brain,asct-b,Brain,HBM256.HGZN.489
+0000-0003-1355-892X,Richard Scheuermann,Richard,Scheuermann,v1.3,allen-brain,asct-b,Brain,HBM256.HGZN.489
+0000-0003-4549-588X,Jeremy A. Miller,Jeremy,Miller,v1.4,allen-brain,asct-b,Brain,HBM568.VJBK.732
+0000-0001-7620-8973,Kimberly Siletti,Kimberly,Siletti,v1.4,allen-brain,asct-b,Brain,HBM568.VJBK.732
+0000-0003-1355-892X,Richard H. Scheuermann,Richard,Scheuermann,v1.4,allen-brain,asct-b,Brain,HBM568.VJBK.732
+0000-0002-3927-2084,Muzlifah A. Haniffa,Muzlifah,Haniffa,v1.0,blood-pelvis,asct-b,Pelvis,HBM957.CKRV.896
+0000-0003-4495-8205,Laura Jardine,Laura,Jardine,v1.0,blood-pelvis,asct-b,Pelvis,HBM957.CKRV.896
+0000-0002-6294-6366,Sarah A. Teichmann,Sarah,Teichmann,v1.0,blood-pelvis,asct-b,Pelvis,HBM957.CKRV.896
+0000-0002-3927-2084,Muzlifah A. Haniffa,Muzlifah,Haniffa,v1.1,blood-pelvis,asct-b,Pelvis,HBM296.NBLN.233
+0000-0003-4495-8205,Laura Jardine,Laura,Jardine,v1.1,blood-pelvis,asct-b,Pelvis,HBM296.NBLN.233
+0000-0002-6294-6366,Sarah A. Teichmann,Sarah,Teichmann,v1.1,blood-pelvis,asct-b,Pelvis,HBM296.NBLN.233
+0000-0002-3927-2084,Muzlifah A. Haniffa,Muzlifah,Haniffa,v1.3,blood-pelvis,asct-b,Pelvis,HBM785.CGSG.458
+0000-0003-4495-8205,Laura Jardine,Laura,Jardine,v1.3,blood-pelvis,asct-b,Pelvis,HBM785.CGSG.458
+0000-0002-6294-6366,Sarah A. Teichmann,Sarah,Teichmann,v1.3,blood-pelvis,asct-b,Pelvis,HBM785.CGSG.458
+0000-0002-2597-881X,Griffin Weber,Griffin,Weber,v1.0,blood-vasculature-organ-crosswalk,asct-b,Blood vasculature,HBM577.MCCB.463
+0000-0002-5574-4272,Katherine S Gustilo,Katherine,Gustilo,v1.0,blood-vasculature-organ-crosswalk,asct-b,Blood vasculature,HBM577.MCCB.463
+0000-0002-2597-881X,Griffin Weber,Griffin,Weber,v1.1,blood-vasculature,asct-b,Blood vasculature,HBM655.DGSW.887
+0000-0002-6692-6880,Sujin Lee,Sujin,Lee,v1.1,blood-vasculature,asct-b,Blood vasculature,HBM655.DGSW.887
+0000-0003-0120-4630,Rajeev Malhotra,Rajeev,Malhotra,v1.1,blood-vasculature,asct-b,Blood vasculature,HBM655.DGSW.887
+0000-0002-2597-881X,Griffin Weber,Griffin,Weber,v1.2,blood-vasculature,asct-b,Blood vasculature,HBM954.HNGT.899
+0000-0002-6692-6880,Sujin Lee,Sujin,Lee,v1.2,blood-vasculature,asct-b,Blood vasculature,HBM954.HNGT.899
+0000-0003-0120-4630,Rajeev Malhotra,Rajeev,Malhotra,v1.2,blood-vasculature,asct-b,Blood vasculature,HBM954.HNGT.899
+0000-0002-2597-881X,Griffin Weber,Griffin,Weber,v1.3,blood-vasculature,asct-b,Blood vasculature,HBM948.FMZR.475
+0000-0002-6692-6880,Sujin Lee,Sujin,Lee,v1.3,blood-vasculature,asct-b,Blood vasculature,HBM948.FMZR.475
+0000-0003-0120-4630,Rajeev Malhotra,Rajeev,Malhotra,v1.3,blood-vasculature,asct-b,Blood vasculature,HBM948.FMZR.475
+0000-0002-2597-881X,Griffin Weber,Griffin,Weber,v1.4,blood-vasculature,asct-b,Blood vasculature,HBM279.CXVW.525
+0000-0002-6692-6880,Sujin Lee,Sujin,Lee,v1.4,blood-vasculature,asct-b,Blood vasculature,HBM279.CXVW.525
+0000-0003-0120-4630,Rajeev Malhotra,Rajeev,Malhotra,v1.4,blood-vasculature,asct-b,Blood vasculature,HBM279.CXVW.525
+0000-0002-3927-2084,Muzlifah A. Haniffa,Muzlifah,Haniffa,v1.0,bone-marrow-and-blood,asct-b,Bone marrow,HBM963.TBFP.428
+0000-0003-4495-8205,Laura Jardine,Laura,Jardine,v1.0,bone-marrow-and-blood,asct-b,Bone marrow,HBM963.TBFP.428
+0000-0002-6294-6366,Sarah A. Teichmann,Sarah,Teichmann,v1.0,bone-marrow-and-blood,asct-b,Bone marrow,HBM963.TBFP.428
+0000-0002-3927-2084,Muzlifah A. Haniffa,Muzlifah,Haniffa,v1.1,bone-marrow-pelvis,asct-b,Bone marrow,HBM692.WVQX.752
+0000-0003-4495-8205,Laura Jardine,Laura,Jardine,v1.1,bone-marrow-pelvis,asct-b,Bone marrow,HBM692.WVQX.752
+0000-0002-6294-6366,Sarah A. Teichmann,Sarah,Teichmann,v1.1,bone-marrow-pelvis,asct-b,Bone marrow,HBM692.WVQX.752
+0000-0002-3927-2084,Muzlifah A. Haniffa,Muzlifah,Haniffa,v1.2,bone-marrow-pelvis,asct-b,Bone marrow,HBM449.NWVK.668
+0000-0003-4495-8205,Laura Jardine,Laura,Jardine,v1.2,bone-marrow-pelvis,asct-b,Bone marrow,HBM449.NWVK.668
+0000-0002-6294-6366,Sarah A. Teichmann,Sarah,Teichmann,v1.2,bone-marrow-pelvis,asct-b,Bone marrow,HBM449.NWVK.668
+0000-0002-3927-2084,Muzlifah A. Haniffa,Muzlifah,Haniffa,v1.3,bonemarrow-pelvis,asct-b,Bone marrow,HBM846.XXGG.898
+0000-0003-4495-8205,Laura Jardine,Laura,Jardine,v1.3,bonemarrow-pelvis,asct-b,Bone marrow,HBM846.XXGG.898
+0000-0002-6294-6366,Sarah A. Teichmann,Sarah,Teichmann,v1.3,bonemarrow-pelvis,asct-b,Bone marrow,HBM846.XXGG.898
+0000-0002-7072-5272,Song-Lin Ding,Song-Lin,Ding,v1.0,brain,asct-b,Brain,HBM264.CCRF.525
+0000-0003-4549-588X,Jeremy A. Miller,Jeremy,Miller,v1.0,brain,asct-b,Brain,HBM264.CCRF.525
+0000-0003-2540-1153,Amy Bernard,Amy,Bernard,v1.0,brain,asct-b,Brain,HBM264.CCRF.525
+0000-0002-7072-5272,Song-Lin Ding,Song-Lin,Ding,v1.1,brain,asct-b,Brain,HBM477.RWSM.936
+0000-0003-4549-588X,Jeremy A. Miller,Jeremy,Miller,v1.1,brain,asct-b,Brain,HBM477.RWSM.936
+0000-0003-2540-1153,Amy Bernard,Amy,Bernard,v1.1,brain,asct-b,Brain,HBM477.RWSM.936
+0000-0003-4549-588X,Jeremy A. Miller,Jeremy,Miller,v1.2,brain,asct-b,Brain,HBM527.JQCW.377
+0000-0001-9141-090X,Raymond Sanchez,Raymond,Sanchez,v1.2,brain,asct-b,Brain,HBM527.JQCW.377
+0000-0003-1355-892X,Richard Scheuermann,Richard,Scheuermann,v1.2,brain,asct-b,Brain,HBM527.JQCW.377
+0000-0001-8776-2769,Angela Kruse,Angela,Kruse,v1.0,eye,asct-b,Eye,HBM369.RBVN.935
+0000-0001-9769-1538,Kevin Schey,Kevin,Schey,v1.0,eye,asct-b,Eye,HBM369.RBVN.935
+0000-0002-3959-1712,Christine Curcio,Christine,Curcio,v1.0,eye,asct-b,Eye,HBM369.RBVN.935
+0000-0001-8776-2769,Angela Kruse,Angela,Kruse,v1.1,eye,asct-b,Eye,HBM494.KLQK.628
+0000-0001-9769-1538,Kevin Schey,Kevin,Schey,v1.1,eye,asct-b,Eye,HBM494.KLQK.628
+0000-0002-3959-1712,Christine Curcio,Christine,Curcio,v1.1,eye,asct-b,Eye,HBM494.KLQK.628
+0000-0001-8776-2769,Angela Kruse,Angela,Kruse,v1.2,eye,asct-b,Eye,HBM762.WRRQ.394
+0000-0001-9769-1538,Kevin Schey,Kevin,Schey,v1.2,eye,asct-b,Eye,HBM762.WRRQ.394
+0000-0002-3959-1712,Christine Curcio,Christine,Curcio,v1.2,eye,asct-b,Eye,HBM762.WRRQ.394
+0000-0001-8776-2769,Angela Kruse,Angela,Kruse,v1.3,eye,asct-b,Eye,HBM262.HRHH.693
+0000-0001-9769-1538,Kevin Schey,Kevin,Schey,v1.3,eye,asct-b,Eye,HBM262.HRHH.693
+0000-0002-3959-1712,Christine Curcio,Christine,Curcio,v1.3,eye,asct-b,Eye,HBM262.HRHH.693
+0000-0003-1980-6840,Kathleen O'Neill,Kathleen,O'Neill,v1.0,fallopian-tube,asct-b,Fallopian tube,HBM579.XTKX.649
+0000-0003-1980-6840,Kathleen O'Neill,Kathleen,O'Neill,v1.1,fallopian-tube,asct-b,Fallopian tube,HBM522.SVHM.477
+0000-0001-8034-7685,Stephen Fisher,Stephen,Fisher,v1.1,fallopian-tube,asct-b,Fallopian tube,HBM522.SVHM.477
+0000-0003-0118-0413,Shin Lin,Shin,Lin,v1.0,heart,asct-b,Heart,HBM873.NNVD.559
+0000-0002-7112-7389,Marc Halushka,Marc,Halushka,v1.0,heart,asct-b,Heart,HBM873.NNVD.559
+0000-0003-0118-0413,Shin Lin,Shin,Lin,v1.1,heart,asct-b,Heart,HBM876.HSSQ.977
+0000-0002-7112-7389,Marc Halushka,Marc,Halushka,v1.1,heart,asct-b,Heart,HBM876.HSSQ.977
+0000-0003-0834-8274,Avinash Boppana,Avinash,Boppana,v1.1,heart,asct-b,Heart,HBM876.HSSQ.977
+0000-0003-0118-0413,Shin Lin,Shin,Lin,v1.2,heart,asct-b,Heart,HBM877.BTSR.898
+0000-0002-7112-7389,Marc Halushka,Marc,Halushka,v1.2,heart,asct-b,Heart,HBM877.BTSR.898
+0000-0003-0834-8274,Avinash Boppana,Avinash,Boppana,v1.2,heart,asct-b,Heart,HBM877.BTSR.898
+0000-0002-0935-7300,Teri A. Longacre,Teri,Longacre,v1.0,intestine-large,asct-b,Intestine,HBM287.KVCD.758
+0000-0001-5675-3974,John Hickey,John,Hickey,v1.0,intestine-large,asct-b,Intestine,HBM287.KVCD.758
+0000-0002-0317-7608,Yiing Lin,Yiing,Lin,v1.0,intestine-large,asct-b,Intestine,HBM287.KVCD.758
+0000-0003-2804-127X,Sanjay Jain,Sanjay,Jain,v1.0,kidney,asct-b,Kidney,HBM325.PTQS.258
+0000-0001-8143-9231,M. Todd Valerius,M.,Valerius,v1.0,kidney,asct-b,Kidney,HBM325.PTQS.258
+0000-0001-9189-9661,Yongqun He,Yongqun,He,v1.0,kidney,asct-b,Kidney,HBM325.PTQS.258
+0000-0003-2804-127X,Sanjay Jain,Sanjay,Jain,v1.1,kidney,asct-b,Kidney,HBM673.ZZDK.622
+0000-0001-8143-9231,M. Todd Valerius,M.,Valerius,v1.1,kidney,asct-b,Kidney,HBM673.ZZDK.622
+0000-0001-9189-9661,Yongqun He,Yongqun,He,v1.1,kidney,asct-b,Kidney,HBM673.ZZDK.622
+0000-0003-2804-127X,Sanjay Jain,Sanjay,Jain,v1.2,kidney,asct-b,Kidney,HBM248.CBJV.556
+0000-0001-8143-9231,M. Todd Valerius,M.,Valerius,v1.2,kidney,asct-b,Kidney,HBM248.CBJV.556
+0000-0001-9189-9661,Yongqun He,Yongqun,He,v1.2,kidney,asct-b,Kidney,HBM248.CBJV.556
+0000-0003-2804-127X,Sanjay Jain,Sanjay,Jain,v1.3,kidney,asct-b,Kidney,HBM944.SVLH.825
+0000-0001-8143-9231,M. Todd Valerius,M.,Valerius,v1.3,kidney,asct-b,Kidney,HBM944.SVLH.825
+0000-0001-9189-9661,Yongqun He,Yongqun,He,v1.3,kidney,asct-b,Kidney,HBM944.SVLH.825
+0000-0003-4645-3614,Tarek El-Achkar,Tarek,El-Achkar,v1.3,kidney,asct-b,Kidney,HBM944.SVLH.825
+0000-0003-3066-2876,Michael Eadon,Michael,Eadon,v1.3,kidney,asct-b,Kidney,HBM944.SVLH.825
+0000-0001-9198-5498,Jeffrey Spraggins,Jeffrey,Spraggins,v1.3,kidney,asct-b,Kidney,HBM944.SVLH.825
+0000-0001-7852-7775,David Rowe,David,Rowe,v1.0,knee,asct-b,Knee,HBM533.JRGW.354
+0000-0001-7852-7775,David Rowe,David,Rowe,v1.1,knee,asct-b,Knee,HBM433.MCBL.623
+0000-0002-0935-7300,Teri A. Longacre,Teri,Longacre,v1.1,large-intestine,asct-b,Large intestine,HBM325.NZPB.589
+0000-0001-5675-3974,John Hickey,John,Hickey,v1.1,large-intestine,asct-b,Large intestine,HBM325.NZPB.589
+0000-0002-0317-7608,Yiing Lin,Yiing,Lin,v1.1,large-intestine,asct-b,Large intestine,HBM325.NZPB.589
+0000-0002-0935-7300,Teri A. Longacre,Teri,Longacre,v1.2,large-intestine,asct-b,Large intestine,HBM494.RRLD.598
+0000-0001-5675-3974,John Hickey,John,Hickey,v1.2,large-intestine,asct-b,Large intestine,HBM494.RRLD.598
+0000-0002-0317-7608,Yiing Lin,Yiing,Lin,v1.2,large-intestine,asct-b,Large intestine,HBM494.RRLD.598
+0000-0002-0935-7300,Teri A. Longacre,Teri,Longacre,v1.3,large-intestine,asct-b,Large intestine,HBM243.ZZGL.262
+0000-0001-5675-3974,John Hickey,John,Hickey,v1.3,large-intestine,asct-b,Large intestine,HBM243.ZZGL.262
+0000-0002-0317-7608,Yiing Lin,Yiing,Lin,v1.3,large-intestine,asct-b,Large intestine,HBM243.ZZGL.262
+0000-0003-1940-6740,Anna Maria Masci,Anna,Masci,v1.0,liver,asct-b,Liver,HBM476.BQCC.574
+0000-0002-4174-2786,Tim Kendall,Tim,Kendall,v1.0,liver,asct-b,Liver,HBM476.BQCC.574
+0000-0003-1824-1067,Ayako Suzuki,Ayako,Suzuki,v1.0,liver,asct-b,Liver,HBM476.BQCC.574
+0000-0003-1940-6740,Anna Maria Masci,Anna,Masci,v1.1,liver,asct-b,Liver,HBM456.SLDZ.399
+0000-0002-4174-2786,Tim Kendall,Tim,Kendall,v1.1,liver,asct-b,Liver,HBM456.SLDZ.399
+0000-0003-1824-1067,Ayako Suzuki,Ayako,Suzuki,v1.1,liver,asct-b,Liver,HBM456.SLDZ.399
+0000-0002-9185-3994,Gloria Pryhuber,Gloria,Pryhuber,v1.0,lung,asct-b,Lung,HBM868.DWJZ.874
+0000-0001-8387-4966,Xin Sun,Xin,Sun,v1.0,lung,asct-b,Lung,HBM868.DWJZ.874
+0000-0002-9185-3994,Gloria Pryhuber,Gloria,Pryhuber,v1.1,lung,asct-b,Lung,HBM323.SGDF.945
+0000-0001-8387-4966,Xin Sun,Xin,Sun,v1.1,lung,asct-b,Lung,HBM323.SGDF.945
+0000-0002-9185-3994,Gloria Pryhuber,Gloria,Pryhuber,v1.2,lung,asct-b,Lung,HBM396.QVLQ.449
+0000-0002-9185-3994,Gloria Pryhuber,Gloria,Pryhuber,v1.3,lung,asct-b,Lung,HBM496.MNTH.952
+0000-0002-7250-3569,Marda Jorgensen,Marda,Jorgensen,v1.0,lymph-node,asct-b,Lymph node,HBM375.LMPC.837
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.0,lymph-node,asct-b,Lymph node,HBM375.LMPC.837
+0000-0002-3522-8932,Clive Wasserfall,Clive,Wasserfall,v1.0,lymph-node,asct-b,Lymph node,HBM375.LMPC.837
+0000-0002-7250-3569,Marda Jorgensen,Marda,Jorgensen,v1.1,lymph-node,asct-b,Lymph node,HBM573.SHCQ.259
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.1,lymph-node,asct-b,Lymph node,HBM573.SHCQ.259
+0000-0001-6870-0300,Natalie Rodriguez,Natalie,Rodriguez,v1.1,lymph-node,asct-b,Lymph node,HBM573.SHCQ.259
+0000-0002-7250-3569,Marda Jorgensen,Marda,Jorgensen,v1.2,lymph-node,asct-b,Lymph node,HBM437.JQVC.953
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.2,lymph-node,asct-b,Lymph node,HBM437.JQVC.953
+0000-0001-6870-0300,Natalie Rodriguez,Natalie,Rodriguez,v1.2,lymph-node,asct-b,Lymph node,HBM437.JQVC.953
+0000-0002-6300-1647,Dhruv Singhal,Dhruv,Singhal,v1.0,lymph-vasculature,asct-b,Lymph vasculature,HBM559.TDMB.283
+0000-0003-1361-7109,Maxim Itkin,Maxim,Itkin,v1.0,lymph-vasculature,asct-b,Lymph vasculature,HBM559.TDMB.283
+0000-0003-0834-8274,Avinash Boppana,Avinash,Boppana,v1.0,lymph-vasculature,asct-b,Lymph vasculature,HBM559.TDMB.283
+0000-0002-6300-1647,Dhruv Singhal,Dhruv,Singhal,v1.1,lymph-vasculature,asct-b,Lymph vasculature,HBM577.JGGH.294
+0000-0003-1361-7109,Maxim Itkin,Maxim,Itkin,v1.1,lymph-vasculature,asct-b,Lymph vasculature,HBM577.JGGH.294
+0000-0003-0834-8274,Avinash Boppana,Avinash,Boppana,v1.1,lymph-vasculature,asct-b,Lymph vasculature,HBM577.JGGH.294
+0000-0002-6300-1647,Dhruv Singhal,Dhruv,Singhal,v1.2,lymph-vasculature,asct-b,Lymph vasculature,HBM469.NHVB.448
+0000-0003-1361-7109,Maxim Itkin,Maxim,Itkin,v1.2,lymph-vasculature,asct-b,Lymph vasculature,HBM469.NHVB.448
+0000-0003-0834-8274,Avinash Boppana,Avinash,Boppana,v1.2,lymph-vasculature,asct-b,Lymph vasculature,HBM469.NHVB.448
+0000-0002-6300-1647,Dhruv Singhal,Dhruv,Singhal,v1.3,lymph-vasculature,asct-b,Lymph vasculature,HBM738.GKLM.876
+0000-0003-1361-7109,Maxim Itkin,Maxim,Itkin,v1.3,lymph-vasculature,asct-b,Lymph vasculature,HBM738.GKLM.876
+0000-0003-0834-8274,Avinash Boppana,Avinash,Boppana,v1.3,lymph-vasculature,asct-b,Lymph vasculature,HBM738.GKLM.876
+0000-0002-9185-3994,Gloria Pryhuber,Gloria,Pryhuber,v1.0,main-bronchus,asct-b,Main bronchus,HBM928.WTVJ.677
+0000-0002-5574-4272,Katherine S Gustilo,Katherine,Gustilo,v1.0,muscular-system,asct-b,Muscular system,HBM944.CLLD.594
+0000-0002-2597-881X,Griffin Weber,Griffin,Weber,v1.0,muscular-system,asct-b,Muscular system,HBM944.CLLD.594
+0000-0003-1980-6840,Kathleen O'Neill,Kathleen,O'Neill,v1.0,ovary,asct-b,Ovary,HBM643.BVHM.572
+0000-0003-4503-8494,Elizabeth Tsui,Elizabeth,Tsui,v1.0,ovary,asct-b,Ovary,HBM643.BVHM.572
+0000-0001-7840-4695,Monica M. Laronda,Monica,Laronda,v1.0,ovary,asct-b,Ovary,HBM643.BVHM.572
+0000-0003-1980-6840,Kathleen O'Neill,Kathleen,O'Neill,v1.1,ovary,asct-b,Ovary,HBM825.SJZF.445
+0000-0003-4503-8494,Elizabeth Tsui,Elizabeth,Tsui,v1.1,ovary,asct-b,Ovary,HBM825.SJZF.445
+0000-0001-7840-4695,Monica M. Laronda,Monica,Laronda,v1.1,ovary,asct-b,Ovary,HBM825.SJZF.445
+0000-0003-1980-6840,Kathleen O'Neill,Kathleen,O'Neill,v1.2,ovary,asct-b,Ovary,HBM878.KBTH.462
+0000-0001-7840-4695,Monica M Laronda,Monica,Laronda,v1.2,ovary,asct-b,Ovary,HBM878.KBTH.462
+0000-0001-5336-2943,Jacqueline Maher,Jacqueline,Maher,v1.2,ovary,asct-b,Ovary,HBM878.KBTH.462
+0000-0001-9396-2142,Veronica Gomez-Lobo,Veronica,Gomez-Lobo,v1.2,ovary,asct-b,Ovary,HBM878.KBTH.462
+0000-0001-8034-7685,Stephen Fisher,Stephen,Fisher,v1.2,ovary,asct-b,Ovary,HBM878.KBTH.462
+0000-0001-6878-1235,Martha Campbell-Thompson,Martha,Campbell-Thompson,v1.0,pancreas,asct-b,Pancreas,HBM332.TMXM.592
+0000-0001-9028-338X,Adel Eskaros,Adel,Eskaros,v1.0,pancreas,asct-b,Pancreas,HBM332.TMXM.592
+0000-0002-8849-6746,Diane Saunders,Diane,Saunders,v1.0,pancreas,asct-b,Pancreas,HBM332.TMXM.592
+0000-0001-6878-1235,Martha Campbell-Thompson,Martha,Campbell-Thompson,v1.1,pancreas,asct-b,Pancreas,HBM557.XHHV.557
+0000-0001-9028-338X,Adel Eskaros,Adel,Eskaros,v1.1,pancreas,asct-b,Pancreas,HBM557.XHHV.557
+0000-0002-8849-6746,Diane Saunders,Diane,Saunders,v1.1,pancreas,asct-b,Pancreas,HBM557.XHHV.557
+0000-0001-6878-1235,Martha Campbell-Thompson,Martha,Campbell-Thompson,v1.2,pancreas,asct-b,Pancreas,HBM975.BBTF.393
+0000-0001-9028-338X,Adel Eskaros,Adel,Eskaros,v1.2,pancreas,asct-b,Pancreas,HBM975.BBTF.393
+0000-0002-8849-6746,Diane Saunders,Diane,Saunders,v1.2,pancreas,asct-b,Pancreas,HBM975.BBTF.393
+0000-0001-7183-2638,Nazanin Ebrahimi,Nazanin,Ebrahimi,v1.0,peripheral-nervous-system,asct-b,Peripheral nervous system,HBM462.NJKR.937
+0000-0001-7183-2638,Bernard de Bono,Bernard,Bono,v1.0,peripheral-nervous-system,asct-b,Peripheral nervous system,HBM462.NJKR.937
+0000-0002-2095-7534,Louise Laurent,Louise,Laurent,v1.0,placenta-full-term,asct-b,Placenta full term,HBM446.WGLG.755
+000-0001-5963-2246,Mana Parast,Mana,Parast,v1.0,placenta-full-term,asct-b,Placenta full term,HBM446.WGLG.755
+0000-0002-0117-7444,Kathleen Fisch,Kathleen,Fisch,v1.0,placenta-full-term,asct-b,Placenta full term,HBM446.WGLG.755
+0000-0002-0746-927X,Douglas Strand,Douglas,Strand,v1.0,prostate,asct-b,Prostate,HBM835.WCGP.479
+0000-0001-7058-5399,Chad Vezina,Chad,Vezina,v1.0,prostate,asct-b,Prostate,HBM835.WCGP.479
+0000-0002-5574-4272,Katherine S Gustilo,Katherine,Gustilo,v1.0,skeleton,asct-b,Skeleton,HBM233.TRCP.638
+0000-0002-2597-881X,Griffin Weber,Griffin,Weber,v1.0,skeleton,asct-b,Skeleton,HBM233.TRCP.638
+0000-0001-6638-683X,Fiona Ginty,Fiona,Ginty,v1.0,skin,asct-b,Skin,HBM227.WHPG.367
+0000-0002-1134-8585,Jonhan Ho,Jonhan,Ho,v1.0,skin,asct-b,Skin,HBM227.WHPG.367
+0000-0001-9987-6712,Joel Sunshine,Joel,Sunshine,v1.0,skin,asct-b,Skin,HBM227.WHPG.367
+0000-0001-6638-683X,Fiona Ginty,Fiona,Ginty,v1.1,skin,asct-b,Skin,HBM423.RTRR.746
+0000-0002-1134-8585,Jonhan Ho,Jonhan,Ho,v1.1,skin,asct-b,Skin,HBM423.RTRR.746
+0000-0001-9987-6712,Joel Sunshine,Joel,Sunshine,v1.1,skin,asct-b,Skin,HBM423.RTRR.746
+0000-0001-6638-683X,Fiona Ginty,Fiona,Ginty,v1.2,skin,asct-b,Skin,HBM725.JHNS.532
+0000-0002-1134-8585,Jonhan Ho,Jonhan,Ho,v1.2,skin,asct-b,Skin,HBM725.JHNS.532
+0000-0001-9987-6712,Joel Sunshine,Joel,Sunshine,v1.2,skin,asct-b,Skin,HBM725.JHNS.532
+0000-0002-0935-7300,Teri Longacre,Teri,Longacre,v1.0,small-intestine,asct-b,Small intestine,HBM736.PJQV.368
+0000-0002-0935-7300,Teri Longacre,Teri,Longacre,v1.1,small-intestine,asct-b,Small intestine,HBM934.NJHF.526
+0000-0002-4096-8601,Vilas Menon,Vilas,Menon,v1.0,spinal-cord,asct-b,Spinal cord,HBM869.WZFK.485
+0000-0002-7250-3569,Marda Jorgensen,Marda,Jorgensen,v1.0,spleen,asct-b,Spleen,HBM625.VPLJ.455
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.0,spleen,asct-b,Spleen,HBM625.VPLJ.455
+0000-0002-3882-457X,Rebecca T. Beuschel,Rebecca,Beuschel,v1.0,spleen,asct-b,Spleen,HBM625.VPLJ.455
+0000-0002-7250-3569,Marda Jorgensen,Marda,Jorgensen,v1.1,spleen,asct-b,Spleen,HBM582.WJWX.929
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.1,spleen,asct-b,Spleen,HBM582.WJWX.929
+0000-0002-3882-457X,Rebecca T. Beuschel,Rebecca,Beuschel,v1.1,spleen,asct-b,Spleen,HBM582.WJWX.929
+0000-0002-7250-3569,Marda Jorgensen,Marda,Jorgensen,v1.2,spleen,asct-b,Spleen,HBM772.KBNQ.742
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.2,spleen,asct-b,Spleen,HBM772.KBNQ.742
+0000-0002-3882-457X,Rebecca T. Beuschel,Rebecca,Beuschel,v1.2,spleen,asct-b,Spleen,HBM772.KBNQ.742
+0000-0002-7250-3569,Marda Jorgensen,Marda,Jorgensen,v1.3,spleen,asct-b,Spleen,HBM763.QFRB.477
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.3,spleen,asct-b,Spleen,HBM763.QFRB.477
+0000-0002-3882-457X,Rebecca T. Beuschel,Rebecca,Beuschel,v1.3,spleen,asct-b,Spleen,HBM763.QFRB.477
+0000-0002-4331-2202,Maigan Brusko,Maigan,Brusko,v1.0,thymus,asct-b,Thymus,HBM934.JMVN.957
+0000-0002-3882-457X,Rebecca T. Beuschel,Rebecca,Beuschel,v1.0,thymus,asct-b,Thymus,HBM934.JMVN.957
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.0,thymus,asct-b,Thymus,HBM934.JMVN.957
+0000-0002-4331-2202,Maigan Brusko,Maigan,Brusko,v1.1,thymus,asct-b,Thymus,HBM392.LPKF.942
+0000-0002-3882-457X,Rebecca T. Beuschel,Rebecca,Beuschel,v1.1,thymus,asct-b,Thymus,HBM392.LPKF.942
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.1,thymus,asct-b,Thymus,HBM392.LPKF.942
+0000-0002-4331-2202,Maigan Brusko,Maigan,Brusko,v1.2,thymus,asct-b,Thymus,HBM284.RFDC.542
+0000-0002-3882-457X,Rebecca T. Beuschel,Rebecca,Beuschel,v1.2,thymus,asct-b,Thymus,HBM284.RFDC.542
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.2,thymus,asct-b,Thymus,HBM284.RFDC.542
+0000-0002-4331-2202,Maigan Brusko,Maigan,Brusko,v1.3,thymus,asct-b,Thymus,HBM375.BJGD.993
+0000-0002-3882-457X,Rebecca T. Beuschel,Rebecca,Beuschel,v1.3,thymus,asct-b,Thymus,HBM375.BJGD.993
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.3,thymus,asct-b,Thymus,HBM375.BJGD.993
+0000-0002-9185-3994,Gloria Pryhuber,Gloria,Pryhuber,v1.0,trachea,asct-b,Trachea,HBM245.PWLJ.489
+0000-0002-0746-927X,Douglas Strand,Douglas,Strand,v1.0,ureter,asct-b,Ureter,HBM882.LRSF.394
+0000-0003-2804-127X,Sanjay Jain,Sanjay,Jain,v1.0,ureter,asct-b,Ureter,HBM882.LRSF.394
+0000-0002-0746-927X,Douglas Strand,Douglas,Strand,v1.0,urinary-bladder,asct-b,Urinary bladder,HBM546.CKGW.888
+0000-0003-2804-127X,Sanjay Jain,Sanjay,Jain,v1.0,urinary-bladder,asct-b,Urinary bladder,HBM546.CKGW.888
+0000-0003-1980-6840,Kathleen O'Neill,Kathleen,O'Neill,v1.0,uterus,asct-b,Uterus,HBM265.DQZW.372
+0000-0003-1980-6840,Kathleen O'Neill,Kathleen,O'Neill,v1.1,uterus,asct-b,Uterus,HBM866.BCMC.625
+0000-0002-2597-881X,Griffin Weber,Griffin,Weber,v1.0,vasculature,asct-b,Vasculature,HBM426.GZPN.888
+0000-0002-6692-6880,Sujin Lee,Sujin,Lee,v1.0,vasculature,asct-b,Vasculature,HBM426.GZPN.888
+0000-0003-0120-4630,Rajeev Malhotra,Rajeev,Malhotra,v1.0,vasculature,asct-b,Vasculature,HBM426.GZPN.888
+0000-0002-7112-7389,Marc Halushka,Marc,Halushka,v1.0,vasculature,asct-b,Vasculature,HBM426.GZPN.888
+0000-0003-0834-8274,Avinash Boppana,Avinash,Boppana,v1.0,vasculature,asct-b,Vasculature,HBM426.GZPN.888
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.2,1-human-lymph-node-ibex,omap,Lymph node,HBM674.DJKV.876
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.3,1-human-lymph-node-ibex,omap,Lymph node,HBM458.NSWR.957
+0000-0002-1297-9725,Werner Müller,Werner,Müller,v1.0,10-palatine-tonsil-macsima,omap,Palatine tonsil,HBM663.JJMJ.628
+0009-0008-1003-987X,Silvia Rüberg,Silvia,Rüberg,v1.0,10-palatine-tonsil-macsima,omap,Palatine tonsil,HBM663.JJMJ.628
+0000-0001-9776-2535,Andreas Bosio,Andreas,Bosio,v1.0,10-palatine-tonsil-macsima,omap,Palatine tonsil,HBM663.JJMJ.628
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.0,11-spleen-ibex,omap,Spleen,HBM957.RHVB.545
+0000-0003-2088-8310,Colin J. Chu,Colin,Chu,v1.0,12-eye-retina-ibex,omap,Eye,HBM979.RCXH.454
+0000-0002-8849-6746,Diane Saunders,Diane,Saunders,v1.0,13-pancreas-codex,omap,Pancreas,HBM754.BHVR.258
+0000-0002-1482-5359,Conrad Reihsmann,Conrad,Reihsmann,v1.0,13-pancreas-codex,omap,Pancreas,HBM754.BHVR.258
+0000-0001-9961-7673,John Hickey,John,Hickey,v1.1,2-intestine-codex,omap,Intestine,HBM794.CSBJ.358
+0000-0001-9961-7673,John Hickey,John,Hickey,v1.2,2-intestine-codex,omap,Intestine,HBM783.TQTD.539
+0000-0002-6078-3321,Elizabeth K. Neumann,Elizabeth,Neumann,v1.1,3-kidney-codex,omap,Kidney,HBM568.RMZB.377
+0000-0002-1602-2082,Melissa Farrow,Melissa,Farrow,v1.1,3-kidney-codex,omap,Kidney,HBM568.RMZB.377
+0000-0002-6078-3321,Elizabeth K. Neumann,Elizabeth,Neumann,v1.2,3-kidney-codex,omap,Kidney,HBM953.VJHK.452
+0000-0002-1602-2082,Melissa Farrow,Melissa,Farrow,v1.2,3-kidney-codex,omap,Kidney,HBM953.VJHK.452
+0000-0001-7524-8260,Elizabeth McDonough,Elizabeth,McDonough,v1.1,4-skin-cell-dive,omap,Skin,HBM577.SBHH.454
+0000-0001-6355-5677,Chrystal Chadwick,Chrystal,Chadwick,v1.1,4-skin-cell-dive,omap,Skin,HBM577.SBHH.454
+0000-0001-6638-683X,Fiona Ginty,Fiona,Ginty,v1.1,4-skin-cell-dive,omap,Skin,HBM577.SBHH.454
+0000-0001-7524-8260,Elizabeth McDonough,Elizabeth,McDonough,v1.2,4-skin-cell-dive,omap,Skin,HBM459.SRBX.598
+0000-0001-6355-5677,Chrystal Chadwick,Chrystal,Chadwick,v1.2,4-skin-cell-dive,omap,Skin,HBM459.SRBX.598
+0000-0001-6638-683X,Fiona Ginty,Fiona,Ginty,v1.2,4-skin-cell-dive,omap,Skin,HBM459.SRBX.598
+0000-0002-3598-0219,Hua Tian,Hua,Tian,v1.1,5-liver-sims,omap,Liver,HBM495.QBSV.777
+0000-0003-2184-7238,Presha Rajbhandari,Presha,Rajbhandari,v1.1,5-liver-sims,omap,Liver,HBM495.QBSV.777
+0000-0002-3598-0219,Hua Tian,Hua,Tian,v1.2,5-liver-sims,omap,Liver,HBM749.LTHX.952
+0000-0003-2184-7238,Presha Rajbhandari,Presha,Rajbhandari,v1.2,5-liver-sims,omap,Liver,HBM749.LTHX.952
+0000-0003-2722-1965,Anna Martinez Casals,Anna,Casals,v1.1,6-pancreas-codex,omap,Pancreas,HBM868.XLTM.922
+0000-0002-3343-349X,Frida Björklund,Frida,Björklund,v1.1,6-pancreas-codex,omap,Pancreas,HBM868.XLTM.922
+0000-0003-2722-1965,Anna Martinez Casals,Anna,Casals,v1.2,6-pancreas-codex,omap,Pancreas,HBM948.XLMZ.833
+0000-0002-3343-349X,Frida Björklund,Frida,Björklund,v1.2,6-pancreas-codex,omap,Pancreas,HBM948.XLMZ.833
+0000-0002-7334-4571,Christine Surrette,Christine,Surrette,v1.1,7-lung-cell-dive,omap,Lung,HBM972.WHPW.455
+0000-0002-9143-6509,Lisa Lowery,Lisa,Lowery,v1.1,7-lung-cell-dive,omap,Lung,HBM972.WHPW.455
+0000-0002-9185-3994,Gloria Pryhuber,Gloria,Pryhuber,v1.1,7-lung-cell-dive,omap,Lung,HBM972.WHPW.455
+0000-0002-0571-0285,Gail Deutsch,Gail,Deutsch,v1.1,7-lung-cell-dive,omap,Lung,HBM972.WHPW.455
+0000-0001-6638-683X,Fiona Ginty,Fiona,Ginty,v1.1,7-lung-cell-dive,omap,Lung,HBM972.WHPW.455
+0000-0002-7334-4571,Christine Surrette,Christine,Surrette,v1.2,7-lung-cell-dive,omap,Lung,HBM933.MRZD.495
+0000-0002-9143-6509,Lisa Lowery,Lisa,Lowery,v1.2,7-lung-cell-dive,omap,Lung,HBM933.MRZD.495
+0000-0002-9185-3994,Gloria Pryhuber,Gloria,Pryhuber,v1.2,7-lung-cell-dive,omap,Lung,HBM933.MRZD.495
+0000-0002-0571-0285,Gail Deutsch,Gail,Deutsch,v1.2,7-lung-cell-dive,omap,Lung,HBM933.MRZD.495
+0000-0001-6638-683X,Fiona Ginty,Fiona,Ginty,v1.2,7-lung-cell-dive,omap,Lung,HBM933.MRZD.495
+0000-0002-0191-3958,Paul Robson,Paul,Robson,v1.0,8-placenta-full-term-imc,omap,Placenta full term,HBM375.WFJN.332
+0000-0002-8854-4517,Santhosh Sivajothi,Santhosh,Sivajothi,v1.0,8-placenta-full-term-imc,omap,Placenta full term,HBM375.WFJN.332
+0000-0003-4067-0511,Ramalakshmi Ramasamy,Ramalakshmi,Ramasamy,v1.0,8-placenta-full-term-imc,omap,Placenta full term,HBM375.WFJN.332
+0000-0002-0776-3030,Daria Barwinska,Daria,Barwinska,v1.0,9-kidney-codex,omap,Kidney,HBM874.KNMC.899
+0000-0003-4645-3614,Tarek M. Ashkar,Tarek,Ashkar,v1.0,9-kidney-codex,omap,Kidney,HBM874.KNMC.899
+0000-0002-7496-8570,Angela R. Sabo,Angela,Sabo,v1.0,9-kidney-codex,omap,Kidney,HBM874.KNMC.899
+0000-0002-9531-3899,Michael J. Ferkowicz,Michael,Ferkowicz,v1.0,9-kidney-codex,omap,Kidney,HBM874.KNMC.899
+0000-0002-2396-5871,Seth Winfree,Seth,Winfree,v1.0,9-kidney-codex,omap,Kidney,HBM874.KNMC.899
+0000-0001-9961-7673,John Hickey,John,Hickey,v1.0,intestines-codex,omap,Intestine,HBM373.HQCB.363
+0000-0002-6078-3321,Elizabeth K. Neumann,Elizabeth,Neumann,v1.0,kidney-codex,omap,Kidney,HBM373.TBKP.375
+0000-0002-3598-0219,Hua Tian,Hua,Tian,v1.0,liver-sim,omap,Liver,HBM279.BTBC.847
+0000-0003-2184-7238,Presha Rajbhandari,Presha,Rajbhandari,v1.0,liver-sim,omap,Liver,HBM279.BTBC.847
+0000-0003-2222-4630,Taruna V Neelakantan,Taruna,Neelakantan,v1.0,liver-sim,omap,Liver,HBM279.BTBC.847
+0000-0002-0646-1815,Aubrianna M Decker,Aubrianna,Decker,v1.0,liver-sim,omap,Liver,HBM279.BTBC.847
+0000-0002-3532-3868,Brent R Stockwell,Brent,Stockwell,v1.0,liver-sim,omap,Liver,HBM279.BTBC.847
+0000-0002-7334-4571,Christine Surrette,Christine,Surrette,v1.0,lung-celldive,omap,Lung,HBM366.RQZK.248
+0000-0002-9143-6509,Lisa Lowery,Lisa,Lowery,v1.0,lung-celldive,omap,Lung,HBM366.RQZK.248
+0000-0002-9185-3994,Gloria Pryhuber,Gloria,Pryhuber,v1.0,lung-celldive,omap,Lung,HBM366.RQZK.248
+0000-0002-0571-0285,Gail Deutsch,Gail,Deutsch,v1.0,lung-celldive,omap,Lung,HBM366.RQZK.248
+0000-0001-6638-683X,Fiona Ginty,Fiona,Ginty,v1.0,lung-celldive,omap,Lung,HBM366.RQZK.248
+0000-0003-4379-8967,Andrea J. Radtke,Andrea,Radtke,v1.1,lymph-node-ibex,omap,Lymph node,HBM624.PJSR.685
+0000-0003-2722-1965,Anna Martinez Casals,Anna,Casals,v1.0,pancreas-codex,omap,Pancreas,HBM395.LXKX.734
+0000-0002-3343-349X,Frida Björklund,Frida,Björklund,v1.0,pancreas-codex,omap,Pancreas,HBM395.LXKX.734
+0000-0001-7524-8260,Liz McDonough,Liz,McDonough,v1.0,skin-celldive,omap,Skin,HBM467.LRKZ.884
+0000-0001-7655-4833,Ellen M. Quardokus,Ellen,Quardokus,v1.4,asct-b-3d-models-crosswalk,ref-organ,,HBM622.BDXN.589
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.4,asct-b-3d-models-crosswalk,ref-organ,,HBM622.BDXN.589
+0000-0002-6703-7647,Bruce W. Herr II,Bruce,Herr,v1.4,asct-b-3d-models-crosswalk,ref-organ,,HBM622.BDXN.589
+0000-0002-3321-6137,Katy Börner,Katy,Börner,v1.4,asct-b-3d-models-crosswalk,ref-organ,,HBM622.BDXN.589
+0000-0001-7655-4833,Ellen M. Quardokus,Ellen,Quardokus,v1.3,asct-b-3d-models-mapping,ref-organ,,HBM766.SDNC.676
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.3,asct-b-3d-models-mapping,ref-organ,,HBM766.SDNC.676
+0000-0002-6703-7647,Bruce W. Herr II,Bruce,Herr,v1.3,asct-b-3d-models-mapping,ref-organ,,HBM766.SDNC.676
+0000-0002-3321-6137,Katy Börner,Katy,Börner,v1.3,asct-b-3d-models-mapping,ref-organ,,HBM766.SDNC.676
+0000-0001-7655-4833,Ellen M. Quardokus,Ellen,Quardokus,Mapping,asctb-3d-models-mapping,ref-organ,,HBM527.RCXM.366
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,Mapping,asctb-3d-models-mapping,ref-organ,,HBM527.RCXM.366
+0000-0002-8977-498X,Andreas Bueckle,Andreas,Bueckle,Mapping,asctb-3d-models-mapping,ref-organ,,HBM527.RCXM.366
+0000-0002-6703-7647,Bruce W. Herr II,Bruce,Herr,Mapping,asctb-3d-models-mapping,ref-organ,,HBM527.RCXM.366
+0000-0002-3321-6137,Katy Börner,Katy,Börner,Mapping,asctb-3d-models-mapping,ref-organ,,HBM527.RCXM.366
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,blood-vasculature-female,ref-organ,Blood vasculature,HBM542.RNFN.859
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,blood-vasculature-female,ref-organ,Blood vasculature,HBM232.FSRK.728
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,blood-vasculature-female,ref-organ,Blood vasculature,HBM232.FSRK.728
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,blood-vasculature-male,ref-organ,Blood vasculature,HBM624.HZFZ.385
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,blood-vasculature-male,ref-organ,Blood vasculature,HBM686.LBDQ.998
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,blood-vasculature-male,ref-organ,Blood vasculature,HBM686.LBDQ.998
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,brain-female,ref-organ,Brain,HBM438.XKJT.666
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,brain-female,ref-organ,Brain,HBM724.XTTN.487
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,brain-female,ref-organ,Brain,HBM883.TBLV.838
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,brain-female,ref-organ,Brain,HBM883.TBLV.838
+00dcv1019,Allen Institute,Allen,Institute,v1.0,brain-male,ref-organ,Brain,HBM927.XKJR.426
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,brain-male,ref-organ,Brain,HBM246.TXGH.789
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,brain-male,ref-organ,Brain,HBM946.SSFX.636
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,brain-male,ref-organ,Brain,HBM946.SSFX.636
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,eye-female-left,ref-organ,Eye,HBM359.KHRG.755
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,eye-female-left,ref-organ,Eye,HBM947.QXCK.633
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,eye-female-left,ref-organ,Eye,HBM947.QXCK.633
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,eye-female-right,ref-organ,Eye,HBM692.CDGH.743
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,eye-female-right,ref-organ,Eye,HBM276.NWLC.455
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,eye-female-right,ref-organ,Eye,HBM276.NWLC.455
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,eye-male-left,ref-organ,Eye,HBM229.DQTQ.987
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,eye-male-left,ref-organ,Eye,HBM589.ZDVC.244
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,eye-male-left,ref-organ,Eye,HBM589.ZDVC.244
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,eye-male-right,ref-organ,Eye,HBM343.ZZKS.993
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,eye-male-right,ref-organ,Eye,HBM628.JFJJ.755
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,eye-male-right,ref-organ,Eye,HBM628.JFJJ.755
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,fallopian-tube-female-left,ref-organ,Fallopian tube,HBM346.XLQF.893
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,fallopian-tube-female-left,ref-organ,Fallopian tube,HBM887.HZKB.637
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,fallopian-tube-female-left,ref-organ,Fallopian tube,HBM887.HZKB.637
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,fallopian-tube-female-right,ref-organ,Fallopian tube,HBM986.HDFV.993
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,fallopian-tube-female-right,ref-organ,Fallopian tube,HBM875.FCDP.878
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,fallopian-tube-female-right,ref-organ,Fallopian tube,HBM875.FCDP.878
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,female-united,ref-organ,,HBM658.KHFL.229
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,female-united,ref-organ,,HBM658.KHFL.229
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,heart-female,ref-organ,Heart,HBM894.FGQN.237
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,heart-female,ref-organ,Heart,HBM459.GVPS.249
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,heart-female,ref-organ,Heart,HBM384.VWVH.465
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,heart-female,ref-organ,Heart,HBM384.VWVH.465
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,heart-male,ref-organ,Heart,HBM384.FDPD.646
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,heart-male,ref-organ,Heart,HBM548.CTHS.699
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,heart-male,ref-organ,Heart,HBM373.VSTV.568
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,intestine-large-female,ref-organ,Intestine,HBM734.KXRL.243
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,intestine-large-male,ref-organ,Intestine,HBM235.QFTP.824
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,kidney-female-left,ref-organ,Kidney,HBM765.JWFB.892
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,kidney-female-left,ref-organ,Kidney,HBM893.CHGD.258
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,kidney-female-left,ref-organ,Kidney,HBM898.QGVV.734
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,kidney-female-left,ref-organ,Kidney,HBM898.QGVV.734
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,kidney-female-right,ref-organ,Kidney,HBM726.HWKT.534
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,kidney-female-right,ref-organ,Kidney,HBM569.LBLR.528
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,kidney-female-right,ref-organ,Kidney,HBM487.ZGCW.688
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,kidney-female-right,ref-organ,Kidney,HBM487.ZGCW.688
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,kidney-male-left,ref-organ,Kidney,HBM792.NPXX.335
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,kidney-male-left,ref-organ,Kidney,HBM987.QXZX.867
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,kidney-male-left,ref-organ,Kidney,HBM562.JGPS.244
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,kidney-male-left,ref-organ,Kidney,HBM562.JGPS.244
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,kidney-male-right,ref-organ,Kidney,HBM693.RTRN.866
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,kidney-male-right,ref-organ,Kidney,HBM724.XBQG.384
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,kidney-male-right,ref-organ,Kidney,HBM272.ZVPQ.979
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,kidney-male-right,ref-organ,Kidney,HBM272.ZVPQ.979
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,knee-female-left,ref-organ,Knee,HBM886.ZDPK.865
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,knee-female-left,ref-organ,Knee,HBM445.ZKHR.632
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,knee-female-left,ref-organ,Knee,HBM445.ZKHR.632
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,knee-female-right,ref-organ,Knee,HBM793.BQGC.274
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,knee-male-left,ref-organ,Knee,HBM825.XRZT.933
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,knee-male-left,ref-organ,Knee,HBM592.GGXG.842
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,knee-male-left,ref-organ,Knee,HBM592.GGXG.842
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,knee-male-right,ref-organ,Knee,HBM546.WMLL.993
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,knee-male-right,ref-organ,Knee,HBM262.NWXL.436
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,knee-male-right,ref-organ,Knee,HBM262.NWXL.436
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,large-intestine-female,ref-organ,Large intestine,HBM879.CXSX.975
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,large-intestine-female,ref-organ,Large intestine,HBM637.SRWT.828
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,large-intestine-female,ref-organ,Large intestine,HBM637.SRWT.828
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,large-intestine-male,ref-organ,Large intestine,HBM626.PBQL.796
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,large-intestine-male,ref-organ,Large intestine,HBM334.LVTH.937
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,large-intestine-male,ref-organ,Large intestine,HBM334.LVTH.937
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,liver-female,ref-organ,Liver,HBM474.XSKK.979
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,liver-female,ref-organ,Liver,HBM798.JZZM.649
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,liver-female,ref-organ,Liver,HBM798.JZZM.649
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,liver-male,ref-organ,Liver,HBM793.BQGC.274
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,liver-male,ref-organ,Liver,HBM677.HVRF.764
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,liver-male,ref-organ,Liver,HBM677.HVRF.764
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,lung-female,ref-organ,Lung,HBM467.NHKR.974
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,lung-female,ref-organ,Lung,HBM448.SPWK.587
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,lung-female,ref-organ,Lung,HBM733.JCZJ.647
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,lung-female,ref-organ,Lung,HBM733.JCZJ.647
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,lung-male,ref-organ,Lung,HBM373.VPSC.692
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,lung-male,ref-organ,Lung,HBM432.TNRZ.258
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,lung-male,ref-organ,Lung,HBM787.FWXN.723
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,lung-male,ref-organ,Lung,HBM787.FWXN.723
+0000-0003-2390-083X,Li Yao,Li,Yao,v1.0,lymph-node-female-left,ref-organ,Lymph node,HBM897.HVMV.989
+0000-0003-2390-083X,Li Yao,Li,Yao,v1.0,lymph-node-female-right,ref-organ,Lymph node,HBM439.ZTGH.778
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,lymph-node-female,ref-organ,Lymph node,HBM992.ZQPV.642
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,lymph-node-female,ref-organ,Lymph node,HBM463.LFHF.874
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,lymph-node-female,ref-organ,Lymph node,HBM463.LFHF.874
+0000-0003-2390-083X,Li Yao,Li,Yao,v1.0,lymph-node-male-left,ref-organ,Lymph node,HBM668.RBLW.256
+0000-0003-2390-083X,Li Yao,Li,Yao,v1.0,lymph-node-male-right,ref-organ,Lymph node,HBM699.BLKS.298
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,lymph-node-male,ref-organ,Lymph node,HBM855.HCSJ.436
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,lymph-node-male,ref-organ,Lymph node,HBM299.VVXH.634
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,male-united,ref-organ,,HBM527.VTCC.559
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,male-united,ref-organ,,HBM527.VTCC.559
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,ovary-female-left,ref-organ,Ovary,HBM822.TTPW.598
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,ovary-female-left,ref-organ,Ovary,HBM499.JLMB.357
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,ovary-female-left,ref-organ,Ovary,HBM499.JLMB.357
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,ovary-female-right,ref-organ,Ovary,HBM428.HSSM.863
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,ovary-female-right,ref-organ,Ovary,HBM453.QTZX.449
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,ovary-female-right,ref-organ,Ovary,HBM453.QTZX.449
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,pancreas-female,ref-organ,Pancreas,HBM596.NSFQ.426
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,pancreas-female,ref-organ,Pancreas,HBM338.VKSF.574
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,pancreas-female,ref-organ,Pancreas,HBM338.VKSF.574
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,pancreas-male,ref-organ,Pancreas,HBM249.BLBM.234
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,pancreas-male,ref-organ,Pancreas,HBM992.BMVW.775
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,pancreas-male,ref-organ,Pancreas,HBM992.BMVW.775
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,pelvis-female,ref-organ,Pelvis,HBM539.RRDB.894
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,pelvis-female,ref-organ,Pelvis,HBM678.LPCR.586
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,pelvis-female,ref-organ,Pelvis,HBM427.CCRP.887
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,pelvis-female,ref-organ,Pelvis,HBM427.CCRP.887
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,pelvis-male,ref-organ,Pelvis,HBM672.KSST.448
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,pelvis-male,ref-organ,Pelvis,HBM333.RJDF.478
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,pelvis-male,ref-organ,Pelvis,HBM893.QGJK.978
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,pelvis-male,ref-organ,Pelvis,HBM893.QGJK.978
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,placenta-full-term-female,ref-organ,Placenta full term,HBM796.CQJZ.982
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,prostate-male,ref-organ,Prostate,HBM493.JKTJ.487
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,prostate-male,ref-organ,Prostate,HBM229.TSCH.665
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,prostate-male,ref-organ,Prostate,HBM229.TSCH.665
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,skin-female,ref-organ,Skin,HBM287.TJZD.872
+0000-0003-3398-5507,Leonard Cross,Leonard,Cross,v1.0,skin-female,ref-organ,Skin,HBM287.TJZD.872
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,skin-female,ref-organ,Skin,HBM555.MQLF.923
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,skin-female,ref-organ,Skin,HBM254.DVTN.589
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,skin-female,ref-organ,Skin,HBM254.DVTN.589
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,skin-male,ref-organ,Skin,HBM689.CGPV.442
+0000-0003-3398-5507,Leonard Cross,Leonard,Cross,v1.0,skin-male,ref-organ,Skin,HBM689.CGPV.442
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,skin-male,ref-organ,Skin,HBM592.CTHB.237
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,skin-male,ref-organ,Skin,HBM369.SBSP.863
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,skin-male,ref-organ,Skin,HBM369.SBSP.863
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,small-intestine-female,ref-organ,Small intestine,HBM887.PSNL.257
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,small-intestine-female,ref-organ,Small intestine,HBM887.PSNL.257
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,small-intestine-male,ref-organ,Small intestine,HBM373.JKLS.694
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,small-intestine-male,ref-organ,Small intestine,HBM468.FFTJ.536
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,small-intestine-male,ref-organ,Small intestine,HBM468.FFTJ.536
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,spinal-cord-female,ref-organ,Spinal cord,HBM625.LDJN.633
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,spinal-cord-female,ref-organ,Spinal cord,HBM625.LDJN.633
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,spinal-cord-male,ref-organ,Spinal cord,HBM366.MTJD.685
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,spinal-cord-male,ref-organ,Spinal cord,HBM366.MTJD.685
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,spleen-female,ref-organ,Spleen,HBM626.WZGS.532
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,spleen-female,ref-organ,Spleen,HBM763.BRDT.574
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,spleen-female,ref-organ,Spleen,HBM459.JHVH.373
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,spleen-female,ref-organ,Spleen,HBM459.JHVH.373
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,spleen-male,ref-organ,Spleen,HBM583.DRHV.265
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,spleen-male,ref-organ,Spleen,HBM428.SWCN.269
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,spleen-male,ref-organ,Spleen,HBM662.GMWC.569
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,spleen-male,ref-organ,Spleen,HBM662.GMWC.569
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,thymus-female,ref-organ,Thymus,HBM896.TWPT.542
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,thymus-female,ref-organ,Thymus,HBM225.QSQG.238
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,thymus-female,ref-organ,Thymus,HBM956.TTND.385
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,thymus-female,ref-organ,Thymus,HBM956.TTND.385
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,thymus-male,ref-organ,Thymus,HBM955.BGTP.947
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,thymus-male,ref-organ,Thymus,HBM654.JFJP.923
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,thymus-male,ref-organ,Thymus,HBM823.SNLN.667
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,thymus-male,ref-organ,Thymus,HBM823.SNLN.667
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,ureter-female-left,ref-organ,Ureter,HBM455.BVMB.749
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,ureter-female-left,ref-organ,Ureter,HBM923.WCQQ.623
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,ureter-female-left,ref-organ,Ureter,HBM923.WCQQ.623
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,ureter-female-right,ref-organ,Ureter,HBM585.ZVKW.798
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,ureter-female-right,ref-organ,Ureter,HBM669.RFNC.442
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,ureter-female-right,ref-organ,Ureter,HBM669.RFNC.442
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,ureter-male-left,ref-organ,Ureter,HBM763.QFXT.356
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,ureter-male-left,ref-organ,Ureter,HBM473.XWNL.438
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,ureter-male-left,ref-organ,Ureter,HBM473.XWNL.438
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,ureter-male-right,ref-organ,Ureter,HBM962.NPQG.577
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,ureter-male-right,ref-organ,Ureter,HBM878.DBSR.759
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,ureter-male-right,ref-organ,Ureter,HBM878.DBSR.759
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,urinary-bladder-female,ref-organ,Urinary bladder,HBM565.XPXM.226
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,urinary-bladder-female,ref-organ,Urinary bladder,HBM235.KQNP.897
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,urinary-bladder-female,ref-organ,Urinary bladder,HBM235.KQNP.897
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,urinary-bladder-male,ref-organ,Urinary bladder,HBM446.HDLZ.823
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,urinary-bladder-male,ref-organ,Urinary bladder,HBM934.DMHJ.898
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,urinary-bladder-male,ref-organ,Urinary bladder,HBM934.DMHJ.898
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,uterus-female,ref-organ,Uterus,HBM379.ZRWS.653
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.1,uterus-female,ref-organ,Uterus,HBM228.JBNJ.299
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.1,uterus-female,ref-organ,Uterus,HBM228.JBNJ.299
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,vasculature-female,ref-organ,Vasculature,HBM253.DKWB.737
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,vasculature-male,ref-organ,Vasculature,HBM784.ZDZF.357
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,vh-f-eye-l,ref-organ,Eye,HBM378.DBLX.423
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,vh-f-eye-l,ref-organ,Eye,HBM378.DBLX.423
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,vh-f-eye-r,ref-organ,Eye,HBM745.RCGM.944
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,vh-f-eye-r,ref-organ,Eye,HBM745.RCGM.944
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,vh-f-larynx,ref-organ,Larynx,HBM295.ZXSK.374
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,vh-f-larynx,ref-organ,Larynx,HBM295.ZXSK.374
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.3,vh-f-lung,ref-organ,Lung,HBM794.PKQV.978
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.3,vh-f-lung,ref-organ,Lung,HBM794.PKQV.978
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,vh-f-main-bronchus,ref-organ,Main bronchus,HBM539.LVSV.683
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,vh-f-main-bronchus,ref-organ,Main bronchus,HBM539.LVSV.683
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,vh-f-mammary-gland-l,ref-organ,Mammary gland,HBM378.VWZG.633
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,vh-f-mammary-gland-r,ref-organ,Mammary gland,HBM989.SNHP.535
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,vh-f-palatine-tonsil-l,ref-organ,Palatine tonsil,HBM978.QMLX.642
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,vh-f-palatine-tonsil-l,ref-organ,Palatine tonsil,HBM978.QMLX.642
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,vh-f-palatine-tonsil-r,ref-organ,Palatine tonsil,HBM599.NJCF.974
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,vh-f-palatine-tonsil-r,ref-organ,Palatine tonsil,HBM599.NJCF.974
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.3,vh-f-skin,ref-organ,Skin,HBM466.LKPQ.876
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.3,vh-f-skin,ref-organ,Skin,HBM466.LKPQ.876
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,vh-f-trachea,ref-organ,Trachea,HBM483.WXRQ.275
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,vh-f-trachea,ref-organ,Trachea,HBM483.WXRQ.275
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.3,vh-f-united,ref-organ,,HBM245.CNSG.248
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.3,vh-f-united,ref-organ,,HBM245.CNSG.248
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.4,vh-f-united,ref-organ,,HBM959.JMVR.733
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.4,vh-f-united,ref-organ,,HBM959.JMVR.733
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,vh-m-eye-l,ref-organ,Eye,HBM858.KCTG.666
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,vh-m-eye-l,ref-organ,Eye,HBM858.KCTG.666
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.2,vh-m-eye-r,ref-organ,Eye,HBM763.WQLH.975
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.2,vh-m-eye-r,ref-organ,Eye,HBM763.WQLH.975
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,vh-m-larynx,ref-organ,Larynx,HBM563.KGWS.679
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,vh-m-larynx,ref-organ,Larynx,HBM563.KGWS.679
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.3,vh-m-lung,ref-organ,Lung,HBM737.FFBT.876
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.3,vh-m-lung,ref-organ,Lung,HBM737.FFBT.876
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,vh-m-main-bronchus,ref-organ,Main bronchus,HBM795.LVRX.842
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,vh-m-main-bronchus,ref-organ,Main bronchus,HBM795.LVRX.842
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,vh-m-palatine-tonsil-l,ref-organ,Palatine tonsil,HBM659.MMSP.248
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,vh-m-palatine-tonsil-l,ref-organ,Palatine tonsil,HBM659.MMSP.248
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,vh-m-palatine-tonsil-r,ref-organ,Palatine tonsil,HBM845.GXSC.628
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,vh-m-palatine-tonsil-r,ref-organ,Palatine tonsil,HBM845.GXSC.628
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.0,vh-m-trachea,ref-organ,Trachea,HBM969.WCCJ.636
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.0,vh-m-trachea,ref-organ,Trachea,HBM969.WCCJ.636
+0000-0003-4066-7531,Kristen Browne,Kristen,Browne,v1.4,vh-m-united,ref-organ,,HBM728.HNBH.685
+0000-0002-3333-5646,Heidi Schlehlein,Heidi,Schlehlein,v1.4,vh-m-united,ref-organ,,HBM728.HNBH.685
+0000-0002-2597-881X,Griffin Weber,Griffin,Weber,v1.0,blood-vasculature-geometry,vascular-geometry,Blood vasculature,HBM796.WLLL.599
+0000-0002-5574-4272,Katherine S Gustilo,Katherine,Gustilo,v1.0,blood-vasculature-geometry,vascular-geometry,Blood vasculature,HBM796.WLLL.599
