@@ -10,8 +10,8 @@ params = {
     'format':'xml',
     'rw':500,
 }
-df = pd.read_csv('output.csv')
-for keyword in df['kw']:
+df = pd.read_csv('/data/funding/organs.csv')
+for keyword in df['organs']:
     print(keyword)
     params['kw'] = keyword
     st=1
@@ -28,5 +28,5 @@ for keyword in df['kw']:
             break
         st += 500
 
-    with open(f'{keyword}_kaken.json', 'w') as f:
+    with open(f'/data/funding/kaken/{keyword}.json', 'w') as f:
         json.dump(all_results, f, indent=4)

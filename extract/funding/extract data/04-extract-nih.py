@@ -31,5 +31,5 @@ while True:
         print('Error：', response.status_code)
         break
 
-with open('nih_awards_results\\13.json', 'w') as f:
+with open('data/funding/nih//awards_results.json', 'w') as f:
     json.dump(all_results, f, indent=4)

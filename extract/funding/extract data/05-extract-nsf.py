@@ -22,7 +22,7 @@ while True:
         break
 
 
-with open('awards_results.json', 'w') as f:
+with open('data/funding/nsf/awards_results.json', 'w') as f:
     json.dump(all_results, f, indent=4)
 
 print('Total count: {} results'.format(len(all_results)))
