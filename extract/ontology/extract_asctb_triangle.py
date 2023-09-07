@@ -19,7 +19,7 @@ def extract_entity_data(entity_data, ontology_type, organ_key, row_id):
 
 
 # Read the JSON file
-with open('ccf-asctb-all.json', 'r') as f:
+with open('data/ontology/ccf-asctb-all.json', 'r') as f:
     data = json.load(f)
 
 # Initialize empty list to hold data for the new table with row_id and ontology_type
@@ -49,6 +49,6 @@ table_with_row_id_columns = ['row_id', 'id', 'rdfs_label', 'name', 'b_type', 'or
 table_with_row_id_df = pd.DataFrame(table_with_row_id_data, columns=table_with_row_id_columns)
 
 # Save to CSV
-output_path = 'hralit_ontology_triangle.csv'
+output_path = 'data/ontology/hralit_ontology_triangle.csv'
 table_with_row_id_df.to_csv(output_path, index=False)
 
