@@ -56,7 +56,7 @@ for record in data:
         })
 
 # Write the extracted data to a CSV file
-output_csv_path = "data/experts/hra_creators.csv"
+output_csv_path = "data/expert/hra_creators.csv"
 df = pd.DataFrame(extracted_data)
 df.to_csv(output_csv_path, index=False)
 
