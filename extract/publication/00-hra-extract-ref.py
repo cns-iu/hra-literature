@@ -60,7 +60,7 @@ extracted_data = extract_data(json_content)
 df = pd.DataFrame.from_dict(extracted_data)
 
 # Defining the CSV file path
-csv_file_path = 'ref_output.csv'
+csv_file_path = 'data/publication/hra-refs-organs.csv'
 
 # Writing the DataFrame to the CSV file
 df.to_csv(csv_file_path, index=False)
