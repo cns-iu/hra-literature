@@ -20,7 +20,7 @@
 -- publication data:
 
 -- publications in asct+b tables
-\copy hralit_asct_publication from /N/slate/yokong/asct_publication.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy hralit_asct_publication from data/publication/hra-refs-cleaned.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
 -- publications for different organs
 with t1 as (
