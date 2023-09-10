@@ -30,6 +30,17 @@ do
         # Extract xlsx/project.xlsx from the zip
         unzip "$DIR/$(basename $url)" "xlsx/project.xlsx" -d $DIR
 
+        # Determine the appropriate name for the extracted file
+        if [[ $url == *fp7* ]]; then
+            new_name="project_fp7.xlsx"
+        elif [[ $url == *h2000* ]]; then
+            new_name="project_h2000.xlsx"
+        elif [[ $(echo $url | tr '[:upper:]' '[:lower:]') == *horizon* ]]; then
+            new_name="project_horizon.xlsx"
+        else
+            new_name="$(basename $url .zip).xlsx"
+        fi
+
         # Rename the extracted file to match the original ZIP name (but with .xlsx extension)
         mv "$DIR/xlsx/project.xlsx" "$DIR/$(basename $url .zip).xlsx"
 
