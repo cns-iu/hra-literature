@@ -19,5 +19,5 @@ CREATE TABLE author_info_all_affi (
 
 -- Import data into the table
 COPY author_info_all_affi 
-FROM '/N/slate/yokong/author_info_all_affi.psv' 
+FROM data/expert/author_info_all_affi.psv
 WITH DELIMITER '|' CSV HEADER ENCODING 'SQL-ASCII';
