@@ -1,8 +1,8 @@
 import pandas as pd
 import json
+import os
 
-
-def transform_source_file(source_file_path, file_type, dataset_name, mapping_table_path):
+def transform_source_file(source_file_path, file_type, dataset_name):
     mapping_table = pd.read_csv("data/funding/mapping_tables.csv")
 
     if file_type.lower() == 'json':
@@ -66,7 +66,42 @@ def transform_source_file(source_file_path, file_type, dataset_name, mapping_tab
 
     return output_file_path
 
-json_output_file_path = transform_source_file('path_to_file.json', 'json', 'your_dataset_name',
-                                              'mapping_table.csv')
-csv_output_file_path = transform_source_file('path_to_file.csv', 'csv', 'your_dataset_name',
-                                             'mapping_table.csv')
+base_directory = 'data/funding' 
+
+for dirpath, dirnames, filenames in os.walk(base_directory):
+
+    dataset_name = os.path.basename(dirpath).upper() 
+
+    for filename in filenames:
+        if dataset_name == "NIH":
+            if "2022" in filename or "2023" in filename:
+                dataset_name = "NIH_2023"
+            else:
+                dataset_name = "NIH_2021"
+
+        if dataset_name == "EC":
+            if "h2000" in filename or "horizon" in filename:
+                dataset_name = "EC_2027"
+            else: 
+                dataset_name = "EC_2013"
+
+
+        file_path = os.path.join(dirpath, filename)
+        
+        if filename.endswith('.csv'):
+            output_file_path = transform_source_file(file_path, 'csv', dataset_name)
+            
+        elif filename.endswith('.json'):
+            output_file_path = transform_source_file(file_path, 'json', dataset_name)
+            
+        elif filename.endswith('.xlsx'):
+            # Convert xlsx to csv
+            df = pd.read_excel(file_path)
+            csv_path = file_path.rsplit('.', 1)[0] + '.csv'
+            df.to_csv(csv_path, index=False)
+            
+            output_file_path = transform_source_file(csv_path, 'csv', dataset_name)
+            
+        else:
+            continue  # Skip files that aren't CSV, JSON, or XLSX
+

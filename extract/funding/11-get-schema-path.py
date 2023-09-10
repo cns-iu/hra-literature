@@ -1,6 +1,7 @@
 import json
 import csv
 import pandas as pd
+import os
 
 def get_data_schema(obj, path=""):
     paths = []
@@ -28,25 +29,50 @@ def get_data_schema(obj, path=""):
 
     return schema, paths
 
+
 #read the source file
-csv_file_path = 'path_to_file.csv'
-with open(csv_file_path, 'r', encoding='utf-8') as f:
-    reader = csv.DictReader(f)
-    csv_data = [dict(row) for row in reader]
+base_directory = 'data/funding' 
 
-json_data = json.dumps(csv_data)
-data = json.loads(json_data)
+for dirpath, dirnames, filenames in os.walk(base_directory):
+    for filename in filenames:
+        if filename.endswith('.csv'):
+            csv_file_path = os.path.join(dirpath, filename)
+            
+            with open(csv_file_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                csv_data = [dict(row) for row in reader]
+            
+            data = csv_data
+            
+        elif filename.endswith('.json'):
+            json_file_path = os.path.join(dirpath, filename)
+            
+            with open(json_file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                
+        elif filename.endswith('.xlsx'):
+            xlsx_file_path = os.path.join(dirpath, filename)
+            
+            # Assuming the data you want is in the first sheet. Modify if needed.
+            df = pd.read_excel(xlsx_file_path, sheet_name=0)
+            data = df.to_dict(orient='records')
+            
+        else:
+            continue  # Skip files that aren't CSV, JSON, or XLSX
+        
+        schema, paths = get_data_schema(data)
+        key_paths = []
 
-schema, paths = get_data_schema(data)
-key_paths = []
+        for item in paths:
+            if len(item['type'].keys()) == 1 and 'type' in item['type'].keys():
+                key_paths.append([item['path'], item['type']['type']])
 
-for item in paths:
-    if len(item['type'].keys()) == 1 and 'type' in item['type'].keys():
-        key_paths.append([item['path'], item['type']['type']])
-
-# Save the schema and key paths to JSON and CSV files
-with open('data_schema_nih_funding_19985_2021.json', 'w') as f:
-    json.dump(schema, f, indent=4)
-df = pd.DataFrame(key_paths, columns=['path', 'type'])
-df.to_csv("key_paths.csv", index=False)
-
+        # Save the schema and key paths to JSON and CSV files
+        json_filename = filename.rsplit('.', 1)[0] + '_schema.json'  # Get filename without extension and append '_schema.json'
+        csv_filename = filename.rsplit('.', 1)[0] + '_key_paths.csv'
+        
+        with open(os.path.join(dirpath, json_filename), 'w') as f:
+            json.dump(schema, f, indent=4)
+        
+        df = pd.DataFrame(key_paths, columns=['path', 'type'])
+        df.to_csv(os.path.join(dirpath, csv_filename), index=False)
