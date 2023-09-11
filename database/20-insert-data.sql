@@ -192,7 +192,7 @@ where funder_id in (select funder_soa_id from cleaned_funder where funder_soa_id
 
 --insert data for relationships
 
-\copy hralit_ontology_triangle from data/ontology/hralit_ontology_triangle.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy hralit_ontology_triple from data/ontology/hralit_ontology_triple.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
 insert into hralit_pub_funding_funder(
     pmid, funding_id, acronym, funder_name_pubmed, soa_funder_id, country)

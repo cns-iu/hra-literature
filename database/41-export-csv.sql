@@ -14,7 +14,7 @@
 \COPY (SELECT * FROM hralit_ontology_anatomical_structures) TO 'hralit/hralit_ontology_anatomical_structures.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
 \COPY (SELECT * FROM hralit_ontology_biomarkers) TO 'hralit/hralit_ontology_biomarkers.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
 \COPY (SELECT * FROM hralit_ontology_cell_types) TO 'hralit/hralit_ontology_cell_types.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_ontology_triangle) TO 'hralit/hralit_ontology_triangle.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
+\COPY (SELECT * FROM hralit_ontology_triple) TO 'hralit/hralit_ontology_triple.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
 \COPY (SELECT * FROM hralit_pub_funding_funder) TO 'hralit/hralit_pub_funding_funder.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
 \COPY (SELECT * FROM hralit_publication) TO 'hralit/hralit_publication.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
 \COPY (SELECT * FROM hralit_publication_author) TO 'hralit/hralit_publication_author.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
