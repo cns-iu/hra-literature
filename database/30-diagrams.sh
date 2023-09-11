@@ -11,5 +11,5 @@ java -jar schemaspy-6.2.4.jar \
 -p password \
 -o outputDir \
 -i "hralit_asct_publication|hralit_author|hralit_author_expertise|hralit_author_institution|hralit_creator|hralit_dataset|hralit_digital_object_5th_release|hralit_donor|hralit_funder_cleaned|hralit_funding|hralit_institution|hralit_ontology_anatomical_structures|hralit_ontology_biomarkers|hralit_ontology_cell_types|hralit_ontology_triple|hralit_pub_funding_funder|hralit_publication|hralit_publication_author|hralit_publication_subject|hralit_reviewer" \
--meta schemameta.xml \
+-meta data/db/schemameta.xml \
 -noimplied

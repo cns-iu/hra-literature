@@ -21,5 +21,9 @@ This repository provides the supporting code and data for "Mining Publication, F
 
 ## Credits
 This hralit dataset is developed by the [Cyberinfrastructure for Network Science Center at Indiana University](https://cns.iu.edu/). It is funded by NIH Award OT2OD033756 and OT2OD026671.
+<<<<<<< HEAD
         
     
+=======
+        
+>>>>>>> 92efea6 (update name of db tables and columns)
