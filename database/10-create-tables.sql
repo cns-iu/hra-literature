@@ -118,8 +118,8 @@ create table hralit_donor (
     medical_history character varying,
     mechanism_of_injury character varying,
     social_history character varying,
-    sex_ontotlogy character varying,
-    race_ontotlogy character varying
+    sex_ontology character varying,
+    race_ontology character varying
 );
 
 create table hralit_funder_cleaned (
@@ -203,7 +203,7 @@ create table hralit_pub_funding_funder (
     country varchar
 );
 
-create table hralit_ontology_triangle(
+create table hralit_ontology_triple(
     row_id varchar,
     id varchar,
     rdfs_label varchar,
