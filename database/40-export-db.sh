@@ -18,7 +18,7 @@ pg_dump \
   -t hralit_ontology_anatomical_structures \
   -t hralit_ontology_biomarkers \
   -t hralit_ontology_cell_types \
-  -t hralit_ontology_triangle \
+  -t hralit_ontology_triple \
   -t hralit_pub_funding_funder \
   -t hralit_publication \
   -t hralit_publication_author \
