@@ -15,6 +15,7 @@
 
 \copy hralit_digital_object_5th_release from data/experimental/hra_do_5th_release.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
+\copy hralit_organ from data/experimental/organ.csv WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
 
 
 -- publication data:
