@@ -1,23 +1,5 @@
 <schemaMeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://schemaspy.org/xsd/6/schemameta.xsd">
     <tables>
-        <!-- Add your table and relationship information here -->
-        <!-- <table name="hralit_author">
-            <column name="orcid" type="varchar">
-                <foreignKey table="hralit_publication_author" column="orcid" />
-                <foreignKey table="hralit_author_institution" column="orcid" />
-            </column>
-        </table>
-        <table name="hralit_publication">
-            <column name="pmid" type="varchar">
-                <foreignKey table="hralit_publication_author" column="pmid" />
-                <foreignKey table="hralit_pub_funding_funder" column="pmid" />
-            </column>
-        </table> -->
-        <!-- <table name="hralit_institution">
-            <column name="soa_institution_id" type="varchar">
-                <foreignKey table="hralit_author_institution" column="soa_institution_id" />
-            </column>
-        </table> -->
         <table name="hralit_author_institution">
             <column name="orcid" type="varchar">
                 <foreignKey table="hralit_author" column="orcid" />
@@ -33,17 +15,12 @@
             <column name="orcid" type="varchar">
                 <foreignKey table="hralit_author" column="orcid" />
             </column>
-        </table>    
-        <!-- <table name="hralit_funding">
-            <column name="funding_id" type="varchar">
-                <foreignKey table="hralit_pub_funding_funder" column="funding_id" />
+        </table>
+        <table name="hralit_other_refs">
+            <column name="pmid" type="varchar">
+                <foreignKey table="hralit_publication" column="pmid" />
             </column>
-        </table>    
-        <table name="hralit_funder_cleaned">
-            <column name="soa_funder_id" type="varchar">
-                <foreignKey table="hralit_pub_funding_funder" column="soa_funder_id" />
-            </column>
-        </table>     -->
+        </table>        
         <table name="hralit_pub_funding_funder">
             <column name="pmid" type="varchar">
                 <foreignKey table="hralit_publication" column="pmid" />
@@ -55,15 +32,12 @@
                 <foreignKey table="hralit_funder_cleaned" column="soa_funder_id" />
             </column>
         </table>   
-        <!-- <table name="hralit_digital_object_5th_release">
-            <column name="hubmap_id" type="varchar">
-                <foreignKey table="hralit_creator" column="hubmap_id" />
-                <foreignKey table="hralit_reviewer" column="hubmap_id" />
-            </column>
-        </table>    -->
-        <table name="hralit_asct_publication">
+        <table name="hralit_asctb_publication">
             <column name="doi" type="varchar">
                 <foreignKey table="hralit_publication" column="doi" />
+            </column>
+            <column name="organ" type="varchar">
+                <foreignKey table="hralit_organ" column="organ" />
             </column>
         </table>   
         <table name="hralit_creator">
@@ -71,7 +45,7 @@
                 <foreignKey table="hralit_author" column="orcid" />
             </column>
             <column name="hubmap_id" type="varchar">
-                <foreignKey table="hralit_digital_object_5th_release" column="hubmap_id" />
+                <foreignKey table="hralit_digital_objects" column="hubmap_id" />
             </column>
         </table>   
         <table name="hralit_reviewer">
@@ -79,44 +53,27 @@
                 <foreignKey table="hralit_author" column="orcid" />
             </column>
             <column name="hubmap_id" type="varchar">
-                <foreignKey table="hralit_digital_object_5th_release" column="hubmap_id" />
+                <foreignKey table="hralit_digital_objects" column="hubmap_id" />
             </column>
         </table>   
         <table name="hralit_author_expertise">
             <column name="orcid" type="varchar">
                 <foreignKey table="hralit_author" column="orcid" />
             </column>
-            <column name="expertise" type="varchar">
-                <foreignKey table="hralit_ontology_triangle" column="name" />
+            <column name="organ" type="varchar">
+                <foreignKey table="hralit_organ" column="organ" />
             </column>
         </table>   
-        <!-- <table name="hralit_ontology_anatomical_structures">
+        <table name="hralit_triple">
             <column name="id" type="varchar">
-                <foreignKey table="hralit_ontology_triangle" column="id" />
+                <foreignKey table="hralit_anatomical_structures" column="id" />
+                <foreignKey table="hralit_cell_types" column="id" />
+                <foreignKey table="hralit_biomarkers" column="id" />
+            </column>
+            <column name="organ" type="varchar">
+                <foreignKey table="hralit_organ" column="organ" />
             </column>
         </table>   
-        <table name="hralit_ontology_cell_types">
-            <column name="id" type="varchar">
-                <foreignKey table="hralit_ontology_triangle" column="id" />
-            </column>
-        </table>   
-        <table name="hralit_ontology_biomarkers">
-            <column name="id" type="varchar">
-                <foreignKey table="hralit_ontology_triangle" column="id" />
-            </column>
-        </table>    -->
-        <table name="hralit_ontology_triangle">
-            <column name="id" type="varchar">
-                <foreignKey table="hralit_ontology_anatomical_structures" column="id" />
-                <foreignKey table="hralit_ontology_cell_types" column="id" />
-                <foreignKey table="hralit_ontology_biomarkers" column="id" />
-            </column>
-        </table>   
-        <!-- <table name="hralit_donor">
-            <column name="donor_id" type="varchar">
-                <foreignKey table="hralit_dataset" column="donor_id" />
-            </column>
-        </table>    -->
         <table name="hralit_dataset">
             <column name="donor_id" type="varchar">
                 <foreignKey table="hralit_donor" column="donor_id" />
@@ -129,7 +86,10 @@
             <column name="pmid" type="varchar">
                 <foreignKey table="hralit_publication" column="pmid" />
             </column>
+            <column name="organ" type="varchar">
+                <foreignKey table="hralit_organ" column="organ" />
+            </column>
         </table>   
-        <!-- ... -->
+
     </tables>
 </schemaMeta>

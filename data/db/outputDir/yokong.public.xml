@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?><database name="yokong" schema="public" type="PostgreSQL - 11.19 (Ubuntu 11.19-1.pgdg20.04+1)">
+   <tables>
+      <table name="hralit_anatomical_structures" numRows="4383" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_triple"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="rdfs_label" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+      </table>
+      <table name="hralit_asctb_publication" numRows="1288" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="organ" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="organ" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_organ"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="doi" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="doi" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_publication"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="notes" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+      </table>
+      <table name="hralit_author" numRows="583117" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="orcid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="orcid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_author_expertise"/>
+            <child column="orcid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_author_institution"/>
+            <child column="orcid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_creator"/>
+            <child column="orcid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_publication_author"/>
+            <child column="orcid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_reviewer"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="first_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="last_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="first_pubyear" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="career_age" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="involved_funding" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <primaryKey column="orcid" sequenceNumberInPK="1"/>
+      </table>
+      <table name="hralit_author_expertise" numRows="768178" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="orcid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="orcid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_author"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="organ" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="organ" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_organ"/>
+         </column>
+      </table>
+      <table name="hralit_author_institution" numRows="464043" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="orcid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="orcid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_author"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="soa_institution_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="soa_institution_id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_institution"/>
+         </column>
+      </table>
+      <table name="hralit_biomarkers" numRows="3234" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_triple"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="rdfs_label" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="b_type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+      </table>
+      <table name="hralit_cell_types" numRows="1422" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_triple"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="rdfs_label" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+      </table>
+      <table name="hralit_creator" numRows="550" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="orcid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="orcid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_author"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="full_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="first_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="last_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="version" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="organ" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="hubmap_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="hubmap_id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_digital_objects"/>
+         </column>
+      </table>
+      <table name="hralit_dataset" numRows="7337" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="dataset_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="organ_gtex_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="donor_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="donor_id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_donor"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="individual_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="protocols_used" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="rin_score_from_paxgene" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="rin_score_from_frozen" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="organ" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="autolysis_score" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="sample_ischemic_time" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="sample_type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="pathology_notes" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="source" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="dataset_hubmap_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="dataset_status" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="dataset_group_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="dataset_group_uuid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="dataset_date_time_created" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="dataset_created_by_email" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="dataset_date_time_modified" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="dataset_modified_by_email" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="lab_id_or_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="dataset_data_types" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="dataset_portal_url" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="first_sample_hubmap_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="first_sample_submission_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="first_sample_uuid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="first_sample_type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="first_sample_portal_url" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="organ_hubmap_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="organ_submission_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="organ_uuid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="donor_submission_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="donor_uuid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="donor_group_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="rui_location_hubmap_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="rui_location_submission_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="rui_location_uuid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="sample_metadata_hubmap_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="sample_metadata_submission_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="sample_metadata_uuid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="processed_dataset_uuid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="dataset_title" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="dataset_h5ad_path" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="dataset_total_cell_count" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="collection_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="collection_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="publication_doi" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="doi" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_publication"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="organ_ontology" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="anatomical_structure" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="anatomical_structure_ontology" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="suspension_type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+      </table>
+      <table name="hralit_digital_objects" numRows="295" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="version" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="title" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="license" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="publisher" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="hubmap_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="hubmap_id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_creator"/>
+            <child column="hubmap_id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_reviewer"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="doi" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <primaryKey column="hubmap_id" sequenceNumberInPK="1"/>
+      </table>
+      <table name="hralit_donor" numRows="4639" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="donor_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="donor_id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_dataset"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="sex" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="age" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="death_event" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="source" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="age_unit" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="weight" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="weight_unit" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="height" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="height_unit" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="race" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="body_mass_index" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="body_mass_index_unit" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="blood_type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="rh_blood_group" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="rh_factor" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="kidney_donor_profile_index" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="kidney_donor_profile_index_unit" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="cause_of_death" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="medical_history" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="mechanism_of_injury" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="social_history" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="sex_ontology" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="race_ontology" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <primaryKey column="donor_id" sequenceNumberInPK="1"/>
+      </table>
+      <table name="hralit_funder_cleaned" numRows="6427" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="soa_funder_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="soa_funder_id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_pub_funding_funder"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="funder_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="country_code" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <primaryKey column="soa_funder_id" sequenceNumberInPK="1"/>
+      </table>
+      <table name="hralit_funding" numRows="917061" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="funding_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="funding_id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_pub_funding_funder"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="acronym" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <primaryKey column="funding_id" sequenceNumberInPK="1"/>
+      </table>
+      <table name="hralit_institution" numRows="26235" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="soa_institution_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="soa_institution_id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_author_institution"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ror" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="institution_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="institution_type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="country_code" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <primaryKey column="soa_institution_id" sequenceNumberInPK="1"/>
+      </table>
+      <table name="hralit_organ" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="organ" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="organ" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_asctb_publication"/>
+            <child column="organ" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_author_expertise"/>
+            <child column="organ" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_publication_subject"/>
+            <child column="organ" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_triple"/>
+         </column>
+         <primaryKey column="organ" sequenceNumberInPK="1"/>
+      </table>
+      <table name="hralit_other_refs" numRows="1823" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="pmid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="pmid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_publication"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="doi" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="source" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+      </table>
+      <table name="hralit_pub_funding_funder" numRows="2632888" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="pmid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="pmid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_publication"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="funding_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="funding_id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_funding"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="acronym" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="funder_name_pubmed" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="soa_funder_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="soa_funder_id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_funder_cleaned"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="country" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+      </table>
+      <table name="hralit_publication" numRows="7103369" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="pmid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="pmid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_other_refs"/>
+            <child column="pmid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_pub_funding_funder"/>
+            <child column="pmid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_publication_author"/>
+            <child column="pmid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_publication_subject"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="doi" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="doi" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_asctb_publication"/>
+            <child column="publication_doi" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_dataset"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="pubyear" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="article_title" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="journal_title" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <primaryKey column="pmid" sequenceNumberInPK="1"/>
+         <primaryKey column="doi" sequenceNumberInPK="2"/>
+      </table>
+      <table name="hralit_publication_author" numRows="1079698" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="pmid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="pmid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_publication"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="orcid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="orcid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_author"/>
+         </column>
+      </table>
+      <table name="hralit_publication_subject" numRows="7898258" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="pmid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="pmid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_publication"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="organ" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="organ" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_organ"/>
+         </column>
+      </table>
+      <table name="hralit_reviewer" numRows="602" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="orcid" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="orcid" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_author"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="full_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="first_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="last_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="version" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="organ" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="hubmap_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="hubmap_id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_digital_objects"/>
+         </column>
+      </table>
+      <table name="hralit_triple" numRows="178977" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="row_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_cell_types"/>
+            <parent column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_biomarkers"/>
+            <parent column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_anatomical_structures"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="rdfs_label" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="b_type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="organ" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="organ" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_organ"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="ontology_type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+      </table>
+   </tables>
+</database>
