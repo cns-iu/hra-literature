@@ -160,6 +160,10 @@ create table hralit_ontology_biomarkers (
     b_type varchar
 );
 
+create table hralit_organ (
+    organ varchar
+);
+
 create table hralit_publication(
     pmid varchar,
     doi varchar,
@@ -180,13 +184,17 @@ create table hralit_reviewer (
     hubmap_id varchar
 );
 
+create table hralit_other_refs (
+    pmid varchar,
+    doi varchar,
+    source varchar
+);
 
 -- create tables for linking
 
 create table hralit_author_expertise(
     orcid varchar,
-    expertise varchar,
-    expertise_type varchar
+    organ varchar
 );
 
 create table hralit_author_institution (

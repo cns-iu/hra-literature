@@ -3,7 +3,7 @@ import pandas as pd
 from collections import defaultdict
 
 # the 5th release metadata file (ccf-asctb-all.json) are given in https://ccf-ontology.hubmapconsortium.org/v2.2.1/ccf-asctb.json
-file_path = 'ccf-asctb-all.json'
+file_path = 'data/ontology/ccf-asctb-all.json'
 
 # Function to extract the required information
 def extract_data(json_content):

@@ -1,0 +1,32 @@
+organ,dataset_count,cell_count_count
+blood vasculature,17,3311718
+bone marrow,24,4664385
+brain,1666,244852929
+eye,256,14844890
+fallopian tube,69,3519078
+heart,49,4769948
+kidney,625,19329269
+knee,6,0
+large intestine,289,7823252
+liver,89,9448009
+lung,506,415050060
+lymph node,55,4295177
+lymph vasculature,0,0
+main bronchus,0,0
+muscular system,37,7618410
+ovary,6,156804
+pancreas,46,4539924
+pelvis,1788,1952941521
+peripheral nervous system,0,0
+placenta,0,0
+prostate,73,4159866
+skeletal,0,0
+skin,58,5066152
+small intestine,308,7153510
+spinal cord,134,7280191
+spleen,68,3039279
+thymus,25,0
+trachea,0,0
+ureter,1,598266
+urinary bladder,35,4767426
+uterus,239,4657715

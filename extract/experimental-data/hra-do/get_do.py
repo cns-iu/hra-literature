@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 # Load the JSON data from the provided file
-with open("data/experimental/hra-v1.4-metadata.json", 'r') as file:
+with open("data/hra-v1.4-metadata.json", 'r') as file:
     data = json.load(file)
 
 # Extract the desired fields from the data

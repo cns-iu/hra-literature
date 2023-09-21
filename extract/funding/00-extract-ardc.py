@@ -9,9 +9,10 @@ params = {
     'api_key':'ded8d31e8e38',
     'limit':1000
 }
-df = pd.read_csv('/data/funding/organs.csv')
+df = pd.read_csv('data/experimental/organ.csv')
 
-for keyword in df['organs']:
+for keyword in df['organ']:
+# for keyword in ['lymph vasculature']:
     encoded_keyword = keyword.replace('_', '%20')
     print(keyword)
     params['q'] = encoded_keyword
