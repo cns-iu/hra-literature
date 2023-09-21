@@ -1,22 +1,18 @@
 import pandas as pd
 import psycopg2
-import configparser
 
 # Connect to the PostgreSQL database
-config = configparser.ConfigParser()
-config.read('db_config.ini')
-
 conn = psycopg2.connect(
     dbname="pubmed19",
-    user=config.get('postgresql', 'user'),
-    password=config.get('postgresql', 'password'),
-    host=config.get('postgresql', 'host'),
-    port=config.get('postgresql', 'port')
+    user="your_username",
+    password="your_password",
+    host="your_host",
+    port="your_port"
 )
 
 # Read the list of organs from the CSV
-df_organs = pd.read_csv('data/experimental/organ.csv')
-organs = df_organs['organ'].tolist()  
+df_organs = pd.read_csv('data/publication/list_of_organs.csv')
+organs = df_organs['organ'].tolist()  # Assuming 'organ' is the column name
 
 # DataFrame to store the results
 df_results = pd.DataFrame(columns=['pmid', 'organ', 'uid'])
@@ -44,9 +40,7 @@ for organ in organs:
     
     params = [organ] + [f"%{word}%" for word in words] + [organ] + [f"%{word}%" for word in words]
     df_temp = pd.read_sql_query(cte_query, conn, params=params)
-    print('df_temp=')
-    print(df_temp)
-    df_results = pd.concat([df_results, df_temp], ignore_index=True)
+    df_results = df_results.append(df_temp)
 
 # Save the results to a CSV file
 df_results.to_csv('data/publication/pubmed-pubs.csv', index=False)
