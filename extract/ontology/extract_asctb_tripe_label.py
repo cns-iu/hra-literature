@@ -42,7 +42,7 @@ for key in top_level_keys:
         # Rule 2: cell_types relationships
         for i in range(1, len(cell_types)):
             source = cell_types[i]
-            target = cell_types[0]
+            target = cell_types[i - 1]
             csv_data.append({
                 "source_id": source.get("id", ""),
                 "source_rdfs_label": source.get("rdfs_label", ""),
