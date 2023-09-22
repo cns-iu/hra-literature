@@ -221,6 +221,19 @@ create table hralit_ontology_triple(
     ontology_type varchar
 );
 
+CREATE TABLE hralit_asctb_linkage (
+    source_id varchar,
+    source_rdfs_label varchar,
+    source_name varchar,
+    source_type varchar,
+    relationship varchar,
+    target_id varchar,
+    target_rdfs_label varchar,
+    target_name varchar,
+    target_type varchar
+);
+
+
 create table hralit_publication_author (
     pmid varchar,
     orcid varchar
