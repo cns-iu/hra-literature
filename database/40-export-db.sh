@@ -20,6 +20,7 @@ pg_dump \
   -t hralit_biomarkers \
   -t hralit_cell_types \
   -t hralit_triple \
+  -t hralit_asctb_linkage \
   -t hralit_pub_funding_funder \
   -t hralit_publication \
   -t hralit_publication_author \
@@ -28,4 +29,4 @@ pg_dump \
   -t hralit_organ \
   -t hralit_publication_subject \
   -t hralit_anatomical_structures \
-  -f /mnt/c/users/yokong/documents/hralit.sql
+  -f data/db/hralit.sql
