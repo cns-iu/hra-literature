@@ -9,6 +9,8 @@
 
 \copy hralit_ontology_triple from data/ontology/hralit_ontology_triple.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
+\copy hralit_asctb_linkage from data/ontology/asctb_linkage.csv WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
+
 -- experimental data:
 -- donors, datasets, digital objects 5th release
 
