@@ -2,11 +2,28 @@
    <tables>
       <table name="hralit_anatomical_structures" numRows="4383" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_asctb_linkage"/>
             <child column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_triple"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="rdfs_label" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
+      </table>
+      <table name="hralit_asctb_linkage" numRows="20146" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="null" name="id" nullable="false" remarks="" size="0" type="varchar" typeCode="12">
+            <parent column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_anatomical_structures"/>
+            <parent column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_cell_types"/>
+            <parent column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_biomarkers"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="source_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="source_rdfs_label" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="source_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="source_type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="relationship" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="target_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="target_rdfs_label" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="target_name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="target_type" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
       </table>
       <table name="hralit_asctb_publication" numRows="1288" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="organ" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
@@ -52,6 +69,7 @@
       </table>
       <table name="hralit_biomarkers" numRows="3234" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_asctb_linkage"/>
             <child column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_triple"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="rdfs_label" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
@@ -61,6 +79,7 @@
       </table>
       <table name="hralit_cell_types" numRows="1422" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <child column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_asctb_linkage"/>
             <child column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_triple"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="rdfs_label" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
@@ -289,9 +308,9 @@
       <table name="hralit_triple" numRows="178977" remarks="" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="row_id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="id" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12">
+            <parent column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_anatomical_structures"/>
             <parent column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_cell_types"/>
             <parent column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_biomarkers"/>
-            <parent column="id" foreignKey="Defined in XML" implied="false" onDeleteCascade="false" schema="public" table="hralit_anatomical_structures"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="rdfs_label" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="name" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
