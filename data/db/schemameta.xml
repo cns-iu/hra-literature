@@ -74,6 +74,13 @@
                 <foreignKey table="hralit_organ" column="organ" />
             </column>
         </table>   
+        <table name="hralit_asctb_linkage">
+            <column name="id" type="varchar">
+                <foreignKey table="hralit_anatomical_structures" column="id" />
+                <foreignKey table="hralit_cell_types" column="id" />
+                <foreignKey table="hralit_biomarkers" column="id" />
+            </column>
+        </table>   
         <table name="hralit_dataset">
             <column name="donor_id" type="varchar">
                 <foreignKey table="hralit_donor" column="donor_id" />

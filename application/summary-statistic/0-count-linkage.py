@@ -65,7 +65,23 @@ queries = [
      "select count(distinct(row_id,organ)) from hralit_triple;"),
     
     ("CellMarker/CxG refs & publication",
-     "select count(pmid) from hralit_other_refs;")
+     "select count(pmid) from hralit_other_refs;"),
+
+     ("AS & AS",
+      "select count(*) from hralit_asctb_linkage where relationship='part_of';"
+     ),
+
+    ("AS & CT",
+      "select count(*) from hralit_asctb_linkage where relationship='located_in';"
+     ),
+
+    ("CT & CT",
+      "select count(*) from hralit_asctb_linkage where relationship='is_a';"
+     ),
+     
+    ("CT & B",
+      "select count(*) from hralit_asctb_linkage where relationship='characterizes';"
+     )
 ]
 
 # Collect results

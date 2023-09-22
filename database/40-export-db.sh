@@ -27,4 +27,5 @@ pg_dump \
   -t hralit_other_refs \
   -t hralit_organ \
   -t hralit_publication_subject \
+  -t hralit_anatomical_structures \
   -f /mnt/c/users/yokong/documents/hralit.sql
