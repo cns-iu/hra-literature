@@ -2,7 +2,7 @@
 Welcome to the HRA Literature GitHub repository. This repository contains the supporting code and data for the paper that documents the compilation of the HRAlit dataset.
 
 ## Introduction
-This repository provides the supporting code and data for "Mining Publication, Funding, Experimental Data, and Ontologies in Support of Human Reference Atlas Construction and Usage" paper, detailing the assembly of the HRAlit dataset — a comprehensive compilation linking HRA data to various entities like experts, publications, and ontologies. Our aim is to facilitate a deeper exploration of HRA trends, from identifying leading experts and major publications to understanding funding patterns and alignment with existing ontologies.
+This repository provides the supporting code and data for "Publication, Funding, and Experimental Data in Support of Human Reference Atlas Construction and Usage" paper, detailing the assembly of the HRAlit dataset — a comprehensive compilation linking HRA data to various entities like experts, publications, and ontologies. Our aim is to facilitate a deeper exploration of HRA trends, from identifying leading experts and major publications to understanding funding patterns and alignment with existing ontologies.
 
 ## Quick Start
 ### Requirements:
@@ -15,6 +15,19 @@ This repository provides the supporting code and data for "Mining Publication, F
 ```psql -U [your-username] -d [your-database-name] < hralit.sql```
 
 ## Running Reports
+### Summary statistics
+
+
+### Application 1 : Providing Data Evidence for the HRA
+
+
+### Application 2 : Identify HRA Reviewers
+
+
+
+### Application 3 : Identify HRA Reviewers
+
+
 
 ## Development
 
