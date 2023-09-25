@@ -9,8 +9,8 @@ This repository provides the supporting code and data for "Mining Publication, F
 - **PostgreSQL**: Ensure you have PostgreSQL installed on your system.
 - **psql CLI**: The command-line interface (CLI) application for PostgreSQL should also be installed.
 ### Download dataset
-- **sql db**: You can finde the hralit database in (https://drive.google.com/drive/folders/13OKqmNu8aUeTrwoG8YFVCqXwOJ5slzn2?ths=true)
-- **csv tables**: If you prefer to work with CSV files, we've provided individual CSVs for each table in the HRAlit database. You can find them in (https://drive.google.com/drive/folders/13OKqmNu8aUeTrwoG8YFVCqXwOJ5slzn2?ths=true).
+- **SQL Database**: To access the HRAlit database using SQL, you can use the provided SQL file: [hralit.sql](data/db/hralit.sql)
+- **CSV Tables**: If you prefer to work with CSV files, we've provided individual CSVs for each table in the HRAlit database. You can find them in [data/db/csv](data/db/csv)
 ### Restore the Database from the Dump:
 ```psql -U [your-username] -d [your-database-name] < hralit.sql```
 
