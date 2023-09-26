@@ -1,7 +1,0 @@
-PREFIX ccf: <http://purl.org/ccf/>
-PREFIX sp: <https://semopenalex.org/property/>
-
-SELECT (CONCAT('    ( <',STR(?concept), '> ) ') as ?concept)
-WHERE {
-  ?concept ccf:ccf_term ?term .
-}
