@@ -16,7 +16,7 @@ count_cols = df.columns.tolist()
 ##in funding data
 # custom_colors =['#FB9A99','#7A47B3','#E31A1C','#B2DF8A','#1F78B4','#A6CEE3']
 #in pub-exp-fund-ex
-custom_colors =['#A6CEE3','#FB9A99','#B2DF8A', '#33A02C', '#E31A1C','#1F78B4']
+custom_colors =['#E31A1C','#FB9A99','#B2DF8A', '#33A02C', '#1F78B4','#A6CEE3']
 scientific_colors = custom_colors[:len(count_cols)]
 
 # Set the figure size

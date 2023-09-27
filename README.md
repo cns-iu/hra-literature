@@ -16,16 +16,18 @@ This repository provides the supporting code and data for "Publication, Funding,
 
 ## Running Reports
 ### Summary statistics
+[This section](application/app0) is for the summary statistic of HRAlit database, including linkage counts, node counts, publication comparison among ASCT+B table, CellMarker, and CZ CELLxGENE.
+
+### Providing Data Evidence for the HRA
+[This section](application/app1) is for providing expert, publication, and experimental data evidence for the HRA.
+- **Statistic**: The total number of publications, citations, experts, Avg. h-index, funded projects, funders, datasets, cells for 31 organ.
+- **Visualization**: Visualizations for these statistics.
+
+### Comparison with different datasets
+This section is for 
 
 
-### Application 1 : Providing Data Evidence for the HRA
-
-
-### Application 2 : Identify HRA Reviewers
-
-
-
-### Application 3 : Identify HRA Reviewers
+### Application 3 : 
 
 
 
