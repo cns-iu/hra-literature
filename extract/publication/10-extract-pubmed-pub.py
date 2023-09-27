@@ -1,13 +1,16 @@
 import pandas as pd
 import psycopg2
 
+config = configparser.ConfigParser()
+config.read('db_config.ini')
+
 # Connect to the PostgreSQL database
 conn = psycopg2.connect(
     dbname="pubmed19",
-    user="your_username",
-    password="your_password",
-    host="your_host",
-    port="your_port"
+    user=config.get('postgresql', 'user'),
+    password=config.get('postgresql', 'password'),
+    host=config.get('postgresql', 'host'),
+    port=config.get('postgresql', 'port')
 )
 
 # Read the list of organs from the CSV

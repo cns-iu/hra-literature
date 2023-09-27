@@ -7,7 +7,7 @@ This repository provides the supporting code and data for "Publication, Funding,
 ## Quick Start
 ### Requirements:
 - **PostgreSQL**: Ensure you have PostgreSQL installed on your system.
-- **psql CLI**: The command-line interface (CLI) application for PostgreSQL should also be installed.
+- **PSQL CLI**: The command-line interface (CLI) application for PostgreSQL should also be installed.
 ### Download dataset
 - **SQL Database**: To access the HRAlit database using SQL, you can use the provided SQL file: [hralit.sql](data/db/hralit.sql)
 - **CSV Tables**: If you prefer to work with CSV files, we've provided individual CSVs for each table in the HRAlit database. You can find them in [data/db/csv](data/db/csv)

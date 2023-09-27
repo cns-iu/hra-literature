@@ -1,1 +1,4 @@
 data/publication/pubmed-pubs.csv filter=lfs diff=lfs merge=lfs -text
+data/funding/additional_funding_meta.csv filter=lfs diff=lfs merge=lfs -text
+data/funding/additional_meta_kaken.csv filter=lfs diff=lfs merge=lfs -text
+data/funding/additional_meta_nih.csv filter=lfs diff=lfs merge=lfs -text
