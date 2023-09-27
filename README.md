@@ -76,8 +76,8 @@ This section is for HRAlit database construction using PostgreSQL.
     - Institutions: Import the metadata of seleted institution sourced from OpenAlex into ```hralit_institution``` table.
     - Publications - Funding: Import the linkage of publications and funding id sourced from PubMed into ```hralit_funding``` table.
     - Publications - Funding - Funder: Link the seleted publications and funding IDs with the funders. Additionally, connect them to the cleaned funders sourced from OpenAlex using the same PMIDs and funding IDs. Then import the results into the ```hralit_pub_funding_funder``` table.
--**Diagram**: Use [```schemaspy```](https://schemaspy.org/) to output diagram of HRAlit database.
--**Export database**: Export HRAlit database in SQL format, and the 23 tables within the HRAlit database in CSV format.
+- **Diagram**: Use [```schemaspy```](https://schemaspy.org/) to output diagram of HRAlit database.
+- **Export database**: Export HRAlit database in SQL format, and the 23 tables within the HRAlit database in CSV format.
 
 ## Credits
 This hralit dataset is developed by the [Cyberinfrastructure for Network Science Center at Indiana University](https://cns.iu.edu/). It is funded by NIH Award OT2OD033756 and OT2OD026671.
