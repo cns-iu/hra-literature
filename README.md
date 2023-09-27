@@ -10,7 +10,7 @@ This repository provides the supporting code and data for "Publication, Funding,
 - **PSQL CLI**: The command-line interface (CLI) application for PostgreSQL should also be installed.
 ### Download dataset
 - **SQL Database**: To access the HRAlit database using SQL, you can use the provided SQL file: [hralit.sql](data/db/hralit.sql)
-- **CSV Tables**: If you prefer to work with CSV files, we've provided individual CSVs for each table in the HRAlit database. You can find them in [data/db/csv](data/db/csv)
+- **CSV Tables**: If you prefer to work with CSV files, we've provided individual CSVs for each table in the HRAlit database. 
 ### Restore the Database from the Dump:
 ```psql -U [your-username] -d [your-database-name] < hralit.sql```
 
@@ -24,14 +24,29 @@ This repository provides the supporting code and data for "Publication, Funding,
 - **Visualization**: Visualizations for these statistics.
 
 ### Comparison with different datasets
-This section is for 
+[This section](application/app2) is for comparing the publications among ASCT+B table, CellMarker, and CZ CELLxGENE.
 
+### Prioritize Atlas Contruction
+[This section](application/app3) is for computing the types of DOs and HRAlit data types per organ to help prioritize HRA construction. 
 
-### Application 3 : 
-
-
+### HRA diversity
+[This section](application/app4) is for analyzing the diversity and inclusiveness of HRA survey, HRA experts, general publication authors, and donor metadata.
+- **Predicting Gender**: uses [gender_guesser](https://pypi.org/project/gender-guesser/) package to determine gender based on the first name.
+- **Predicting Race**: uses [ethnicolr](https://github.com/appeler/ethnicolr) package to determine race based on the first name and last name.
 
 ## Development
+### Extract data
+- [**Experimental data**](extract/experimental-data) : Extract the CellMarker, CZ CELLxGENE, HRA digital objects, HuBMAP data.
+- **Experts**:
+- **Funder**:
+- **Funding**:
+- **Institution**:
+- **Ontology**:
+- **Publication**:
+
+
+### Build database
+
 
 
 ## Credits

@@ -19,4 +19,7 @@ sns.heatmap(correlation_matrix, cmap='RdBu_r', center=0, linewidths=0.5, linecol
 
 # Set the title and display the plot
 plt.title('Lower Triangle Correlation Heatmap (Diverging Color Palette)')
+
+plt.savefig("data/results/app1/fig-1-e.png")
+
 plt.show()

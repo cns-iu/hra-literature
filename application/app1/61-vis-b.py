@@ -24,4 +24,7 @@ sns.heatmap(data_alpha_sorted[['organ', 'avg_cit']].set_index('organ'),
 
 # Set the title and display the plot
 plt.title('Average Citations by Organ (Alphabetically Sorted)')
+
+plt.savefig("data/results/app1/fig-1-b.png")
+
 plt.show()

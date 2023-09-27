@@ -40,5 +40,7 @@ ax.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
 # Adjust the layout to show the x-axis labels fully
 plt.tight_layout()
 
+plt.savefig("data/results/app1/fig-1-c.png")
+
 # Show the plot
 plt.show()

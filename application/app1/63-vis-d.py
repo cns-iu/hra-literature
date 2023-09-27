@@ -30,4 +30,6 @@ plt.legend()
 plt.grid(False)  # Removing the grid lines
 plt.tight_layout()
 
+plt.savefig("data/results/app1/fig-1-d.png")
+
 plt.show()

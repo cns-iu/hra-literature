@@ -37,5 +37,6 @@ bubble = sns.scatterplot(data=data_long, y='organ', x='funder', size='funding_pr
 # Remove grid lines
 bubble.grid(False)
 
+plt.savefig("data/results/app1/fig-1-a.png")
 
 plt.show()
