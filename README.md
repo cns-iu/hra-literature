@@ -1,4 +1,12 @@
-# HRA Literature
+# Publication, Funding, and Experimental Data in Support of Human Reference Atlas Construction and Usage
+Yongxin Kong<sup>1,2, * </sup> and Katy Börner <sup>1,* </sup>
+
+<sup>* </sup>Joint corresponding authors
+
+<sup>1 </sup>Indiana University;   <sup>2 </sup>Sun Yat-sen University
+
+---
+
 Experts from 18 consortia are collaborating on the Human Reference Atlas (HRA) which aims to map the 37 trillion cells in the healthy human body. Information relevant for HRA construction and usage is held by experts (clinicians, pathologists, anatomists, single-cell experts), published in scholarly papers, and captured in experimental data. However, these data sources use different metadata schemes and cannot be cross-searched efficiently. This paper documents the compilation of a dataset, called HRAlit, that links 295 HRA digital objects (31 organs with 2,689 anatomical structures, 590 cell types, 1,770 biomarkers) to 583,117 experts; 7,103,180 publications; 896,680 funded projects, and 1,816 experimental datasets. The resulting HRAlit represents 21,704,001 records as a network with 8,694,233 nodes and 14,096,735 links. We demonstrate how HRAlit can be mined to identify leading experts, major papers, funding trends, or alignment with existing ontologies in support of systematic HRA construction and usage.
 
 ## Introduction
