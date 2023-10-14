@@ -4,7 +4,7 @@ Welcome to the HRA Literature GitHub repository. This repository contains the su
 ## Introduction
 This repository provides the supporting code and data for "Publication, Funding, and Experimental Data in Support of Human Reference Atlas Construction and Usage" paper, detailing the assembly of the HRAlit dataset — a comprehensive compilation linking HRA data to various entities like experts, publications, and ontologies. Our aim is to facilitate a deeper exploration of HRA trends, from identifying leading experts and major publications to understanding funding patterns and alignment with existing ontologies.
 
-## Quick Starthttps://github.com/cns-iu/hra-literature/blob/main/README.md
+## Quick Start
 ### Requirements:
 - **PostgreSQL**: Ensure you have PostgreSQL installed on your system.
 - **PSQL CLI**: The command-line interface (CLI) application for PostgreSQL should also be installed.
