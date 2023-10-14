@@ -6,8 +6,10 @@ This repository provides the supporting code and data for "Publication, Funding,
 
 The repo is structured in the following way:
 ```
+├── extract
+├── database
+├── application
 ├── data
-
 ```
 
 ## Quick Start
