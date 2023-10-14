@@ -4,7 +4,7 @@ Welcome to the HRA Literature GitHub repository. This repository contains the su
 ## Introduction
 This repository provides the supporting code and data for "Publication, Funding, and Experimental Data in Support of Human Reference Atlas Construction and Usage" paper, detailing the assembly of the HRAlit dataset — a comprehensive compilation linking HRA data to various entities like experts, publications, and ontologies. Our aim is to facilitate a deeper exploration of HRA trends, from identifying leading experts and major publications to understanding funding patterns and alignment with existing ontologies.
 
-## Quick Start
+## Quick Starthttps://github.com/cns-iu/hra-literature/blob/main/README.md
 ### Requirements:
 - **PostgreSQL**: Ensure you have PostgreSQL installed on your system.
 - **PSQL CLI**: The command-line interface (CLI) application for PostgreSQL should also be installed.
@@ -13,6 +13,10 @@ This repository provides the supporting code and data for "Publication, Funding,
 - **CSV Tables**: If you prefer to work with CSV files, we've provided individual CSVs for each table in the HRAlit database. 
 ### Restore the Database from the Dump:
 ```psql -U [your-username] -d [your-database-name] < hralit.sql```
+### Entity Relationship Diagram （ERD）
+[The Entity Relationship Diagram of HRAlit database](https://dbdiagram.io/d/HRAlit-database-652a4fe1ffbf5169f0abf1a2) is avaiable.
+
+![img](https://github.com/cns-iu/hra-literature/blob/main/data/db/Entity%20Relationship%20Diagram.png?raw=true)
 
 ## Running Reports
 ### Summary statistics
