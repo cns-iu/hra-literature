@@ -94,7 +94,7 @@ for annotation, query in queries:
     cursor.close()
 
 # Convert results to DataFrame
-df = pd.DataFrame(results, columns=['Annotation', 'Result'])
+df = pd.DataFrame(results, columns=['Relationships', '#Linkages'])
 
 # Save to CSV
 df.to_csv('data/results/app0/linkage-ct.csv', index=False)
