@@ -54,6 +54,9 @@ The repo is structured in the following way:
 - **Predicting Gender**: uses [gender_guesser](https://pypi.org/project/gender-guesser/) package to determine gender based on the first name.
 - **Predicting Race**: uses [ethnicolr](https://github.com/appeler/ethnicolr) package to determine race based on the first name and last name.
 
+## Supplementary information
+- [**Mapping for HuBMAP, CxG, and GTEx data**](data/experimental/dataset_mapping.csv): a mapping table that correlates identifiers across HuBMAP, CZ CELLxGENE, and GTEx.
+
 ## Development
 ### Extract data
 This section is for extracting data in different types sourced from different datasets.
