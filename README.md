@@ -58,7 +58,7 @@ The repo is structured in the following way:
 - [**Mapping for HuBMAP, CxG, and GTEx data**](data/experimental/dataset_mapping.csv): a mapping table that correlates identifiers across HuBMAP, CZ CELLxGENE, and GTEx.
 - [**Additional funding metadata**](data/funding/merged_metadata.7z): provides metadata related to six additional funded projects, including ARDC, CIHR, EC, KAKEN, NIH, and NSF.
 - **HRA diversity survey**: includes [HRA Diversity Survey](data/results/app6/survey/HRA_Diversity_Survey.pdf), [the report of its results](data/results/app6/survey/HRA_Diversity_Results.pdf), and [the results in CSV format](data/results/app6/survey/HRA_survey.csv).
-- **HRA expert diversity**: provides details on [the gender and career age of HRA creators and reviewers](), as well as [statistics on race](data/results/app6/expert-race.csv).
+- **HRA expert diversity**: provides details on [the gender and career age of HRA creators and reviewers](data/expert/experts_meta.csv), as well as [statistics on race](data/results/app6/expert-race.csv).
 
 ## Development
 ### Extract data
