@@ -56,6 +56,7 @@ The repo is structured in the following way:
 
 ## Supplementary information
 - [**Mapping for HuBMAP, CxG, and GTEx data**](data/experimental/dataset_mapping.csv): a mapping table that correlates identifiers across HuBMAP, CZ CELLxGENE, and GTEx.
+- [**Additional funding metadata**](data/funding/merged_metadata.7z): provides metadata related to six additional funded projects, including ARDC, CIHR, EC, KAKEN, NIH, and NSF.
 
 ## Development
 ### Extract data
