@@ -59,7 +59,8 @@ The repo is structured in the following way:
 - [**Additional funding metadata**](data/funding/merged_metadata.7z): provides metadata related to six additional funded projects, including ARDC, CIHR, EC, KAKEN, NIH, and NSF.
 - **HRA diversity survey**: includes [HRA Diversity Survey](data/results/app6/survey/HRA_Diversity_Survey.pdf), [the report of its results](data/results/app6/survey/HRA_Diversity_Results.pdf), and [the results in CSV format](data/results/app6/survey/HRA_survey.csv).
 - **HRA expert diversity**: provides details on [the gender and career age of HRA creators and reviewers](data/expert/experts_meta.csv), as well as [statistics on race](data/results/app6/expert-race.csv).
-
+- **Data dictionary of HRAlit database**: provides details on the [data description](data/results/app0/data-dictionary.xlsx) for each table in the HRAlit database, as well as statistics on the number of [rows](data/results/app0/row-ct.csv), [nodes](data/results/app0/node-ct.csv), and [linkages of relationships](data/results/app0/linkage-ct.csv).
+  
 ## Development
 ### Extract data
 This section is for extracting data in different types sourced from different datasets.
