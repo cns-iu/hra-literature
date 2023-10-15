@@ -75,7 +75,7 @@ Code for extracting data in different types sourced from different datasets.
     - AS, CT, B: Extract the id, rdfs_label, and name.
     - Linkages: Tag ```part_of ``` for ASs, ```located_in``` for ASs and CTs, ```is_a``` for CTs, ```characterizes``` for CTs and Bs.
 - [**Publication**](extract/publication): Extract the HRA references and PubMed publications associated with [31 organs in 5th release HRA](data/experimental/organ.csv), and calculated citation using WoS data.
-    - HRA references: Extract the general references and specific references in 5th release ASCT+B tables through [CCF-ASCTB-ALL data](data/ontology/ccf-asctb-all.json).
+    - HRA references: Extract the general references and specific references in 5th release ASCT+B Tables through [CCF-ASCTB-ALL data](data/ontology/ccf-asctb-all.json).
     - PubMed: Retrieve the PubMed publications where the titles or MeSH terms contain any of the 31 organ names. 
     - Web of Science: Using WoS data linked by WoS IDs to PMIDs, count publication citations, which refers to the number of papers citing a publication.
 - [**Experts**](extract/experts):  From PubMed data, extract the authors associated with the selected PubMed publications. Additionally, extract the HRA experts across all versions, including creators and reviewers.
@@ -98,7 +98,7 @@ Construct the HRAlit database in PostgreSQL via the following steps:
 - **Create tables**: Create 23 tables for HRAlit database.
 - **Load data**: Load data into 23 tables from the output of the ```extract``` section.
     - Experimental data: Load experimental data and ontology from the output of the section to HRAlit database.
-    - Publication data: Select publication data associated with 31 organs, references associated with ASCT+B tables, publications associated with CellMarker, GTEx, or CellMarker, and then add them to ```hrait_publication``` table.
+    - Publication data: Select publication data associated with 31 organs, references associated with ASCT+B Tables, publications associated with CellMarker, GTEx, or CellMarker, and then add them to ```hrait_publication``` table.
     - Publication - Authors: Import the linkages between selected publications and authors to ```hralit_publication_author``` table.
     - Authors: Import the metadata of selected authors to ```hralit_author``` table, as well as the HRA experts.
     - Authors - Institutions: Link the selected authors with institution data in OpenAlex, and import into ```hralit_author_institution``` table.
