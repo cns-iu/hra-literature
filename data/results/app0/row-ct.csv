@@ -1,0 +1,25 @@
+Table,Rows,Columns
+hralit_anatomical_structures,4383 ,3 
+hralit_asctb_publication,1288 ,5 
+hralit_asctb_linkage,20146 ,9 
+hralit_author,583117 ,6 
+hralit_author_expertise,768178 ,2 
+hralit_author_institution,464043 ,2 
+hralit_biomarkers,3234 ,4 
+hralit_cell_types,1422 ,3 
+hralit_creator,550 ,9 
+hralit_dataset,7337 ,52 
+hralit_digital_objects,295 ,8 
+hralit_donor,4639 ,24 
+hralit_funder_cleaned,6427 ,3 
+hralit_funding,917061 ,2 
+hralit_institution,26235 ,5 
+hralit_organ,31 ,1 
+hralit_other_refs,1823 ,3 
+hralit_pub_funding_funder,2632888 ,6 
+hralit_publication,7103369 ,5 
+hralit_publication_author,1079698 ,2 
+hralit_publication_subject,7898258 ,2 
+hralit_reviewer,602 ,9 
+hralit_triple,178977 ,7 
+Total,21704001 ,172 
