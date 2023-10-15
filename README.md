@@ -60,6 +60,7 @@ The repo is structured in the following way:
 - **HRA diversity survey**: includes [HRA Diversity Survey](data/results/app6/survey/HRA_Diversity_Survey.pdf), [the report of its results](data/results/app6/survey/HRA_Diversity_Results.pdf), and [the results in CSV format](data/results/app6/survey/HRA_survey.csv).
 - **HRA expert diversity**: provides details on [the gender and career age of HRA creators and reviewers](data/expert/experts_meta.csv), as well as [statistics on race](data/results/app6/expert-race.csv).
 - **Data dictionary of HRAlit database**: provides details on the [data description](data/results/app0/data-dictionary.xlsx) for each table in the HRAlit database, as well as statistics on the number of [rows](data/results/app0/row-ct.csv), [nodes](data/results/app0/node-ct.csv), and [linkages of relationships](data/results/app0/linkage-ct.csv).
+- **Expert, Literature, and Experimental Data Evidence for HRA**: provides details on 31 organs, including an [overview](data/results/app1/merged_output.csv), [average citations](data/results/app1/avg-citation.csv), [funding amounts from six additional funders](data/results/app1), [trends in publications over the years](data/results/app1/pub-trend.csv), and [relationships](data/results/app1/relationship.csv).
   
 ## Development
 ### Extract data
