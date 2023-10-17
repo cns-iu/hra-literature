@@ -36,21 +36,21 @@ The repo is structured in the following way:
 
 ## Running Reports
 ### Summary statistics
-[This section](application/app0) generates summary statistics of the HRAlit database, including linkage counts, node counts, and publication comparison for ASCT+B Tables, CellMarker, and CZ CELLxGENE datasets.
+[Code in this direcory](application/app0) generates summary statistics of the HRAlit database, including linkage counts, node counts, and publication comparison for ASCT+B Tables, CellMarker, and CZ CELLxGENE datasets.
 
 ### Providing Data Evidence for the HRA
-[This section](application/app1) is for providing expert, publication, and experimental data evidence for the HRA.
+[Code in this direcory](application/app1) is run to provide expert, publication, and experimental data evidence for the HRA.
 - **Statistics**: The total number of publications, citations, experts, average _h_-index, funded projects, funders, datasets, and cells for 31 organs.
 - **Visualization**: Visualizations of these statistics.
 
 ### Comparison with different datasets
-[This section](application/app2) is for comparing the publications reported in ASCT+B Tables, CellMarker, and CZ CELLxGENE datasets.
+[Code in this direcory](application/app2) is run for comparing the publications reported in ASCT+B Tables, CellMarker, and CZ CELLxGENE datasets.
 
 ### Prioritize Atlas Construction
-[This section](application/app3) is for computing the types of DOs and HRAlit data types per organ to help prioritize HRA construction.
+[Code in this direcory](application/app3) is run for computing the types of DOs and HRAlit data types per organ to help prioritize HRA construction.
 
 ### HRA diversity
-[This section](application/app4) has code for analyzing the diversity and inclusiveness of HRA survey, HRA experts, general publication authors, and donor metadata.
+[Code in this direcory](application/app4) has code for analyzing the diversity and inclusiveness of HRA survey, HRA experts, general publication authors, and donor metadata.
 - **Predicting Gender**: Uses [gender_guesser](https://pypi.org/project/gender-guesser/) package to determine gender based on the first name.
 - **Predicting Race**: Uses [ethnicolr](https://github.com/appeler/ethnicolr) package to determine race based on the first name and last name.
 
@@ -105,8 +105,8 @@ Construct the HRAlit database in PostgreSQL via the following steps:
     - Institutions: Import the metadata of selected institutions sourced from OpenAlex into ```hralit_institution``` table.
     - Publications - Funding: Import the linkage of publications and funding id sourced from PubMed into ```hralit_funding``` table.
     - Publications - Funding - Funder: Link the selected publications and funding IDs with the funders. Additionally, connect them to the cleaned funders sourced from OpenAlex using the same PMIDs and funding IDs. Then import the results into the ```hralit_pub_funding_funder``` table.
-- **Diagram**: Use [```schemaspy```](https://schemaspy.org/) to output diagram of HRAlit database.
+- **Diagram**: Use [```schemaspy```](https://schemaspy.org/) to output a diagram of the HRAlit database.
 - **Export database**: Export HRAlit database in SQL format, and the 23 tables within the HRAlit database in CSV format.
 
 ## Credits
-This hralit dataset is developed by the [Cyberinfrastructure for Network Science Center at Indiana University](https://cns.iu.edu/). This research has been funded by the China Scholar Council [YK] and the NIH Common Fund through the Office of Strategic Coordination/Office of the NIH Director under awards OT2OD033756 and OT2OD026671, by the Cellular Senescence Network (SenNet) Consortium through the Consortium Organization and Data Coordinating Center (CODCC) under award number U24CA268108, by the Kidney Precision Medicine Project grant U2CDK114886, by the NIDDK under awards U24DK135157 and U01DK133090 and by The Multiscale Human CIFAR project [KB]. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. 
+This HRAlit dataset is developed by the [Cyberinfrastructure for Network Science Center at Indiana University](https://cns.iu.edu/). This research has been funded by the China Scholar Council [YK] and the NIH Common Fund through the Office of Strategic Coordination/Office of the NIH Director under awards OT2OD033756 and OT2OD026671, by the Cellular Senescence Network (SenNet) Consortium through the Consortium Organization and Data Coordinating Center (CODCC) under award number U24CA268108, by the Kidney Precision Medicine Project grant U2CDK114886, by the NIDDK under awards U24DK135157 and U01DK133090 and by The Multiscale Human CIFAR project [KB]. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. 
