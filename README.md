@@ -22,8 +22,11 @@ The repo is structured in the following way:
 
 ## Quick Start
 ### Requirements:
+- **Linux System**: Or ensure you have WSL or WSL2 installed on your Windows machine.
+- **Python3**: Install Python3 ```sudo apt install python3 python3-pip```
 - **PostgreSQL**: Ensure you have at least PostgreSQL version 9.6 installed on your system.
 - **PSQL CLI**: The corresponding command-line interface (CLI) application for PostgreSQL should also be installed.
+- **Libraries**: Use ```requirements.txt``` to install the required libraries using the command: ```pip install -r requirements.txt```
 ### Download dataset
 - **SQL Database**: To access the HRAlit database using SQL, you can use the provided SQL file: [hralit.sql](data/db/hralit.sql)
 - **CSV Tables**: If you prefer to work with CSV files, we've provided individual CSVs for each table in the HRAlit database. 
