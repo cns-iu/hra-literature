@@ -32,7 +32,7 @@ The repo is structured in the following way:
 - **CSV Tables**: If you prefer to work with CSV files, we've provided individual CSVs for each table in the HRAlit database. 
 ### Restore the Database from the Dump:
 ```psql -U [your-username] -d [your-database-name] < hralit.sql```
-### Entity Relationship Diagram （ERD）
+### Entity Relationship Diagram（ERD）
 [The Entity Relationship Diagram of HRAlit database](https://dbdiagram.io/d/HRAlit-database-652a4fe1ffbf5169f0abf1a2) is available.
 
 ![img](https://github.com/cns-iu/hra-literature/blob/main/data/db/Entity%20Relationship%20Diagram.png?raw=true)
