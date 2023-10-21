@@ -90,4 +90,4 @@ average_row = pd.DataFrame({
 final_race_data = pd.concat([race_counts, average_row], ignore_index=True)
 
 # Save race result to CSV
-final_race_data.to_csv('data/results/app6/author-race.csv', index=False)
+final_race_data.to_csv('data/results/app4/author-race.csv', index=False)
