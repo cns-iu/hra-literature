@@ -3,7 +3,7 @@
 \pset fieldsep ','
 \pset format csv
 \pset tuples_only off
-\o /mnt/c/users/yokong/documents/com.csv
+\o /data/results/app2/com.csv
 
 with cellmarker_doi as (
     select pmid,doi from pmid_doi where pmid in (select pmid from cellmarker where pmid is not null) and pmid is not null
