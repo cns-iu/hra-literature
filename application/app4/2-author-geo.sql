@@ -3,7 +3,7 @@
 \pset fieldsep ','
 \pset format csv
 \pset tuples_only off
-\o data/results/app6/author-geo-ct.csv
+\o data/results/app4/author-geo-ct.csv
 
 -- with cte as (select a.orcid,b.country_code
 -- from hralit_author_institution a
