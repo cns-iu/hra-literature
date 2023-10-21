@@ -3,7 +3,7 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 
 # Load the author data from CSV
-author_geo_df = pd.read_csv('data/results/app6/author-geo-ct.csv')
+author_geo_df = pd.read_csv('data/results/app4/author-geo-ct.csv')
 
 # Load the GeoJSON file containing country shapes
 countries_gdf = gpd.read_file('data/vis/countries.geojson')
@@ -21,5 +21,5 @@ ax.set_title('Number of Authors by Country')
 plt.show()
 
 # Save the figure
-fig_path_svg = "data/results/app6/authors_by_country_map.svg"
+fig_path_svg = "data/results/app4/authors_by_country_map.svg"
 fig.savefig(fig_path_svg, bbox_inches="tight", format="svg")
