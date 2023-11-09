@@ -16,7 +16,7 @@ The repo is structured in the following way:
 ```
 ├── extract
 ├── database
-├── application
+├── validation
 ├── data
 ```
 
@@ -36,26 +36,6 @@ The repo is structured in the following way:
 [The Entity Relationship Diagram of HRAlit database](https://dbdiagram.io/d/HRAlit-database-652a4fe1ffbf5169f0abf1a2) is available.
 
 ![img](https://github.com/cns-iu/hra-literature/blob/main/data/db/Entity%20Relationship%20Diagram.png?raw=true)
-
-## Running Reports
-### Summary statistics
-[Code in this direcory](application/app0) generates summary statistics of the HRAlit database, including linkage counts, node counts, and publication comparison for ASCT+B Tables, CellMarker, and CZ CELLxGENE datasets.
-
-### Providing Data Evidence for the HRA
-[Code in this direcory](application/app1) is run to provide expert, publication, and experimental data evidence for the HRA.
-- **Statistics**: The total number of publications, citations, experts, average _h_-index, funded projects, funders, datasets, and cells for 31 organs.
-- **Visualization**: Visualizations of these statistics.
-
-### Comparison with different datasets
-[Code in this direcory](application/app2) is run for comparing the publications reported in ASCT+B Tables, CellMarker, and CZ CELLxGENE datasets.
-
-### Prioritize Atlas Construction
-[Code in this direcory](application/app3) is run for computing the types of DOs and HRAlit data types per organ to help prioritize HRA construction.
-
-### HRA diversity
-[Code in this direcory](application/app4) has code for analyzing the diversity and inclusiveness of HRA survey, HRA experts, general publication authors, and donor metadata.
-- **Predicting Gender**: Uses [gender_guesser](https://pypi.org/project/gender-guesser/) package to determine gender based on the first name.
-- **Predicting Race**: Uses [ethnicolr](https://github.com/appeler/ethnicolr) package to determine race based on the first name and last name.
 
 ## Supplementary information
 - [**Mapping for HuBMAP, CxG, and GTEx data**](data/experimental/dataset_mapping.csv): A mapping table that correlates identifiers across HuBMAP, CZ CELLxGENE, and GTEx.
@@ -84,14 +64,7 @@ Code for extracting data in different types sourced from different datasets.
 - [**Experts**](extract/experts):  From PubMed data, extract the authors associated with the selected PubMed publications. Additionally, extract the HRA experts across all versions, including creators and reviewers.
     - HRA experts: Extract the creators and reviewers from [HRA metadata across five versions](data/hra-v1.4-metadata.json), including ORCIDs, author names, associated digital objects. 
     - Authors: Extract the authors with ORCIDs associated with the selected publications, and query the information for authors. Then calculate authors' _h_-indexes based on the citation data from WoS data.
-- [**Funding**](extract/funding): From PubMed data, extract the funding data associated with the selected PubMed publications (in database section). Additionally, extract additional funded project data sourced from six agencies, including Australian Research Data Commons (ARDC), the Canadian Institutes of Health Research (CIHR), European Commission (EC), Grants-in-Aid for Scientific Research (KAKEN), National Institutes of Health (NIH), and National Science Foundation (NSF).
-    - ARDC: Extract funding data using the [ARDC API](https://archive-intranet.ardc.edu.au/display/DOC/Research+Activities+API) by using the 31 organ names as search keywords.
-    - CIHR: Extract funding data from [CIHR portal](https://open.canada.ca/data/dataset/) from year 2000 to 2021. 
-    - EC: Extract funding data from [CIHR portal](https://open.canada.ca/data/dataset/) under the Framework (from FP1 to FP7, h2000, horizon) Programme of the European Union.
-    - KAKEN: Extract funding data using the [KAKEN API](https://support.nii.ac.jp/en/kaken/api/api_outline) by using the 31 organ names as search keywords.
-    - NIH: Extract funding data using the [NIH API](https://api.reporter.nih.gov/) by searching fiscal_years from 1985 to 2023.
-    - NSF: Extract funding data using the [NSF API](https://resources.research.gov/common/webapi/awardapisearch-v1.htm) by using the 31 organ names as search keywords.
-    - Merge: Extract the data schema of each dataset, and mapping by [manual mapping table](data/funding/mapping_table.csv), extract the additional funding metadata.
+- [**Funding**](extract/funding): From PubMed data, extract the funding data associated with the selected PubMed publications (in database section). 
 - [**Funder**](extract/funder): Extract the funder metadata and the linkage among publications, funded projects, and funders from [OpenAlex](https://docs.openalex.org/api-entities/funders).
 - [**Institution**](extract/institutions): Extract the institution metadata and the linkage among authors and institutions from [OpenAlex](https://docs.openalex.org/api-entities/institutions).
 
