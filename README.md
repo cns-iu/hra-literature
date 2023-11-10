@@ -31,24 +31,31 @@ The repo is structured in the following way:
 - **SQL Database**: To access the HRAlit database using SQL, you can use the provided SQL file: hralit.sql
 - **CSV Tables**: If you prefer to work with CSV files, we've provided individual CSVs for each table in the HRAlit database. 
 ### Restore the Database from the Dump:
-```psql -U [your-username] -d [your-database-name] < hralit.sql```
+- First, ensure that PostgreSQL is installed on your machine.
+- Download the ```hralit.sql``` file to your local system.
+- Open the terminal or command line interface.
+- Use the following command to import the database:
+
+  ```psql -U [your-username] -d [your-database-name] < /path/to/hralit.sql```
+
+  Replace [your-username] with your PostgreSQL username and [your-database-name] with the name of the database you want to import the data into. Make sure to replace /path/to/hralit.sql with the actual path to the hralit.sql file on your local system.
+- Note that if your PostgreSQL setup requires a password, you may be prompted to enter it.
+
 ### Entity Relationship Diagram（ERD）
 [The Entity Relationship Diagram of HRAlit database](https://dbdiagram.io/d/HRAlit-database-652a4fe1ffbf5169f0abf1a2) is available.
 
 ![img](https://github.com/cns-iu/hra-literature/blob/main/data/db/Entity%20Relationship%20Diagram.png?raw=true)
 
 ## Supplementary information
-- [**Mapping for HuBMAP, CxG, and GTEx data**](data/experimental/dataset_mapping.csv): A mapping table that correlates identifiers across HuBMAP, CZ CELLxGENE, and GTEx.
 - **Data dictionary of HRAlit database**: Provides details on the [data description](data/results/app0/data-dictionary.xlsx) for each table in the HRAlit database, as well as statistics on the number of [rows](data/results/app0/row-ct.csv), [nodes](data/results/app0/node-ct.csv), and [linkages of relationships](data/results/app0/linkage-ct.csv).
 
   
 ## Development
 ### Extract data
 Code for extracting data in different types sourced from different datasets.
-- [**Experimental data**](extract/experimental-data): Extract the CellMarker, CZ CELLxGENE, HRA digital objects, HuBMAP data. Merge data from these four sources, and output the dataset metadata and donor metadata.
-    - CellMarker: Human cell markers via [CellMarker](http://xteam.xbio.top/CellMarker/index.jsp) portal. 
+- [**Experimental data**](extract/experimental-data): Extract the CellMarker, CZ CELLxGENE, HRA digital objects, HuBMAP data. Merge data from these HuBMAP, CZ CELLxGENE, and GTEx through a mapping table [```dataset_mapping.csv```](data/experimental/dataset_mapping.csv) that correlates identifiers across these sources, and output the dataset metadata and donor metadata.
+    - HRA: Digital objects are selected from [HRA metadata across five versions](data/hra-v1.4-metadata.json).- CellMarker: Human cell markers via [CellMarker](http://xteam.xbio.top/CellMarker/index.jsp) portal. 
     - CZ CELLxGENE: Datasets for healthy human adults are extracted via [CELLxGENE Census](https://chanzuckerberg.github.io/cellxgene-census/index.html) API, including datasets and donors.
-    - HRA: Digital objects are selected from [HRA metadata across five versions](data/hra-v1.4-metadata.json).
     - HuBMAP: Datasets and donors are extracted via [Smart API](https://smart-api.info/ui/0065e419668f3336a40d1f5ab89c6ba3). 
 - [**Ontology**](extract/ontology): Extract the ontology terms in 5th release ASCT+B Tables through [CCF-ASCTB-ALL data](data/ontology/ccf-asctb-all.json), including anatomical structures (AS), cell types (CT), biomarkers (B), and their linkages.
     - AS, CT, B: Extract the id, rdfs_label, and name.
@@ -56,11 +63,11 @@ Code for extracting data in different types sourced from different datasets.
 - [**Publication**](extract/publication): Extract the HRA references and PubMed publications associated with [31 organs in 5th release HRA](data/experimental/organ.csv), and calculated citation using WoS data.
     - HRA references: Extract the general references and specific references in 5th release ASCT+B Tables through [CCF-ASCTB-ALL data](data/ontology/ccf-asctb-all.json).
     - PubMed: Retrieve the PubMed publications where the titles or MeSH terms contain any of the 31 organ names. 
-    - Web of Science: Using WoS data linked by WoS IDs to PMIDs, count publication citations, which refers to the number of papers citing a publication.
+    - Web of Science: Using WoS data linked by WoS IDs to PMIDs, for technical validation.
 - [**Experts**](extract/experts):  From PubMed data, extract the authors associated with the selected PubMed publications. Additionally, extract the HRA experts across all versions, including creators and reviewers.
     - HRA experts: Extract the creators and reviewers from [HRA metadata across five versions](data/hra-v1.4-metadata.json), including ORCIDs, author names, associated digital objects. 
-    - Authors: Extract the authors with ORCIDs associated with the selected publications, and query the information for authors. Then calculate authors' _h_-indexes based on the citation data from WoS data.
-- [**Funding**](extract/funding): From PubMed data, extract the funding data associated with the selected PubMed publications (in database section). 
+    - Authors: Extract the authors with ORCIDs associated with the selected publications, and query the information for authors. 
+- [**Funding**](extract/funding): From PubMed data, extract the funding data associated with the selected PubMed publications. 
 - [**Funder**](extract/funder): Extract the funder metadata and the linkage among publications, funded projects, and funders from [OpenAlex](https://docs.openalex.org/api-entities/funders).
 - [**Institution**](extract/institutions): Extract the institution metadata and the linkage among authors and institutions from [OpenAlex](https://docs.openalex.org/api-entities/institutions).
 
@@ -69,14 +76,33 @@ Code for extracting data in different types sourced from different datasets.
 Construct the HRAlit database in PostgreSQL via the following steps:
 - **Create tables**: Create 23 tables for HRAlit database.
 - **Load data**: Load data into 23 tables from the output of the ```extract``` section.
-    - Experimental data: Load experimental data and ontology from the output of the section to HRAlit database.
-    - Publication data: Select publication data associated with 31 organs, references associated with ASCT+B Tables, publications associated with CellMarker, GTEx, or CellMarker, and then add them to ```hrait_publication``` table.
-    - Publication - Authors: Import the linkages between selected publications and authors to ```hralit_publication_author``` table.
-    - Authors: Import the metadata of selected authors to ```hralit_author``` table, as well as the HRA experts.
+    - HRA data:
+      - Import digital objects from HRA across 5 versions to ```hralit_digital_objects``` table
+      - Import organs listed in HRA v1.4 to ```hralit_organ``` table
+      - Import creators information listed in HRA across 5 versions to ```hralit_creator``` table
+      - Import reviewers information listed in HRA across 5 versions to ```hralit_creator``` table
+      - Import anatomical structures listed in HRA v1.4 to ```hralit_anatomical_structures``` table
+      - Import cell types listed in HRA v1.4 to ```hralit_cell_types``` table
+      - Import biomarkers listed in HRA v1.4 to ```hralit_biomarkers``` table
+      - Import linkages among anatomical structures, cell types, and biomarkers listed in HRA v1.4 to ```hralit_triple``` table
+      - Import specific relationships within the ASCT+B tables in 5th release to ```hralit_asctb_linkage``` table
+      - Import general and specific references from ASCT+B Tables in 5th release to ```hralit_asctb_publication``` table
+    - Experimental data:
+      - Load donor metadata to ```hralit_donor``` table
+      - Load dataset metadata to ```hralit_dataset``` table
+    - Publication data:
+      - Import publications in experimental datasets or CellMarker to ```hralit_other_publication``` table
+      - Select publication data associated with 31 organs, and store the linkage between PMIDs and organs to ```hralit_publication_subject``` table
+      - Select publication data associated with 31 organs(recorded in "hralit_publication_subject" table), references associated with ASCT+B Tables (recorded in "hralit_asctb_publication" table), publications associated with CellMarker, GTEx, or CellMarker (recorded in "hralit_other_publication" table), and then add them to ```hrait_publication``` table.
+    - Publication - Authors: Import the linkages between publications in "hralit_publication" table and associated authors to ```hralit_publication_author``` table.
+    - Authors:
+      - Query the linkage between ORCIDs and organs to ```hralit_author_expertise``` table by joing "hralit_publication_subject" table and "hralit_publication_author" table.
+      - Import the metadata of selected authors to ```hralit_author``` table, as well as the HRA experts.
     - Authors - Institutions: Link the selected authors with institution data in OpenAlex, and import into ```hralit_author_institution``` table.
     - Institutions: Import the metadata of selected institutions sourced from OpenAlex into ```hralit_institution``` table.
     - Publications - Funding: Import the linkage of publications and funding id sourced from PubMed into ```hralit_funding``` table.
     - Publications - Funding - Funder: Link the selected publications and funding IDs with the funders. Additionally, connect them to the cleaned funders sourced from OpenAlex using the same PMIDs and funding IDs. Then import the results into the ```hralit_pub_funding_funder``` table.
+    - Funders: Select the cleaned funder metadata from OpenAlex to ```hralit_funder_cleaned``` table by matching the funder ID in the "hralit_pub_funding_funder" table.
 - **Diagram**: Use [```schemaspy```](https://schemaspy.org/) to output a diagram of the HRAlit database.
 - **Export database**: Export HRAlit database in SQL format, and the 23 tables within the HRAlit database in CSV format.
 
