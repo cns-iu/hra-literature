@@ -3,7 +3,7 @@
 \pset fieldsep ','
 \pset format csv
 \pset tuples_only off
-\o data/results/app1/pub-trend.csv
+\o data/validation/pub-trend.csv
 
 with a as (
     select pubyear,count(distinct(pmid)) as pubmed_pubs
