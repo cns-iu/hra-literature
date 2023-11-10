@@ -35,7 +35,7 @@ The repo is structured in the following way:
 ### Entity Relationship Diagram（ERD）
 [The Entity Relationship Diagram of HRAlit database](https://dbdiagram.io/d/HRAlit-database-652a4fe1ffbf5169f0abf1a2) is available.
 
-![img](https://github.com/cns-iu/hra-literature/main/data/db/Entity%20Relationship%20Diagram.png?raw=true)
+![img](https://github.com/cns-iu/hra-literature/blob/main/data/db/Entity%20Relationship%20Diagram.png?raw=true)
 
 ## Supplementary information
 - [**Mapping for HuBMAP, CxG, and GTEx data**](data/experimental/dataset_mapping.csv): A mapping table that correlates identifiers across HuBMAP, CZ CELLxGENE, and GTEx.
