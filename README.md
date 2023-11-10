@@ -53,14 +53,21 @@ The repo is structured in the following way:
 ## Development
 ### Extract data
 Code for extracting data in different types sourced from different datasets.
-- [**Experimental data**](extract/experimental-data): Extract the CellMarker, CZ CELLxGENE, HRA digital objects, HuBMAP data. Merge data from these HuBMAP, CZ CELLxGENE, and GTEx through a mapping table [```dataset_mapping.csv```](data/experimental/dataset_mapping.csv) that correlates identifiers across these sources, and output the dataset metadata and donor metadata.
-    - HRA: Digital objects are selected from [HRA metadata across five versions](data/hra-v1.4-metadata.json).- CellMarker: Human cell markers via [CellMarker](http://xteam.xbio.top/CellMarker/index.jsp) portal. 
+- [**HRA**]: Extract the HRA data.
+  -  Digital objects: Selected from [HRA metadata across five versions](data/hra-v1.4-metadata.json).
+  -  Organs: Organize the [31 organs in 5th release HRA](data/experimental/organ.csv).
+  -  Anatomical, Cell, and Biomarker: Select AS, CT, and B in 5th HRA (see ontology section), as well as their relationships.
+  -  HRA creators and reviewers across five versions (see experts section).
+  -  HRA references and reviewers across five versions (see publication section).
+- CellMarker: Human cell markers via [CellMarker](http://xteam.xbio.top/CellMarker/index.jsp) portal. 
+- [**Experimental data**](extract/experimental-data): Extract the CellMarker, CZ CELLxGENE, HuBMAP data. Merge data through a mapping table [```dataset_mapping.csv```](data/experimental/dataset_mapping.csv) that correlates identifiers across these sources, and output the dataset metadata and donor metadata.
     - CZ CELLxGENE: Datasets for healthy human adults are extracted via [CELLxGENE Census](https://chanzuckerberg.github.io/cellxgene-census/index.html) API, including datasets and donors.
     - HuBMAP: Datasets and donors are extracted via [Smart API](https://smart-api.info/ui/0065e419668f3336a40d1f5ab89c6ba3). 
 - [**Ontology**](extract/ontology): Extract the ontology terms in 5th release ASCT+B Tables through [CCF-ASCTB-ALL data](data/ontology/ccf-asctb-all.json), including anatomical structures (AS), cell types (CT), biomarkers (B), and their linkages.
     - AS, CT, B: Extract the id, rdfs_label, and name.
     - Linkages: Tag ```part_of ``` for ASs, ```located_in``` for ASs and CTs, ```is_a``` for CTs, ```characterizes``` for CTs and Bs.
-- [**Publication**](extract/publication): Extract the HRA references and PubMed publications associated with [31 organs in 5th release HRA](data/experimental/organ.csv), and calculated citation using WoS data.
+    - Triple：Build the linkage among anatomical structures, cell types, and biomarkers listed in the same row of a ASCT+B Table through assigning a unique identifier called “row_id” to each row
+- [**Publication**](extract/publication): Extract the HRA references and PubMed publications associated with [31 organs in 5th release HRA](data/experimental/organ.csv).
     - HRA references: Extract the general references and specific references in 5th release ASCT+B Tables through [CCF-ASCTB-ALL data](data/ontology/ccf-asctb-all.json).
     - PubMed: Retrieve the PubMed publications where the titles or MeSH terms contain any of the 31 organ names. 
     - Web of Science: Using WoS data linked by WoS IDs to PMIDs, for technical validation.
@@ -80,7 +87,7 @@ Construct the HRAlit database in PostgreSQL via the following steps:
       - Import digital objects from HRA across 5 versions to ```hralit_digital_objects``` table
       - Import organs listed in HRA v1.4 to ```hralit_organ``` table
       - Import creators information listed in HRA across 5 versions to ```hralit_creator``` table
-      - Import reviewers information listed in HRA across 5 versions to ```hralit_creator``` table
+      - Import reviewers information listed in HRA across 5 versions to ```hralit_reviewer``` table
       - Import anatomical structures listed in HRA v1.4 to ```hralit_anatomical_structures``` table
       - Import cell types listed in HRA v1.4 to ```hralit_cell_types``` table
       - Import biomarkers listed in HRA v1.4 to ```hralit_biomarkers``` table
