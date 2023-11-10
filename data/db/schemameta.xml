@@ -16,7 +16,7 @@
                 <foreignKey table="hralit_author" column="orcid" />
             </column>
         </table>
-        <table name="hralit_other_refs">
+        <table name="hralit_other_publication">
             <column name="pmid" type="varchar">
                 <foreignKey table="hralit_publication" column="pmid" />
             </column>

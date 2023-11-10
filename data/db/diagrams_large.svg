@@ -723,14 +723,14 @@
 <polygon fill="black" stroke="black" points="305.52,-2473.61 313.77,-2476.59 309.51,-2473.3 313.5,-2473 313.5,-2473 313.5,-2473 309.51,-2473.3 313.23,-2469.41 305.52,-2473.61 305.52,-2473.61"/>
 <ellipse fill="none" stroke="black" cx="302.33" cy="-2473.85" rx="3.2" ry="3.2"/>
 </g>
-<!-- hralit_other_refs -->
+<!-- hralit_other_publication -->
 <g id="node12" class="node">
-<title>hralit_other_refs</title>
-<g id="a_node12"><a xlink:href="tables/hralit_other_refs.html" xlink:title="hralit_other_refs" target="_top">
+<title>hralit_other_publication</title>
+<g id="a_node12"><a xlink:href="tables/hralit_other_publication.html" xlink:title="hralit_other_publication" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="338.5,-2527 338.5,-2633 496.5,-2633 496.5,-2527 338.5,-2527"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="338.5,-2611 338.5,-2633 496.5,-2633 496.5,-2611 338.5,-2611"/>
 <polygon fill="none" stroke="black" points="338.5,-2611 338.5,-2633 496.5,-2633 496.5,-2611 338.5,-2611"/>
-<text text-anchor="start" x="343.5" y="-2620.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">hralit_other_refs</text>
+<text text-anchor="start" x="343.5" y="-2620.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">hralit_other_publication</text>
 <text text-anchor="start" x="454.5" y="-2619.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
 <polygon fill="none" stroke="black" points="338.5,-2589 338.5,-2611 496.5,-2611 496.5,-2589 338.5,-2589"/>
 <text text-anchor="start" x="371.5" y="-2597.2" font-family="Helvetica,sans-Serif" font-size="11.00">pmid</text>
@@ -750,9 +750,9 @@
 </a>
 </g>
 </g>
-<!-- hralit_other_refs&#45;&gt;hralit_publication -->
+<!-- hralit_other_publication&#45;&gt;hralit_publication -->
 <g id="edge14" class="edge">
-<title>hralit_other_refs:w&#45;&gt;hralit_publication:e</title>
+<title>hralit_other_publication:w&#45;&gt;hralit_publication:e</title>
 <path fill="none" stroke="black" d="M323.12,-2598.54C241.85,-2580.6 310.19,-2404 212,-2404"/>
 <polygon fill="black" stroke="black" points="329.54,-2599.19 337.14,-2603.58 333.52,-2599.59 337.5,-2600 337.5,-2600 337.5,-2600 333.52,-2599.59 337.86,-2596.42 329.54,-2599.19 329.54,-2599.19"/>
 <ellipse fill="none" stroke="black" cx="326.36" cy="-2598.86" rx="3.2" ry="3.2"/>
