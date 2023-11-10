@@ -47,7 +47,7 @@ The repo is structured in the following way:
 ![img](https://github.com/cns-iu/hra-literature/blob/main/data/db/Entity%20Relationship%20Diagram.png?raw=true)
 
 ## Supplementary information
-- **Data dictionary of HRAlit database**: Provides details on the [data description](data/results/app0/data-dictionary.xlsx) for each table in the HRAlit database, as well as statistics on the number of [rows](data/results/app0/row-ct.csv), [nodes](data/results/app0/node-ct.csv), and [linkages of relationships](data/results/app0/linkage-ct.csv).
+- **Data dictionary of HRAlit database**: Provides details on the [data description](data/db/data-dictionary.xlsx) for each table in the HRAlit database, as well as statistics on the number of [rows](data/db/row-ct.csv), [nodes](data/db/node-ct.csv), and [linkages of relationships](data/db/linkage-ct.csv).
 
   
 ## Development
