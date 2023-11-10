@@ -14,21 +14,21 @@ def import_from_csv_to_db():
 
     for index, row in df.iterrows():
         cur.execute(
-            "INSERT INTO hralit_other_refs (pmid, source) VALUES (%s, 'cellmarker')", 
+            "INSERT INTO hralit_other_publication (pmid, source) VALUES (%s, 'cellmarker')", 
             (row['PMID'],)
         )
 
 
 def import_from_dataset_to_db():
     cur.execute("""
-        INSERT INTO hralit_other_refs (doi, source) 
+        INSERT INTO hralit_other_publication (doi, source) 
         SELECT publication_doi, source
         FROM hralit_dataset 
         WHERE publication_doi IS NOT NULL
         GROUP BY publication_doi, source ;
-        update hralit_other_refs set doi=pmid_doi.doi from pmid_doi where pmid_doi.pmid=hralit_other_refs.pmid;
-        update hralit_other_refs set pmid=pmid_doi.pmid from pmid_doi where lower(pmid_doi.doi)=lower(hralit_other_refs.doi) 
-            and hralit_other_refs.pmid is null;
+        update hralit_other_publication set doi=pmid_doi.doi from pmid_doi where pmid_doi.pmid=hralit_other_publication.pmid;
+        update hralit_other_publication set pmid=pmid_doi.pmid from pmid_doi where lower(pmid_doi.doi)=lower(hralit_other_publication.doi) 
+            and hralit_other_publication.pmid is null;
     """)
 
 if __name__ == "__main__":

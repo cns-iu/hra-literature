@@ -184,7 +184,7 @@ create table hralit_reviewer (
     hubmap_id varchar
 );
 
-create table hralit_other_refs (
+create table hralit_other_publication (
     pmid varchar,
     doi varchar,
     source varchar

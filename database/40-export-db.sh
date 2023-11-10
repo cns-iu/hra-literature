@@ -25,7 +25,7 @@ pg_dump \
   -t hralit_publication \
   -t hralit_publication_author \
   -t hralit_reviewer \
-  -t hralit_other_refs \
+  -t hralit_other_publication \
   -t hralit_organ \
   -t hralit_publication_subject \
   -t hralit_anatomical_structures \

@@ -24,7 +24,7 @@ t2 as (
     union
     select pmid from pmid_31_organs
     union
-    select pmid from hralit_other_refs
+    select pmid from hralit_other_publication
 ),
 t3 as (
     SELECT doi from hralit_asct_publication

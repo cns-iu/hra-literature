@@ -19,6 +19,6 @@
 \COPY (SELECT * FROM hralit_publication_author) TO 'data/db/csv/hralit_publication_author.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
 \COPY (SELECT * FROM hralit_reviewer) TO 'data/db/csv/hralit_reviewer.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
 \COPY (SELECT * FROM hralit_publication_subject) TO 'data/db/csv/hralit_publication_subject.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_other_refs) TO 'data/db/csv/hralit_other_refs.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
+\COPY (SELECT * FROM hralit_other_publication) TO 'data/db/csv/hralit_other_publication.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
 \COPY (SELECT * FROM hralit_organ) TO 'data/db/csv/hralit_organ.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
 \COPY (SELECT * FROM hralit_asctb_linkage) TO 'data/db/csv/hralit_asctb_linkage.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
