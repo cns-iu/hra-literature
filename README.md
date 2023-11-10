@@ -28,7 +28,7 @@ The repo is structured in the following way:
 - **PSQL CLI**: The corresponding command-line interface (CLI) application for PostgreSQL should also be installed.
 - **Libraries**: Use ```requirements.txt``` to install the required libraries using the command: ```pip install -r requirements.txt```
 ### Download dataset
-- **SQL Database**: To access the HRAlit database using SQL, you can use the provided SQL file: [hralit.sql](data/db/hralit.sql)
+- **SQL Database**: To access the HRAlit database using SQL, you can use the provided SQL file: hralit.sql
 - **CSV Tables**: If you prefer to work with CSV files, we've provided individual CSVs for each table in the HRAlit database. 
 ### Restore the Database from the Dump:
 ```psql -U [your-username] -d [your-database-name] < hralit.sql```
@@ -39,12 +39,9 @@ The repo is structured in the following way:
 
 ## Supplementary information
 - [**Mapping for HuBMAP, CxG, and GTEx data**](data/experimental/dataset_mapping.csv): A mapping table that correlates identifiers across HuBMAP, CZ CELLxGENE, and GTEx.
-- [**Additional funding metadata**](data/funding/merged_metadata.7z): Provides metadata related to six additional funded projects, including ARDC, CIHR, EC, KAKEN, NIH, and NSF.
-- **HRA diversity survey**: Includes [HRA Diversity Survey](data/results/app4/survey/HRA_Diversity_Survey.pdf), [the report of its results](data/results/app4/survey/HRA_Diversity_Results.pdf), and [the results in CSV format](data/results/app4/survey/HRA_survey.csv).
-- **HRA expert diversity**: Provides details on [the gender and career age of HRA creators and reviewers](data/expert/experts_meta.csv), as well as [statistics on race](data/results/app4/expert-race.csv).
 - **Data dictionary of HRAlit database**: Provides details on the [data description](data/results/app0/data-dictionary.xlsx) for each table in the HRAlit database, as well as statistics on the number of [rows](data/results/app0/row-ct.csv), [nodes](data/results/app0/node-ct.csv), and [linkages of relationships](data/results/app0/linkage-ct.csv).
 - **Expert, Literature, and Experimental Data Evidence for HRA**: Provides details on 31 organs, including an [overview](data/results/app1/merged_output.csv), [average citations](data/results/app1/avg-citation.csv), [funding amounts from six additional funders](data/results/app1), [trends in publications over the years](data/results/app1/pub-trend.csv), and [relationships](data/results/app1/relationship.csv).
-- **HRA diversity**: Provides details on gender distribution across ages for [surveys](data/results/app4/gender-age-survey.csv), [donors](data/results/app4/gender-age-donor.csv), and the [world population](data/results/app4/gender-age-world-population.csv), as well as [gender distribution in career ages](data/results/app4/gender-in-career-ages.csv), [racial demographics](data/results/app4/race.csv), and [the number of authors by geolocation](data/results/app4/authors-in-geolocation.csv).
+
   
 ## Development
 ### Extract data
