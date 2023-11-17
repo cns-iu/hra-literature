@@ -15,13 +15,13 @@ This repository provides the supporting code and data for "Publication, Funding,
 The repo is structured in the following way:
 ```
 ├── extract
-├── database
-├── validation
 ├── data
+├── database
+├── validate
 ```
 
 ## Quick Start
-### Requirements:
+### Requirements
 - **Linux System**: Or ensure you have WSL or WSL2 installed on your Windows machine.
 - **Python3**: Install Python3 ```sudo apt install python3 python3-pip```
 - **PostgreSQL**: Ensure you have at least PostgreSQL version 9.6 installed on your system.
@@ -30,10 +30,10 @@ The repo is structured in the following way:
 ### Download dataset
 - **SQL Database**: To access the HRAlit database using SQL, you can use the provided SQL file: hralit.sql
 - **CSV Tables**: If you prefer to work with CSV files, we've provided individual CSVs for each table in the HRAlit database. 
-### Restore the Database from the Dump:
+### Restore the Database from the Dump
 - First, ensure that PostgreSQL is installed on your machine.
 - Download the ```hralit.sql``` file to your local system.
-- Open the terminal or command line interface.
+- Open a terminal or command line interface.
 - Use the following command to import the database:
 
   ```psql -U [your-username] -d [your-database-name] < /path/to/hralit.sql```
@@ -41,7 +41,7 @@ The repo is structured in the following way:
   Replace [your-username] with your PostgreSQL username and [your-database-name] with the name of the database you want to import the data into. Make sure to replace /path/to/hralit.sql with the actual path to the hralit.sql file on your local system.
 - Note that if your PostgreSQL setup requires a password, you may be prompted to enter it.
 
-### Entity Relationship Diagram（ERD）
+### Entity Relationship Diagram (ERD）
 [The Entity Relationship Diagram of HRAlit database](https://dbdiagram.io/d/HRAlit-database-652a4fe1ffbf5169f0abf1a2) is available.
 
 ![img](https://github.com/cns-iu/hra-literature/blob/main/data/db/Entity%20Relationship%20Diagram.png?raw=true)
@@ -50,7 +50,7 @@ The repo is structured in the following way:
 - **Data dictionary of HRAlit database**: Provides details on the [data description](data/db/data-dictionary.xlsx) for each table in the HRAlit database, as well as statistics on the number of [rows](data/db/row-ct.csv), [nodes](data/db/node-ct.csv), and [linkages of relationships](data/db/linkage-ct.csv).
 
   
-## Development
+## Develop database
 ### Extract data
 Code for extracting data in different types sourced from different datasets.
 - [**HRA**]: Extract the HRA data.
@@ -112,6 +112,6 @@ Construct the HRAlit database in PostgreSQL via the following steps:
     - Funders: Select the cleaned funder metadata from OpenAlex to ```hralit_funder_cleaned``` table by matching the funder ID in the "hralit_pub_funding_funder" table.
 - **Diagram**: Use [```schemaspy```](https://schemaspy.org/) to output a diagram of the HRAlit database.
 - **Export database**: Export HRAlit database in SQL format, and the 23 tables within the HRAlit database in CSV format.
-
+## Validate database
 ## Credits
 This HRAlit dataset is developed by the [Cyberinfrastructure for Network Science Center at Indiana University](https://cns.iu.edu/). This research has been funded by the China Scholar Council [YK] and the NIH Common Fund through the Office of Strategic Coordination/Office of the NIH Director under awards OT2OD033756 and OT2OD026671, by the Cellular Senescence Network (SenNet) Consortium through the Consortium Organization and Data Coordinating Center (CODCC) under award number U24CA268108, by the Kidney Precision Medicine Project grant U2CDK114886, by the NIDDK under awards U24DK135157 and U01DK133090 and by The Multiscale Human CIFAR project [KB]. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. 
