@@ -107,7 +107,7 @@ Construct the HRAlit database in PostgreSQL via the following steps:
 
 ### Validate database
 - **Coverage of publications**: Compare the publications in HRAlit database with those in WoS and OpenAlex.
-  - overage of HRAlit publications in WoS and OpenAlex databases.
+  - Coverage of HRAlit publications in WoS and OpenAlex databases.
   - Number of papers published per year for the 31 organs.
   - Growth in the number of publications in the HRAlit database over time with linear regression analysis.
 - **Coverage of linkages from publication to funding, from publication to author ORCID**: Compare the linkages in HRAlit database with those in WoS and OpenAlex.
