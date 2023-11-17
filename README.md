@@ -27,19 +27,11 @@ The repo is structured in the following way:
 - **PostgreSQL**: Ensure you have at least PostgreSQL version 9.6 installed on your system.
 - **PSQL CLI**: The corresponding command-line interface (CLI) application for PostgreSQL should also be installed.
 - **Libraries**: Use ```requirements.txt``` to install the required libraries using the command: ```pip install -r requirements.txt```
-### Download dataset
+### Data availablity
 - **SQL Database**: To access the HRAlit database using SQL, you can use the provided SQL file: hralit.sql
+  - Use the following command to import the database:
+  ```psql -U [your-username] -d [your-database-name] < /path/to/hralit.sql```Replace [your-username] with your PostgreSQL username and [your-database-name] with the name of the database you want to import the data into. Make sure to replace /path/to/hralit.sql with the actual path to the hralit.sql file on your local system.
 - **CSV Tables**: If you prefer to work with CSV files, we've provided individual CSVs for each table in the HRAlit database. 
-### Restore the Database from the Dump
-- First, ensure that PostgreSQL is installed on your machine.
-- Download the ```hralit.sql``` file to your local system.
-- Open a terminal or command line interface.
-- Use the following command to import the database:
-
-  ```psql -U [your-username] -d [your-database-name] < /path/to/hralit.sql```
-
-  Replace [your-username] with your PostgreSQL username and [your-database-name] with the name of the database you want to import the data into. Make sure to replace /path/to/hralit.sql with the actual path to the hralit.sql file on your local system.
-- Note that if your PostgreSQL setup requires a password, you may be prompted to enter it.
 
 ### Entity Relationship Diagram
 [The Entity Relationship Diagram of HRAlit database](https://dbdiagram.io/d/HRAlit-database-652a4fe1ffbf5169f0abf1a2) is available.
@@ -114,6 +106,11 @@ Construct the HRAlit database in PostgreSQL via the following steps:
 - **Export database**: Export HRAlit database in SQL format, and the 23 tables within the HRAlit database in CSV format.
 
 ### Validate database
+- **Coverage of publications**: Compare the publications in HRAlit database with those in WoS and OpenAlex.
+  - overage of HRAlit publications in WoS and OpenAlex databases.
+  - Number of papers published per year for the 31 organs.
+  - Growth in the number of publications in the HRAlit database over time with linear regression analysis.
+- **Coverage of linkages from publication to funding, from publication to author ORCID**: Compare the linkages in HRAlit database with those in WoS and OpenAlex.
 
 ## Credits
 This HRAlit dataset is developed by the [Cyberinfrastructure for Network Science Center at Indiana University](https://cns.iu.edu/). This research has been funded by the China Scholar Council [YK] and the NIH Common Fund through the Office of Strategic Coordination/Office of the NIH Director under awards OT2OD033756 and OT2OD026671, by the Cellular Senescence Network (SenNet) Consortium through the Consortium Organization and Data Coordinating Center (CODCC) under award number U24CA268108, by the Kidney Precision Medicine Project grant U2CDK114886, by the NIDDK under awards U24DK135157 and U01DK133090 and by The Multiscale Human CIFAR project [KB]. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. 
