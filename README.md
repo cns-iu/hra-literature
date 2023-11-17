@@ -28,6 +28,7 @@ The repo is structured in the following way:
 - **PSQL CLI**: The corresponding command-line interface (CLI) application for PostgreSQL should also be installed.
 - **Libraries**: Use ```requirements.txt``` to install the required libraries using the command: ```pip install -r requirements.txt```
 ### Data availablity
+- **Data**: The HRAlit database SQL file and all tables in CSV format are at Figshare, https://figshare.com/articles/dataset/24580669.  
 - **SQL Database**: To access the HRAlit database using SQL, you can use the provided SQL file: hralit.sql
   - Use the following command to import the database:
   ```psql -U [your-username] -d [your-database-name] < /path/to/hralit.sql```Replace [your-username] with your PostgreSQL username and [your-database-name] with the name of the database you want to import the data into. Make sure to replace /path/to/hralit.sql with the actual path to the hralit.sql file on your local system.
