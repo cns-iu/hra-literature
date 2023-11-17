@@ -41,7 +41,7 @@ The repo is structured in the following way:
   Replace [your-username] with your PostgreSQL username and [your-database-name] with the name of the database you want to import the data into. Make sure to replace /path/to/hralit.sql with the actual path to the hralit.sql file on your local system.
 - Note that if your PostgreSQL setup requires a password, you may be prompted to enter it.
 
-### Entity Relationship Diagram (ERD）
+### Entity Relationship Diagram
 [The Entity Relationship Diagram of HRAlit database](https://dbdiagram.io/d/HRAlit-database-652a4fe1ffbf5169f0abf1a2) is available.
 
 ![img](https://github.com/cns-iu/hra-literature/blob/main/data/db/Entity%20Relationship%20Diagram.png?raw=true)
@@ -70,7 +70,7 @@ Code for extracting data in different types sourced from different datasets.
 - [**Publication**](extract/publication): Extract the HRA references and PubMed publications associated with [31 organs in 5th release HRA](data/experimental/organ.csv).
     - HRA references: Extract the general references and specific references in 5th release ASCT+B Tables through [CCF-ASCTB-ALL data](data/ontology/ccf-asctb-all.json).
     - PubMed: Retrieve the PubMed publications where the titles or MeSH terms contain any of the 31 organ names. 
-    - Web of Science: Using WoS data linked by WoS IDs to PMIDs, for technical validation.
+    - Web of Science: Using WoS data linked by WoS IDs to PMIDs, only for technical validation.
 - [**Experts**](extract/experts):  From PubMed data, extract the authors associated with the selected PubMed publications. Additionally, extract the HRA experts across all versions, including creators and reviewers.
     - HRA experts: Extract the creators and reviewers from [HRA metadata across five versions](data/hra-v1.4-metadata.json), including ORCIDs, author names, associated digital objects. 
     - Authors: Extract the authors with ORCIDs associated with the selected publications, and query the information for authors. 
@@ -112,6 +112,8 @@ Construct the HRAlit database in PostgreSQL via the following steps:
     - Funders: Select the cleaned funder metadata from OpenAlex to ```hralit_funder_cleaned``` table by matching the funder ID in the "hralit_pub_funding_funder" table.
 - **Diagram**: Use [```schemaspy```](https://schemaspy.org/) to output a diagram of the HRAlit database.
 - **Export database**: Export HRAlit database in SQL format, and the 23 tables within the HRAlit database in CSV format.
-## Validate database
+
+### Validate database
+
 ## Credits
 This HRAlit dataset is developed by the [Cyberinfrastructure for Network Science Center at Indiana University](https://cns.iu.edu/). This research has been funded by the China Scholar Council [YK] and the NIH Common Fund through the Office of Strategic Coordination/Office of the NIH Director under awards OT2OD033756 and OT2OD026671, by the Cellular Senescence Network (SenNet) Consortium through the Consortium Organization and Data Coordinating Center (CODCC) under award number U24CA268108, by the Kidney Precision Medicine Project grant U2CDK114886, by the NIDDK under awards U24DK135157 and U01DK133090 and by The Multiscale Human CIFAR project [KB]. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. 
