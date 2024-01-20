@@ -1,0 +1,1601 @@
+organ,id,rdfs_label,name
+blood,CL:0000945,lymphocyte of B lineage,B lineage
+blood,CL:0000816,immature B cell,immature B cell
+blood,CL:0000787,memory B cell,memory B cell
+blood,CL:0000788,naive B cell,naive B cell
+blood,CL:0000818,transitional stage B cell,transitional B cell
+blood,CL:0001056,"dendritic cell, human",dendritic cell (DC)
+blood,CL:0002394,CD141-positive myeloid dendritic cell,dendritic cell type 1 (DC1)
+blood,CL:0002399,CD1c-positive myeloid dendritic cell,dendritic cell type 2 (DC2)
+blood,CL:0002399,CD1c-positive myeloid dendritic cell,dendritic cell type 3 (DC3)
+blood,CL:0001058,"plasmacytoid dendritic cell, human",Plasmacytoid Dendritic Cell (pDC)
+blood,CL:0000840,immature conventional dendritic cell,transitional Dendritic Cell (tDC)
+blood,CL:0000576,monocyte,monocyte
+blood,CL:0001054,CD14-positive monocyte,CD14 monocyte
+blood,CL:0002396,"CD14-low, CD16-positive monocyte",CD16 monocyte
+blood,CL:0000775,neutrophil,neutrophilic granulocyte
+blood,CL:0000775,neutrophil,neutrophil
+blood,CL:0000094,granulocyte,granulocyte
+blood,CL:0000771,eosinophil,eosinophil
+blood,CL:0000767,basophil,basophil
+blood,CL:0000084,T cell,T lymphocytes
+blood,CL:0000895,"naive thymus-derived CD4-positive, alpha-beta T cell",CD4 naive
+blood,CL:0000897,"CD4-positive, alpha-beta memory T cell",CD4 T cell memory
+blood,CL:0001087,"effector memory CD4-positive, alpha-beta T cell, terminally differentiated",CD4 T cell effector memory CD45RA
+blood,CL:0000900,"naive thymus-derived CD8-positive, alpha-beta T cell",CD8 naive
+blood,CL:0001050,"effector CD8-positive, alpha-beta T cell",CD8 T cell effector memory
+blood,CL:0001062,"effector memory CD8-positive, alpha-beta T cell, terminally differentiated",CD8 T cell effector memory CD45RA
+blood,CL:0002437,mature CD8 single-positive thymocyte,mature CD8 T cell
+blood,CL:0000814,mature NK T cell,NK lymphocytes
+blood,CL:0000938,"CD16-negative, CD56-bright natural killer cell, human",CD56 bright Natural killer
+blood,CL:0000824,mature natural killer cell,mature Natural killer
+blood,CL:0000815,regulatory T cell,T regulatory
+blood_vasculature,CL:0010008,cardiac endothelial cell,cardiac endothelial cell
+blood_vasculature,CL:0000071,blood vessel endothelial cell,blood vessel endothelial cell
+blood_vasculature,CL:0002543,vein endothelial cell,endothelial cell of vein
+blood_vasculature,CL:1000414,endothelial cell of venule,endothelial cell of venule
+blood_vasculature,CL:1000413,endothelial cell of artery,endothelial cell of artery
+blood_vasculature,CL:0000057,fibroblast,fibroblast
+blood_vasculature,CL:0000359,vascular associated smooth muscle cell,vascular smooth muscle cell
+blood_vasculature,CL:0002144,capillary endothelial cell,capillary endothelial cell
+blood_vasculature,CL:1000412,endothelial cell of arteriole,endothelial cell of arteriole
+blood_vasculature,CL:0002262,endothelial cell of sinusoid,endothelial cell of sinusoid
+bone_marrow,CL:0000945,lymphocyte of B lineage,B lineage
+bone_marrow,CL:0000817,precursor B cell,precursor B cell (pre B cell)
+bone_marrow,CL:0000816,immature B cell,immature B cell
+bone_marrow,CL:0000787,memory B cell,memory B cell
+bone_marrow,CL:0000788,naive B cell,naive B cell
+bone_marrow,CL:0000786,plasma cell,plasma cell
+bone_marrow,CL:0000826,pro-B cell,pro B progenitor
+bone_marrow,CL:0000818,transitional stage B cell,transitional B cell
+bone_marrow,CL:0001056,"dendritic cell, human",dendritic cell (DC)
+bone_marrow,CL:0000990,conventional dendritic cell,dendritic cell type 1 (DC1)
+bone_marrow,CL:0000990,conventional dendritic cell,dendritic cell type 2 (DC2)
+bone_marrow,CL:0001056,"dendritic cell, human",dendritic cell type 3 (DC3)
+bone_marrow,CL:0001058,"plasmacytoid dendritic cell, human",Plasmacytoid Dendritic Cell (pDC)
+bone_marrow,CL:0000840,immature conventional dendritic cell,transitional Dendritic Cell (tDC)
+bone_marrow,CL:0000764,erythroid lineage cell,erythroid
+bone_marrow,CL:0000764,erythroid lineage cell,early erythroid
+bone_marrow,CL:0000764,erythroid lineage cell,mid erythroid
+bone_marrow,CL:0000764,erythroid lineage cell,late erythroid
+bone_marrow,CL:0000556,Megakaryocyte,Megakaryocyte (MK)
+bone_marrow,CL:0000556,megakaryocyte,Megakaryocyte (MK)
+bone_marrow,CL:0000553,megakaryocyte progenitor cell,early Megakaryocyte (MK)
+bone_marrow,CL:0000837,hematopoietic multipotent progenitor cell,hemopoietic stem cell/multipotent progenitor (HSC/MPP)
+bone_marrow,CL:0000050,megakaryocyte-erythroid progenitor cell,megakaryocyte-erythroid-mast cell progenitor (MEMP)
+bone_marrow,CL:0000051,common lymphoid progenitor,common lymphoid progenitor (CLP)
+bone_marrow,CL:0000049,common myeloid progenitor,common myeloid progenitor (CMP)
+bone_marrow,CL:0000557,granulocyte monocyte progenitor cell,granulocyte-macrophage progenitor cell (GMP)
+bone_marrow,CL:0000037,hemopoietic stem cell,hemopoietic stem cell (HSC)
+bone_marrow,,,lympho-myeloid progenitor cell (LMPP)
+bone_marrow,CL:0000837,hematopoietic multipotent progenitor cell,multipotent progenitor cell (MPP)
+bone_marrow,CL:0000576,monocyte,monocyte
+bone_marrow,CL:0001054,CD14-positive monocyte,CD14 monocyte
+bone_marrow,CL:0002396,"CD14-low, CD16-positive monocyte",CD16 monocyte
+bone_marrow,CL:0000559,promonocyte,promonocyte
+bone_marrow,,,Myeloid progenitor (MOP)
+bone_marrow,CL:0000775,neutrophil,neutrophilic granulocyte
+bone_marrow,CL:0002193,myelocyte,myelocyte
+bone_marrow,CL:0000775,neutrophil,neutrophil
+bone_marrow,CL:0000836,promyelocyte,promyelocyte
+bone_marrow,CL:0000094,granulocyte,granulocyte
+bone_marrow,CL:0000771,eosinophil,eosinophil
+bone_marrow,CL:0000767,basophil,basophil
+bone_marrow,CL:0000097,mast cell,mast cell
+bone_marrow,CL:0000084,T cell,T lymphocytes
+bone_marrow,CL:0000895,"naive thymus-derived CD4-positive, alpha-beta T cell",CD4 naive
+bone_marrow,CL:0000897,"CD4-positive, alpha-beta memory T cell",CD4 T cell memory
+bone_marrow,CL:0001087,"effector memory CD4-positive, alpha-beta T cell, terminally differentiated",CD4 T cell effector memory CD45RA
+bone_marrow,CL:0000900,"naive thymus-derived CD8-positive, alpha-beta T cell",CD8 naive
+bone_marrow,CL:0000909,"CD8-positive, alpha-beta memory T cell",CD8 T cell memory
+bone_marrow,,,CD8 T cell effector memory
+bone_marrow,CL:0001062,"effector memory CD8-positive, alpha-beta T cell, terminally differentiated",CD8 T cell effector memory CD45RA
+bone_marrow,,,mature CD8 T cell
+bone_marrow,CL:0000814,mature NK T cell,NK lymphocytes
+bone_marrow,CL:0000938,"CD16-negative, CD56-bright natural killer cell",CD56 bright Natural Killer
+bone_marrow,CL:0000824,mature natural killer cell,mature Natural killer
+bone_marrow,CL:0000815,regulatory T cell,T regulatory
+brain,CL:0000236,B cell,B cell
+brain,,Bcell_0 Miscellaneous Non-neuron of brain,Bcell_0
+brain,CL:0000084,T cell,T cell
+brain,,Tcell_1 Miscellaneous Non-neuron of brain,Tcell_1
+brain,CL:0000623,natural killer cell,NK cell
+brain,,Nkcell_2 Miscellaneous Non-neuron of brain,Nkcell_2
+brain,CL:0000576,monocyte,monocyte
+brain,,Mono_3 Miscellaneous Non-neuron of brain,Mono_3
+brain,CL:0000129,microglial cell,microglia
+brain,,Mgl_4 Microglia Non-neuron of brain,Mgl_4
+brain,,Mgl_5 Microglia Non-neuron of brain,Mgl_5
+brain,,Mgl_6 Microglia Non-neuron of brain,Mgl_6
+brain,,Mgl_7 Microglia Non-neuron of brain,Mgl_7
+brain,,Mgl_8 Microglia Non-neuron of brain,Mgl_8
+brain,,Mgl_9 Microglia Non-neuron of brain,Mgl_9
+brain,,Mgl_10 Microglia Non-neuron of brain,Mgl_10
+brain,,Mgl_11 Microglia Non-neuron of brain,Mgl_11
+brain,,Mgl_12 Microglia Non-neuron of brain,Mgl_12
+brain,CL:4023072,brain vascular cell,brain vascular cell
+brain,,VendPLVAP_13 Vascular Non-neuron of brain,VendPLVAP_13
+brain,,VendAC_14 Vascular Non-neuron of brain,VendAC_14
+brain,,VendC_15 Vascular Non-neuron of brain,VendC_15
+brain,,VendVC_16 Vascular Non-neuron of brain,VendVC_16
+brain,,VendV_17 Vascular Non-neuron of brain,VendV_17
+brain,,VendA_18 Vascular Non-neuron of brain,VendA_18
+brain,,Vsmc_19 Vascular Non-neuron of brain,Vsmc_19
+brain,,Vsmc_20 Vascular Non-neuron of brain,Vsmc_20
+brain,,Per_21 Vascular Non-neuron of brain,Per_21
+brain,,Per_22 Vascular Non-neuron of brain,Per_22
+brain,,Per_23 Vascular Non-neuron of brain,Per_23
+brain,CL:0000057,fibroblast,fibroblast
+brain,,Fbl_24 Fibroblast Non-neuron of brain,Fbl_24
+brain,,Fbl_25 Fibroblast Non-neuron of brain,Fbl_25
+brain,,Fbl_26 Fibroblast Non-neuron of brain,Fbl_26
+brain,,Fbl_27 Fibroblast Non-neuron of brain,Fbl_27
+brain,,Fbl_28 Fibroblast Non-neuron of brain,Fbl_28
+brain,,Fbl_29 Fibroblast Non-neuron of brain,Fbl_29
+brain,,Fbl_30 Fibroblast Non-neuron of brain,Fbl_30
+brain,,Fbl_31 Fibroblast Non-neuron of brain,Fbl_31
+brain,CL:0002453,oligodendrocyte precursor cell,oligodendrocyte precursor cell
+brain,,OPC_32 Oligodendrocyte precursor Non-neuron of brain,OPC_32
+brain,,OPC_33 Oligodendrocyte precursor Non-neuron of brain,OPC_33
+brain,,OPC_34 Oligodendrocyte precursor Non-neuron of brain,OPC_34
+brain,,OPC_35 Oligodendrocyte precursor Non-neuron of gray matter of forebrain,OPC_35
+brain,,OPC_36 Oligodendrocyte precursor Non-neuron of brain,OPC_36
+brain,CL:4023059,differentiation-committed oligodendrocyte precursor,committed oligodendrocyte precursor cell
+brain,,COP_37 Committed oligodendrocyte precursor Non-neuron of brain,COP_37
+brain,,COP_38 Committed oligodendrocyte precursor Non-neuron of brain,COP_38
+brain,,COP_39 Committed oligodendrocyte precursor Non-neuron of brain,COP_39
+brain,CL:0000128,oligodendrocyte,oligodendrocyte
+brain,,Oligo_40 Oligodendrocyte Non-neuron of brain,Oligo_40
+brain,,COP_41 Committed oligodendrocyte precursor Non-neuron of brain,COP_41
+brain,,COP_42 Committed oligodendrocyte precursor Non-neuron of thalamus,COP_42
+brain,,COP_43 Committed oligodendrocyte precursor Non-neuron of brain,COP_43
+brain,,Oligo_44 Oligodendrocyte Non-neuron of brain,Oligo_44
+brain,,Oligo_45 Oligodendrocyte Non-neuron of brain,Oligo_45
+brain,,Oligo_46 Oligodendrocyte Non-neuron of brain,Oligo_46
+brain,,Oligo_47 Oligodendrocyte Non-neuron of brain,Oligo_47
+brain,,Oligo_48 Oligodendrocyte Non-neuron of gray matter of forebrain,Oligo_48
+brain,,Oligo_49 Oligodendrocyte Non-neuron of brain,Oligo_49
+brain,,Oligo_50 Oligodendrocyte Non-neuron of hypothalamus,Oligo_50
+brain,CL:0000644,Bergmann glial cell,Bergmann glial cell
+brain,,Bgl_51 Bergmann glia Non-neuron of cerebellum,Bgl_51
+brain,CL:0002605,astrocyte of the cerebral cortex,astrocyte of the cerebral cortex
+brain,,Astro_52 Astrocyte Non-neuron of cerebral cortex,Astro_52
+brain,CL:0002604,hippocampal astrocyte,hippocampal astrocyte
+brain,,Astro_53 Astrocyte Non-neuron of hippocampal gyrus (formation),Astro_53
+brain,CL:0012000,astrocyte of the forebrain,astrocyte of the forebrain
+brain,,Astro_54 Astrocyte Non-neuron of gray matter of forebrain,Astro_54
+brain,,Astro_55 Astrocyte Non-neuron of gray matter of forebrain,Astro_55
+brain,CL:0000127,astrocyte,astrocyte
+brain,,Astro_56 Astrocyte Non-neuron of brain,Astro_56
+brain,,Astro_57 Astrocyte Non-neuron of gray matter of forebrain,Astro_57
+brain,,Astro_58 Astrocyte Non-neuron of cerebral cortex,Astro_58
+brain,,Astro_59 Astrocyte Non-neuron of brain,Astro_59
+brain,,Astro_60 Astrocyte Non-neuron of brain,Astro_60
+brain,,Astro_61 Astrocyte Non-neuron of brain,Astro_61
+brain,,Astro_62 Astrocyte Non-neuron of brain,Astro_62
+brain,,Astro_63 Astrocyte Non-neuron of brain,Astro_63
+brain,,Astro_64 Astrocyte Non-neuron of hypothalamus,Astro_64
+brain,CL:0000065,ependymal cell,ependymal cell
+brain,,Epen_65 Ependymal Non-neuron of brain,Epen_65
+brain,,Epen_66 Ependymal Non-neuron of gray matter of hindbrain,Epen_66
+brain,,Epen_67 Ependymal Non-neuron of gray matter of hindbrain,Epen_67
+brain,,Epen_68 Ependymal Non-neuron of brain,Epen_68
+brain,,Epen_69 Ependymal Non-neuron of brain,Epen_69
+brain,,Epen_70 Ependymal Non-neuron of brain,Epen_70
+brain,,Epen_71 Ependymal Non-neuron of brain,Epen_71
+brain,,Epen_72 Ependymal Non-neuron of brain,Epen_72
+brain,,Epen_73 Ependymal Non-neuron of gray matter of forebrain,Epen_73
+brain,,Epen_74 Ependymal Non-neuron of brain,Epen_74
+brain,,COP_75 Committed oligodendrocyte precursor Non-neuron of brain,COP_75
+brain,CL:4023073,choroid plexus cell,choroid plexus cell
+brain,,Chrp_76 Choroid plexus Non-neuron of brain,Chrp_76
+brain,,Chrp_77 Choroid plexus Non-neuron of brain,Chrp_77
+brain,,Chrp_78 Choroid plexus Non-neuron of basal forebrain,Chrp_78
+brain,,Chrp_79 Choroid plexus Non-neuron of basal forebrain,Chrp_79
+brain,,Chrp_80 Choroid plexus Non-neuron of basal forebrain,Chrp_80
+brain,,Chrp_81 Choroid plexus Non-neuron of brain,Chrp_81
+brain,,Chrp_82 Choroid plexus Non-neuron of brain,Chrp_82
+brain,CL:4023012,near-projecting glutamatergic cortical neuron,near-projecting glutamatergic cortical neuron
+brain,,DLNP_83 Deep-layer near-projecting Neuron of cerebral cortex,DLNP_83
+brain,CL:0000679,glutamatergic neuron,glutamatergic neuron
+brain,,DLCT6b_84 Deep-layer corticothalamic and 6b Neuron of hippocampal gyrus (formation),DLCT6b_84
+brain,,DLNP_85 Deep-layer near-projecting Neuron of gray matter of forebrain,DLNP_85
+brain,,DLNP_86 Deep-layer near-projecting Neuron of cerebral cortex,DLNP_86
+brain,,DLNP_87 Deep-layer near-projecting Neuron of gray matter of forebrain,DLNP_87
+brain,,DLNP_88 Deep-layer near-projecting Neuron of cerebral cortex,DLNP_88
+brain,,DLNP_89 Deep-layer near-projecting Neuron of cerebral cortex,DLNP_89
+brain,,DLNP_90 Deep-layer near-projecting Neuron of cerebral cortex,DLNP_90
+brain,,DLNP_91 Deep-layer near-projecting Neuron of gray matter of forebrain,DLNP_91
+brain,,DLNP_92 Deep-layer near-projecting Neuron of cerebral cortex,DLNP_92
+brain,,DLNP_93 Deep-layer near-projecting Neuron of cerebral cortex,DLNP_93
+brain,,DLNP_94 Deep-layer near-projecting Neuron of cerebral cortex,DLNP_94
+brain,,DLNP_95 Deep-layer near-projecting Neuron of gray matter of forebrain,DLNP_95
+brain,,DLNP_96 Deep-layer near-projecting Neuron of gray matter of forebrain,DLNP_96
+brain,,DLCT6b_97 Deep-layer corticothalamic and 6b Neuron of cerebral cortex,DLCT6b_97
+brain,,DLCT6b_98 Deep-layer corticothalamic and 6b Neuron of gray matter of forebrain,DLCT6b_98
+brain,,DLCT6b_99 Deep-layer corticothalamic and 6b Neuron of gray matter of forebrain,DLCT6b_99
+brain,,DLCT6b_100 Deep-layer corticothalamic and 6b Neuron of gray matter of forebrain,DLCT6b_100
+brain,,DLCT6b_101 Deep-layer corticothalamic and 6b Neuron of cerebral cortex,DLCT6b_101
+brain,,DLCT6b_102 Deep-layer corticothalamic and 6b Neuron of gray matter of forebrain,DLCT6b_102
+brain,,DLCT6b_103 Deep-layer corticothalamic and 6b Neuron of gray matter of forebrain,DLCT6b_103
+brain,,DLCT6b_104 Deep-layer corticothalamic and 6b Neuron of gray matter of forebrain,DLCT6b_104
+brain,,DLCT6b_105 Deep-layer corticothalamic and 6b Neuron of gray matter of forebrain,DLCT6b_105
+brain,,DLCT6b_106 Deep-layer corticothalamic and 6b Neuron of cerebral cortex,DLCT6b_106
+brain,,DLCT6b_107 Deep-layer corticothalamic and 6b Neuron of cerebral cortex,DLCT6b_107
+brain,,DLCT6b_108 Deep-layer corticothalamic and 6b Neuron of cerebral cortex,DLCT6b_108
+brain,,DLCT6b_109 Deep-layer corticothalamic and 6b Neuron of cerebral cortex,DLCT6b_109
+brain,,DLCT6b_110 Deep-layer corticothalamic and 6b Neuron of gray matter of forebrain,DLCT6b_110
+brain,,DLCT6b_111 Deep-layer corticothalamic and 6b Neuron of hippocampal gyrus (formation),DLCT6b_111
+brain,,DLCT6b_112 Deep-layer corticothalamic and 6b Neuron of cerebral cortex,DLCT6b_112
+brain,CL:4023009,extratelencephalic-projecting glutamatergic cortical neuron,extratelencephalic-projecting glutamatergic cortical neuron
+brain,,L5ET_113 Miscellaneous Neuron of cerebral cortex,L5ET_113
+brain,,L5ET_114 Miscellaneous Neuron of cerebral cortex,L5ET_114
+brain,CL:4023060,hippocampal CA1-3 neuron,hippocampal CA1-3 neuron
+brain,,L5ET_115 Hippocampal CA1-3 Neuron of cerebral cortex,L5ET_115
+brain,CL:0010012,cerebral cortex neuron,cerebral cortex neuron
+brain,,Misc_116 Miscellaneous Neuron of cerebral cortex,Misc_116
+brain,CL:0012001,neuron of the forebrain,neuron of the forebrain
+brain,,L5ET_117 Miscellaneous Neuron of gray matter of forebrain,L5ET_117
+brain,,L5ET_118 Miscellaneous Neuron of brain,L5ET_118
+brain,,CA13_119 Hippocampal CA1-3 Neuron of hippocampal gyrus (formation),CA13_119
+brain,CL:4023008,intratelencephalic-projecting glutamatergic cortical neuron,intratelencephalic-projecting glutamatergic cortical neuron
+brain,,ULIT_120 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_120
+brain,,ULIT_121 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_121
+brain,,ULIT_122 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_122
+brain,,ULIT_123 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_123
+brain,,ULIT_124 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_124
+brain,,ULIT_125 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_125
+brain,,ULIT_126 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_126
+brain,,ULIT_127 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_127
+brain,,ULIT_128 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_128
+brain,,ULIT_129 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_129
+brain,,ULIT_130 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_130
+brain,,ULIT_131 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_131
+brain,,Misc_132 Miscellaneous Neuron of cerebral cortex,Misc_132
+brain,,ULIT_133 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_133
+brain,,ULIT_134 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_134
+brain,,ULIT_135 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_135
+brain,,DLIT_136 Deep-layer intratelencephalic Neuron of gray matter of forebrain,DLIT_136
+brain,,DLIT_137 Deep-layer intratelencephalic Neuron of cerebral cortex,DLIT_137
+brain,,ULIT_138 Upper-layer intratelencephalic Neuron of cerebral cortex,ULIT_138
+brain,,DLIT_139 Deep-layer intratelencephalic Neuron of cerebral cortex,DLIT_139
+brain,,DLIT_140 Deep-layer intratelencephalic Neuron of cerebral cortex,DLIT_140
+brain,,DLIT_141 Deep-layer intratelencephalic Neuron of cerebral cortex,DLIT_141
+brain,,DLIT_142 Deep-layer intratelencephalic Neuron of cerebral cortex,DLIT_142
+brain,,DLIT_143 Deep-layer intratelencephalic Neuron of gray matter of forebrain,DLIT_143
+brain,,DLIT_144 Deep-layer intratelencephalic Neuron of cerebral cortex,DLIT_144
+brain,,DLIT_145 Deep-layer intratelencephalic Neuron of gray matter of forebrain,DLIT_145
+brain,,DLIT_146 Deep-layer intratelencephalic Neuron of gray matter of forebrain,DLIT_146
+brain,,DLIT_147 Deep-layer intratelencephalic Neuron of gray matter of forebrain,DLIT_147
+brain,,DLIT_148 Deep-layer intratelencephalic Neuron of gray matter of forebrain,DLIT_148
+brain,,DLIT_149 Deep-layer intratelencephalic Neuron of cerebral cortex,DLIT_149
+brain,,DLIT_150 Deep-layer intratelencephalic Neuron of cerebral cortex,DLIT_150
+brain,,DLIT_151 Deep-layer intratelencephalic Neuron of gray matter of forebrain,DLIT_151
+brain,,DLIT_152 Deep-layer intratelencephalic Neuron of gray matter of forebrain,DLIT_152
+brain,CL:4023039,amygdala excitatory neuron,amygdala excitatory neuron
+brain,,Amex_153 Amygdala excitatory Neuron of amygdaloid complex,Amex_153
+brain,,Amex_154 Amygdala excitatory Neuron of gray matter of forebrain,Amex_154
+brain,,Amex_155 Amygdala excitatory Neuron of amygdaloid complex,Amex_155
+brain,,Amex_156 Amygdala excitatory Neuron of gray matter of forebrain,Amex_156
+brain,,Amex_157 Amygdala excitatory Neuron of gray matter of forebrain,Amex_157
+brain,,Amex_158 Amygdala excitatory Neuron of gray matter of forebrain,Amex_158
+brain,,Amex_159 Amygdala excitatory Neuron of gray matter of forebrain,Amex_159
+brain,,Amex_160 Amygdala excitatory Neuron of amygdaloid complex,Amex_160
+brain,,Amex_161 Amygdala excitatory Neuron of gray matter of forebrain,Amex_161
+brain,,Amex_162 Amygdala excitatory Neuron of gray matter of forebrain,Amex_162
+brain,,CA13_163 Hippocampal CA1-3 Neuron of amygdaloid complex,CA13_163
+brain,,Misc_164 Miscellaneous Neuron of gray matter of forebrain,Misc_164
+brain,,Misc_165 Miscellaneous Neuron of cerebral cortex,Misc_165
+brain,,Misc_166 Miscellaneous Neuron of cerebral cortex,Misc_166
+brain,,Misc_167 Miscellaneous Neuron of cerebral cortex,Misc_167
+brain,,Misc_168 Miscellaneous Neuron of cerebral cortex,Misc_168
+brain,,CA13_169 Hippocampal CA1-3 Neuron of hippocampal gyrus (formation),CA13_169
+brain,,Misc_170 Miscellaneous Neuron of gray matter of forebrain,Misc_170
+brain,,Amex_171 Amygdala excitatory Neuron of hippocampal gyrus (formation),Amex_171
+brain,,Amex_172 Amygdala excitatory Neuron of cerebral cortex,Amex_172
+brain,,Amex_173 Amygdala excitatory Neuron of gray matter of forebrain,Amex_173
+brain,,Amex_174 Amygdala excitatory Neuron of gray matter of forebrain,Amex_174
+brain,,Amex_175 Amygdala excitatory Neuron of cerebral cortex,Amex_175
+brain,CL:0000540,neuron,neuron
+brain,,Misc_176 Miscellaneous Neuron of hippocampal gyrus (formation),Misc_176
+brain,,Misc_177 Miscellaneous Neuron of brain,Misc_177
+brain,,Misc_178 Miscellaneous Neuron of brain,Misc_178
+brain,,CA13_179 Hippocampal CA1-3 Neuron of hippocampal gyrus (formation),CA13_179
+brain,,CA13_180 Hippocampal CA1-3 Neuron of hippocampal gyrus (formation),CA13_180
+brain,,CA13_181 Hippocampal CA1-3 Neuron of hippocampal gyrus (formation),CA13_181
+brain,,CA13_182 Hippocampal CA1-3 Neuron of hippocampal gyrus (formation),CA13_182
+brain,,CA13_183 Hippocampal CA1-3 Neuron of hippocampal gyrus (formation),CA13_183
+brain,,CA13_184 Hippocampal CA1-3 Neuron of hippocampal gyrus (formation),CA13_184
+brain,,CA13_185 Hippocampal CA1-3 Neuron of hippocampal gyrus (formation),CA13_185
+brain,,CA13_186 Hippocampal CA1-3 Neuron of hippocampal gyrus (formation),CA13_186
+brain,,CA13_187 Hippocampal CA1-3 Neuron of hippocampal gyrus (formation),CA13_187
+brain,,CA13_188 Hippocampal CA1-3 Neuron of hippocampal gyrus (formation),CA13_188
+brain,,CA13_189 Hippocampal CA1-3 Neuron of gray matter of forebrain,CA13_189
+brain,CL:4023061,hippocampal CA4 neuron,hippocampal CA4 neuron
+brain,,CA4_190 Hippocampal CA4 Neuron of hippocampal gyrus (formation),CA4_190
+brain,,CA4_191 Hippocampal CA4 Neuron of hippocampal gyrus (formation),CA4_191
+brain,,CA4_192 Hippocampal CA4 Neuron of hippocampal gyrus (formation),CA4_192
+brain,,CA4_193 Hippocampal CA4 Neuron of hippocampal gyrus (formation),CA4_193
+brain,,CA4_194 Hippocampal CA4 Neuron of hippocampal gyrus (formation),CA4_194
+brain,,CA4_195 Hippocampal CA4 Neuron of hippocampal gyrus (formation),CA4_195
+brain,,CA4_196 Hippocampal CA4 Neuron of hippocampal gyrus (formation),CA4_196
+brain,,CA4_197 Hippocampal CA4 Neuron of hippocampal gyrus (formation),CA4_197
+brain,,CA4_198 Hippocampal CA4 Neuron of brain,CA4_198
+brain,CL:4023062,dentate gyrus neuron,hippocampal dentate gyrus neuron
+brain,,DG_199 Hippocampal dentate gyrus Neuron of hippocampal gyrus (formation),DG_199
+brain,,DG_200 Hippocampal dentate gyrus Neuron of hippocampal gyrus (formation),DG_200
+brain,,DG_201 Hippocampal dentate gyrus Neuron of hippocampal gyrus (formation),DG_201
+brain,,DG_202 Hippocampal dentate gyrus Neuron of hippocampal gyrus (formation),DG_202
+brain,,DG_203 Hippocampal dentate gyrus Neuron of hippocampal gyrus (formation),DG_203
+brain,,DG_204 Hippocampal dentate gyrus Neuron of hippocampal gyrus (formation),DG_204
+brain,,DG_205 Hippocampal dentate gyrus Neuron of hippocampal gyrus (formation),DG_205
+brain,CL:1001474,medium spiny neuron,medium spiny neuron
+brain,,MSN_206 Medium spiny neuron Neuron of hippocampal gyrus (formation),MSN_206
+brain,,MSN_207 Medium spiny neuron Neuron of basal forebrain,MSN_207
+brain,,MSN_208 Medium spiny neuron Neuron of gray matter of forebrain,MSN_208
+brain,,MSN_209 Medium spiny neuron Neuron of basal forebrain,MSN_209
+brain,,MSN_210 Medium spiny neuron Neuron of basal forebrain,MSN_210
+brain,,MSN_211 Medium spiny neuron Neuron of gray matter of forebrain,MSN_211
+brain,,MSN_212 Medium spiny neuron Neuron of basal forebrain,MSN_212
+brain,,MSN_213 Medium spiny neuron Neuron of gray matter of forebrain,MSN_213
+brain,,MSN_214 Medium spiny neuron Neuron of gray matter of forebrain,MSN_214
+brain,,MSN_215 Medium spiny neuron Neuron of gray matter of forebrain,MSN_215
+brain,,MSN_216 Medium spiny neuron Neuron of brain,MSN_216
+brain,,MSN_217 Medium spiny neuron Neuron of gray matter of forebrain,MSN_217
+brain,,MSN_218 Medium spiny neuron Neuron of gray matter of forebrain,MSN_218
+brain,,MSN_219 Medium spiny neuron Neuron of brain,MSN_219
+brain,,MSN_220 Medium spiny neuron Neuron of amygdaloid complex,MSN_220
+brain,,MSN_221 Medium spiny neuron Neuron of gray matter of forebrain,MSN_221
+brain,CL:1001474,medium spiny neuron,eccentric medium spiny neuron
+brain,,EMSN_222 Eccentric medium spiny neuron Neuron of basal forebrain,EMSN_222
+brain,,EMSN_223 Eccentric medium spiny neuron Neuron of gray matter of forebrain,EMSN_223
+brain,,EMSN_224 Eccentric medium spiny neuron Neuron of gray matter of forebrain,EMSN_224
+brain,,EMSN_225 Eccentric medium spiny neuron Neuron of gray matter of forebrain,EMSN_225
+brain,,EMSN_226 Eccentric medium spiny neuron Neuron of brain,EMSN_226
+brain,,EMSN_227 Eccentric medium spiny neuron Neuron of gray matter of forebrain,EMSN_227
+brain,,EMSN_228 Eccentric medium spiny neuron Neuron of gray matter of forebrain,EMSN_228
+brain,,EMSN_229 Eccentric medium spiny neuron Neuron of gray matter of forebrain,EMSN_229
+brain,,EMSN_230 Eccentric medium spiny neuron Neuron of brain,EMSN_230
+brain,,EMSN_231 Eccentric medium spiny neuron Neuron of gray matter of forebrain,EMSN_231
+brain,,EMSN_232 Eccentric medium spiny neuron Neuron of brain,EMSN_232
+brain,,EMSN_233 Eccentric medium spiny neuron Neuron of brain,EMSN_233
+brain,,EMSN_234 Eccentric medium spiny neuron Neuron of gray matter of forebrain,EMSN_234
+brain,,Splat_235 Splatter Neuron of brain,Splat_235
+brain,CL:4023063,medial ganglionic eminence derived interneuron,MGE derived interneuron
+brain,,MGE_236 MGE interneuron Neuron of gray matter of forebrain,MGE_236
+brain,,Splat_237 Splatter Neuron of brain,Splat_237
+brain,,Splat_238 Splatter Neuron of gray matter of forebrain,Splat_238
+brain,,MGE_239 MGE interneuron Neuron of cerebral cortex,MGE_239
+brain,,MGE_240 MGE interneuron Neuron of cerebral cortex,MGE_240
+brain,,MGE_241 MGE interneuron Neuron of cerebral cortex,MGE_241
+brain,,MGE_242 MGE interneuron Neuron of cerebral cortex,MGE_242
+brain,,MGE_243 MGE interneuron Neuron of cerebral cortex,MGE_243
+brain,,MGE_244 MGE interneuron Neuron of gray matter of forebrain,MGE_244
+brain,,MGE_245 MGE interneuron Neuron of gray matter of forebrain,MGE_245
+brain,,MGE_246 MGE interneuron Neuron of gray matter of forebrain,MGE_246
+brain,,MGE_247 MGE interneuron Neuron of hippocampal gyrus (formation),MGE_247
+brain,,MGE_248 MGE interneuron Neuron of cerebral cortex,MGE_248
+brain,,MGE_249 MGE interneuron Neuron of gray matter of forebrain,MGE_249
+brain,,MGE_250 MGE interneuron Neuron of cerebral cortex,MGE_250
+brain,,MGE_251 MGE interneuron Neuron of cerebral cortex,MGE_251
+brain,,MGE_252 MGE interneuron Neuron of cerebral cortex,MGE_252
+brain,,MGE_253 MGE interneuron Neuron of gray matter of forebrain,MGE_253
+brain,,MGE_254 MGE interneuron Neuron of cerebral cortex,MGE_254
+brain,,MGE_255 MGE interneuron Neuron of gray matter of forebrain,MGE_255
+brain,,MGE_256 MGE interneuron Neuron of cerebral cortex,MGE_256
+brain,,MGE_257 MGE interneuron Neuron of cerebral cortex,MGE_257
+brain,,MGE_258 MGE interneuron Neuron of gray matter of forebrain,MGE_258
+brain,,MGE_259 MGE interneuron Neuron of gray matter of forebrain,MGE_259
+brain,,MGE_260 MGE interneuron Neuron of gray matter of forebrain,MGE_260
+brain,,MGE_261 MGE interneuron Neuron of cerebral cortex,MGE_261
+brain,,MGE_262 MGE interneuron Neuron of cerebral cortex,MGE_262
+brain,,MGE_263 MGE interneuron Neuron of cerebral cortex,MGE_263
+brain,CL:0000402,CNS interneuron,CNS interneuron
+brain,,LLC_264 LAMP5-LHX6 and Chandelier Neuron of gray matter of forebrain,LLC_264
+brain,,LLC_265 LAMP5-LHX6 and Chandelier Neuron of gray matter of forebrain,LLC_265
+brain,,LLC_266 LAMP5-LHX6 and Chandelier Neuron of gray matter of forebrain,LLC_266
+brain,,LLC_267 LAMP5-LHX6 and Chandelier Neuron of cerebral cortex,LLC_267
+brain,,LLC_268 LAMP5-LHX6 and Chandelier Neuron of hippocampal gyrus (formation),LLC_268
+brain,,LLC_269 LAMP5-LHX6 and Chandelier Neuron of gray matter of forebrain,LLC_269
+brain,,LLC_270 LAMP5-LHX6 and Chandelier Neuron of cerebral cortex,LLC_270
+brain,,LLC_271 LAMP5-LHX6 and Chandelier Neuron of gray matter of forebrain,LLC_271
+brain,,LLC_272 LAMP5-LHX6 and Chandelier Neuron of gray matter of forebrain,LLC_272
+brain,,LLC_273 LAMP5-LHX6 and Chandelier Neuron of brain,LLC_273
+brain,,LLC_274 LAMP5-LHX6 and Chandelier Neuron of gray matter of forebrain,LLC_274
+brain,,LLC_275 LAMP5-LHX6 and Chandelier Neuron of gray matter of forebrain,LLC_275
+brain,CL:4023064,caudal ganglionic eminence derived interneuron,CGE interneuron
+brain,,CGE_276 CGE interneuron Neuron of gray matter of forebrain,CGE_276
+brain,,CGE_277 CGE interneuron Neuron of gray matter of forebrain,CGE_277
+brain,,CGE_278 CGE interneuron Neuron of gray matter of forebrain,CGE_278
+brain,,CGE_279 CGE interneuron Neuron of gray matter of forebrain,CGE_279
+brain,,CGE_280 CGE interneuron Neuron of gray matter of forebrain,CGE_280
+brain,,CGE_281 CGE interneuron Neuron of gray matter of forebrain,CGE_281
+brain,,CGE_282 CGE interneuron Neuron of cerebral cortex,CGE_282
+brain,,CGE_283 CGE interneuron Neuron of cerebral cortex,CGE_283
+brain,,CGE_284 CGE interneuron Neuron of gray matter of forebrain,CGE_284
+brain,,CGE_285 CGE interneuron Neuron of gray matter of forebrain,CGE_285
+brain,,CGE_286 CGE interneuron Neuron of gray matter of forebrain,CGE_286
+brain,,CGE_287 CGE interneuron Neuron of brain,CGE_287
+brain,,CGE_288 CGE interneuron Neuron of gray matter of forebrain,CGE_288
+brain,,CGE_289 CGE interneuron Neuron of gray matter of forebrain,CGE_289
+brain,,CGE_290 CGE interneuron Neuron of cerebral cortex,CGE_290
+brain,,CGE_291 CGE interneuron Neuron of gray matter of forebrain,CGE_291
+brain,,CGE_292 CGE interneuron Neuron of cerebral cortex,CGE_292
+brain,,CGE_293 CGE interneuron Neuron of gray matter of forebrain,CGE_293
+brain,,CGE_294 CGE interneuron Neuron of brain,CGE_294
+brain,,CGE_295 CGE interneuron Neuron of gray matter of forebrain,CGE_295
+brain,,CGE_296 CGE interneuron Neuron of gray matter of forebrain,CGE_296
+brain,,,upper rhombic lip neuron
+brain,,URL_297 Upper rhombic lip Neuron of midbrain,URL_297
+brain,CL:4023057,cerebellar inhibitory GABAergic interneuron,cerebellar inhibitory
+brain,,CBI_298 Cerebellar inhibitory Neuron of gray matter of hindbrain,CBI_298
+brain,,CBI_299 Cerebellar inhibitory Neuron of gray matter of hindbrain,CBI_299
+brain,,CBI_300 Cerebellar inhibitory Neuron of gray matter of hindbrain,CBI_300
+brain,,CBI_301 Cerebellar inhibitory Neuron of pons,CBI_301
+brain,,CBI_302 Cerebellar inhibitory Neuron of gray matter of hindbrain,CBI_302
+brain,,CBI_303 Cerebellar inhibitory Neuron of cerebellum,CBI_303
+brain,,CBI_304 Cerebellar inhibitory Neuron of cerebellum,CBI_304
+brain,,CBI_305 Cerebellar inhibitory Neuron of gray matter of hindbrain,CBI_305
+brain,,CBI_306 Cerebellar inhibitory Neuron of cerebellum,CBI_306
+brain,,CBI_307 Cerebellar inhibitory Neuron of gray matter of hindbrain,CBI_307
+brain,,URL_308 Upper rhombic lip Neuron of gray matter of hindbrain,URL_308
+brain,,URL_309 Upper rhombic lip Neuron of gray matter of hindbrain,URL_309
+brain,,URL_310 Upper rhombic lip Neuron of gray matter of hindbrain,URL_310
+brain,,URL_311 Upper rhombic lip Neuron of gray matter of hindbrain,URL_311
+brain,,URL_312 Upper rhombic lip Neuron of gray matter of hindbrain,URL_312
+brain,,Splat_313 Splatter Neuron of brain,Splat_313
+brain,,Misc_314 Miscellaneous Neuron of gray matter of hindbrain,Misc_314
+brain,,,lower rhombic lip neuron
+brain,,LRL_315 Lower rhombic lip Neuron of pons,LRL_315
+brain,,LRL_316 Lower rhombic lip Neuron of gray matter of hindbrain,LRL_316
+brain,,LRL_317 Lower rhombic lip Neuron of pons,LRL_317
+brain,,LRL_318 Lower rhombic lip Neuron of pons,LRL_318
+brain,,LRL_319 Lower rhombic lip Neuron of pons,LRL_319
+brain,,LRL_320 Lower rhombic lip Neuron of pons,LRL_320
+brain,,LRL_321 Lower rhombic lip Neuron of pons,LRL_321
+brain,,LRL_322 Lower rhombic lip Neuron of gray matter of hindbrain,LRL_322
+brain,CL:4023074,mammillary body neuron,mammillary body neuron
+brain,,Mmb_323 Mammillary body Neuron of hypothalamus,Mmb_323
+brain,,Mmb_324 Mammillary body Neuron of hypothalamus,Mmb_324
+brain,,Mmb_325 Mammillary body Neuron of hypothalamus,Mmb_325
+brain,,Mmb_326 Mammillary body Neuron of hypothalamus,Mmb_326
+brain,,Mmb_327 Mammillary body Neuron of hypothalamus,Mmb_327
+brain,,Mmb_328 Mammillary body Neuron of hypothalamus,Mmb_328
+brain,,Mmb_329 Mammillary body Neuron of hypothalamus,Mmb_329
+brain,,Mmb_330 Mammillary body Neuron of hypothalamus,Mmb_330
+brain,,Mmb_331 Mammillary body Neuron of hypothalamus,Mmb_331
+brain,,Mmb_332 Mammillary body Neuron of hypothalamus,Mmb_332
+brain,,Mmb_333 Mammillary body Neuron of hypothalamus,Mmb_333
+brain,,Splat_334 Splatter Neuron of thalamus,Splat_334
+brain,,Splat_335 Splatter Neuron of gray matter of hindbrain,Splat_335
+brain,,Splat_336 Splatter Neuron of midbrain,Splat_336
+brain,,Splat_337 Splatter Neuron of brain,Splat_337
+brain,,Splat_338 Splatter Neuron of medulla oblongata,Splat_338
+brain,,Splat_339 Splatter Neuron of pons,Splat_339
+brain,,Splat_340 Splatter Neuron of brain,Splat_340
+brain,,Splat_341 Splatter Neuron of pons,Splat_341
+brain,,Splat_342 Splatter Neuron of cerebellum,Splat_342
+brain,,Splat_343 Splatter Neuron of medulla oblongata,Splat_343
+brain,,Splat_344 Splatter Neuron of gray matter of hindbrain,Splat_344
+brain,,Splat_345 Splatter Neuron of brain,Splat_345
+brain,,Splat_346 Splatter Neuron of medulla oblongata,Splat_346
+brain,,Splat_347 Splatter Neuron of medulla oblongata,Splat_347
+brain,,Splat_348 Splatter Neuron of medulla oblongata,Splat_348
+brain,,Splat_349 Splatter Neuron of medulla oblongata,Splat_349
+brain,,Splat_350 Splatter Neuron of medulla oblongata,Splat_350
+brain,,Splat_351 Splatter Neuron of brain,Splat_351
+brain,,Splat_352 Splatter Neuron of midbrain,Splat_352
+brain,,Splat_353 Splatter Neuron of thalamus,Splat_353
+brain,,Splat_354 Splatter Neuron of brain,Splat_354
+brain,,Splat_355 Splatter Neuron of brain,Splat_355
+brain,,Splat_356 Splatter Neuron of brain,Splat_356
+brain,,Splat_357 Splatter Neuron of midbrain,Splat_357
+brain,,Splat_358 Splatter Neuron of midbrain,Splat_358
+brain,,Splat_359 Splatter Neuron of midbrain,Splat_359
+brain,,Splat_360 Splatter Neuron of midbrain,Splat_360
+brain,,Splat_361 Splatter Neuron of brain,Splat_361
+brain,,Splat_362 Splatter Neuron of brain,Splat_362
+brain,,Splat_363 Splatter Neuron of gray matter of forebrain,Splat_363
+brain,,Splat_364 Splatter Neuron of midbrain,Splat_364
+brain,,Splat_365 Splatter Neuron of brain,Splat_365
+brain,,Splat_366 Splatter Neuron of brain,Splat_366
+brain,,Splat_367 Splatter Neuron of midbrain,Splat_367
+brain,,Splat_368 Splatter Neuron of brain,Splat_368
+brain,,Splat_369 Splatter Neuron of midbrain,Splat_369
+brain,,Splat_370 Splatter Neuron of midbrain,Splat_370
+brain,,Splat_371 Splatter Neuron of midbrain,Splat_371
+brain,CL:4023068,thalamic excitatory neuron,thalamic excitatory neuron
+brain,,Thex_372 Thalamic excitatory Neuron of brain,Thex_372
+brain,,Splat_373 Splatter Neuron of brain,Splat_373
+brain,,Splat_374 Splatter Neuron of brain,Splat_374
+brain,,Splat_375 Splatter Neuron of thalamus,Splat_375
+brain,,Splat_376 Splatter Neuron of brain,Splat_376
+brain,,Splat_377 Splatter Neuron of gray matter of forebrain,Splat_377
+brain,,Splat_378 Splatter Neuron of brain,Splat_378
+brain,,Splat_379 Splatter Neuron of pons,Splat_379
+brain,,Splat_380 Splatter Neuron of gray matter of hindbrain,Splat_380
+brain,,Splat_381 Splatter Neuron of brain,Splat_381
+brain,,Splat_382 Splatter Neuron of brain,Splat_382
+brain,,Splat_383 Splatter Neuron of brain,Splat_383
+brain,,Splat_384 Splatter Neuron of brain,Splat_384
+brain,,Splat_385 Splatter Neuron of hypothalamus,Splat_385
+brain,,Splat_386 Splatter Neuron of medulla oblongata,Splat_386
+brain,,Splat_387 Splatter Neuron of brain,Splat_387
+brain,,Splat_388 Splatter Neuron of pons,Splat_388
+brain,,Splat_389 Splatter Neuron of brain,Splat_389
+brain,,Splat_390 Splatter Neuron of brain,Splat_390
+brain,,Splat_391 Splatter Neuron of hypothalamus,Splat_391
+brain,,Splat_392 Splatter Neuron of gray matter of forebrain,Splat_392
+brain,,Splat_393 Splatter Neuron of brain,Splat_393
+brain,,Splat_394 Splatter Neuron of pons,Splat_394
+brain,,Splat_395 Splatter Neuron of midbrain,Splat_395
+brain,,Splat_396 Splatter Neuron of brain,Splat_396
+brain,,Splat_397 Splatter Neuron of brain,Splat_397
+brain,,Splat_398 Splatter Neuron of gray matter of hindbrain,Splat_398
+brain,,Splat_399 Splatter Neuron of medulla oblongata,Splat_399
+brain,,Splat_400 Splatter Neuron of gray matter of forebrain,Splat_400
+brain,,Misc_401 Miscellaneous Neuron of gray matter of forebrain,Misc_401
+brain,,Splat_402 Splatter Neuron of brain,Splat_402
+brain,,Splat_403 Splatter Neuron of brain,Splat_403
+brain,,Misc_404 Miscellaneous Neuron of cerebral cortex,Misc_404
+brain,,Amex_405 Amygdala excitatory Neuron of gray matter of forebrain,Amex_405
+brain,,Amex_406 Amygdala excitatory Neuron of gray matter of forebrain,Amex_406
+brain,,Amex_407 Amygdala excitatory Neuron of gray matter of forebrain,Amex_407
+brain,,Amex_408 Amygdala excitatory Neuron of gray matter of forebrain,Amex_408
+brain,,Splat_409 Splatter Neuron of gray matter of forebrain,Splat_409
+brain,,Splat_410 Splatter Neuron of gray matter of forebrain,Splat_410
+brain,,Splat_411 Splatter Neuron of hypothalamus,Splat_411
+brain,,Splat_412 Splatter Neuron of hypothalamus,Splat_412
+brain,,Splat_413 Splatter Neuron of hypothalamus,Splat_413
+brain,,Splat_414 Splatter Neuron of hypothalamus,Splat_414
+brain,,Splat_415 Splatter Neuron of brain,Splat_415
+brain,,Splat_416 Splatter Neuron of gray matter of forebrain,Splat_416
+brain,,Splat_417 Splatter Neuron of hypothalamus,Splat_417
+brain,,Splat_418 Splatter Neuron of hypothalamus,Splat_418
+brain,CL:4023039,amygdala excitatory neuron,Amygdala excitatory neuron
+brain,,Amex_419 Amygdala excitatory Neuron of gray matter of forebrain,Amex_419
+brain,,Splat_420 Splatter Neuron of gray matter of forebrain,Splat_420
+brain,,Splat_421 Splatter Neuron of gray matter of forebrain,Splat_421
+brain,,Splat_422 Splatter Neuron of brain,Splat_422
+brain,,Splat_423 Splatter Neuron of brain,Splat_423
+brain,,Splat_424 Splatter Neuron of gray matter of forebrain,Splat_424
+brain,,Splat_425 Splatter Neuron of gray matter of forebrain,Splat_425
+brain,,EMSN_426 Eccentric medium spiny neuron Neuron of gray matter of forebrain,EMSN_426
+brain,,MSN_427 Medium spiny neuron Neuron of brain,MSN_427
+brain,,Splat_428 Splatter Neuron of brain,Splat_428
+brain,,Splat_429 Splatter Neuron of gray matter of forebrain,Splat_429
+brain,,MSN_430 Medium spiny neuron Neuron of gray matter of forebrain,MSN_430
+brain,,Splat_431 Splatter Neuron of hypothalamus,Splat_431
+brain,,Splat_432 Splatter Neuron of brain,Splat_432
+brain,CL:4023079,midbrain-derived inhibitory neuron,midbrain-derived inhibitory neuron
+brain,,Midi_433 Midbrain-derived inhibitory Neuron of brain,Midi_433
+brain,,Midi_434 Midbrain-derived inhibitory Neuron of brain,Midi_434
+brain,,Midi_435 Midbrain-derived inhibitory Neuron of brain,Midi_435
+brain,,Midi_436 Midbrain-derived inhibitory Neuron of brain,Midi_436
+brain,,Midi_437 Midbrain-derived inhibitory Neuron of brain,Midi_437
+brain,,Midi_438 Midbrain-derived inhibitory Neuron of brain,Midi_438
+brain,,Midi_439 Midbrain-derived inhibitory Neuron of brain,Midi_439
+brain,,Midi_440 Midbrain-derived inhibitory Neuron of brain,Midi_440
+brain,,Midi_441 Midbrain-derived inhibitory Neuron of brain,Midi_441
+brain,,Midi_442 Midbrain-derived inhibitory Neuron of thalamus,Midi_442
+brain,,Midi_443 Midbrain-derived inhibitory Neuron of thalamus,Midi_443
+brain,,Midi_444 Midbrain-derived inhibitory Neuron of brain,Midi_444
+brain,,Thex_445 Thalamic excitatory Neuron of thalamus,Thex_445
+brain,,Thex_446 Thalamic excitatory Neuron of thalamus,Thex_446
+brain,,Thex_447 Thalamic excitatory Neuron of thalamus,Thex_447
+brain,,Thex_448 Thalamic excitatory Neuron of thalamus,Thex_448
+brain,,Thex_449 Thalamic excitatory Neuron of thalamus,Thex_449
+brain,,Thex_450 Thalamic excitatory Neuron of thalamus,Thex_450
+brain,,Thex_451 Thalamic excitatory Neuron of thalamus,Thex_451
+brain,,Thex_452 Thalamic excitatory Neuron of thalamus,Thex_452
+brain,,Thex_453 Thalamic excitatory Neuron of brain,Thex_453
+brain,,Thex_454 Thalamic excitatory Neuron of thalamus,Thex_454
+brain,,Thex_455 Thalamic excitatory Neuron of thalamus,Thex_455
+brain,,Thex_456 Thalamic excitatory Neuron of thalamus,Thex_456
+brain,,Thex_457 Thalamic excitatory Neuron of thalamus,Thex_457
+brain,,Thex_458 Thalamic excitatory Neuron of thalamus,Thex_458
+brain,,Thex_459 Thalamic excitatory Neuron of gray matter of forebrain,Thex_459
+brain,,Thex_460 Thalamic excitatory Neuron of thalamus,Thex_460
+brain,PCL:0015001,Inh L1 LAMP5 PVRL2 primary motor cortex GABAergic interneuron (Hsap),Inh L1 LAMP5 PVRL2
+brain,PCL:0015002,Inh L1 LAMP5 RAB11FIP1 primary motor cortex GABAergic interneuron (Hsap),Inh L1 LAMP5 RAB11FIP1
+brain,PCL:0015003,Inh L1-6 LAMP5 AARD primary motor cortex GABAergic interneuron (Hsap),Inh L1-6 LAMP5 AARD
+brain,PCL:0015004,Inh L1-6 LAMP5 NES primary motor cortex GABAergic interneuron (Hsap),Inh L1-6 LAMP5 NES
+brain,PCL:0015005,Inh L1-6 LAMP5 CA1 primary motor cortex GABAergic interneuron (Hsap),Inh L1-6 LAMP5 CA1
+brain,PCL:0015006,Inh L5-6 LAMP5 CRABP1 primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 LAMP5 CRABP1
+brain,PCL:0015007,Inh L3-6 PAX6 LINC01497 primary motor cortex GABAergic interneuron (Hsap),Inh L3-6 PAX6 LINC01497
+brain,PCL:0015008,Inh L1 PAX6 MIR101-1 primary motor cortex GABAergic interneuron (Hsap),Inh L1 PAX6 MIR101-1
+brain,PCL:0015014,Inh L1 LAMP5 BMP2 primary motor cortex GABAergic interneuron (Hsap),Inh L1 LAMP5 BMP2
+brain,PCL:0015015,Inh L1 LAMP5 NMBR primary motor cortex GABAergic interneuron (Hsap),Inh L1 LAMP5 NMBR
+brain,PCL:0015009,Inh L1 PAX6 CHRFAM7A primary motor cortex GABAergic interneuron (Hsap),Inh L1 PAX6 CHRFAM7A
+brain,PCL:0015010,Inh L1-6 VIP SLC7A6OS primary motor cortex GABAergic interneuron (Hsap),Inh L1-6 VIP SLC7A6OS
+brain,PCL:0015011,Inh L2 PAX6 FREM2 primary motor cortex GABAergic interneuron (Hsap),Inh L2 PAX6 FREM2
+brain,PCL:0015012,Inh L1-2 VIP HTR3A primary motor cortex GABAergic interneuron (Hsap),Inh L1-2 VIP HTR3A
+brain,PCL:0015013,Inh L1-2 VIP WNT4 primary motor cortex GABAergic interneuron (Hsap),Inh L1-2 VIP WNT4
+brain,PCL:0015016,Inh L1 PVALB-like SST ASIC4 primary motor cortex GABAergic interneuron (Hsap),Inh L1 PVALB SST ASIC4
+brain,PCL:0015017,Inh L1 SST P4HA3 primary motor cortex GABAergic interneuron (Hsap),Inh L1 SST P4HA3
+brain,PCL:0015018,Inh L1 SST DEFB108B primary motor cortex GABAergic interneuron (Hsap),Inh L1 SST DEFB108B
+brain,PCL:0015019,Inh L1-3 VIP CBLN1 primary motor cortex GABAergic interneuron (Hsap),Inh L1-3 VIP CBLN1
+brain,PCL:0015020,Inh L1-2 VIP EXPH5 primary motor cortex GABAergic interneuron (Hsap),Inh L1-2 VIP EXPH5
+brain,PCL:0015021,Inh L1-3 VIP HSPB6 primary motor cortex GABAergic interneuron (Hsap),Inh L1-3 VIP HSPB6
+brain,PCL:0015022,Inh L1-2 VIP PTGER3 primary motor cortex GABAergic interneuron (Hsap),Inh L1-2 VIP PTGER3
+brain,PCL:0015023,Inh L1-2 VIP SCML4 primary motor cortex GABAergic interneuron (Hsap),Inh L1-2 VIP SCML4
+brain,PCL:0015024,Inh L1-3 VIP FNDC1 primary motor cortex GABAergic interneuron (Hsap),Inh L1-3 VIP FNDC1
+brain,PCL:0015025,Inh L1-3 VIP CHRNA2 primary motor cortex GABAergic interneuron (Hsap),Inh L1-3 VIP CHRNA2
+brain,PCL:0015026,Inh L2 VIP SLC6A16 primary motor cortex GABAergic interneuron (Hsap),Inh L2 VIP SLC6A16
+brain,PCL:0015027,Inh L1 VIP KLHDC8B primary motor cortex GABAergic interneuron (Hsap),Inh L1 VIP KLHDC8B
+brain,PCL:0015028,Inh L3-5 VIP IGDCC3 primary motor cortex GABAergic interneuron (Hsap),Inh L3-5 VIP IGDCC3
+brain,PCL:0015029,Inh L1-5 VIP SMOC1 primary motor cortex GABAergic interneuron (Hsap),Inh L1-5 VIP SMOC1
+brain,PCL:0015030,Inh L3-5 VIP HS3ST3A1 primary motor cortex GABAergic interneuron (Hsap),Inh L3-5 VIP HS3ST3A1
+brain,PCL:0015031,Inh L5-6 VIP COL4A3 primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 VIP COL4A3
+brain,PCL:0015032,Inh L1-5 VIP CD27-AS1 primary motor cortex GABAergic interneuron (Hsap),Inh L1-5 VIP CD27-AS1
+brain,PCL:0015033,Inh L2-5 VIP BSPRY primary motor cortex GABAergic interneuron (Hsap),Inh L2-5 VIP BSPRY
+brain,PCL:0015034,Inh L2-5 VIP SOX11 primary motor cortex GABAergic interneuron (Hsap),Inh L2-5 VIP SOX11
+brain,PCL:0015035,Inh L3-6 VIP ZIM2-AS1 primary motor cortex GABAergic interneuron (Hsap),Inh L3-6 VIP ZIM2-AS1
+brain,PCL:0015036,Inh L1-5 VIP PHLDB3 primary motor cortex GABAergic interneuron (Hsap),Inh L1-5 VIP PHLDB3
+brain,PCL:0015037,Inh L1-5 VIP LINC01013 primary motor cortex GABAergic interneuron (Hsap),Inh L1-5 VIP LINC01013
+brain,PCL:0015038,Inh L3-6 VIP UG0898H09 primary motor cortex GABAergic interneuron (Hsap),Inh L3-6 VIP UG0898H09
+brain,PCL:0015039,Inh L3-5 VIP TAC3 primary motor cortex GABAergic interneuron (Hsap),Inh L3-5 VIP TAC3
+brain,PCL:0015040,Inh L1-6 SST NPY primary motor cortex GABAergic interneuron (Hsap),Inh L1-6 SST NPY (Sst Chodl)
+brain,PCL:0015041,Inh L3-5 SST CDH3 primary motor cortex GABAergic interneuron (Hsap),Inh L3-5 SST CDH3
+brain,PCL:0015042,Inh L5 SST RPL35AP11 primary motor cortex GABAergic interneuron (Hsap),Inh L5 SST RPL35AP11
+brain,PCL:0015043,Inh L5-6 SST ISX primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 SST ISX
+brain,PCL:0015044,Inh L5-6 PVALB SST CRHR2 primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 PVALB SST CRHR2
+brain,PCL:0015045,Inh L3-5 SST OR5AH1P primary motor cortex GABAergic interneuron (Hsap),Inh L3-5 SST OR5AH1P
+brain,PCL:0015046,Inh L3-5 SST GGTLC3 primary motor cortex GABAergic interneuron (Hsap),Inh L3-5 SST GGTLC3
+brain,PCL:0015047,Inh L2-3 SST NMU primary motor cortex GABAergic interneuron (Hsap),Inh L2-3 SST NMU
+brain,PCL:0015048,Inh L5-6 SST PAWR primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 SST PAWR
+brain,PCL:0015049,Inh L5-6 SST PIK3CD primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 SST PIK3CD
+brain,PCL:0015050,Inh L1-2 SST CCNJL primary motor cortex GABAergic interneuron (Hsap),Inh L1-2 SST CCNJL
+brain,PCL:0015051,Inh L1-3 SST FAM20A primary motor cortex GABAergic interneuron (Hsap),Inh L1-3 SST FAM20A
+brain,PCL:0015052,Inh L1-2 SST PRRT4 primary motor cortex GABAergic interneuron (Hsap),Inh L1-2 SST PRRT4
+brain,PCL:0015053,Inh L5-6 SST BEAN1 primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 SST BEAN1
+brain,PCL:0015054,Inh L5-6 SST DNAJC14 primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 SST DNAJC14
+brain,PCL:0015055,Inh L5-6 SST C4orf26 primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 SST C4orf26
+brain,PCL:0015056,Inh L5-6 SST FBN2 primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 SST FBN2
+brain,PCL:0015057,Inh L5-6 SST KLHL1 primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 SST KLHL1
+brain,PCL:0015058,Inh L6 SST TH primary motor cortex GABAergic interneuron (Hsap),Inh L6 SST TH
+brain,PCL:0015059,Inh L5-6 PVALB KCNIP2 primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 PVALB KCNIP2
+brain,PCL:0015060,Inh L5-6 PVALB ZFPM2-AS1 primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 PVALB ZFPM2-AS1
+brain,PCL:0015061,Inh L3-5 PVALB ISG20 primary motor cortex GABAergic interneuron (Hsap),Inh L3-5 PVALB ISG20
+brain,PCL:0015062,Inh L5 PVALB LRIG3 primary motor cortex GABAergic interneuron (Hsap),Inh L5 PVALB LRIG3
+brain,PCL:0015063,Inh L2-5 PVALB HHIPL1 primary motor cortex GABAergic interneuron (Hsap),Inh L2-5 PVALB HHIPL1
+brain,PCL:0015064,Inh L2-5 PVALB RPH3AL primary motor cortex GABAergic interneuron (Hsap),Inh L2-5 PVALB RPH3AL
+brain,PCL:0015065,Inh L3 PVALB SAMD13 primary motor cortex GABAergic interneuron (Hsap),Inh L3 PVALB SAMD13
+brain,PCL:0015066,Inh L1-2 PVALB CDK20 primary motor cortex GABAergic interneuron (Hsap),Inh L1-2 PVALB CDK20
+brain,PCL:0015067,Inh L2 PVALB FRZB primary motor cortex GABAergic interneuron (Hsap),Inh L2 PVALB FRZB
+brain,PCL:0015068,Inh L1-2 SST CLIC6 primary motor cortex GABAergic interneuron (Hsap),Inh L1-2 SST CLIC6
+brain,PCL:0015069,Inh L5-6 PVALB GAPDHP60 primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 PVALB GAPDHP60
+brain,PCL:0015070,Inh L5-6 PVALB FAM150B primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 PVALB FAM150B
+brain,PCL:0015071,Inh L5-6 PVALB MEPE primary motor cortex GABAergic interneuron (Hsap),Inh L5-6 PVALB MEPE
+brain,PCL:0015072,Inh L1-6 PVALB COL15A1 primary motor cortex GABAergic interneuron (Hsap),Inh L1-6 PVALB COL15A1 (Chandelier)
+brain,PCL:0015073,Exc L2 LAMP5 KCNG3 primary motor cortex glutamatergic neuron (Hsap),Exc L2 LAMP5 KCNG3
+brain,PCL:0015074,Exc L2 LINC00507 ATP7B primary motor cortex glutamatergic neuron (Hsap),Exc L2 LINC00507 ATP7B
+brain,PCL:0015075,Exc L2 LINC00507 GLRA3 primary motor cortex glutamatergic neuron (Hsap),Exc L2 LINC00507 GLRA3
+brain,PCL:0015076,Exc L2-3 RORB RTKN2 primary motor cortex glutamatergic neuron (Hsap),Exc L2-3 RORB RTKN2
+brain,PCL:0015077,Exc L2-3 LINC00507 DSG3 primary motor cortex glutamatergic neuron (Hsap),Exc L2-3 LINC00507 DSG3
+brain,PCL:0015078,Exc L3 LAMP5 CARM1P1 primary motor cortex glutamatergic neuron (Hsap),Exc L3 LAMP5 CARM1P1
+brain,PCL:0015080,Exc L2-3 RORB CCDC68 primary motor cortex glutamatergic neuron (Hsap),Exc L2-3 RORB CCDC68
+brain,PCL:0015081,Exc L2-3 RORB PTPN3 primary motor cortex glutamatergic neuron (Hsap),Exc L2-3 RORB PTPN3
+brain,PCL:0015082,Exc L3 THEMIS ENPEP primary motor cortex glutamatergic neuron (Hsap),Exc L3 THEMIS ENPEP
+brain,PCL:0015083,Exc L3-5 RORB TNNT2 primary motor cortex glutamatergic neuron (Hsap),Exc L3-5 RORB TNNT2
+brain,PCL:0015084,Exc L3-5 RORB LAMA4 primary motor cortex glutamatergic neuron (Hsap),Exc L3-5 RORB LAMA4
+brain,PCL:0015085,Exc L5 THEMIS VILL primary motor cortex glutamatergic neuron (Hsap),Exc L5 THEMIS VILL
+brain,PCL:0015086,Exc L3 RORB OTOGL primary motor cortex glutamatergic neuron (Hsap),Exc L3 RORB OTOGL
+brain,PCL:0015087,Exc L3-5 RORB LINC01202 primary motor cortex glutamatergic neuron (Hsap),Exc L3-5 RORB LINC01202
+brain,PCL:0015088,Exc L5 THEMIS SLC22A18 primary motor cortex glutamatergic neuron (Hsap),Exc L5 THEMIS SLC22A18
+brain,PCL:0015089,Exc L5-6 THEMIS TNFAIP6 primary motor cortex glutamatergic neuron (Hsap),Exc L5-6 THEMIS TNFAIP6
+brain,PCL:0015090,Exc L3-5 RORB LNX2 primary motor cortex glutamatergic neuron (Hsap),Exc L3-5 RORB LNX2
+brain,PCL:0015091,Exc L3-5 RORB RPRM primary motor cortex glutamatergic neuron (Hsap),Exc L3-5 RORB RPRM
+brain,PCL:0015092,Exc L5 RORB MED8 primary motor cortex glutamatergic neuron (Hsap),Exc L5 RORB MED8
+brain,PCL:0015093,Exc L5 THEMIS FGF10 primary motor cortex glutamatergic neuron (Hsap),Exc L5 THEMIS FGF10
+brain,PCL:0015094,Exc L6 THEMIS LINC00343 primary motor cortex glutamatergic neuron (Hsap),Exc L6 THEMIS LINC00343
+brain,PCL:0015095,Exc L6 THEMIS SLN primary motor cortex glutamatergic neuron (Hsap),Exc L6 THEMIS SLN
+brain,PCL:0015096,Exc L6 THEMIS SNTG2 primary motor cortex glutamatergic neuron (Hsap),Exc L6 THEMIS SNTG2
+brain,PCL:0015097,Exc L5-6 THEMIS SMYD1 primary motor cortex glutamatergic neuron (Hsap),Exc L5-6 THEMIS SMYD1 (L6 IT Car3)
+brain,PCL:0015098,Exc L5-6 FEZF2 OR1L8 primary motor cortex glutamatergic neuron (Hsap),Exc L5-6 FEZF2 OR1L8
+brain,PCL:0015099,Exc L5 THEMIS LINC01116 primary motor cortex glutamatergic neuron (Hsap),Exc L5 THEMIS LINC01116
+brain,PCL:0015100,Exc L5 THEMIS RGPD6 primary motor cortex glutamatergic neuron (Hsap),Exc L5 THEMIS RGPD6
+brain,PCL:0015101,Exc L5-6 FEZF2 C9orf135-AS1 primary motor cortex glutamatergic neuron (Hsap),Exc L5-6 FEZF2 C9orf135-AS1
+brain,PCL:0015102,Exc L5-6 FEZF2 FILIP1L primary motor cortex glutamatergic neuron (Hsap),Exc L5-6 FEZF2 FILIP1L
+brain,PCL:0015103,Exc L5-6 FEZF2 SH2D1B primary motor cortex glutamatergic neuron (Hsap),Exc L5-6 FEZF2 SH2D1B
+brain,PCL:0015104,Exc L6 FEZF2 PDYN primary motor cortex glutamatergic neuron (Hsap),Exc L6 FEZF2 PDYN
+brain,PCL:0015105,Exc L6 FEZF2 FFAR4 primary motor cortex glutamatergic neuron (Hsap),Exc L6 FEZF2 FFAR4
+brain,PCL:0015106,Exc L6 FEZF2 PROKR2 primary motor cortex glutamatergic neuron (Hsap),Exc L6 FEZF2 PROKR2
+brain,PCL:0015107,Exc L5-6 FEZF2 CFTR primary motor cortex glutamatergic neuron (Hsap),Exc L5-6 FEZF2 CFTR
+brain,PCL:0015108,Exc L6 FEZF2 KLK7 primary motor cortex glutamatergic neuron (Hsap),Exc L6 FEZF2 KLK7
+brain,PCL:0015109,Exc L6 FEZF2 POGK primary motor cortex glutamatergic neuron (Hsap),Exc L6 FEZF2 POGK
+brain,PCL:0015110,Exc L5 FEZF2 CSN1S1 primary motor cortex glutamatergic neuron (Hsap),Exc L5 FEZF2 CSN1S1
+brain,PCL:0015111,Exc L3-5 FEZF2 ASGR2 primary motor cortex glutamatergic neuron (Hsap),Exc L3-5 FEZF2 ASGR2
+brain,PCL:0015112,Exc L3-5 FEZF2 LINC01107 primary motor cortex glutamatergic neuron (Hsap),Exc L3-5 FEZF2 LINC01107
+brain,PCL:0015113,Exc L5 FEZF2 PKD2L1 primary motor cortex glutamatergic neuron (Hsap),Exc L5 FEZF2 PKD2L1
+brain,PCL:0015114,Exc L5 FEZF2 NREP-AS1 primary motor cortex glutamatergic neuron (Hsap),Exc L5 FEZF2 NREP-AS1
+brain,PCL:0015115,Exc L5 FEZF2 RNF144A-AS1 primary motor cortex glutamatergic neuron (Hsap),Exc L5 FEZF2 RNF144A-AS1
+brain,PCL:0015116,Exc L5-6 FEZF2 IFNG-AS1 primary motor cortex glutamatergic neuron (Hsap),Exc L5-6 FEZF2 IFNG-AS1
+brain,PCL:0015117,Exc L5-6 FEZF2 LPO primary motor cortex glutamatergic neuron (Hsap),Exc L5-6 FEZF2 LPO
+brain,PCL:0015118,OPC L1-6 PDGFRA COL20A1 primary motor cortex oligodendrocyte precursor cell (Hsap),OPC L1-6 PDGFRA COL20A1
+brain,PCL:0015079,Oligo L2-6 OPALIN MAP6D1 primary motor cortex oligodendrocyte (Hsap),Oligo L2-6 OPALIN MAP6D1
+brain,PCL:0015119,Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte (Hsap),Oligo L3-6 OPALIN ENPP6
+brain,PCL:0015120,Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte (Hsap),Oligo L2-6 OPALIN FTH1P3
+brain,PCL:0015121,Oligo L5-6 OPALIN LDLRAP1 primary motor cortex oligodendrocyte (Hsap),Oligo L5-6 OPALIN LDLRAP1
+brain,PCL:0015122,Astro L1-6 FGFR3 AQP1 primary motor cortex astrocyte (Hsap),Astro L1-6 FGFR3 AQP1
+brain,PCL:0015123,Astro L1 FGFR3 SERPINI2 primary motor cortex astrocyte (Hsap),Astro L1 FGFR3 SERPINI2
+brain,PCL:0015124,Astro L1-6 FGFR3 PLCG1 primary motor cortex astrocyte (Hsap),Astro L1-6 FGFR3 PLCG1
+brain,PCL:0015125,Endo L2-5 NOSTRIN SRGN primary motor cortex endothelial cell (Hsap),Endo L2-5 NOSTRIN SRGN
+brain,PCL:0015126,VLMC L1-5 PDGFRA COLEC12 primary motor cortex vascular leptomeningeal cell (Hsap),VLMC L1-5 PDGFRA COLEC12
+brain,PCL:0015127,Micro L1-6 TYROBP CD74 primary motor cortex microglial cell (Hsap),Micro L1-6 TYROBP CD74
+eye,CL:0000540,Neuron,Neuron
+eye,CL:0000099,Interneuron,Interneuron
+eye,CL:0000561,Amacrine Cell,Amacrine Cell
+eye,CL:0000561,Amacrine Cell,Amacrine cell
+eye,CL:0011005,GABAergic interneuron,GABAergic interneuron
+eye,,,glutamic acid decarboxylase 65 cell
+eye,CL:4030028,glycinergic amacrine cell,Glycinergic Amacrine Cell
+eye,,,A8 bistratified small-field cell
+eye,CL:0004252,medium field retinal amacrine cell,medium-field cell
+eye,CL:0004253,wide field retinal amacrine cell,wide field cell
+eye,,,polyaxonal amacrine cell
+eye,,,semilunar type 1 cell
+eye,,,semilunar type 3 cell
+eye,CL:0004219,A2 amacrine cell,A2 cell
+eye,,,semilunar cell
+eye,CL:0004232,starburst amacrine cell,starburst amacrine cell
+eye,CL:0000748,retinal bipolar neuron,Bipolar Cell
+eye,CL:0000748,retinal bipolar neuron,Bipolar cell
+eye,CL:0000749,ON-bipolar cell,ON Bipolar cell
+eye,CL:4033019,ON-blue cone bipolar cell,blue cone bipolar cell
+eye,CL:0000750,OFF-bipolar cell,OFF Bipolar cell
+eye,CL:4033027,diffuse bipolar 1 cell,Diffuse bipolar 1 (DB1)
+eye,CL:4033028,diffuse bipolar 2 cell,Diffuse bipolar 2 cell
+eye,CL:4033029,diffuse bipolar 3a cell,Diffuse bipolar 3a cell
+eye,CL:4033030,diffuse bipolar 3b cell,Diffuse bipolar 3b cell
+eye,CL:4033031,diffuse bipolar 4 cell,Diffuse bipolar 4 cell
+eye,CL:4033032,diffuse bipolar 6 cell,Diffuse bipolar 6 cell
+eye,CL:4033033,flat midget bipolar cell,Flat midget bipolar cell
+eye,CL:4033034,invaginating midget bipolar cell,invaginating bipolar cell
+eye,CL:0000751,rod bipolar cell,rod bipolar cell
+eye,CL:0000287,eye photoreceptor cell,photoreceptor
+eye,CL:0000573,retinal cone cell,retinal cone cell
+eye,CL:0002585,retinal blood vessel endothelial cell,Endothelial Cell
+eye,CL:0000540,neuron,Neuron
+eye,CL:0000740,retinal ganglion cell,Ganglion cell
+eye,CL:4023188,Midget ganglion cell of retina,Midget cell
+eye,CL:4023189,Parasol ganglion cell of retina,Parasol cell
+eye,CL:0011004,lens fiber cell,lens fiber cell
+eye,CL:0002228,primary lens fiber,primary lens fiber
+eye,CL:0000745,retina horizontal cell,Horizontal Cell
+eye,CL:0002224,lens epithelial cell,lens epithelial cell
+eye,CL:0002225,secondary lens fiber,mature fiber cell
+eye,CL:0000129,microglial cell,microglial cell
+eye,CL:0000636,Mueller cell,Muller glia
+eye,CL:0008034,mural cell,Mural Cell
+eye,CL:0000669,pericyte,Pericyte
+eye,CL:0000287,eye photoreceptor cell,Photoreceptor
+eye,CL:0000604,retinal rod cell,retinal rod cell
+eye,CL:0002586,retinal pigment epithelial cell,retinal pigmented epithelial cell
+eye,CL:0000132,corneal endothelial cell,corneal endothelial cell
+eye,CL:0002363,keratocyte,keratocyte
+eye,CL:0017004,telocyte,telocyte
+eye,CL:0000575,corneal epithelial cell,corneal epithelial cell
+eye,CL:0002304,non-pigmented ciliary epithelial cell,non-pigmented ciliary epithelial cell
+eye,CL:0000066,epithelial cell,epithelial cell
+eye,CL:0002565,iris pigment epithelial cell,iris pigment epithelial cell
+eye,CL:0002303,pigmented ciliary epithelial cell,pigmented ciliary epithelial cell
+eye,,,glial cell
+eye,,,limbal stem cells
+fallopian_tube,,,Fibroblast
+fallopian_tube,,,fibroblast-mesenchymal cell
+fallopian_tube,,,macrophage
+fallopian_tube,,,CD8+ T-cells
+fallopian_tube,,,Natural killer cell
+fallopian_tube,,,CD4+ T-cell
+fallopian_tube,,,Langerhans cell
+fallopian_tube,,,monocyte
+fallopian_tube,,,dendritic cell
+fallopian_tube,,,mast cell
+fallopian_tube,,,B cell
+fallopian_tube,,,plasma cell
+fallopian_tube,,,neutrophil
+fallopian_tube,,,Endothelial cell
+fallopian_tube,,,epithelial cell
+fallopian_tube,,,intercalary cell
+fallopian_tube,,,ciliated epithelial cell
+fallopian_tube,,,secretory epithelial cell
+heart,CL:1000477,cardiac pacemaker cell of sinoatrial node,pacemaker cell
+heart,CL:1000413,endothelial cell of artery,endothelial cell
+heart,CL:0002592,smooth muscle cell of the coronary artery,smooth muscle cell
+heart,CL:0000057,fibroblast,fibroblast
+heart,CL:0000746,cardiac muscle cell,cardiomyocyte
+heart,CL:2000067,cardiac atrium fibroblast,fibroblast
+heart,CL:0000235,macrophage,macrophage
+heart,CL:0002573,Schwann cell,Schwann Cell
+heart,CL:0000097,mast cell,mast cell
+heart,CL:0002138,lymphatic endothelial cell,lymphatic endothelial cell
+heart,CL:0000236,B cell,B lymphocyte
+heart,CL:0000914,immature NK T cell,NK/T lymphocyte
+heart,CL:0001065,Innate lymphoid cell,Innate lymphoid cell
+heart,CL:0002350,endocardial cell,endocardial cell
+heart,CL:0010008,cardiac endothelial cell,endothelial cell
+heart,CL:0000359,vascular associated smooth muscle cell,smooth muscle cell
+heart,CL:0000669,pericyte,pericyte
+heart,CL:0017004,telocyte,telocyte (interstitial like cell of cajal)
+heart,CL:0000542,lymphocyte,lymphocyte
+heart,CL:0001056,"dendritic cell, human",dendritic cell
+heart,CL:0000136,fat cell,adipocyte
+heart,CL:0001065,innate lymphoid cell,ILC
+heart,CL:0002350,endocardial cell,endocardial
+heart,CL:0000071,blood vessel endothelial cell,endothelial cell
+heart,CL:0002144,capillary endothelial cell,capillary endothelial cell
+heart,CL:0002068,Purkinje myocyte,Purkinje fiber cell
+heart,CL:2000066,cardiac ventricle fibroblast,fibroblast
+heart,CL:0000097,mast cell ,mast cell
+heart,CL:0000071,blood vessel endothelial cell,smooth muscle cell
+heart,CL:1000477,cardiac pacemaker cell of sinoatrial node,pacemaker cardiomyocyte
+heart,,,valve interstitial cell
+heart,CL:0000077,mesothelial cell,mesothelial cell
+heart,CL:1000309,epicardial adipocyte,adipocyte
+kidney,,,capsule mesenchymal stromal cell
+kidney,CL:0000653,podocyte,Podocyte
+kidney,CL:0000653,glomerular visceral epithelial cell,Podocyte
+kidney,CL:1000714,kidney cortex collecting duct principal cell,Cortical Collecting Duct Principal Cell
+kidney,CL:1001108,kidney loop of Henle medullary thick ascending limb epithelial cell,Medullary Thick Ascending Limb Cell
+kidney,CL:4030013,kidney loop of Henle long descending thin limb outer medulla epithelial cell,Descending Thin Limb Cell Type 2
+kidney,CL:1001285,vasa recta descending limb cell,Descending Vasa Recta Endothelial Cell
+kidney,CL:1000718,kidney inner medulla collecting duct principal cell,Inner Medullary Collecting Duct Cell
+kidney,CL:1000452,parietal epithelial cell,Parietal Epithelial Cell
+kidney,CL:1001005,glomerular capillary endothelial cell,Glomerular Capillary Endothelial Cell
+kidney,CL:1000742,glomerular mesangial cell,Mesangial Cell
+kidney,CL:0002306,epithelial cell of proximal tubule,Proximal Tubule Epithelial Cell
+kidney,CL:4030009,epithelial cell of proximal tubule segment 1,Proximal Tubule Epithelial Cell Segment 1
+kidney,CL:4030010,epithelial cell of proximal tubule segment 2,Proximal Tubule Epithelial Cell Segment 2
+kidney,CL:4030011,epithelial cell of proximal tubule segment 3,Proximal Tubule Cell Epithelial Segment 3
+kidney,CL:1001111,kidney loop of Henle thin descending limb epithelial cell,Descending Thin Limb Cell
+kidney,CL:4030012,kidney loop of Henle short descending thin limb epithelial cell,Descending Thin Limb Cell Type 1
+kidney,CL:4030014,kidney loop of Henle long descending thin limb inner medulla epithelial cell,Descending Thin Limb Cell Type 3
+kidney,CL:1001107,kidney loop of Henle thin ascending limb epithelial cell,Ascending Thin Limb Cell
+kidney,CL:1001106,kidney loop of Henle thick ascending limb epithelial cell,Thick Ascending Limb Cell
+kidney,CL:1001109,kidney loop of Henle cortical thick ascending limb epithelial cell,Cortical Thick Ascending Limb Cell
+kidney,CL:1000850,macula densa epithelial cell,Macula Densa cell
+kidney,CL:1000849,kidney distal convoluted tubule epithelial cell,Distal Convoluted Tubule Cell
+kidney,CL:4030016,epithelial cell of early distal convoluted tubule,Distal Convoluted Tubule Cell Type 1
+kidney,CL:4030017,epithelial cell of late distal convoluted tubule,Distal Convoluted Tubule Cell Type 2
+kidney,CL:1000768,kidney connecting tubule epithelial cell,Connecting Tubule Cell
+kidney,CL:4030018,kidney connecting tubule principal cell,Connecting Tubule Principal Cell
+kidney,CL:4030019,kidney connecting tubule intercalated cell,Connecting Tubule Intercalated Cell
+kidney,CL:4030020,kidney connecting tubule alpha-intercalated cell,Connecting Tubule Intercalated Cell Type A
+kidney,CL:4030021,kidney connecting tubule beta-intercalated cell,Intercalated Cell Type B
+kidney,CL:1000454,kidney collecting duct epithelial cell,Collecting Duct Cell
+kidney,CL:1001431,kidney collecting duct principal cell,Collecting Duct Principal Cell
+kidney,CL:1000716,kidney outer medulla collecting duct principal cell,Outer Medullary Collecting Duct Principal Cell
+kidney,CL:1000718,kidney inner medulla collecting duct,Inner Medullary Collecting Duct Cell
+kidney,,,Transitional principal-intercalated cell
+kidney,CL:1001432,kidney collecting duct intercalated cell,Collecting Duct Intercalated Cell
+kidney,CL:4030015,kidney collecting duct alpha-intercalated cell,Collecting Duct Intercalated Cell Type A
+kidney,CL:1000715,kidney cortex collecting duct intercalated cell,Cortical Collecting Duct Intercalated Cell Type A
+kidney,CL:1000717,kidney outer medulla collecting duct intercalated cell,Outer Medullary Collecting Duct Intercalated Cell Type A
+kidney,CL:0002201,renal beta-intercalated cell,Intercalated Cell Type B
+kidney,CL:1000715,kidney cortex collecting duct intercalated cell,Cortical Collecting Duct Intercalated Cell Type B
+kidney,CL:0000115,endothelial cell,Endothelial Cell
+kidney,CL:1001096,kidney afferent arteriole endothelial cell,Afferent Arteriole Endothelial Cell
+kidney,CL:1001099,kidney efferent arteriole endothelial cell,Efferent Arteriole Endothelial cell
+kidney,CL:1001033,peritubular capillary endothelial cell,Peritubular Capillary Endothelial Cell
+kidney,CL:1001131,vasa recta ascending limb cell,Ascending Vasa Recta Endothelial Cell
+kidney,CL:0002138,endothelial cell of lymphatic vessel,Lymphatic Endothelial Cell
+kidney,CL:1001318,renal interstitial pericyte,Vascular Smooth Muscle Cell/Pericyte (general)
+kidney,CL:0019018,blood vessel smooth muscle cell,Vascular Smooth Muscle Cell
+kidney,CL:0000648,kidney granular cell,Juxtaglomerular granular cell (Renin positive)
+kidney,CL:1000692,kidney interstitial fibroblast,Fibroblast
+kidney,CL:4030022,renal medullary fibroblast,Medullary Fibroblast
+kidney,CL:1000691,kidney interstitial myofibroblast,Myofibroblast
+kidney,CL:0000738,Leukocyte,
+kidney,CL:1000695,kidney interstitial alternatively activated macrophage,M2-Macrophage
+kidney,CL:0000875,non-classical monocyte,non Classical Monocyte
+kidney,CL:0000623,natural killer cell,Natural Killer Cell
+kidney,CL:0000814,mature NK T cell,Natural Killer T Cell
+kidney,CL:0001056,"dendritic cell, human",Dendritic Cell (general)
+kidney,CL:0000990,conventional dendritic cell,Dendritic Cell (classical)
+kidney,CL:0001058,"plasmacytoid dendritic cell, human",Dendritic Cell (plasmatoid)
+kidney,CL:0000576,monocyte,Monocyte
+kidney,,,Monocyte Derived Cell
+kidney,CL:0000084,T cell,T Cell
+kidney,CL:0000910,cytotoxic T cell,Cytotoxic T Cell
+kidney,CL:0000815,regulatory T cell,regulatory T cell
+kidney,CL:0000236,B cell,B cell
+kidney,CL:0000786,plasma cell,Plasma cell
+kidney,CL:0000775,neutrophil,Neutrophil
+kidney,CL:0000097,mast cell,Mast cell
+kidney,CL:1000597,papillary tips cell,Papillary Tip Epithelial Cell
+knee,CL:1001607,articular chondrocyte,articular chondrocyte
+knee,,,Deep Superficial
+knee,,,Rounded Chondrocytes
+knee,CL:0000744,columnar chondrocyte,Columnar Chondrocytes
+knee,,,Prehypertrophic Chondrocytes
+knee,CL:0000743,hypertrophic chondrocyte,hypertrophic chondrocyte
+knee,CL:0000743,hypertrophic chondrocyte,Hypertrophic Chondrocytes
+knee,,,Residual Hypertrophic Chondrocytes
+knee,CL:0000137,osteocyte,Osteocytes
+knee,CL:0000137,osteocyte,osteocyte
+knee,CL:0000062,osteoblast,Osteoblasts
+knee,CL:0000062,osteoblast,osteoblast
+knee,,,Bone lIning Cells
+knee,CL:0000092,osteoclast,Osteoclasts
+knee,CL:0000779,multinuclear osteoclast,multinuclear osteoclast
+knee,,,Preosteoclasts
+knee,CL:0000778,mononuclear osteoclast,mononuclear osteoclast
+knee,,,vascular endothelial cells
+knee,CL:2000008,microvascular endothelial cell,microvascular endothelial cell
+knee,,,perivascular cells
+knee,CL:0000669,pericyte cell,pericyte cell
+knee,CL:0007010,preosteoblast,Preosteoblast
+knee,CL:0007010,preosteoblast,preosteoblast
+knee,,,sinusoidal cells
+knee,CL:0002262,endothelial cell of sinusoid,endothelial cell of sinusoid
+knee,,,autonomic neuronal cells
+knee,,,Marrow Adipocytes
+knee,CL:0000136,fat cell,fat cell
+large_intestine,CL:0002071,enterocyte of epithelium of large intestine,absorptive
+large_intestine,CL:1000321,large intestine crypt goblet cell,goblet
+large_intestine,CL:0009016,intestinal crypt stem cell of large intestine,epithelial stem cell
+large_intestine,CL:0009009,paneth cell of epithelium of large intestine,Paneth
+large_intestine,CL:0000165,neuroendocrine cell,neuroendocrine
+large_intestine,CL:0009011,transit amplifying cell of large intestine,transient amplifying cell
+large_intestine,CL:0019032,intestinal tuft cell,tuft cell
+large_intestine,CL:0000915,"CD8-alpha-alpha-positive, alpha-beta intraepithelial T cell",surface intraepithelial CD8+ alph alpha positive alpha/beta lymphocyte
+large_intestine,CL:0000802,"CD8-alpha alpha positive, gamma-delta intraepithelial T cell",surface intraepithelial CD8+ lymphocyte gamma/delta
+large_intestine,CL:0000796,"CD8-alpha-beta-positive, alpha-beta intraepithelial T cell",surface intraepithelial CD8+ alph beta positive alpha/beta lymphocyte
+large_intestine,CL:0000793,"CD4-positive, alpha-beta intraepithelial T cell",surface intraepithelial CD4+ lymphocyte
+large_intestine,CL:0000935,"CD4-negative, CD8-negative, alpha-beta intraepithelial T cell",surface intraepithelial CD4-CD8- lymphocyte alpha/beta
+large_intestine,CL:0000041,mature eosinophil,eosinophil
+large_intestine,,,subepithelial membrane
+large_intestine,,,pericryptal fibroblastic sheath
+large_intestine,CL:0002144,capillary endothelial cell,capillary endothelium
+large_intestine,CL:0002138,endothelial cell of lymphatic vessel,lymphatic endothelium
+large_intestine,CL:0000669,pericyte cell,pericyte
+large_intestine,CL:0000186,myofibroblast cell,myofibroblast
+large_intestine,CL:0000057,fibroblast,fibroblast
+large_intestine,CL:0002573,Schwann cell,nerve/schwann cell
+large_intestine,,,ganglion
+large_intestine,CL:0000165,neuroendocrine cell,neuroendocrine cell
+large_intestine,CL:0000682,M cell of gut,M cell
+large_intestine,CL:0009018,lymphocyte of large intestine lamina propria,B cell
+large_intestine,CL:0009018,lymphocyte of large intestine lamina propria,CD4+ T cell
+large_intestine,CL:0009018,lymphocyte of large intestine lamina propria,regulatory CD4+ T cell
+large_intestine,CL:0009018,macrophage,CD8+ T cell
+large_intestine,CL:0000235,macrophage,macrophage
+large_intestine,CL:0009018,lymphocyte of large intestine lamina propria,NK cell
+large_intestine,CL:0002138,endothelial cell of lymphatic vessel,ILF lymphatic endothelium
+large_intestine,CL:0002652,endothelial cell of high endothelial venule,ILV high endothelial venule endothelium
+large_intestine,CL:0000786,plasma cell,plasma cell
+large_intestine,CL:0009018,lymphocyte of large intestine lamina propria,CD8+ T cell
+large_intestine,CL:0000097,mast cell,mast cell
+large_intestine,CL:0000096,mature neutrophil,neutrophil (normally intravascular only)
+large_intestine,CL:0000451,dendritic cell,dendritic cell
+large_intestine,CL:0009018,lymphocyte of large intestine lamina propria,innate lymphoid cell
+large_intestine,CL:0002573,Schwann cell,nerve
+large_intestine,CL:0000136,fat cell,adipocyte
+large_intestine,CL:1000412,endothelial cell of arteriole,arteriole endothelium
+large_intestine,CL:1000414,endothelial cell of venule,venule endothelium
+large_intestine,CL:0002088,interstitial cell of Cajal,interstitial cell of Cajal
+large_intestine,CL:1000279,,muscle
+large_intestine,CL:1000279,smooth muscle cell of large intestine,muscle
+large_intestine,CL:1000457,mesothelial cell of visceral peritoneum,mesothelial cell
+large_intestine,CL:0009009,paneth cell of colon,Paneth
+large_intestine,CL:0000165,,neuroendocrine
+large_intestine,CL:0009011,transit amplifying cell of colon,transient amplifying cell
+large_intestine,CL:0000915,"CD8-alpha-alpha-positive, alpha-beta intraepithelial T cell",surface intraepithelial CD8+ alpha alpha positive alpha/beta lymphocyte
+large_intestine,CL:0000796,"CD8-alpha-beta-positive, alpha-beta intraepithelial T cell",surface intraepithelial CD8+ alpha beta positive alpha/beta lymphocyte
+large_intestine,CL:0000165,,neuroendocrine cell
+large_intestine,CL:0000786,,plasma cell
+large_intestine,CL:0000096,,neutrophil (normally intravascular only)
+large_intestine,CL:0009009,,Paneth
+large_intestine,CL:0009011,,transient amplifying cell
+large_intestine,CL:0019032,,tuft cell
+large_intestine,CL:0009018,,NK cell
+large_intestine,CL:0009018,,B cell
+large_intestine,CL:0000192,smooth muscle,smooth muscle
+large_intestine,CL:0000244,,transitional
+large_intestine,CL:0000146,,columnar
+large_intestine,CL:0000240,,squamous
+large_intestine,CL:0000453,Langerhans cell,langerhans cells
+large_intestine,CL:0000148,melanocyte,melanocyte
+large_intestine,CL:0000242,Merkel cell,Merkel
+large_intestine,CL:0000312,keratinocyte,keratinocyte
+large_intestine,CL:0000453,Langerhans cell,langerhans
+large_intestine,CL:0000317,sebum secreting cell,sebocyte
+large_intestine,CL:0000434,eccrine cell,eccrine
+large_intestine,CL:1000417,myoepithelial cell of sweat gland,myoepithelial
+large_intestine,CL:0000033,apocrine cell,apocrine
+large_intestine,CL:0000545,T-helper 1 cell,T helper
+large_intestine,CL:0000910,cytotoxic T cell,T killer
+large_intestine,CL:0000815,regulatory T cell,T reg
+large_intestine,CL:0000236,B cell,B cell
+large_intestine,CL:0002573,Schwann cell,schwann cell
+large_intestine,CL:0002576,perineural cell,perineurial cell
+large_intestine,CL:1000412,endothelial cell of arteriole,arteriole endothelial cell
+large_intestine,CL:0000359,vascular associated smooth muscle cell,perivascular smooth muscle cell
+large_intestine,CL:0002292,type I cell of carotid body,glomus cell
+large_intestine,CL:0002042,immature NK T cell stage IV,lymphatic endothelium
+large_intestine,CL:0002543,vein endothelial cell,venous endothelium
+large_intestine,CL:0000188,cell of skeletal muscle,skeletal muscle
+liver,CL:1000398,endothelial cell of hepatic sinusoid,liver sinusoid endothelial cell
+liver,CL:0000091,Kupffer Cell,Kupffer cell
+liver,CL:0000632,hepatic stellate cell,quiescent hepatic stellate cell
+liver,,,Immune cell
+liver,CL:0000182,hepatocyte,hepatocyte
+liver,CL:0019026,periportal region hepatocyte,periportal hepatocyte
+liver,CL:0019029,centrilobular region hepatocyte,pericentral hepatocyte
+liver,CL:0019028,midzonal region hepatocyte,mid zone hepatocyte
+liver,CL:0002543,vein endothelial cell,endothelial cell
+liver,CL:0000241,stratified cuboidal epithelial cell,cuboidal cell (Small cholangiocytes are cuboidal)
+liver,CL:0000075,columnar/cuboidal epithelial cell,columnar cell ( larger cholangiocytes are more columnar) has ciliae
+liver,CL:0000526,afferent neuron cell,neuron cell
+liver,CL:1000413,endothelial cell of artery,endothelial cell
+liver,CL:0019018,blood vessel smooth muscle cell,smooth muscle cell
+liver,,hepatic portal fibroblast,portal fibroblast
+liver,CL:0002196,Hepatic oval cell,hepatic oval cell 
+liver,,,hepatic progenitor cell
+liver,CL:0002138,lymphatic endothelial cell,hepatic lymphatic endothelial cell
+liver,CL:0001056,human Dendritic cell,conventional Dendritic cell
+liver,CL:0000990,conventional dendritic cell,Conventional DC 1
+liver,CL:0002399,CD1c+ myeloid dendritic cell,Conventional DC 2
+liver,CL:0000784,plasmacytoid dendritic cell,plasmacytoid Dendritic cell
+liver,,,CD8 TRm (residence memory)
+liver,CL:0000624,CD4 positive alpha beta,CD4+T cell
+liver,CL:0000798,gamma delta T cell,gamma delta T cell
+liver,CL:0001203,CD8 positiver alpha beta memory T cell CD45RO +,CD8+ Liver-Resident Memory T cell
+liver,CL:0000921,Type I NK T cell,iNKT
+liver,,,Eomes low Liver NK cell
+liver,,,TBet low Liver NK cell
+liver,CL:0000623,Natural killer Cell,NK
+liver,CL:2000054,hepatic Pit cell,Pit cell
+lung,CL:0011103,sympathetic neuron,sympathetic neuron
+lung,,,airway submucosal gland ciliated duct cell
+lung,CL:4033024,airway submucosal gland duct basal cell,airway submucosal gland duct basal cell
+lung,CL:4033023,airway submucosal gland collecting duct epithelial cell,airway submucosal gland collecting duct epithelial cell
+lung,CL:4033005,serous secreting cell of bronchus submucosal gland,serous secreting cell of bronchus submucosal gland
+lung,CL:4033022,mucus secreting cell of bronchus submucosal gland,mucus secreting cell of bronchus submucosal gland
+lung,CL:4033003,myoepithelial cell of bronchus submucosal gland,myoepithelial cell of bronchus submucosal gland
+lung,CL:0002598,bronchial smooth muscle cell,bronchial smooth muscle cell
+lung,CL:4033026,lung perichondrial fibroblast,lung perichondrial fibroblast
+lung,,,airway deuterosomal cell
+lung,CL:0017000,pulmonary ionocyte,pulmonary ionocyte
+lung,,,respiratory suprabasal cell
+lung,CL:0002332,ciliated cell of the bronchus,ciliated cell of the bronchus
+lung,CL:4033009,goblet cell of epithelium of lobar bronchus,goblet cell of epithelium of lobar bronchus
+lung,CL:0002329,basal epithelial cell of tracheobronchial tree,basal epithelial cell of tracheobronchial tree
+lung,CL:4033007,brush cell of epithelium of lobar bronchus,tuft cell
+lung,CL:4033010,neuroendocrine cell of epithelium of lobar bronchus,neuroendocrine cell of epithelium of lobar bronchus
+lung,,,airway submucosal gland ciliated duct cells
+lung,CL:0019002,tracheobronchial chondrocyte,tracheobronchial chondrocyte
+lung,CL:0000158,club cell,club cell
+lung,CL:1000223,lung neuroendocrine cell,lung neuroendocrine cell
+lung,CL:0002208,brush cell of bronchus,tuft cell
+lung,CL:0019003,tracheobronchial goblet cell,tracheobronchial goblet cell
+lung,CL:0019019,tracheobronchial smooth muscle cell,tracheobronchial smooth muscle
+lung,CL:1000271,lung ciliated cell,lung ciliated cell
+lung,CL:1000352,basal cell of epithelium of lobular bronchiole,basal cell of epithelium of lobular bronchiole
+lung,CL:4033017,bronchiolar smooth muscle cell,bronchiolar smooth muscle cell
+lung,CL:1000350,basal cell of epithelium of terminal bronchiole,basal cell of epithelium of terminal bronchiole
+lung,CL:1000351,basal cell of epithelium of respiratory bronchiole,basal cell of epithelium of respiratory bronchiole
+lung,CL:4028003,alveolar capillary type 2 endothelial cell,CAP2 aerocyte capillary aCap
+lung,CL:4028002,alveolar capillary type 1 endothelial cell,CAP1 general capillary gCap
+lung,CL:0002063,type II pneumocyte,alveolar type II cell
+lung,CL:0002062,type I pneumocyte,alveolar type I cell
+lung,CL:0009089,lung pericyte,lung pericyte
+lung,CL:4028006,adventitial fibroblast,adventitial fibroblast
+lung,CL:4028004,alveolar type 1 fibroblast cell,alveolar type 1 fibroblast cell
+lung,CL:0002619,adult endothelial progenitor cell,adult endothelial progenitor cell
+lung,CL:4033008,vein endothelial cell of respiratory system,vein endothelial cell of respiratory system
+lung,CL:0009086,endothelial cell of respiratory system lymphatic vessel,endothelial cell of respiratory system lymphatic vessel
+lung,CL:1000493,mesothelial cell of visceral pleura,mesothelial cell of visceral pleura
+lung,CL:4033018,lung megakaryocyte,lung megakaryocyte
+lung,CL:4033016,secondary crest myofibroblast,secondary crest myofibroblast
+lung,CL:1001568,pulmonary artery endothelial cell,pulmonary artery endothelial cell
+lung,CL:0002591,smooth muscle cell of the pulmonary artery,smooth muscle cell of the pulmonary artery
+lung,CL:0002557,fibroblast of pulmonary artery,fibroblast of pulmonary artery
+lung,CL:0019018,blood vessel smooth muscle cell,blood vessel smooth muscle cell
+lung,CL:1000413,endothelial cell of artery,endothelial cell of artery
+lung,,,alveolar macrophage CCL3+
+lung,CL:0000583,alveolar macrophage,alveolar macrophage
+lung,,,alveolar macrophage proliferating
+lung,,,alveolar macrophage MT-positive
+lung,,,Interstitial macrophage
+lung,CL:0000860,classical monocyte,classical inflammatory monocyte
+lung,CL:0000875,non-classical monocyte,non-classical or patrolling monocyte
+lung,CL:0000623,natural killer cell,natural killer cell
+lung,CL:0000938,"CD16-negative, CD56-bright natural killer cell, human",NK CD56bright
+lung,CL:0000485,mucosal type mast cell,tissue resident mucosal type mast cell
+lung,CL:0000484,connective tissue type mast cell,connective tissue type mast cell
+lung,CL:0000775,neutrophil,neutrophil
+lung,CL:0000767,basophil,basophil
+lung,CL:0019015,lung parenchyma resident eosinophil,lung parenchyma resident eosinophil
+lung,CL:0000814,mature NK T cell,mature NK T cell
+lung,CL:0000895,"naive thymus-derived CD4-positive, alpha-beta T cell","naive thymus-derived CD4-positive, alpha-beta T cell"
+lung,CL:0000905,"effector memory CD4-positive, alpha-beta T cell","effector memory CD4-positive, alpha-beta T cell"
+lung,,,CD4+ T cell resident memory
+lung,CL:0000815,regulatory T cell,regulatory T cell
+lung,CL:0000900,"naive thymus-derived CD8-positive, alpha-beta T cell","naive thymus-derived CD8-positive, alpha-beta T cell"
+lung,CL:0000913,"effector memory CD8-positive, alpha-beta T cell","effector memory CD8-positive, alpha-beta T cell"
+lung,,,CD8+ T cell resident memory
+lung,CL:0000940,mucosal invariant T cell,mucosal invariant T cell
+lung,CL:0002394,CD141-positive myeloid dendritic cell,cDC1 CD141-positive myeloid dendritic cell
+lung,CL:0002399,CD1c-positive myeloid dendritic cell,cDC2 CD1c-positive myeloid dendritic cell
+lung,,,migratory dendritic cell
+lung,CL:0000784,plasmacytoid dendritic cell,plasmacytoid dendritic cell
+lung,CL:0000786,plasma cell,plasma cell
+lung,CL:0000236,B cell,B cell
+lymph_nodes,CL:0000186,myofibroblast cell,Myofibroblast
+lymph_nodes,CL:0000071,blood vessel endothelial cell,Blood Vessel Endothelial Cell
+lymph_nodes,CL:0000669,pericyte cell,Pericyte
+lymph_nodes,CL:0002138,endothelial cell of lymphatic vessel,Endothelial Cell of Lymphatic Vessel
+lymph_nodes,CL:0019017,Lymphatic vessel smooth muscle cell,Smooth Muscle Cell
+lymph_nodes,CL:0000887,lymph node subcapsular sinus macrophage,Macrophage
+lymph_nodes,CL:0009103,ymph node marginal reticular cell,Marginal Reticular Cell
+lymph_nodes,CL:0009107,lymphatic endothelial cell of subcapsular sinus ceiling,Lymphatic Endothelial Cell -Subcapsular Sinus Ceiling
+lymph_nodes,CL:0009108,lymphatic endothelial cell of subcapsular sinus floor,Lymphatic Endothelial Cell-Subcapsular Sinus Floor
+lymph_nodes,CL:0009109,lymphatic endothelial cell of trabecula,Lymphatic Endothelial Cell-Trabeculae
+lymph_nodes,CL:0000442,follicular dendritic cell,Follicular Dendritic Cell
+lymph_nodes,CL:0000788,naive B cell,Naive B Cell
+lymph_nodes,CL:0000787,memory B cell,Memory B Cell
+lymph_nodes,CL:0000235,macrophage,Macrophage
+lymph_nodes,CL:0009111,centrocyte,Centrocyte
+lymph_nodes,CL:0002038,T follicular helper cell,T Follicular Helper Cell
+lymph_nodes,CL:0009113,T follicular regulatory cell,T Follicular Regulatory Cell
+lymph_nodes,CL:0000888,lymph node tingible body macrophage,Tingible Body Macrophage
+lymph_nodes,CL:0000980,plasmablast,Plasmablast
+lymph_nodes,CL:0009112,centroblast,Centroblast
+lymph_nodes,CL:0009104,B cell zone reticular cell,B Cell Zone Reticular Cell
+lymph_nodes,CL:0000895,"naive thymus-derived CD4-positive, alpha-beta T cell",Naive CD4+ T cell
+lymph_nodes,CL:0000897,"CD4-positive, alpha-beta memory T cell",Memory CD4+ T cell
+lymph_nodes,CL:0000545,T-helper 1 cell,Th1 cell
+lymph_nodes,CL:0000546,T-helper 2 cell,Th2 cell
+lymph_nodes,CL:0000899,T-helper 17 cell,Th17 cell
+lymph_nodes,CL:0000815,regulatory T cell,T Regulatory Cell
+lymph_nodes,CL:0000910,cytotoxic T cell,T Cytotoxic Cell
+lymph_nodes,CL:0000900,"naive thymus-derived CD8-positive, alpha-beta T cell",Naive CD8+ T cell
+lymph_nodes,CL:0000909,"CD8-positive, alpha-beta memory T cell",Memory CD8+ T cell
+lymph_nodes,CL:0000623,natural killer cell,Natural Killer Cell
+lymph_nodes,CL:0009105,T cell zone reticular cell,T Cell Zone Reticular Cell
+lymph_nodes,CL:0000451,dendritic cell,Dendritic Cell
+lymph_nodes,CL:0002399,CD1c-positive myeloid dendritic cell,Conventional Dendritic Cell cDC2
+lymph_nodes,CL:0002138,endothelial cell of lymphatic vessel,Lymphatic Endothelial Cell
+lymph_nodes,CL:0001058,"plasmacytoid dendritic cell, human",Plasmacytoid Dendritic Cell
+lymph_nodes,CL:0002394,CD141-positive myeloid dendritic cell,Conventional Dendritic Cell cDC1
+lymph_nodes,CL:0000798,gamma-delta T cell,Gamma/Delta T cells
+lymph_nodes,CL:0000097,mast cell,Mast Cell
+lymph_nodes,CL:0000786,plasma cell,Plasma Cell
+lymph_nodes,CL:0009114,monocytoid B Cell,Monocytoid B Cell
+lymph_nodes,CL:0000236,B cell,B Cell
+lymph_nodes,CL:0009106,medullary reticular cell,Medullary Reticular Cell
+lymph_nodes,CL:0000084,T Cell,T Cell
+lymph_nodes,CL:0009110,lymphatic endothelial cell of medulla ceiling,Lymphatic Endothelial Cell of Medulla Ceiling
+lymph_nodes,CL:0019017,lymphatic vessel smooth muscle cell,Smooth Muscle Cell
+lymph_nodes,CL:0011103,sympathetic neuron,Sympathetic Neuron
+lymph_vasculature,CL:0002138,endothelial cell of lymphatic vessel,lymphatic endothelial cell
+main-bronchus,CL:0002598,bronchial smooth muscle cell,bronchial smooth muscle cell
+main-bronchus,LMHA:00142,ciliated cell of terminal ciliated ducts of submucosal glands,ciliated cell of terminal ciliated ducts of submucosal glands
+main-bronchus,CL:4033023,airway submucosal gland collecting duct epithelial cell,airway submucosal gland collecting duct epithelial cell
+main-bronchus,CL:1000331,serous cell of epithelium of bronchus,serous cell of epithelium of bronchus
+main-bronchus,CL:4033022,mucus secreting cell of bronchus submucosal gland,mucus secreting cell of bronchus submucosal gland
+main-bronchus,CL:4033003,myoepithelial cell of bronchus submucosal gland,myoepithelial cell of bronchus submucosal gland
+main-bronchus,CL:4033024,airway submucosal gland duct basal cell,airway submucosal gland duct basal cell
+main-bronchus,CL:0019002,tracheobronchial chondrocyte,tracheobronchial chondrocyte
+main-bronchus,CL:0019002,lung perichondrial fibroblast,lung perichondrial fibroblast
+main-bronchus,CL:0017000,pulmonary ionocyte,pulmonary ionocyte
+main-bronchus,CL:4033010,neuroendocrine cell of epithelium of lobar bronchus,neuroendocrine cell of epithelium of lobar bronchus
+main-bronchus,,,respiratory suprabasal cell
+main-bronchus,CL:0002332,ciliated cell of the bronchus,ciliated cell of the bronchus
+main-bronchus,CL:4033007,brush cell of epithelium of lobar bronchus,tuft cell
+main-bronchus,,,airway deuterosomal cell
+main-bronchus,CL:4033009,goblet cell of epithelium of lobar bronchus,goblet cell of epithelium of lobar bronchus
+main-bronchus,CL:0002329,basal epithelial cell of tracheobronchial tree,basal epithelial cell of tracheobronchial tree
+main-bronchus,CL:1000413,endothelial cell of artery,endothelial cell of artery
+main-bronchus,CL:0019018,blood vessel smooth muscle cell,blood vessel smooth muscle cell
+main-bronchus,CL:4033008,vein endothelial cell of respiratory system,vein endothelial cell of respiratory system
+muscular-system,CL:0000188,cell of skeletal muscle,skeletal muscle cell
+ovary,CL:0002095,hilar cell,hilar cell
+ovary,,,columnar ovarian surface epithelial cell
+ovary,,,flattened cuboidal ovarian surface epithelial cell
+ovary,,,corpus luteum endothelial cell
+ovary,,,corpus luteum macrophage
+ovary,,,Stroma Type I cell
+ovary,,,Stroma Type II cell
+ovary,,,Stroma Type III cell
+ovary,,,Stroma Type IV cell
+ovary,,,Stroma Type V cell
+ovary,EFO:0005289,mural granulosa cell,mural granulosa cell
+ovary,CL:0000654,primary oocyte,primary oocyte
+ovary,,,pre-antral follicle granulosa cell
+ovary,CL:0000175,luteal cell,luteal cell
+ovary,CL:0000503,theca cell,theca cell
+ovary,CL:0000711,cumulus cell,cumulus granulosa cell
+pancreas,CL:1001599,pancreas exocrine glandular cell,Pancreas exocrine glandular cell
+pancreas,CL:0002064,pancreatic acinar cell,Acinar cell
+pancreas,CL:0000192,smooth muscle cell,Smooth muscle cell
+pancreas,CL:0002079,pancreatic ductal cell,Ductal cell
+pancreas,CL:1001433,epithelial cell of exocrine pancreas,Ductal epithelial cell
+pancreas,CL:0000146,simple columnar epithelial cell,Simple columnar epithelial cell
+pancreas,,,Low columnar epithelial cell
+pancreas,,,Nonmucinous cuboidal epithelial cell
+pancreas,CL:0002080,pancreatic centro-acinar cell,Centroacinar cell
+pancreas,,,Flat epithelial cells
+pancreas,CL:1000322,pancreatic goblet cell,Pancreatic goblet cell
+pancreas,CL:0000577,type EC enteroendocrine cell,Enterochromaffin cell
+pancreas,,,Tall columnar epithelial cell
+pancreas,CL:0000542,lymphocyte,Lymphocyte
+pancreas,CL:0000236,B cell,B lymphocyte
+pancreas,CL:0000084,T cell,T lymphocyte
+pancreas,CL:0000094,granulocyte,Granulocyte
+pancreas,CL:0000775,neutrophil,Neutrophil
+pancreas,CL:0000235,macrophage,Macrophage
+pancreas,CL:0000451,dendritic cell,Dendritic cell
+pancreas,CL:0008024,pancreatic endocrine cell,Endocrine cell
+pancreas,CL:0000171,pancreatic A cell,Alpha cell
+pancreas,CL:0000169,type B pancreatic cell,Beta cell
+pancreas,CL:0000173,pancreatic D cell,Delta cell
+pancreas,CL:0002275,pancreatic PP cell,PP cell
+pancreas,CL:0005019,pancreatic epsilon cell,Epsilon cell
+pancreas,CL:0000509,gastrin secreting cell,Gastrin cell
+pancreas,,,M1-like macrophage
+pancreas,,,M2-like macrophage
+pancreas,CL:0002574,stromal cell of pancreas,Stromal cell
+pancreas,CL:0000057,fibroblast,Fibroblast
+pancreas,CL:0002410,pancreatic stellate cell,Pancreatic stellate cell
+pancreas,,,Activated stellate cell
+pancreas,,,Quiescent stellate cell
+pancreas,CL:0000136,fat cell,Adipocyte
+peripheral_nervous_system,CL:0000540,neuron,neuron
+placenta full term,CL:0000071,blood vessel endothelial cell,vascular endothelial cells
+placenta full term,CL:0000669,pericyte cell,pericytes
+placenta full term,CL:0000359,vascular associated smooth muscle cell,vascular smooth muscle cells
+placenta full term,CL:0002568,mesenchymal stem cell of Wharton's jelly,mesenchymal stromal cell of Wharton's jelly
+placenta full term,CL:0008036,extravillous trophoblast,extravillous trophoblast (interstitial)
+placenta full term,CL:0002536,epithelial cell of amnion,amnion epithelial cell (AEC)
+placenta full term,,,amnion mesenchymal stromal cell (AMSC)
+placenta full term,,,chorionic mesenchymal stromal cell (CMSC)
+placenta full term,CL:0000523,cytotrophoblast,cytotrophoblast (CTB)
+placenta full term,CL:0008036,extravillous trophoblast,extravillous trophoblast (EVT)
+placenta full term,,,endometrial epithelial cell
+placenta full term,CL:0002255,stromal cell of endometrium,endometrial stromal cell
+placenta full term,,,uterine NK cell
+placenta full term,,,uterine macrophage
+placenta full term,CL:0000815,regulatory T cell,regulatory T cell
+placenta full term,CL:0000910,cytotoxic T cell,cytotoxic T cell
+placenta full term,CL:0000236,B cell,B cell
+placenta full term,CL:2000091,endometrial microvascular endothelial cells,endometrial microvascular endothelial cell (EMEC)
+placenta full term,CL:0008036,extravillous trophoblast,extravillous trophoblast (endovascular)
+placenta full term,CL:0002138,endothelial cell of lymphatic vessel,lymphatic endothelial cell
+placenta full term,CL:0000525,syncytiotrophoblast,syncytiotrophoblast (STB)
+placenta full term,CL:3000001,Hofbauer cell,Hofbauer cell (HC)
+placenta full term,,,placental stromal cell (PSC)
+placenta full term,CL:2000062,placental villous capillary endothelial cell,placental microvascular endothelial cells
+prostate,CL:0002340,luminal cell of prostate epithelium,luminal epithelia
+prostate,CL:0002341,basal cell of prostate epithelium,basal epithelia
+prostate,CL:0002313,endocrine-paracrine cell of prostate gland,neuroendocrine epithelia
+prostate,CL:1000487,smooth muscle cell of prostate,prostate smooth muscle
+prostate,CL:2000059,prostate gland microvascular endothelial cell,endothelia
+prostate,,fibroblast of subepithelial connective tissue of prostatic gland,periepithelial fibroblast
+prostate,,fibroblast of connective tissue of prostate,interstitial fibroblast
+prostate,,vascular smooth muscle cell of prostate,vascular smooth muscle
+prostate,,prostate perictye,prostate perictye
+prostate,,basal cell of prostatic urethra,basal cell of prostatic urethra
+prostate,,club cell of prostatic urethra,club cell of prostatic urethra
+prostate,,hillock cell of prostatic urethra,hillock cell of prostatic urethra
+skeleton,CL:0001035,bone cell,bone cell
+skin,CL:0002153,corneocyte,Keratinocyte (Corneocyte)
+skin,CL:0000312,keratinocyte,Keratinocyte (Granular)
+skin,CL:0002457,epidermal Langerhans cell,Langerhans cell
+skin,CL:0000649,prickle cell,Keratinocytes (Spinous)
+skin,CL:0000242,Merkel cell,Merkel cell
+skin,CL:0000646,basal cell,Keratinocyte (Basal)
+skin,CL:1000458,melanocyte of skin,Melanocyte
+skin,,,Keratinocyte (Onychocyte)
+skin,CL:0002337,keratinocyte stem cell,keratinocyte stem cell
+skin,CL:0000151,sebum secreting cell,"Germinative (epithelial) cell, Sebocyte"
+skin,CL:1000417,myoepithelial cell of sweat gland,myoepithelial cell
+skin,CL:0002620,skin fibroblast,Fibroblast
+skin,CL:0000097,mast cell,Mast cell
+skin,CL:0001006,dermal dendritic cell,Dendritic cell (DC1)
+skin,CL:0001006,dermal dendritic cell,Dendritic cell (DC2)
+skin,CL:0001006,dermal dendritic cell,Dendritic cell (monocyte-derived)
+skin,CL:0001006,dermal dendritic cell,Dendritic cell (migratory)
+skin,CL:0000235,macrophage,Macrophage
+skin,CL:0000545,T-helper 1 cell,T helper
+skin,CL:0000910,cytotoxic T cell,T killer
+skin,CL:0000815,regulatory T cell,T reg
+skin,CL:0000623,natural killer cell,Natural killer cell
+skin,CL:0001067,group 1 innate lymphoid cell,Natural killer cell / Innate lymphoid cell 1
+skin,CL:0001069,group 2 innate lymphoid cell,Innate lymphoid cell 2
+skin,CL:0001071,group 3 innate lymphoid cell,Innate lymphoid cell 3
+skin,CL:0000236,B cell,B cell
+skin,CL:0000786,plasma cell,Plasma cell
+skin,CL:0000775,neutrophil,Neutrophil
+skin,CL:0000771,eosinophil,Eosinophil
+skin,CL:0000540,Neuron,Neuron
+skin,CL:0002573,Schwann cell,Schwann cell
+skin,,,perineurial cells
+skin,CL:0000115,endothelial cell,Endothelial cell
+skin,CL:0000359,smooth muscle cell,Perivascular smooth muscle cell
+skin,CL:0002292,type I cell of carotid body,Glomus cell
+skin,CL:0000669,pericyte cell,Pericyte
+skin,CL:0002138,endothelial cell of lymphatic vessel,Lymphatic
+skin,CL:0002521,subcutaneous fat cell,Adipocyte
+skin,,,Perineural cell
+small_intestine,CL:1000344,paneth cell of epithelium proper of small intestine,Paneth cell
+small_intestine,CL:1000324,duodenal goblet cell,goblet cell
+small_intestine,CL:0009080,tuft cell of small intestine,tuft cell
+small_intestine,CL:0000212,absorptive cell,absorptive
+small_intestine,CL:0000584,enterocyte,enterocyte
+small_intestine,CL:0000163,endocrine cell,endocrine lineage cell
+small_intestine,CL:0000034,stem cell,stem cell
+small_intestine,,,BCHE (butyrylcholinesterase) cell
+small_intestine,CL:0000115,endothelial,endothelial
+small_intestine,,,lymphatic
+small_intestine,CL:0000186,myofibroblast,myofibroblast
+small_intestine,CL:0000057,fibroblast,fibroblast
+small_intestine,,,nerve
+small_intestine,CL:0000682,M cell of gut,M cell
+small_intestine,CL:0000236,B cell,B cell
+small_intestine,CL:0000786,plasma cell,plasma
+small_intestine,,,CD4+ T
+small_intestine,,,regulatory CD4+ T
+small_intestine,,,CD8+ T
+small_intestine,CL:0000235,macrophage,macrophage
+small_intestine,CL:0000771,eosinophil,eosinophil
+small_intestine,CL:0000097,mast cell,mast cell
+small_intestine,CL:0000775,neutrophil,neutrophil
+small_intestine,CL:0000623,natural killer cell,natural killer (NK) cell
+small_intestine,CL:0000451,dendritic cell,dendritic cell (DC)
+small_intestine,CL:0001065,innate lymphoid cell,innate lyphoid cell (ILC)
+small_intestine,,,muscle
+small_intestine,CL:0000077,mesothelial cell,mesothelial
+small_intestine,CL:0000057,fibroblast,fibroblasts
+small_intestine,CL:0000115,endothelial cell,endothelial cells
+small_intestine,CL:0000036,epithelial fate stem cell,epithelial stem cells
+small_intestine,CL:1000344,paneth cell of epithelium proper of small intestine,Paneth
+small_intestine,CL:0000163,endocrine cell,endocrine
+small_intestine,CL:1000325,jejunal goblet cell,goblet
+small_intestine,CL:0000584,enterocyte,enterocytes
+small_intestine,CL:0009080,tuft cell of small intestine,Tuft cells
+small_intestine,CL:0000115,endothelial cell,endothelial
+small_intestine,,,lymphatics
+small_intestine,CL:0000186,myofibroblast,myofibroblasts
+small_intestine,,,nerves
+small_intestine,CL:0000235,macrophage,macrophages
+small_intestine,CL:0000771,eosinophil,eosinophils
+small_intestine,CL:0000097,mast cell,mast cells
+small_intestine,CL:0000775,neutrophil,neutrophils
+small_intestine,CL:0000623,natural killer cell,NK cells
+small_intestine,CL:0000451,dendritic cell,DCs
+small_intestine,CL:0001065,innate lymphoid cell,ILCs
+small_intestine,CL:0000115,endothelial cell,endoethlial
+small_intestine,CL:0002088,interstitial cell of Cajal,Interstitial cells of Cajal
+small_intestine,,,epithelial stem cells
+small_intestine,CL:1000326,ileal goblet cell,goblet
+small_intestine,CL:0000077,mesothelial,mesothelial
+spinal cord,CL:0000065,Ependymal Cell,Ependymal Cell
+spinal cord,CL:0000128,Oligodendrocyte,Oligodendrocyte
+spinal cord,CL:0002453,Oligodendrocyte Precursor Cell,Oligodendrocyte Precursor Cell
+spinal cord,CL:0000127,Astrocyte,Astrocyte
+spinal cord,CL:0000129,microglial cell,Microglia
+spinal cord,CL:0000115,Endothelial Cell,Endothelial Cell
+spinal cord,CL:0000540,neuron,Dorsal Excitatory Neuron 1
+spinal cord,CL:0000540,neuron,Dorsal Excitatory Neuron 2
+spinal cord,CL:0000540,neuron,Dorsal Excitatory Neuron 3
+spinal cord,CL:0000540,neuron,Dorsal Excitatory Neuron 4
+spinal cord,CL:0000540,neuron,Dorsal Excitatory Neuron 5
+spinal cord,CL:0000540,neuron,Dorsal Excitatory Neuron 6
+spinal cord,CL:0000540,neuron,Dorsal Excitatory Neuron 7
+spinal cord,CL:0000540,neuron,Dorsal Excitatory Neuron 8
+spinal cord,CL:0000540,neuron,Dorsal Excitatory Neuron 9
+spinal cord,CL:0000540,neuron,Dorsal Excitatory Neuron 10
+spinal cord,CL:0000540,neuron,Dorsal Excitatory Neuron 11
+spinal cord,CL:0000540,neuron,Dorsal Excitatory Neuron 12
+spinal cord,CL:0000540,neuron,Dorsal Inhibitory Neuron 1
+spinal cord,CL:0000540,neuron,Dorsal Inhibitory Neuron 2
+spinal cord,CL:0000540,neuron,Dorsal Inhibitory Neuron 3
+spinal cord,CL:0000540,neuron,Dorsal Inhibitory Neuron 4
+spinal cord,CL:0000540,neuron,Dorsal Inhibitory Neuron 5
+spinal cord,CL:0000540,neuron,Dorsal Inhibitory Neuron 6
+spinal cord,CL:0000540,neuron,Dorsal Inhibitory Neuron 7
+spinal cord,CL:0000540,neuron,Dorsal Inhibitory Neuron 8
+spinal cord,CL:0000540,neuron,Dorsal Inhibitory Neuron 9
+spinal cord,CL:0000540,neuron,Ventral Excitatory Neuron 1
+spinal cord,CL:0000540,neuron,Ventral Excitatory Neuron 2
+spinal cord,CL:0000540,neuron,Ventral Excitatory Neuron 3
+spinal cord,CL:0000540,neuron,Ventral Inhibitory Neuron 1
+spinal cord,CL:0000540,neuron,Ventral Inhibitory Neuron 2
+spinal cord,CL:0000540,neuron,Ventral Inhibitory Neuron 3
+spinal cord,CL:0000100,motor neuron,motor neuron
+spinal cord,CL:0000540,neuron,Medial Excitatory Neuron 1
+spinal cord,CL:0000540,neuron,Medial Excitatory Neuron 2
+spinal cord,CL:0000540,neuron,Medial Excitatory Neuron 3
+spinal cord,CL:0000540,neuron,Medial Excitatory Neuron 4
+spinal cord,CL:0000540,neuron,Medial Inhibitory Neuron 1
+spleen,CL:2000053,splenic endothelial cell,Splenic endothelial cell
+spleen,,,Catecholaminergic Neuron
+spleen,CL:0000788,naive B Cell,Naive B Cell
+spleen,CL:0000787,memory B cell,Memory-Like B Cell
+spleen,CL:0000972,class switched memory B cell,Switched B Cell
+spleen,,,Adventitial Stromal Cell
+spleen,CL:0000499,stromal cell,Splenic Stromal Cell (non-FRC/non-FDC)
+spleen,CL:0000192,smooth muscle cell,Splenic Smooth Muscle Cell
+spleen,CL:0000669,pericyte,Splenic Pericyte
+spleen,,,Splenic Stromal Sheath Cell
+spleen,CL:0000874,splenic red pulp macrophage,Macrophage
+spleen,,,Reticular Cell of splenic sinusoid
+spleen,,,Splenic Littoral Cell
+spleen,,,Splenic Red Pulp Stromal Cell
+spleen,CL:0000874,splenic red pulp macrophage,Red Pulp Macrophage
+spleen,CL:0000037,hematopoetic stem cell,Hematopoetic Stem Cell
+spleen,CL:0001055,"CD14-positive, CD16-low monocyte",Monocytes
+spleen,CL:0000232,erythrocyte,Erythrocytes
+spleen,,B cell,B cell
+spleen,CL:0000625,"CD8-positive, alpha-beta T cell",CD8+ T Cell
+spleen,CL:0000909,"CD8-positive, alpha-beta memory T cell",Memory CD8+ T Cell
+spleen,CL:0000786,plasma cell,Plasma Cell
+spleen,CL:0000980,plasmablast,Plasmablast
+spleen,CL:0001056,"dendritic cell, human",Dendritic Cell
+spleen,CL:0000233,platelet,Platelet
+spleen,CL:0000623,natural killer cell,NK Cell
+spleen,CL:1000489,reticular cell of splenic cord,Red Pulp Reticular Cell
+spleen,CL:0000775,neutrophil,Neutrophil
+spleen,,,Splenic perifollicular zone macrophage
+spleen,CL:0000499,stromal cell ,Stromal Cell
+spleen,CL:0002394,myeloid dendritic cell cDC1,cDC1 myeloid dendritic cell
+spleen,CL:0002399,myeloid dendritic cell cDC2,cDC2 myeloid dendritic cell
+spleen,CL:0011031,monocyte-derived dendritic cell,Monocyte-Derived DC
+spleen,CL:0001058,"plasmacytoid dendritic cell, human",Plasmacytoid Dendritic Cell
+spleen,,,DEC205+ DC
+spleen,CL:0002138,endothelial cell of lymphatic vessel,Lymphatic Endothelium Cell
+spleen,CL:0000442,follicular dendritic cell,Follicular Dendritic Cell (FDC)
+spleen,CL:0000788,naive B cell,Naive B Cell
+spleen,CL:0000787,memory B cell,Memory B Cell
+spleen,CL:0000876,splenic white pulp macrophage,Macrophage
+spleen,CL:0000844,germinal center B cell,Germinal Center B Cell
+spleen,CL:0002038,T follicular helper cell,T Follicular Helper Cell
+spleen,CL:0009113,T follicular regulatory cell,T Follicular Regulatory Cell
+spleen,CL:0000877,splenic tingible body macrophage,Tingible Body Macrophage
+spleen,,,Mantle Zone B Cell
+spleen,CL:0000818,transitional stage B cell,Transitional Immature B Cells
+spleen,,,Splenic Pericyte
+spleen,CL:0000845,marginal zone B cell of spleen,Superficial Zone B Cell
+spleen,CL:0000872,splenic marginal zone macrophage,Macrophage
+spleen,CL:0000492,CD4-positive helper T cell,CD4+ T cell
+spleen,CL:0001078,"group 3 innate lymphoid cell, human",Innate Lymphoid Cell (Type 3)
+spleen,CL:1000489,reticular cell of splenic cord,Fibroblastic Reticular Cell (FRC)
+spleen,CL:0000895,"naive thymus-derived CD4-positive, alpha-beta T cell",Naive CD4+ T Cell
+spleen,CL:0000492,CD4-positive helper T cell,CD4+ T Cell
+spleen,CL:0000900,"naive thymus-derived CD8-positive, alpha-beta T cell",Naive CD8+ T Cell
+spleen,CL:0001050,"effector CD8-positive, alpha-beta T cell",CD8+ T Cell
+spleen,CL:0000794,"CD8-positive, alpha-beta cytotoxic T cell",Cytotoxic T Cells
+spleen,CL:0000815,regulatory T cell,T Regulatory Cell
+spleen,,,Interdigitating Dendritic Cells
+spleen,CL:0000876,splenic white pulp macrophage,Macrophages
+spleen,,,Splenic Smooth Muscle Cell
+spleen,,,Cytotoxic Memory T Cell
+spleen,CL:0000909,"CD8-positive, alpha-beta memory T cell",Non-Cytotoxic CD8+ Memory T Cell
+spleen,CL:0000897,"CD4-positive, alpha-beta memory T cell",CD4+ Memory T Cell
+spleen,CL:0000186,myofibroblast cell,Myofibroblasts
+spleen,CL:0000798,gamma-delta T cell,Gamma/Delta T cells
+spleen,CL:1000413,endothelial cell of artery,Blood Endothelial Cells
+spleen,CL:0002543,vein endothelial cell,Blood Endothelial Cells
+spleen,CL:0000186,myofibroblast cell,Myofibroblast
+spleen,,,Subcapsular Dendritic Cell
+thymus,CL:0009078,thymic fibroblast type 1,thymic capsular fibroblast
+thymus,CL:0000866,thymic macrophage,macrophage
+thymus,CL:3000002,sympathetic noradrenergic neuron,sympathetic noradrenergic nerve
+thymus,CL:0000071,blood vessel endothelial cell,blood endothelial cell
+thymus,CL:0001070,beige adipocyte,beige adipocyte
+thymus,CL:0009079,thymic fibroblast type 2,thymic interlobular fibroblast
+thymus,CL:0000764,erythroid lineage cell,erythroid
+thymus,CL:0000097,mast cell,mast cell
+thymus,CL:0000771,eosinophil,eosinophil
+thymus,CL:0009077,subcapsular thymic epithelial cell,subcapsular cortical epithelial cell
+thymus,CL:0002425,early T lineage precursor,early thymic progenitor
+thymus,CL:0009081,specified double negative thymocyte,double negative thymocyte 2
+thymus,CL:0009082,committed double negative thymocyte,double negative thymocyte 3
+thymus,CL:0009083,rearranging double negative thymocyte,double negative thymocyte 4
+thymus,CL:0000883,thymic cortical macrophage,macrophage
+thymus,CL:0000809,"double-positive, alpha-beta thymocyte",double positive thymocyte
+thymus,CL:0000942,thymic plasmacytoid dendritic cell,plasmacytoid dendritic cell
+thymus,CL:0002364,cortical thymic epithelial cell,cortical thymic epithelial cell
+thymus,CL:0000970,unswitched memory B cell,memory B cell
+thymus,CL:0000972,class switched memory B cell,memory B cell
+thymus,CL:0000980,plasmablast,plasmablast
+thymus,CL:0000786,plasma cell,plasma cell
+thymus,CL:0000576,monocyte,monocyte
+thymus,CL:0002436,mature CD4 single-positive thymocyte,CD4+ T single positive thymocyte
+thymus,CL:0002437,mature CD8 single-positive thymocyte,CD8+ T single positive thymocyte
+thymus,CL:0002059,CD8alpha-positive thymic conventional dendritic cell,conventional dendritic cell 1
+thymus,CL:0002460,CD8alpha-negative thymic conventional dendritic cell,conventional dendritic cell 2
+thymus,CL:0002138,endothelial cell of lymphatic vessel,lymphatic endothelial cell
+thymus,CL:0009070,corticomedullary thymic epithelial cell,corticomedullary thymic epithelial cell
+thymus,CL:0000934,"CD4-positive, alpha-beta cytotoxic T cell",cytotoxic CD4 T cell
+thymus,CL:0000897,"CD4-positive, alpha-beta memory T cell",CD4+ T memory T cell
+thymus,CL:0000909,"CD8-positive, alpha-beta memory T cell",CD8+ T memory
+thymus,CL:0009068,CD8aa(I) thymocyte,CD8aa(I) thymocyte
+thymus,CL:0009069,CD8aa(II) thymocyte,CD8aa(II) thymocyte
+thymus,CL:0002038,T follicular helper cell,T follicular helper cell
+thymus,CL:0002677,naive regulatory T cell,regulatory T cells
+thymus,CL:0000798,gamma-delta T cell,gamma-delta T cell
+thymus,CL:0000899,T-helper 17 cell,Th17 cell
+thymus,CL:0000940,mucosal invariant T cell,mucosal associated invariant T cell
+thymus,CL:0000914,immature NKT cell,immature NKT cell
+thymus,CL:0000882,thymic medullary macrophage,macrophage
+thymus,CL:0000788,naive B cell,naive B cell
+thymus,CL:0001078,"group 3 innate lymphoid cell, human",group 3 innate lymphoid cell
+thymus,CL:0000623,natural killer cell,natural killer cell
+thymus,CL:0009071,medullary thymic epithelial cell type 1,medullary thymic epithelial cell type 1
+thymus,CL:0009072,medullary thymic epithelial cell type 2,medullary thymic epithelial cell type 2
+thymus,CL:0009073,medullary thymic epithelial cell type 3,medullary thymic epithelial cell type 3
+thymus,CL:0009074,medullary thymic epithelial cell type 4,medullary thymic epithelial cell type 4
+thymus,CL:0009075,myo-medullary thymic epithelial cell,myo-medullary thymic epithelial cell
+thymus,CL:0009076,neuro-medullary thymic epithelial cell,neuro-medullary thymic epithelial cell
+trachea,CL:0002145,ciliated columnar cell of tracheobronchial tree,ciliated columnar cell of tracheobronchial tree
+trachea,CL:1000223,lung neuroendocrine cell,lung neuroendocrine cell
+trachea,CL:0002207,brush cell of trachea,tuft cell
+trachea,CL:1000348,basal cell of epithelium of trachea,basal cell of epithelium of trachea
+trachea,CL:1000329,tracheal goblet cell,tracheal goblet cell
+trachea,CL:0019019,tracheobronchial smooth muscle cell,tracheobronchial smooth muscle cell
+trachea,CL:1000330,serous cell of epithelium of trachea,serous cell of epithelium of trachea
+trachea,CL:4033023,airway submucosal gland collecting duct epithelial cell,airway submucosal gland collecting duct epithelial cell
+trachea,LMHA:00142,ciliated cell of terminal ciliated ducts of submucosal glands,ciliated cell of terminal ciliated ducts of submucosal glands
+trachea,CL:4033024,airway submucosal gland duct basal cell,airway submucosal gland duct basal cell
+trachea,CL:4033020,mucus secreting cell of trachea gland,mucus secreting cell of trachea gland
+trachea,CL:4033021,myoepithelial cell of trachea gland,myoepithelial cell of trachea gland
+trachea,CL:0019002,tracheobronchial chondrocyte,tracheobronchial chondrocyte
+trachea,CL:4033025,perichondrial fibroblast,perichondrial fibroblast
+trachea,CL:4033008,vein endothelial cell of respiratory system,vein endothelial cell of respiratory system
+trachea,CL:0019018,blood vessel smooth muscle cell,blood vessel smooth muscle cell
+trachea,CL:1000413,endothelial cell of artery,endothelial cell of artery
+ureter,CL:1001428,ureter urothelial cell,urothelium
+ureter,,,basal cell of ureter urothelium
+ureter,,,intermediate cell of ureter urothelium
+ureter,,,superficial cell of ureter urothelium
+ureter,,,detrusor smooth muscle cell of ureter
+ureter,CL:1000708,ureter adventitial cell,myofibroblast
+ureter,,,myofibroblast cell of ureter
+ureter,CL:1000308,fibrocyte of adventitia of ureter,fibroblast
+ureter,,,PI16+ fibroblast cell of ureter
+ureter,,,DPT+ fibroblast cell of ureter
+ureter,CL:1000708,ureter adventitial cell,fibroblast
+ureter,,,lipofibroblast cell of ureter
+ureter,CL:1000708,ureter adventitial cell,endothelium
+ureter,,,endothelial cell of ureter
+ureter,CL:1000708,ureter adventitial cell,smooth muscle
+ureter,,,vascular smooth muscle cell of ureter
+ureter,,,pericyte cell of ureter
+urinary_bladder,CL:1001428,bladder urothelial cell,urothelium
+urinary_bladder,,,basal cell of bladder urothelium
+urinary_bladder,,,intermediate cell of bladder urothelium
+urinary_bladder,,,superficial cell of bladder urothelium
+urinary_bladder,CL:0002597,smooth muscle cell of bladder,smooth muscle
+urinary_bladder,,,detrusor smooth muscle cell of bladder
+urinary_bladder,CL:1001319,bladder cell,myofibroblast
+urinary_bladder,,,myofibroblast cell of bladder
+urinary_bladder,CL:1001319,bladder cell,fibroblast
+urinary_bladder,,,PI16+ fibroblast cell of bladder
+urinary_bladder,,,DPT+ fibroblast cell of bladder
+urinary_bladder,,,lipofibroblast cell of bladder
+urinary_bladder,CL:2000040,bladder microvascular endothelial cell,endothelium
+urinary_bladder,,,endothelial cell of bladder
+urinary_bladder,,,vascular smooth muscle cell of bladder
+urinary_bladder,,,pericyte cell of bladder
+uterus,,,endothelial cell
+uterus,,,endocervical epithelial cell
+uterus,,,uterine smooth muscle type I cell
+uterus,,,uterine smooth muscle type II cell
+uterus,,,SOX9+ epithelial cell
+uterus,,,ciliated epithelial cell
+uterus,,,glandular epithelial cell
+uterus,,,luminal epithelial cell
+uterus,,,stromal cell
+uterus,,,perivascular support cell
+uterus,,,macrophage
+uterus,,,lymphocyte
+uterus,,,uterine natural killer cell
+uterus,,,uterine dendritic cells
+uterus,,,B cell
+uterus,,,T cell
+uterus,,,innate lymphoid cell
+uterus,,,mast cell

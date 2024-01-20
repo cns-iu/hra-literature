@@ -56,7 +56,7 @@ for entity_type in ['anatomical_structures', 'cell_types', 'biomarkers']:
     second_table_columns = ['organ', 'id', 'rdfs_label', 'name', 'b_type'] if entity_type == 'biomarkers' else ['organ','id','rdfs_label','name']
 
     # Convert lists to DataFrames and drop duplicates
-    first_table_df = pd.DataFrame(first_tables[entity_type], columns=first_table_columns).drop_duplicates()
+    first_table_df = pd.DataFrame(first_tables[entity_type], columns=first_table_columns)
     second_table_df = pd.DataFrame(second_tables[entity_type], columns=second_table_columns).drop_duplicates()
 
     # Save to CSV
