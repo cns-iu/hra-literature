@@ -1,9 +1,9 @@
 -- ontology data: insert data from data-extraction step
-\copy hralit_anatomical_structures from data/ontology/asct_anatomical_structures.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy hralit_anatomical_structures from data/ontology/asct_anatomical_structures_iri.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
-\copy hralit_cell_types from ata/ontology/asct_cell_types.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy hralit_cell_types from ata/ontology/asct_cell_types_iri.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
-\copy hralit_biomarkers from ata/ontology/asct_biomarkers.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
+\copy hralit_biomarkers from ata/ontology/asct_biomarkers_iri.csv Delimiter E',' CSV HEADER Encoding 'SQL-ASCII';
 
 --insert data for relationships
 

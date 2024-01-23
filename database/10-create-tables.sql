@@ -141,22 +141,19 @@ create table hralit_institution (
     country_code varchar
 );
 
-create table hralit_ontology_anatomical_structures (
-    id varchar,
-    rdfs_label varchar,
-    name varchar
+create table hralit_anatomical_structures (
+    iri varchar,
+    pref_label varchar
 );
 
-create table hralit_ontology_cell_types (
-    id varchar,
-    rdfs_label varchar,
-    name varchar
+create table hralit_cell_types (
+    iri varchar,
+    pref_label varchar
 );
 
-create table hralit_ontology_biomarkers (
-    id varchar,
-    rdfs_label varchar,
-    name varchar,
+create table hralit_biomarkers (
+    iri varchar,
+    pref_label varchar,
     b_type varchar
 );
 

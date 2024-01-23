@@ -2,3 +2,16 @@ data/funding/merged_metadata.7z
 .DS_Store
 data/funding/merged_metadata.7z
 data/ontology/asct_anatomical_structures_modified.csv
+extract/ontology/extract-as-iri.py
+extract/ontology/extract-bm-iri.py
+extract/ontology/extract-ct-iri.py
+extract/ontology/as_iri.py
+extract/ontology/b_iri.py
+extract/ontology/ct_iri.py
+data/ontology/anatomical_structures_iri.csv
+data/ontology/anatomical_structures.csv
+data/ontology/asct_anatomical_structures.csv
+data/ontology/asct_biomarkers_modified.csv
+data/ontology/asct_cell_types_modified.csv
+data/ontology/asctb_linkage.csv
+data/ontology/biomarker_iri.csv
