@@ -1,13 +1,17 @@
 #!/bin/bash
 
+HOST=$(awk -F "=" '/host/ {print $2}' db_config.ini)
+PORT=$(awk -F "=" '/port/ {print $2}' db_config.ini)
+DBNAME=$(awk -F "=" '/dbname/ {print $2}' db_config.ini)
+USER=$(awk -F "=" '/user/ {print $2}' db_config.ini)
+
 pg_dump \
-  -h dbr.cns.iu.edu \
-  -U yokong \
-  -d yokong \
-  -p 5433 \
+  -h $HOST \
+  -U $USER  \
+  -d $DBNAME \
+  -p $PORT \
   -t hralit_asctb_publication \
   -t hralit_author \
-  -t hralit_author_expertise \
   -t hralit_author_institution \
   -t hralit_creator \
   -t hralit_dataset \
@@ -28,5 +32,4 @@ pg_dump \
   -t hralit_other_publication \
   -t hralit_organ \
   -t hralit_publication_subject \
-  -t hralit_anatomical_structures \
   -f data/db/hralit.sql

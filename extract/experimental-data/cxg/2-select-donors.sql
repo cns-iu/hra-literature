@@ -1,24 +1,3 @@
-\copy (
-    SELECT 
-        (dataset_id || '-' || donor_id) AS donors,
-        self_reported_ethnicity,
-        self_reported_ethnicity_ontology_term_id,
-        sex,
-        sex_ontology_term_id,
-        suspension_type,
-        development_stage
-    FROM 
-        cxg_cell_metadata
-    WHERE 
-        development_stage ~ '(\d+)-year-old human stage'
-        AND SUBSTRING(development_stage, '\d+')::integer >= 19
-        AND disease = 'normal'
-    GROUP BY 
-        donors,
-        self_reported_ethnicity,
-        self_reported_ethnicity_ontology_term_id,
-        sex,
-        sex_ontology_term_id,
-        suspension_type,
-        development_stage
-) TO data/experimental/cxg_donors_metadata.csv DELIMITER E',' CSV HEADER ENCODING 'SQL-ASCII';
+version https://git-lfs.github.com/spec/v1
+oid sha256:3062fa54146dfc2c637d7a8e86a9f51d188ecc8ac2198fad456dbb47db2977fd
+size 748

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-database/30-diagrams.sh
-database/31-dot2svg.sh
-database/40-export-db.sh
+# database/30-diagrams.sh
+# database/31-dot2svg.sh
+# database/40-export-db.sh
 
 # Extract database config details
 HOST=$(awk -F "=" '/host/ {print $2}' db_config.ini)

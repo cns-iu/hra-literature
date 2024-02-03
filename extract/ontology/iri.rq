@@ -1,0 +1,11 @@
+# Portal: https://cns-iu.github.io/ldsparql/
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf/v2.2.1> # 5th release is CCF v2.2.1
+ 
+SELECT DISTINCT ?asctb_type ?iri
+From CCF:
+WHERE {
+  ?iri ccf:ccf_asctb_type ?asctb_type
+}
+ORDER BY ?asctb_type

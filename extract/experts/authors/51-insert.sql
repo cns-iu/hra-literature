@@ -1,23 +1,3 @@
--- Create the table
-CREATE TABLE author_info_all_affi (
-    author_id VARCHAR,
-    first_name VARCHAR,
-    last_name VARCHAR,
-    full_name VARCHAR,
-    email_addr VARCHAR,
-    country VARCHAR,
-    city VARCHAR,
-    state VARCHAR,
-    organization VARCHAR,
-    suborganization VARCHAR,
-    zip VARCHAR,
-    first_pubyear INTEGER,
-    last_pubyear INTEGER,
-    career_age_to_current INTEGER,
-    career_age INTEGER
-);
-
--- Import data into the table
-COPY author_info_all_affi 
-FROM data/expert/author_info_all_affi.psv
-WITH DELIMITER '|' CSV HEADER ENCODING 'SQL-ASCII';
+version https://git-lfs.github.com/spec/v1
+oid sha256:8127da4b483821c8fc4c0098572d2135952ad90730aa563f1e3a0fc48bbcf93e
+size 568

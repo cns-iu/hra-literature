@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Database connection details
-DB_NAME="yokong"
+DB_NAME=$(awk -F "=" '/dbname/ {print $2}' db_config.ini | tr -d ' ')
 DB_USER=$(awk -F "=" '/user/ {print $2}' db_config.ini | tr -d ' ')
 DB_PASS=$(awk -F "=" '/password/ {print $2}' db_config.ini | tr -d ' ')
 DB_HOST=$(awk -F "=" '/host/ {print $2}' db_config.ini | tr -d ' ')

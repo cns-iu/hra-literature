@@ -25,5 +25,5 @@ data/ontology/biomarker_proteins.csv
 data/ontology/biomarker_lipids.csv
 data/ontology/cell_types.csv
 data/ontology/cell_types_iri.csv
-
+data/ontology/ccf-asctb-all.json
 

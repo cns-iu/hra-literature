@@ -21,7 +21,7 @@ with conn_pubmed19.cursor() as cursor:
 conn_pubmed19.close()
 
 
-conn_yokong = psycopg2.connect(
+conn_mine = psycopg2.connect(
     dbname=config.get('postgresql', 'dbname'),
     user=config.get('postgresql', 'user'),
     password=config.get('postgresql', 'password'),
@@ -29,7 +29,7 @@ conn_yokong = psycopg2.connect(
     port=config.get('postgresql', 'port')
 )
 
-with conn_yokong.cursor() as cursor:
+with conn_mine.cursor() as cursor:
     create_table_query = """
     CREATE TABLE pmid_grant_all (
         pmid INT,
@@ -41,13 +41,13 @@ with conn_yokong.cursor() as cursor:
     );
     """
     cursor.execute(create_table_query)
-    conn_yokong.commit()
+    conn_mine.commit()
 
     # import data to pmid_grant_all table
     import_query = "COPY pmid_grant_all FROM STDIN WITH DELIMITER '|' CSV HEADER"
     with open('data/funding/pmid_grant_all.psv', 'r') as f:
         cursor.copy_expert(import_query, f)
 
-    conn_yokong.commit()
+    conn_mine.commit()
 
-conn_yokong.close()
+conn_mine.close()

@@ -1,19 +1,3 @@
-CREATE TABLE author_info (
-    uid VARCHAR,
-    name_id INTEGER,
-    first_name VARCHAR,
-    last_name VARCHAR,
-    full_name VARCHAR,
-    email_addr VARCHAR,
-    pubyear VARCHAR,
-    country VARCHAR,
-    city VARCHAR,
-    state VARCHAR,
-    organization VARCHAR,
-    suborganization VARCHAR,
-    zip VARCHAR
-);
-
-
--- Import data into the table using the COPY command
-COPY author_info FROM data/expert/author_info.psv WITH DELIMITER '|' CSV HEADER ENCODING 'SQL-ASCII';
+version https://git-lfs.github.com/spec/v1
+oid sha256:f55521d6f5a837a3cdde254cda4be8da206f33e464c935dd2dd1661af4fc4e0d
+size 468

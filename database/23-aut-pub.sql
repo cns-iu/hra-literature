@@ -1,9 +1,3 @@
-insert into hralit_publication_author (pmid, orcid)
-select 
-    pmid, 
-    'https://orcid.org/' || substring(identifier from '[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]')AS orcid
-from pmid_author
-where pmid in (select pmid from hralit_publication where pmid is not null)
-    and pmid is not null
-    and substring(identifier from '[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]') is not NULL
-group by pmid,orcid;
+version https://git-lfs.github.com/spec/v1
+oid sha256:892a63fa3d6311e035898f65a2d7f1e3f18304eea405cd75905650dff26e800c
+size 406

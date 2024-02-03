@@ -1,24 +1,3 @@
--- export tables of hralit database in CSV format
-\COPY (SELECT * FROM hralit_asctb_publication) TO 'data/db/csv/hralit_asct_publication.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_author) TO 'data/db/csv/hralit_author.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_author_expertise) TO 'data/db/csv/hralit_author_expertise.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_author_institution) TO 'data/db/csv/hralit_author_institution.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_creator) TO 'data/db/csv/hralit_creator.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_dataset) TO 'data/db/csv/hralit_dataset.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_digital_objects) TO 'data/db/csv/hralit_digital_objects.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_donor) TO 'data/db/csv/hralit_donor.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_funder_cleaned) TO 'data/db/csv/hralit_funder_cleaned.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_funding) TO 'data/db/csv/hralit_funding.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_institution) TO 'data/db/csv/hralit_institution.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_anatomical_structures) TO 'data/db/csv/hralit_anatomical_structures.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_biomarkers) TO 'data/db/csv/hralit_biomarkers.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_cell_types) TO 'data/db/csv/hralit_cell_types.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_triple) TO 'data/db/csv/hralit_triple.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_pub_funding_funder) TO 'data/db/csv/hralit_pub_funding_funder.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_publication) TO 'data/db/csv/hralit_publication.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_publication_author) TO 'data/db/csv/hralit_publication_author.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_reviewer) TO 'data/db/csv/hralit_reviewer.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_publication_subject) TO 'data/db/csv/hralit_publication_subject.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_other_publication) TO 'data/db/csv/hralit_other_publication.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_organ) TO 'data/db/csv/hralit_organ.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
-\COPY (SELECT * FROM hralit_asctb_linkage) TO 'data/db/csv/hralit_asctb_linkage.csv' WITH CSV HEADER DELIMITER E',' ENCODING 'SQL-ASCII';
+version https://git-lfs.github.com/spec/v1
+oid sha256:8fb28ab46e8c6c30cd5cb27bbaaa039c3b24eef1612037770653c46028ca64f0
+size 3038

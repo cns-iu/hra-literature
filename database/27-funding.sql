@@ -1,9 +1,3 @@
--- funding data:
-
-insert into hralit_funding (funding_id,acronym)
-select grant_id, acronym
-from pmid_grant_all
-where pmid in (select pmid from hralit_publication where pmid is not null)
-    and pmid is not null
-    and grant_id is not null
-group by grant_id, acronym;
+version https://git-lfs.github.com/spec/v1
+oid sha256:0375c18c40562970370f2cc223eed6f05530a521aafb2b535e255e1582eb43b7
+size 268

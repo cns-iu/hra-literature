@@ -1,28 +1,3 @@
-\t on
-\a
-\pset fieldsep '|'
-\pset format csv
-\o data/expert/author_career_age.psv
-
-WITH aa AS (
-    SELECT 
-        a.identifier, 
-        article_year::INTEGER AS pubyear 
-    FROM 
-        medline_author_identifier a 
-    LEFT JOIN 
-        medline_article_date b ON a.pmid = b.pmid
-)
-
-SELECT 
-    identifier, 
-    MIN(pubyear) AS first_pubyear, 
-    MAX(pubyear) AS last_pubyear, 
-    2024 - MIN(pubyear) AS career_age_to_current, 
-    MAX(pubyear) - MIN(pubyear) AS career_age 
-FROM 
-    aa 
-GROUP BY 
-    identifier;
-
-\o
+version https://git-lfs.github.com/spec/v1
+oid sha256:10e76ea64be071baa7614fd35200d17e40a894a4d73f98e7374ac8620293b415
+size 526

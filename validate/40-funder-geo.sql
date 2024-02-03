@@ -1,14 +1,3 @@
-with aa as (
-    select 
-        pmid,
-        country_code 
-    from hralit_pub_funding_funder a 
-    join hralit_funder_cleaned b 
-    on a.soa_funder_id=b.soa_funder_id
-)
-select 
-    country_code,
-    count(distinct(pmid))as funder_count
-from aa 
-group by country_code 
-order by ct desc
+version https://git-lfs.github.com/spec/v1
+oid sha256:139bbf04750d8d3939768b60d9c45e4b8a2666f365f49bdb9557c63dd3d9a2de
+size 289
