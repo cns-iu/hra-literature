@@ -7,7 +7,7 @@ Yongxin Kong<sup>1,2, * </sup> and Katy Börner <sup>1,* </sup>
 
 ---
 
-Experts from 18 consortia are collaborating on the Human Reference Atlas (HRA) which aims to map the 37 trillion cells in the healthy human body. Information relevant for HRA construction and usage is held by experts, published in scholarly papers, and captured in experimental data. However, these data sources use different metadata schemes and cannot be cross-searched efficiently. This paper documents the compilation of a dataset, called HRAlit, that links the 136 HRA v1.4 digital objects (31 organs with 2,689 anatomical structures, 590 cell types, 1,770 biomarkers) to 583,117 experts; 7,103,180 publications; 896,680 funded projects, and 1,816 experimental datasets. The resulting HRAlit represents 23 tables with 21,703,812 records including 7 junction tables with 13,042,188 relationships. The HRAlit can be mined to identify leading experts, major papers, funding trends, or alignment with existing ontologies in support of systematic HRA construction and usage. Data and code are at https://figshare.com/articles/dataset/24580669 and https://github.com/cns-iu/hra-literature. 
+Experts from 18 consortia are collaborating on the Human Reference Atlas (HRA) which aims to map the 37 trillion cells in the healthy human body. Information relevant for HRA construction and usage is held by experts, published in scholarly papers, and captured in experimental data. However, these data sources use different metadata schemes and cannot be cross-searched efficiently. This paper documents the compilation of a dataset, called HRAlit, that links the 136 HRA v1.4 digital objects (31 organs with 4,279 anatomical structures, 1,210 cell types, 2,089 biomarkers) to 583,117 experts; 7,103,180 publications; 896,680 funded projects, and 1,816 experimental datasets. The resulting HRAlit has 22 tables with 20,939,937 records including 6 junction tables with 13,170,651 relationships. The HRAlit can be mined to identify leading experts, major papers, funding trends, or alignment with existing ontologies in support of systematic HRA construction and usage. 
 
 
 ## Introduction
@@ -36,9 +36,8 @@ The repo is structured in the following way:
 - **CSV Tables**: If you prefer to work with CSV files, we've provided individual CSVs for each table in the HRAlit database. 
 
 ### Entity Relationship Diagram
-[The Entity Relationship Diagram of HRAlit database](https://dbdiagram.io/d/HRAlit-database-652a4fe1ffbf5169f0abf1a2) is available.
 
-![img](https://github.com/cns-iu/hra-literature/blob/main/data/db/Entity%20Relationship%20Diagram.png?raw=true)
+![img](https://github.com/cns-iu/hra-literature/blob/main/data/db/HRAlit-Entity-relationship-diagram.svg)
 
 ## Supplementary information
 - **Data dictionary of HRAlit database**: Provides details on the [data description](data/db/data-dictionary.xlsx) for each table in the HRAlit database, as well as statistics on the number of [rows](data/db/row-ct.csv), [nodes](data/db/node-ct.csv), and [linkages of relationships](data/db/linkage-ct.csv).
