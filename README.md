@@ -58,7 +58,7 @@ Code for extracting data in different types sourced from different datasets.
     - HuBMAP: Datasets and donors are extracted via [Smart API](https://smart-api.info/ui/0065e419668f3336a40d1f5ab89c6ba3). 
 - [**Ontology**](extract/ontology): Extract the ontology terms in 5th release ASCT+B Tables through [CCF-ASCTB-ALL data](data/ontology/ccf-asctb-all.json), including anatomical structures (AS), cell types (CT), biomarkers (B), and their linkages.
     - AS, CT, B: Extract the id, rdfs_label, and name.
-    - Linkages: Tag ```part_of ``` for ASs, ```located_in``` for ASs and CTs, ```is_a``` for CTs, ```characterizes``` for CTs and Bs.
+    - Linkages: Tag ```part_of``` for ASs, ```located_in``` for ASs and CTs, ```is_a``` for CTs, ```characterizes``` for CTs and Bs.
     - Triple：Build the linkage among anatomical structures, cell types, and biomarkers listed in the same row of a ASCT+B Table through assigning a unique identifier called “row_id” to each row
 - [**Publication**](extract/publication): Extract the HRA references and PubMed publications associated with [31 organs in 5th release HRA](data/experimental/organ.csv).
     - HRA references: Extract the general references and specific references in 5th release ASCT+B Tables through [CCF-ASCTB-ALL data](data/ontology/ccf-asctb-all.json).
@@ -96,7 +96,6 @@ Construct the HRAlit database in PostgreSQL via the following steps:
       - Select publication data associated with 31 organs(recorded in "hralit_publication_subject" table), references associated with ASCT+B Tables (recorded in "hralit_asctb_publication" table), publications associated with CellMarker, GTEx, or CellMarker (recorded in "hralit_other_publication" table), and then add them to ```hrait_publication``` table.
     - Publication - Authors: Import the linkages between publications in "hralit_publication" table and associated authors to ```hralit_publication_author``` table.
     - Authors:
-      - Query the linkage between ORCIDs and organs to ```hralit_author_expertise``` table by joing "hralit_publication_subject" table and "hralit_publication_author" table.
       - Import the metadata of selected authors to ```hralit_author``` table, as well as the HRA experts.
     - Authors - Institutions: Link the selected authors with institution data in OpenAlex, and import into ```hralit_author_institution``` table.
     - Institutions: Import the metadata of selected institutions sourced from OpenAlex into ```hralit_institution``` table.
