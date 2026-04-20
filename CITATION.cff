@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata below."
+title: "hra-literature"
+type: software
+authors:
+  - family-names: Kong
+    given-names: Yongxin
+  - family-names: Börner
+    given-names: Katy
+repository-code: "https://github.com/cns-iu/hra-literature"
+url: "https://github.com/cns-iu/hra-literature"
+doi: 10.6084/m9.figshare.24580669
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Kong
+      given-names: Yongxin
+    - family-names: Börner
+      given-names: Katy
+  title: "Publication, funding, and experimental data in support of Human Reference Atlas construction and usage"
+  journal: "Scientific Data"
+  year: 2024
+  volume: 11
+  pages: 574
+  doi: 10.1038/s41597-024-03416-8
