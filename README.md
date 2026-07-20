@@ -1,5 +1,5 @@
 # Publication, Funding, and Experimental Data in Support of Human Reference Atlas Construction and Usage
-Yongxin Kong<sup>1,2, * </sup> and Katy Börner <sup>1,* </sup>
+[Yongxin Kong](https://scholar.google.com/citations?user=8f8USHEAAAAJ&hl=en)<sup>1,2, * </sup> and [Katy Börner](https://cns-iu.github.io/katy/) <sup>1,* </sup>
 
 <sup>* </sup>Joint corresponding authors
 
@@ -8,6 +8,11 @@ Yongxin Kong<sup>1,2, * </sup> and Katy Börner <sup>1,* </sup>
 ---
 
 Experts from 18 consortia are collaborating on the Human Reference Atlas (HRA) which aims to map the 37 trillion cells in the healthy human body. Information relevant for HRA construction and usage is held by experts, published in scholarly papers, and captured in experimental data. However, these data sources use different metadata schemes and cannot be cross-searched efficiently. This paper documents the compilation of a dataset, called HRAlit, that links the 136 HRA v1.4 digital objects (31 organs with 4,279 anatomical structures, 1,210 cell types, 2,089 biomarkers) to 583,117 experts; 7,103,180 publications; 896,680 funded projects, and 1,816 experimental datasets. The resulting HRAlit has 22 tables with 20,939,937 records including 6 junction tables with 13,170,651 relationships. The HRAlit can be mined to identify leading experts, major papers, funding trends, or alignment with existing ontologies in support of systematic HRA construction and usage. 
+
+## Links
+[Link to Paper](https://www.nature.com/articles/s41597-024-03416-8)
+
+[Link to Data](https://doi.org/10.6084/m9.figshare.24580669)
 
 
 ## Introduction
